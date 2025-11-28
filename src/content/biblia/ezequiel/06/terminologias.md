@@ -1,0 +1,13 @@
+---
+livro: "ezequiel"
+capitulo: "06"
+titulo: ""
+slug: "ezequiel-06-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+

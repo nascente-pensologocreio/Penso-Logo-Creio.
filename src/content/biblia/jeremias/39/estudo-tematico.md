@@ -1,0 +1,13 @@
+---
+livro: "jeremias"
+capitulo: "39"
+titulo: ""
+slug: "jeremias-39-estudo-tematico"
+data: ""
+autor: "Capelão Nascente"
+tipo: "estudo-tematico"
+tema_principal: ""
+tags: []
+---
+
+

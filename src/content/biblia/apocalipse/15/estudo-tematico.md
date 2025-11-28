@@ -1,0 +1,13 @@
+---
+livro: "apocalipse"
+capitulo: "15"
+titulo: ""
+slug: "apocalipse-15-estudo-tematico"
+data: ""
+autor: "Capelão Nascente"
+tipo: "estudo-tematico"
+tema_principal: ""
+tags: []
+---
+
+

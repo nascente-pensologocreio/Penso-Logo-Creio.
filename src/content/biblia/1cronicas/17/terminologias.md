@@ -1,0 +1,13 @@
+---
+livro: "1cronicas"
+capitulo: "17"
+titulo: ""
+slug: "1cronicas-17-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+

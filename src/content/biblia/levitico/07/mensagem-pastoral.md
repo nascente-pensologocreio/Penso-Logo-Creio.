@@ -1,0 +1,13 @@
+---
+livro: "levitico"
+capitulo: "07"
+titulo: ""
+slug: "levitico-07-mensagem-pastoral"
+data: ""
+autor: "Capelão Nascente"
+tipo: "mensagem-pastoral"
+tema_principal: ""
+tags: []
+---
+
+

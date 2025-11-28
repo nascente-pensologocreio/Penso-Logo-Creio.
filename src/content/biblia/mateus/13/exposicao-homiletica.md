@@ -1,0 +1,13 @@
+---
+livro: "mateus"
+capitulo: "13"
+titulo: ""
+slug: "mateus-13-pregacao-tecnica"
+data: ""
+autor: "Capelão Nascente"
+tipo: "pregacao-tecnica"
+tema_principal: ""
+tags: []
+---
+
+

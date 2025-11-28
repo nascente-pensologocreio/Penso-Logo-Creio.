@@ -1,0 +1,13 @@
+---
+livro: "jo"
+capitulo: "01"
+titulo: ""
+slug: "jo-01-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

@@ -1,0 +1,13 @@
+---
+livro: "2reis"
+capitulo: "11"
+titulo: ""
+slug: "2reis-11-mensagem-pastoral"
+data: ""
+autor: "Capelão Nascente"
+tipo: "mensagem-pastoral"
+tema_principal: ""
+tags: []
+---
+
+

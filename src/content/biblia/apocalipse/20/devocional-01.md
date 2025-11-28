@@ -1,0 +1,13 @@
+---
+livro: "apocalipse"
+capitulo: "20"
+titulo: ""
+slug: "apocalipse-20-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

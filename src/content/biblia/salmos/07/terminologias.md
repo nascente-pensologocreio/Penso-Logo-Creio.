@@ -1,0 +1,13 @@
+---
+livro: "salmos"
+capitulo: "07"
+titulo: ""
+slug: "salmos-07-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+

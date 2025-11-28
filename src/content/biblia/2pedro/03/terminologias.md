@@ -1,0 +1,13 @@
+---
+livro: "2pedro"
+capitulo: "03"
+titulo: ""
+slug: "2pedro-03-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+

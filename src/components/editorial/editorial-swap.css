@@ -1,0 +1,56 @@
+.editorialSwapGrid {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.editorialPrincipal {
+  background: rgba(0,0,0,0.35);
+  padding: 2rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255,215,0,0.25);
+  box-shadow: 0 0 15px rgba(255,223,0,0.12);
+}
+
+.editorialCard {
+  background: rgba(0,0,0,0.35);
+  padding: 1.5rem;
+  border-radius: 14px;
+  border: 1px solid gold;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 0 12px rgba(255,230,120,0.22);
+}
+.editorialCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(255,240,150,0.34);
+}
+
+.editorialCardImg {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+}
+
+.editorialCardResumo {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin-bottom: 0.5rem;
+}
+
+.editorialCardHint {
+  font-size: 0.8rem;
+  color: gold;
+  opacity: 0.65;
+}
+
+.fadeIn {
+  animation: fadeIn 0.4s ease;
+}
+@keyframes fadeIn {
+  from { opacity:0; transform: translateY(6px); }
+  to   { opacity:1; transform: translateY(0); }
+}

@@ -1,0 +1,228 @@
+/* 1. IMPORTAÇÃO DA FONTE (Obriga a estar na primeira linha do arquivo) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Variáveis Centrais */
+:root {
+    --color-gold: #D4AF37;
+    --color-text-light: #EDEDED;
+    --color-bg-dark: #0a0a0a;
+    --color-border-subtle: rgba(212, 175, 55, 0.4);
+    --color-placeholder: #777777;
+    --font-playfair: 'Playfair Display', serif; /* Fonte elegante para títulos e citações */
+    --font-sans: sans-serif; /* Fallback simples para o corpo geral */
+    --color-dark-gold: #6D5B1F; /* Dourado Escuro/Base Ferrugem para o botão */
+}
+
+/* ============================================================
+   ESTILOS GERAIS DA SEÇÃO DE CONTATO
+   ============================================================ */
+.contato-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    color: var(--color-text-light);
+    overflow: hidden;
+    background: linear-gradient(to bottom, var(--color-bg-dark), #0d0d0d, #000000);
+    font-family: var(--font-sans);
+    animation: fadeIn 1s ease-out; /* Requer keyframe em animations.css */
+}
+
+/* Layout de duas colunas em desktop */
+@media (min-width: 1024px) {
+    .contato-section {
+        flex-direction: row;
+    }
+}
+
+/* ============================================================
+   ESTILOS DA COLUNA ESQUERDA (TEXTO E CONTATOS)
+   ============================================================ */
+.contato-texto-coluna {
+    position: relative;
+    z-index: 20;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px 40px;
+    padding-left: 96px; 
+    
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+    animation: fadeInLeft 1.2s ease-out; /* Requer keyframe em animations.css */
+}
+
+@media (min-width: 1024px) {
+    .contato-texto-coluna {
+        width: 50%;
+    }
+}
+
+.contato-titulo {
+    font-size: 3rem;
+    font-family: var(--font-playfair);
+    color: var(--color-gold);
+    margin-bottom: 24px;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.45);
+    animation: glow 3s ease-in-out infinite; /* Requer keyframe em animations.css */
+}
+
+/* 1. Tipografia Refinada para as Citações */
+.frase-principal {
+    color: var(--color-text-light);
+    font-size: 1.25rem;
+    line-height: 1.8;
+    max-width: 448px;
+    font-style: italic;
+    font-weight: 400;
+    font-family: var(--font-playfair); 
+    
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    animation: text-breathe 8s ease-in-out infinite; /* Requer keyframe em animations.css */
+}
+
+.contato-info-grupo {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 0.875rem;
+}
+
+.info-titulo {
+    color: var(--color-gold);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 3px;
+}
+
+.info-link {
+    color: var(--color-text-light);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.info-link:hover {
+    color: var(--color-gold);
+    text-decoration: underline;
+}
+
+.nota-rodape {
+    color: var(--color-placeholder);
+    font-size: 0.75rem;
+    font-style: italic;
+    margin-top: 2px;
+}
+
+.frase-rodape {
+    color: var(--color-gold);
+    font-size: 0.9rem;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 40px;
+    text-shadow: 0 0 7px rgba(212, 175, 55, 0.5);
+    font-family: var(--font-playfair); 
+}
+
+/* ============================================================
+   ESTILOS DA COLUNA DIREITA (FORMULÁRIO)
+   ============================================================ */
+.contato-formulario-coluna {
+    position: relative;
+    z-index: 20;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 32px;
+    
+    background: linear-gradient(to bottom, rgba(212, 175, 55, 0.05), #111111, #000000);
+    border-left: 1px solid rgba(212, 175, 55, 0.2);
+    animation: fadeInRight 1.2s ease-out; /* Requer keyframe em animations.css */
+}
+
+@media (min-width: 1024px) {
+    .contato-formulario-coluna {
+        width: 50%;
+    }
+}
+
+.contato-formulario-wrapper {
+    width: 100%;
+    max-width: 448px;
+    animation: fade-in-up 0.8s ease-out; /* Requer keyframe em animations.css */
+}
+
+.formulario-titulo {
+    font-size: 2rem;
+    font-family: var(--font-playfair);
+    color: var(--color-gold);
+    margin-bottom: 32px;
+    text-align: center;
+    animation: glow 3s ease-in-out infinite; /* Requer keyframe em animations.css */
+}
+
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato-input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid var(--color-border-subtle);
+    color: var(--color-text-light);
+    font-size: 1em;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.contato-input::placeholder {
+    color: var(--color-placeholder);
+}
+
+.contato-input:focus {
+    border-color: rgba(212, 175, 55, 0.8);
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+}
+
+.contato-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* 2. Botão de Envio (Ferrugem/Dourado Escuro e Brilho Pulsante) */
+.contato-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    
+    background-color: var(--color-dark-gold); 
+    
+    border: 1px solid rgba(212, 175, 55, 0.6);
+    color: var(--color-text-light);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    border-radius: 6px;
+    cursor: pointer;
+    
+    box-shadow: none; 
+    
+    transition: all 0.3s ease-in-out;
+    animation: pulse-glow 3s ease-in-out infinite; /* Requer keyframe em animations.css */
+}
+
+.contato-button:hover {
+    background: var(--color-dark-gold); 
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.5); 
+    transform: translateY(-2px);
+}

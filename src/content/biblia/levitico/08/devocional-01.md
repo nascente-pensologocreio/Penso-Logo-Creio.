@@ -1,0 +1,13 @@
+---
+livro: "levitico"
+capitulo: "08"
+titulo: ""
+slug: "levitico-08-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

@@ -1,0 +1,13 @@
+---
+livro: "2cronicas"
+capitulo: "24"
+titulo: ""
+slug: "2cronicas-24-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+

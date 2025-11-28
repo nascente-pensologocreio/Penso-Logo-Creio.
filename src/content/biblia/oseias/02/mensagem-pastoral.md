@@ -1,0 +1,13 @@
+---
+livro: "oseias"
+capitulo: "02"
+titulo: ""
+slug: "oseias-02-mensagem-pastoral"
+data: ""
+autor: "Capelão Nascente"
+tipo: "mensagem-pastoral"
+tema_principal: ""
+tags: []
+---
+
+

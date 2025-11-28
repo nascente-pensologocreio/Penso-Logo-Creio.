@@ -1,0 +1,13 @@
+---
+livro: "jeremias"
+capitulo: "01"
+titulo: ""
+slug: "jeremias-01-estudo-tematico"
+data: ""
+autor: "Capelão Nascente"
+tipo: "estudo-tematico"
+tema_principal: ""
+tags: []
+---
+
+

@@ -1,0 +1,13 @@
+---
+livro: "daniel"
+capitulo: "02"
+titulo: ""
+slug: "daniel-02-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+

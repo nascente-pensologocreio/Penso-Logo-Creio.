@@ -1,0 +1,13 @@
+---
+livro: "2samuel"
+capitulo: "20"
+titulo: ""
+slug: "2samuel-20-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

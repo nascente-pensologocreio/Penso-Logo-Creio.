@@ -1,0 +1,13 @@
+---
+livro: "2cronicas"
+capitulo: "04"
+titulo: ""
+slug: "2cronicas-04-estudo-tematico"
+data: ""
+autor: "Capelão Nascente"
+tipo: "estudo-tematico"
+tema_principal: ""
+tags: []
+---
+
+

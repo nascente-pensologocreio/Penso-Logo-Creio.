@@ -1,0 +1,13 @@
+---
+livro: "2cronicas"
+capitulo: "15"
+titulo: ""
+slug: "2cronicas-15-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+

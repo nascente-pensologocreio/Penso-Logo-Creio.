@@ -1,0 +1,13 @@
+---
+livro: "oseias"
+capitulo: "01"
+titulo: ""
+slug: "oseias-01-pregacao-tecnica"
+data: ""
+autor: "Capelão Nascente"
+tipo: "pregacao-tecnica"
+tema_principal: ""
+tags: []
+---
+
+

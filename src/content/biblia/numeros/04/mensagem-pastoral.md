@@ -1,0 +1,13 @@
+---
+livro: "numeros"
+capitulo: "04"
+titulo: ""
+slug: "numeros-04-mensagem-pastoral"
+data: ""
+autor: "Capelão Nascente"
+tipo: "mensagem-pastoral"
+tema_principal: ""
+tags: []
+---
+
+

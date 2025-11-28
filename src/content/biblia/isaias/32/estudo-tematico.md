@@ -1,0 +1,13 @@
+---
+livro: "isaias"
+capitulo: "32"
+titulo: ""
+slug: "isaias-32-estudo-tematico"
+data: ""
+autor: "Capelão Nascente"
+tipo: "estudo-tematico"
+tema_principal: ""
+tags: []
+---
+
+

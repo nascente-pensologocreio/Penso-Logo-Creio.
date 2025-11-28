@@ -1,0 +1,13 @@
+---
+livro: "apocalipse"
+capitulo: "19"
+titulo: ""
+slug: "apocalipse-19-pregacao-tecnica"
+data: ""
+autor: "Capelão Nascente"
+tipo: "pregacao-tecnica"
+tema_principal: ""
+tags: []
+---
+
+

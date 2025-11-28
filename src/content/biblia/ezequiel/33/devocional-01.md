@@ -1,0 +1,13 @@
+---
+livro: "ezequiel"
+capitulo: "33"
+titulo: ""
+slug: "ezequiel-33-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

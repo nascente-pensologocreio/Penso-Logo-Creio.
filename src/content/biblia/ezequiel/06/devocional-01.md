@@ -1,0 +1,13 @@
+---
+livro: "ezequiel"
+capitulo: "06"
+titulo: ""
+slug: "ezequiel-06-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

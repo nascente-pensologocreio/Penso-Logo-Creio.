@@ -1,0 +1,13 @@
+---
+livro: "numeros"
+capitulo: "28"
+titulo: ""
+slug: "numeros-28-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

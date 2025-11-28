@@ -1,0 +1,13 @@
+---
+livro: "salmos"
+capitulo: "149"
+titulo: ""
+slug: "salmos-149-mensagem-pastoral"
+data: ""
+autor: "Capelão Nascente"
+tipo: "mensagem-pastoral"
+tema_principal: ""
+tags: []
+---
+
+

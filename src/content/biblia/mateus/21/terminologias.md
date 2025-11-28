@@ -1,0 +1,13 @@
+---
+livro: "mateus"
+capitulo: "21"
+titulo: ""
+slug: "mateus-21-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+

@@ -1,0 +1,13 @@
+---
+livro: "salmos"
+capitulo: "70"
+titulo: ""
+slug: "salmos-70-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+

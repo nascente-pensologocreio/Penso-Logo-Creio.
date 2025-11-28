@@ -1,0 +1,13 @@
+---
+livro: "josue"
+capitulo: "07"
+titulo: ""
+slug: "josue-07-estudo-tematico"
+data: ""
+autor: "Capelão Nascente"
+tipo: "estudo-tematico"
+tema_principal: ""
+tags: []
+---
+
+

@@ -1,0 +1,13 @@
+---
+livro: "exodo"
+capitulo: "33"
+titulo: ""
+slug: "exodo-33-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

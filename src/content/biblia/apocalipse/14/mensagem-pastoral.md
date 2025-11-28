@@ -1,0 +1,13 @@
+---
+livro: "apocalipse"
+capitulo: "14"
+titulo: ""
+slug: "apocalipse-14-mensagem-pastoral"
+data: ""
+autor: "Capelão Nascente"
+tipo: "mensagem-pastoral"
+tema_principal: ""
+tags: []
+---
+
+

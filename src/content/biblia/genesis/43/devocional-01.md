@@ -1,0 +1,13 @@
+---
+livro: "genesis"
+capitulo: "43"
+titulo: ""
+slug: "genesis-43-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

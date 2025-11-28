@@ -1,0 +1,13 @@
+---
+livro: "1cronicas"
+capitulo: "08"
+titulo: ""
+slug: "1cronicas-08-pregacao-tecnica"
+data: ""
+autor: "Capelão Nascente"
+tipo: "pregacao-tecnica"
+tema_principal: ""
+tags: []
+---
+
+

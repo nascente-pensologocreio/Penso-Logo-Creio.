@@ -1,0 +1,13 @@
+---
+livro: "marcos"
+capitulo: "04"
+titulo: ""
+slug: "marcos-04-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

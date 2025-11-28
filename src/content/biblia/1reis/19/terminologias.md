@@ -1,0 +1,13 @@
+---
+livro: "1reis"
+capitulo: "19"
+titulo: ""
+slug: "1reis-19-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+

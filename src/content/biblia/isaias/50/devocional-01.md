@@ -1,0 +1,13 @@
+---
+livro: "isaias"
+capitulo: "50"
+titulo: ""
+slug: "isaias-50-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

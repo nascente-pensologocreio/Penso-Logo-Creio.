@@ -1,0 +1,13 @@
+---
+livro: "jeremias"
+capitulo: "26"
+titulo: ""
+slug: "jeremias-26-estudo-tematico"
+data: ""
+autor: "Capelão Nascente"
+tipo: "estudo-tematico"
+tema_principal: ""
+tags: []
+---
+
+

@@ -1,0 +1,13 @@
+---
+livro: "jeremias"
+capitulo: "18"
+titulo: ""
+slug: "jeremias-18-pregacao-tecnica"
+data: ""
+autor: "Capelão Nascente"
+tipo: "pregacao-tecnica"
+tema_principal: ""
+tags: []
+---
+
+

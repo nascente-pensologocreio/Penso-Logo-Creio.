@@ -1,0 +1,13 @@
+---
+livro: "isaias"
+capitulo: "45"
+titulo: ""
+slug: "isaias-45-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

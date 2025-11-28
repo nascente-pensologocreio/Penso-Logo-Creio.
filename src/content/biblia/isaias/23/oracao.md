@@ -1,0 +1,13 @@
+---
+livro: "isaias"
+capitulo: "23"
+titulo: ""
+slug: "isaias-23-oracao"
+data: ""
+autor: "Capelão Nascente"
+tipo: "oracao"
+tema_principal: ""
+tags: []
+---
+
+

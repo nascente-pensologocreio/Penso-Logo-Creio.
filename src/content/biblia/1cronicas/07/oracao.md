@@ -1,0 +1,13 @@
+---
+livro: "1cronicas"
+capitulo: "07"
+titulo: ""
+slug: "1cronicas-07-oracao"
+data: ""
+autor: "Capelão Nascente"
+tipo: "oracao"
+tema_principal: ""
+tags: []
+---
+
+

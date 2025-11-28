@@ -1,0 +1,13 @@
+---
+livro: "mateus"
+capitulo: "06"
+titulo: ""
+slug: "mateus-06-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

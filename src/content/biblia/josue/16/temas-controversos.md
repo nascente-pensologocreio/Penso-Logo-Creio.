@@ -1,0 +1,13 @@
+---
+livro: "josue"
+capitulo: "16"
+titulo: ""
+slug: "josue-16-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+

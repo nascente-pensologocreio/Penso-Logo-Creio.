@@ -1,0 +1,13 @@
+---
+livro: "deuteronomio"
+capitulo: "28"
+titulo: ""
+slug: "deuteronomio-28-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+

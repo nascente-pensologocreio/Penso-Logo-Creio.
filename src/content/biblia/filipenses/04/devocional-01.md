@@ -1,0 +1,13 @@
+---
+livro: "filipenses"
+capitulo: "04"
+titulo: ""
+slug: "filipenses-04-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

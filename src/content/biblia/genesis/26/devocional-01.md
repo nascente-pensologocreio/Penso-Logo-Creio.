@@ -1,0 +1,13 @@
+---
+livro: "genesis"
+capitulo: "26"
+titulo: ""
+slug: "genesis-26-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

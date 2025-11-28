@@ -1,0 +1,163 @@
+{
+  // =====================================================
+  // 🕊️ PLC — DEVOCIONAL
+  // =====================================================
+  "🕊️ PLC Devocional": {
+    "prefix": "plc-dev",
+    "body": [
+      "---",
+      "livro: \"${TM_DIRECTORY/(.*)\\/([^\\/]+)\\/([^\\/]+)$/\\2/}\"",
+      "capitulo: \"${TM_DIRECTORY/(.*)\\/([^\\/]+)\\/([^\\/]+)$/\\3/}\"",
+      "titulo: \"${1}\"",
+      "slug: \"${2}\"",
+      "data: \"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"",
+      "autor: \"Capelão Nascente\"",
+      "",
+      "tipo: \"devocional\"",
+      "tema_principal: \"${3}\"",
+      "tags: [${4}]",
+      "---",
+      "",
+      "$0"
+    ]
+  },
+
+  // =====================================================
+  // ❤️ PLC — ORAÇÃO
+  // =====================================================
+  "❤️ PLC Oração": {
+    "prefix": "plc-ora",
+    "body": [
+      "---",
+      "livro: \"${TM_DIRECTORY/(.*)\\/([^\\/]+)\\/([^\\/]+)$/\\2/}\"",
+      "capitulo: \"${TM_DIRECTORY/(.*)\\/([^\\/]+)\\/([^\\/]+)$/\\3/}\"",
+      "titulo: \"${1}\"",
+      "slug: \"${2}\"",
+      "data: \"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"",
+      "autor: \"Capelão Nascente\"",
+      "",
+      "tipo: \"oracao\"",
+      "tema_principal: \"${3}\"",
+      "tags: [${4}]",
+      "---",
+      "",
+      "$0"
+    ]
+  },
+
+  // =====================================================
+  // 🔥 PLC — EXPOSIÇÃO HOMILÉTICA
+  // =====================================================
+  "🔥 PLC Exposição Homilética": {
+    "prefix": "plc-expo",
+    "body": [
+      "---",
+      "livro: \"${TM_DIRECTORY/(.*)\\/([^\\/]+)\\/([^\\/]+)$/\\2/}\"",
+      "capitulo: \"${TM_DIRECTORY/(.*)\\/([^\\/]+)\\/([^\\/]+)$/\\3/}\"",
+      "titulo: \"${1}\"",
+      "slug: \"${2}\"",
+      "data: \"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"",
+      "autor: \"Capelão Nascente\"",
+      "",
+      "tipo: \"exposicao-homiletica\"",
+      "tema_principal: \"${3}\"",
+      "tags: [${4}]",
+      "---",
+      "",
+      "$0"
+    ]
+  },
+
+  // =====================================================
+  // 📖 PLC — MENSAGEM PASTORAL
+  // =====================================================
+  "📖 PLC Mensagem Pastoral": {
+    "prefix": "plc-past",
+    "body": [
+      "---",
+      "livro: \"${TM_DIRECTORY/(.*)\\/([^\\/]+)\\/([^\\/]+)$/\\2/}\"",
+      "capitulo: \"${TM_DIRECTORY/(.*)\\/([^\\/]+)\\/([^\\/]+)$/\\3/}\"",
+      "titulo: \"${1}\"",
+      "slug: \"${2}\"",
+      "data: \"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"",
+      "autor: \"Capelão Nascente\"",
+      "",
+      "tipo: \"mensagem-pastoral\"",
+      "tema_principal: \"${3}\"",
+      "tags: [${4}]",
+      "---",
+      "",
+      "$0"
+    ]
+  },
+
+  // =====================================================
+  // 🧠 PLC — ESTUDO TEMÁTICO GERAL
+  // =====================================================
+  "🧠 PLC Estudo Temático": {
+    "prefix": "plc-est",
+    "body": [
+      "---",
+      "livro: \"${TM_DIRECTORY/(.*)\\/([^\\/]+)\\/([^\\/]+)$/\\2/}\"",
+      "capitulo: \"${TM_DIRECTORY/(.*)\\/([^\\/]+)\\/([^\\/]+)$/\\3/}\"",
+      "titulo: \"${1}\"",
+      "slug: \"${2}\"",
+      "data: \"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"",
+      "autor: \"Capelão Nascente\"",
+      "",
+      "tipo: \"estudo-tematico\"",
+      "tema_principal: \"${3}\"",
+      "tags: [${4}]",
+      "---",
+      "",
+      "$0"
+    ]
+  },
+
+  // =====================================================
+  // 🏛️ PLC — TERMINOLOGIAS-CHAVE
+  // =====================================================
+  "🏛️ PLC Terminologias-Chave": {
+    "prefix": "plc-term",
+    "body": [
+      "---",
+      "livro: \"${TM_DIRECTORY/(.*)\\/([^\\/]+)\\/([^\\/]+)$/\\2/}\"",
+      "capitulo: \"${TM_DIRECTORY/(.*)\\/([^\\/]+)\\/([^\\/]+)$/\\3/}\"",
+      "titulo: \"${1}\"",
+      "slug: \"${2}\"",
+      "data: \"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"",
+      "autor: \"Capelão Nascente\"",
+      "",
+      "tipo: \"terminologias-chave\"",
+      "tema_principal: \"${3}\"",
+      "tags: [${4}]",
+      "---",
+      "",
+      "$0"
+    ]
+  },
+
+  // =====================================================
+  // ⚖️ PLC — TEMAS CONTROVERSOS
+  // =====================================================
+  "⚖️ PLC Temas Controversos": {
+    "prefix": "plc-cont",
+    "body": [
+      "---",
+      "livro: \"${TM_DIRECTORY/(.*)\\/([^\\/]+)\\/([^\\/]+)$/\\2/}\"",
+      "capitulo: \"${TM_DIRECTORY/(.*)\\/([^\\/]+)\\/([^\\/]+)$/\\3/}\"",
+      "titulo: \"${1}\"",
+      "slug: \"${2}\"",
+      "data: \"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"",
+      "autor: \"Capelão Nascente\"",
+      "",
+      "tipo: \"temas-controversos\"",
+      "tema_principal: \"${3}\"",
+      "tags: [${4}]",
+      "---",
+      "",
+      "$0"
+    ]
+  }
+}
+

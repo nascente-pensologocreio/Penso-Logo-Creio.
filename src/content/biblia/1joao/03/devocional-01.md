@@ -1,0 +1,13 @@
+---
+livro: "1joao"
+capitulo: "03"
+titulo: ""
+slug: "1joao-03-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

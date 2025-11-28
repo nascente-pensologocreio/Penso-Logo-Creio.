@@ -1,0 +1,13 @@
+---
+livro: "atos"
+capitulo: "12"
+titulo: ""
+slug: "atos-12-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

@@ -1,0 +1,13 @@
+---
+livro: "ezequiel"
+capitulo: "16"
+titulo: ""
+slug: "ezequiel-16-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+

@@ -1,0 +1,13 @@
+---
+livro: "salmos"
+capitulo: "42"
+titulo: ""
+slug: "salmos-42-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+

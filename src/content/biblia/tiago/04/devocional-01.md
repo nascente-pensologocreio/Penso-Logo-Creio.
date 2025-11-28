@@ -1,0 +1,13 @@
+---
+livro: "tiago"
+capitulo: "04"
+titulo: ""
+slug: "tiago-04-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

@@ -1,0 +1,13 @@
+---
+livro: "josue"
+capitulo: "24"
+titulo: ""
+slug: "josue-24-mensagem-pastoral"
+data: ""
+autor: "Capelão Nascente"
+tipo: "mensagem-pastoral"
+tema_principal: ""
+tags: []
+---
+
+

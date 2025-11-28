@@ -1,0 +1,13 @@
+---
+livro: "ezequiel"
+capitulo: "18"
+titulo: ""
+slug: "ezequiel-18-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

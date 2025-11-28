@@ -1,0 +1,94 @@
+/* ================================================
+   CONTAINER PRINCIPAL
+   ================================================ */
+.editorial-grid-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ================================================
+   GRID DE 2 COLUNAS (sidebar + conteúdo)
+   ================================================ */
+.editorial-grid-2cols {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 2rem;
+}
+
+/* ================================================
+   SIDEBAR ESQUERDA (Reflexão / Versículo)
+   ================================================ */
+.editorial-sidebar-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ================================================
+   BOX DECORATIVA DA SIDEBAR E DOS CARDS
+   ================================================ */
+.editorial-box {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 1.2rem 1.4rem;
+  border-radius: 8px;
+  backdrop-filter: blur(2px);
+  transition: 0.25s ease-in-out;
+}
+
+/* ================================================
+   TÍTULO DE CADA BOX
+   ================================================ */
+.editorial-box-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #D4AF37;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 6px rgba(212, 175, 55, 0.4);
+}
+
+/* ================================================
+   ÁREA PRINCIPAL DO ARTIGO / PREGACAO / ESTUDO
+   ================================================ */
+.editorial-main {
+  padding: 1rem 1.5rem;
+}
+
+.editorial-main-wrapper {
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+  padding-top: 2rem;
+}
+
+/* ================================================
+   ÁREA CENTRAL PARA DEVOCIONAL (SEM CARDS)
+   ================================================ */
+.editorial-centro {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.editorial-centro > * {
+  max-width: 680px;
+  width: 100%;
+}
+
+/* ================================================
+   RESPONSIVIDADE
+   ================================================ */
+@media (max-width: 1024px) {
+
+  .editorial-grid-2cols {
+    grid-template-columns: 1fr;
+  }
+
+  .editorial-main {
+    padding: 0.5rem;
+  }
+
+  .editorial-centro {
+    margin-top: 2rem;
+  }
+}

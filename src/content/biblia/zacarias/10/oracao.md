@@ -1,0 +1,13 @@
+---
+livro: "zacarias"
+capitulo: "10"
+titulo: ""
+slug: "zacarias-10-oracao"
+data: ""
+autor: "Capelão Nascente"
+tipo: "oracao"
+tema_principal: ""
+tags: []
+---
+
+

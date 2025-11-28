@@ -1,0 +1,13 @@
+---
+livro: "efesios"
+capitulo: "01"
+titulo: ""
+slug: "efesios-01-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

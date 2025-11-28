@@ -1,0 +1,13 @@
+---
+livro: "mateus"
+capitulo: "22"
+titulo: ""
+slug: "mateus-22-pregacao-tecnica"
+data: ""
+autor: "Capelão Nascente"
+tipo: "pregacao-tecnica"
+tema_principal: ""
+tags: []
+---
+
+

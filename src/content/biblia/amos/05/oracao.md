@@ -1,0 +1,13 @@
+---
+livro: "amos"
+capitulo: "05"
+titulo: ""
+slug: "amos-05-oracao"
+data: ""
+autor: "Capelão Nascente"
+tipo: "oracao"
+tema_principal: ""
+tags: []
+---
+
+

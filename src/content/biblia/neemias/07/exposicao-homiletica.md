@@ -1,0 +1,13 @@
+---
+livro: "neemias"
+capitulo: "07"
+titulo: ""
+slug: "neemias-07-pregacao-tecnica"
+data: ""
+autor: "Capelão Nascente"
+tipo: "pregacao-tecnica"
+tema_principal: ""
+tags: []
+---
+
+

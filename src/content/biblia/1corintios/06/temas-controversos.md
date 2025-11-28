@@ -1,0 +1,13 @@
+---
+livro: "1corintios"
+capitulo: "06"
+titulo: ""
+slug: "1corintios-06-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+

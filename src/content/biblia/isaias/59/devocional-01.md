@@ -1,0 +1,13 @@
+---
+livro: "isaias"
+capitulo: "59"
+titulo: ""
+slug: "isaias-59-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

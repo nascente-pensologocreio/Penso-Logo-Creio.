@@ -1,0 +1,13 @@
+---
+livro: "jeremias"
+capitulo: "49"
+titulo: ""
+slug: "jeremias-49-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+

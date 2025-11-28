@@ -1,0 +1,13 @@
+---
+livro: "salmos"
+capitulo: "147"
+titulo: ""
+slug: "salmos-147-oracao"
+data: ""
+autor: "Capelão Nascente"
+tipo: "oracao"
+tema_principal: ""
+tags: []
+---
+
+

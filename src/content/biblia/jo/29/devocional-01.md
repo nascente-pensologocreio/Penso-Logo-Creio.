@@ -1,0 +1,13 @@
+---
+livro: "jo"
+capitulo: "29"
+titulo: ""
+slug: "jo-29-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+

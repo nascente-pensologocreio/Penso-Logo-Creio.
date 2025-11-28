@@ -1,0 +1,13 @@
+---
+livro: "marcos"
+capitulo: "04"
+titulo: ""
+slug: "marcos-04-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+
