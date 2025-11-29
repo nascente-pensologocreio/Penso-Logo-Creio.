@@ -1,0 +1,15 @@
+const a=`---
+livro: "jeremias"
+capitulo: "23"
+titulo: ""
+slug: "jeremias-23-oracao"
+data: ""
+autor: "Capelão Nascente"
+tipo: "oracao"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{a as default};
+//# sourceMappingURL=oracao-BOS20HHZ.js.map

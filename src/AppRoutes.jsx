@@ -1,98 +1,115 @@
 // src/AppRoutes.jsx
 import { Routes, Route } from "react-router-dom";
+import { Suspense, lazy } from "react";
+
+import { parseFrontmatter, markdownToHtml } from "./utils/markdownProcessor.js"; // <-- ÚNICA ADIÇÃO
 
 // Layout principal
-import LayoutPrincipal from "./layouts/LayoutPrincipal.jsx";
+const LayoutPrincipal = lazy(() => import("./layouts/LayoutPrincipal.jsx"));
 
 // Páginas principais
-import Home from "./pages/Home.jsx";
-import CaminhoDasEscrituras from "./pages/CaminhoDasEscrituras.jsx";
-import EscadariaDoConhecimento from "./pages/EscadariaDoConhecimento.jsx";
-import DevocionalDiaria from "./pages/DevocionalDiaria.jsx";
-import TemasDaVida from "./pages/TemasDaVida.jsx";
-import Contato from "./pages/Contato.jsx";
+const Home = lazy(() => import("./pages/Home.jsx"));
+const CaminhoDasEscrituras = lazy(() =>
+  import("./pages/CaminhoDasEscrituras.jsx")
+);
+const EscadariaDoConhecimento = lazy(() =>
+  import("./pages/EscadariaDoConhecimento.jsx")
+);
+const DevocionalDiaria = lazy(() =>
+  import("./pages/DevocionalDiaria.jsx")
+);
+const TemasDaVida = lazy(() => import("./pages/TemasDaVida.jsx"));
+const Contato = lazy(() => import("./pages/Contato.jsx"));
 
 // Post premium da Home
-import Post from "./pages/Post.jsx";
+const Post = lazy(() => import("./pages/Post.jsx"));
 
 // Postagens vindas do Firebase
-import PostPage from "./pages/PostPage.jsx";
+const PostPage = lazy(() => import("./pages/PostPage.jsx"));
 
 // Orações
-import Oracoes from "./pages/Oracoes.jsx";
+const Oracoes = lazy(() => import("./pages/Oracoes.jsx"));
 
 // Biblioteca editorial
-import Biblioteca from "./pages/Biblioteca.jsx";
+const Biblioteca = lazy(() => import("./pages/Biblioteca.jsx"));
 
 // Calendário
-import ArvoreDePostagens from "./components/ArvoreDePostagens.jsx";
+const ArvoreDePostagens = lazy(() =>
+  import("./components/ArvoreDePostagens.jsx")
+);
 
 // Painel administrativo
-import AdminPublish from "./pages/AdminPublish.jsx";
+const AdminPublish = lazy(() => import("./pages/AdminPublish.jsx"));
 
 // 404
-import PaginaNaoEncontrada from "./pages/PaginaNaoEncontrada.jsx";
+const PaginaNaoEncontrada = lazy(() =>
+  import("./pages/PaginaNaoEncontrada.jsx")
+);
 
 // ==============================
 // NOVAS PÁGINAS DA HOME VIEW
 // ==============================
-import Devocional from "./pages/HomeView/Devocional.jsx";
-import MensagemPastoral from "./pages/HomeView/MensagemPastoral.jsx";
-import Oracao from "./pages/HomeView/Oracao.jsx";
+const Devocional = lazy(() => import("./pages/HomeView/Devocional.jsx"));
+const MensagemPastoral = lazy(() =>
+  import("./pages/HomeView/MensagemPastoral.jsx")
+);
+const Oracao = lazy(() => import("./pages/HomeView/Oracao.jsx"));
 
 export default function AppRoutes() {
   return (
-    <Routes>
-      {/* TODAS AS ROTAS QUE USAM O LAYOUT */}
-      <Route element={<LayoutPrincipal />}>
-        <Route index element={<Home />} />
+    <Suspense fallback={<div>Carregando...</div>}>
+      <Routes>
+        {/* TODAS AS ROTAS QUE USAM O LAYOUT */}
+        <Route element={<LayoutPrincipal />}>
+          <Route index element={<Home />} />
 
+          <Route
+            path="caminho-das-escrituras"
+            element={<CaminhoDasEscrituras />}
+          />
+          <Route
+            path="escadaria-do-conhecimento"
+            element={<EscadariaDoConhecimento />}
+          />
+          <Route path="devocional-diaria" element={<DevocionalDiaria />} />
+          <Route path="temas-da-vida" element={<TemasDaVida />} />
+          <Route path="contato" element={<Contato />} />
+
+          {/* HOME → artigo premium */}
+          <Route path="artigo/:slug" element={<Post />} />
+
+          {/* Firebase → Biblioteca */}
+          <Route path="post/:slug" element={<PostPage />} />
+
+          {/* Orações */}
+          <Route path="oracoes" element={<Oracoes />} />
+
+          {/* Biblioteca */}
+          <Route path="biblioteca" element={<Biblioteca />} />
+
+          {/* Calendário */}
+          <Route path="calendario" element={<ArvoreDePostagens />} />
+
+          {/* PAINEL ADMINISTRATIVO */}
+          <Route path="admin/publish" element={<AdminPublish />} />
+
+          {/* ==============================
+              ROTAS DAS PÁGINAS HOME VIEW
+          ============================== */}
+          <Route path="devocional" element={<Devocional />} />
+          <Route
+            path="mensagem-pastoral"
+            element={<MensagemPastoral />}
+          />
+          <Route path="oracao" element={<Oracao />} />
+        </Route>
+
+        {/* 404 */}
         <Route
-          path="caminho-das-escrituras"
-          element={<CaminhoDasEscrituras />}
+          path="*"
+          element={<PaginaNaoEncontrada mensagem="Página não encontrada." />}
         />
-        <Route
-          path="escadaria-do-conhecimento"
-          element={<EscadariaDoConhecimento />}
-        />
-        <Route path="devocional-diaria" element={<DevocionalDiaria />} />
-        <Route path="temas-da-vida" element={<TemasDaVida />} />
-        <Route path="contato" element={<Contato />} />
-
-        {/* HOME → artigo premium */}
-        <Route path="artigo/:slug" element={<Post />} />
-
-        {/* Firebase → Biblioteca */}
-        <Route path="post/:slug" element={<PostPage />} />
-
-        {/* Orações */}
-        <Route path="oracoes" element={<Oracoes />} />
-
-        {/* Biblioteca */}
-        <Route path="biblioteca" element={<Biblioteca />} />
-
-        {/* Calendário */}
-        <Route path="calendario" element={<ArvoreDePostagens />} />
-
-        {/* PAINEL ADMINISTRATIVO */}
-        <Route path="admin/publish" element={<AdminPublish />} />
-
-        {/* ==============================
-            ROTAS DAS PÁGINAS HOME VIEW
-        ============================== */}
-        <Route path="devocional" element={<Devocional />} />
-        <Route
-          path="mensagem-pastoral"
-          element={<MensagemPastoral />}
-        />
-        <Route path="oracao" element={<Oracao />} />
-      </Route>
-
-      {/* 404 */}
-      <Route
-        path="*"
-        element={<PaginaNaoEncontrada mensagem="Página não encontrada." />}
-      />
-    </Routes>
+      </Routes>
+    </Suspense>
   );
 }

@@ -1,0 +1,15 @@
+const n=`---
+livro: "jeremias"
+capitulo: "40"
+titulo: ""
+slug: "jeremias-40-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=devocional-01-C_X9bLM9.js.map

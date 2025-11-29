@@ -1,14 +1,15 @@
 // src/pages/AdminPublish.jsx
-// Publica TODOS os conteúdos .md no Firestore
-// Compatível com o script preencherFrontMatterBiblia.mjs
+// Publica TODOS os conteúdos .md no Firestore (modularizado)
+// Versão universal — motor PLC v5 LTS
 
 import React, { useState } from "react";
-import { db } from "../firebase/config";
-import { collection, setDoc, doc } from "firebase/firestore";
+import { carregarFirestore } from "../modules/admin/carregarFirestore.js";
 
-// ============================
-// IMPORTA TODO O CONTEÚDO .MD
-// ============================
+import { parseFrontmatter } from "../utils/markdownProcessor.js"; // motor universal
+
+// =========================================
+// IMPORTAÇÃO DOS ARQUIVOS .MD
+// =========================================
 
 const globHome = import.meta.glob("../content/home/*.md", {
   eager: true,
@@ -22,63 +23,15 @@ const globBiblia = import.meta.glob("../content/biblia/**/*.md", {
   import: "default",
 });
 
-// ============================
-// PARSE FRONT-MATTER ROBUSTO
-// ============================
-
-function parseFrontMatter(raw) {
-  if (typeof raw !== "string") return { data: {}, content: "" };
-
-  const txt = raw.trimStart();
-  if (!txt.startsWith("---")) return { data: {}, content: raw };
-
-  const end = txt.indexOf("\n---", 3);
-  if (end === -1) return { data: {}, content: raw };
-
-  const fmBlock = txt.slice(3, end).trim();
-  const body = txt.slice(end + 4).trimStart();
-
-  const data = {};
-
-  fmBlock.split("\n").forEach((line) => {
-    const i = line.indexOf(":");
-    if (i === -1) return;
-
-    const key = line.slice(0, i).trim();
-    let value = line.slice(i + 1).trim();
-
-    // Remove aspas externas
-    if (
-      (value.startsWith('"') && value.endsWith('"')) ||
-      (value.startsWith("'") && value.endsWith("'"))
-    ) {
-      value = value.slice(1, -1);
-    }
-
-    // Converte arrays
-    if (key === "tags") {
-      try {
-        data[key] = JSON.parse(value);
-      } catch {
-        data[key] = [];
-      }
-      return;
-    }
-
-    data[key] = value;
-  });
-
-  return { data, content: body };
-}
-
-// ============================
-// MODELO UNIFICADO FIRESTORE
-// ============================
+// =========================================
+// MODELO UNIFICADO PARA FIRESTORE
+// =========================================
 
 function montarDocumento(path, fm, content) {
   const base = {
     slug: fm.slug || "",
     titulo: fm.titulo || "",
+    subtitulo: fm.subtitulo || "",
     tipo: fm.tipo || "",
     data: fm.data || "",
     readTime: fm.readTime || "",
@@ -86,6 +39,7 @@ function montarDocumento(path, fm, content) {
     autor: fm.autor || "Capelão Nascente",
     tema_principal: fm.tema_principal || "",
     tags: Array.isArray(fm.tags) ? fm.tags : [],
+    referencia: fm.referencia || "",
     texto: content || "",
     origem: "",
     livro: "",
@@ -111,9 +65,9 @@ function montarDocumento(path, fm, content) {
   return base;
 }
 
-// ============================
+// =========================================
 // COMPONENTE PRINCIPAL
-// ============================
+// =========================================
 
 export default function AdminPublish() {
   const [log, setLog] = useState([]);
@@ -125,28 +79,33 @@ export default function AdminPublish() {
   async function enviarTudo() {
     setLog(["▶ Iniciando publicação…"]);
 
-    const todos = { ...globHome, ...globBiblia };
+    const todos = {
+      ...globHome,
+      ...globBiblia,
+    };
+
+    const { doc, setDoc, collection, db } = await carregarFirestore();
 
     for (const path in todos) {
       try {
         const raw = todos[path];
-        const { data, content } = parseFrontMatter(raw);
 
-        // Checagem essencial
-        if (!data.slug || !data.tipo || !data.data) {
+        // motor universal — remove parser manual antigo
+        const { data, content } = parseFrontmatter(raw);
+
+        // validação mínima
+        if (!data.slug || !data.tipo || !data.data || !data.titulo) {
           escrever(`⚠ Ignorado (front-matter incompleto): ${path}`);
           continue;
         }
 
-        const docFinal = montarDocumento(path, data, content);
+        const documento = montarDocumento(path, data, content);
 
-        await setDoc(
-          doc(collection(db, "publicacoes"), docFinal.slug),
-          docFinal,
-          { merge: true }
-        );
+        const ref = doc(collection(db, "publicacoes"), documento.slug);
 
-        escrever(`✔ Publicado: ${docFinal.slug}`);
+        await setDoc(ref, documento, { merge: true });
+
+        escrever(`✔ Publicado: ${documento.slug}`);
       } catch (err) {
         escrever(`❌ ERRO EM ${path}: ${err}`);
       }

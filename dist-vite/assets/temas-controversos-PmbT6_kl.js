@@ -1,0 +1,15 @@
+const o=`---
+livro: "joao"
+capitulo: "03"
+titulo: ""
+slug: "joao-03-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{o as default};
+//# sourceMappingURL=temas-controversos-PmbT6_kl.js.map

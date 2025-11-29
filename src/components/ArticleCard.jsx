@@ -2,6 +2,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { parseFrontmatter, markdownToHtml } from "../utils/markdownProcessor.js"; // <-- ÚNICA ADIÇÃO
+
 export const ArticleCard = ({ post, isMain = false, delay = 0.1 }) => {
   if (!post || typeof post !== "object") return null;
 

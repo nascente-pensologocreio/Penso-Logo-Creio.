@@ -1,0 +1,15 @@
+const a=`---
+livro: "atos"
+capitulo: "06"
+titulo: ""
+slug: "atos-06-pregacao-tecnica"
+data: ""
+autor: "Capelão Nascente"
+tipo: "pregacao-tecnica"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{a as default};
+//# sourceMappingURL=exposicao-homiletica-D8cbIm6I.js.map

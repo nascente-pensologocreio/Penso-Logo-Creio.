@@ -1,0 +1,15 @@
+const a=`---
+livro: "salmos"
+capitulo: "40"
+titulo: ""
+slug: "salmos-40-oracao"
+data: ""
+autor: "Capelão Nascente"
+tipo: "oracao"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{a as default};
+//# sourceMappingURL=oracao-Cz24WG9Z.js.map

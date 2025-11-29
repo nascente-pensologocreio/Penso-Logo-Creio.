@@ -1,0 +1,15 @@
+const n=`---
+livro: "salmos"
+capitulo: "67"
+titulo: ""
+slug: "salmos-67-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=terminologias-Dz2QzVlm.js.map

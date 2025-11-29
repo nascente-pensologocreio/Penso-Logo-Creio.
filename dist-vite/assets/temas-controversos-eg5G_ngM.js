@@ -1,0 +1,15 @@
+const n=`---
+livro: "jeremias"
+capitulo: "01"
+titulo: ""
+slug: "jeremias-01-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=temas-controversos-eg5G_ngM.js.map

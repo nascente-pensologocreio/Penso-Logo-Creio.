@@ -1,0 +1,15 @@
+const t=`---
+livro: "salmos"
+capitulo: "78"
+titulo: ""
+slug: "salmos-78-estudo-tematico"
+data: ""
+autor: "Capelão Nascente"
+tipo: "estudo-tematico"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{t as default};
+//# sourceMappingURL=estudo-tematico-DUYBCv2n.js.map

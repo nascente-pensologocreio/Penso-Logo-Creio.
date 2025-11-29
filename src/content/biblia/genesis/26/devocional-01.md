@@ -1,11 +1,14 @@
 ---
+slug: "genesis-26-devocional"
+titulo: ""
+tipo: "devocional"
+origem: "biblia"
 livro: "genesis"
 capitulo: "26"
-titulo: ""
-slug: "genesis-26-devocional"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "devocional"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

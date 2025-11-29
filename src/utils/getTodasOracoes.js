@@ -1,46 +1,34 @@
 // src/utils/getTodasOracoes.js
-// Carrega as 20 orações de /content/tags/*/oracao.md
+// Carrega todas as orações em /src/content/tags/*/oracao.md
+// Versão universal — motor PLC v5 LTS
 
+import { parseFrontmatter, markdownToHtml } from "./markdownProcessor.js";
+
+/* ----------------------------------------------------
+   GLOB REAL (sem alias, sem remendos)
+---------------------------------------------------- */
 const globOracoes = import.meta.glob(
-  "@content/tags/*/oracao.md?raw",
-  { eager: true }
+  "../content/tags/*/oracao.md",
+  { eager: true, query: "?raw", import: "default" }
 );
 
-// Parser front-matter seguro
-function parseFrontMatter(raw) {
-  if (!raw || typeof raw !== "string") return { data: {}, content: "" };
-
-  const txt = raw.trimStart();
-  if (!txt.startsWith("---")) return { data: {}, content: raw };
-
-  const end = txt.indexOf("\n---", 3);
-  const fm = txt.slice(3, end).trim();
-  const body = txt.slice(end + 4).trim();
-
-  const data = {};
-
-  fm.split("\n").forEach((line) => {
-    const idx = line.indexOf(":");
-    if (idx === -1) return;
-    const key = line.slice(0, idx).trim();
-    const val = line.slice(idx + 1).trim().replace(/^"|"$/g, "");
-    data[key] = val;
-  });
-
-  return { data, content: body };
-}
-
+/* ----------------------------------------------------
+   Retorna TODAS as orações do diretório /tags
+---------------------------------------------------- */
 export function getTodasOracoes() {
   const oracoes = [];
 
   for (const [path, raw] of Object.entries(globOracoes)) {
-    const { data, content } = parseFrontMatter(raw);
+    const { data, content } = parseFrontmatter(raw);
+
+    // exemplo: ".../tags/esperanca/oracao.md" → "esperanca"
     const tag = path.split("/").slice(-2)[0];
 
     oracoes.push({
       ...data,
       tag,
       content,
+      html: markdownToHtml(content),
       path,
     });
   }

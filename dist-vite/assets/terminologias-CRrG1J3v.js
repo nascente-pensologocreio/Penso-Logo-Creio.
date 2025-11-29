@@ -1,0 +1,15 @@
+const n=`---
+livro: "miqueias"
+capitulo: "07"
+titulo: ""
+slug: "miqueias-07-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=terminologias-CRrG1J3v.js.map

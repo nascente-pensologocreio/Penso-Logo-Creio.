@@ -1,11 +1,14 @@
 ---
+slug: "eclesiastes-02-oracao"
+titulo: ""
+tipo: "oracao"
+origem: "biblia"
 livro: "eclesiastes"
 capitulo: "02"
-titulo: ""
-slug: "eclesiastes-02-oracao"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "oracao"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

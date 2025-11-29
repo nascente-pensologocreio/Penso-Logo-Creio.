@@ -1,11 +1,14 @@
 ---
+slug: "apocalipse-09-mensagem-pastoral"
+titulo: ""
+tipo: "mensagem-pastoral"
+origem: "biblia"
 livro: "apocalipse"
 capitulo: "09"
-titulo: ""
-slug: "apocalipse-09-mensagem-pastoral"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "mensagem-pastoral"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

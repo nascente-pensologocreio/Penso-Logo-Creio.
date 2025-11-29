@@ -1,0 +1,15 @@
+const n=`---
+livro: "jeremias"
+capitulo: "41"
+titulo: ""
+slug: "jeremias-41-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=terminologias-CrR-r71n.js.map

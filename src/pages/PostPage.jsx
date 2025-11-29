@@ -1,8 +1,14 @@
+// src/pages/PostPage.jsx
+// Versão universal — motor PLC v5 LTS
+// Exibe posts vindos do Firebase usando templates editoriais
+
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { doc, getDoc } from "firebase/firestore";
-import { db } from "../firebase/config";
 
+import { parseFrontmatter, markdownToHtml } from "../utils/markdownProcessor.js";
+import { getFirebaseDB } from "../firebase/config";
+
+// Templates
 import PostWrapper from "../components/PostWrapper.jsx";
 import DevocionalTemplate from "../templates/DevocionalTemplate.jsx";
 import PregacaoTemplate from "../templates/PregacaoTemplate.jsx";
@@ -12,20 +18,37 @@ export default function PostPage() {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    const carregar = async () => {
+    async function carregar() {
       try {
+        const db = await getFirebaseDB();
+        const { doc, getDoc } = await import("firebase/firestore");
+
         const ref = doc(db, "publicacoes", slug);
         const snap = await getDoc(ref);
-        if (snap.exists()) {
-          setPost(snap.data());
-        } else {
+
+        if (!snap.exists()) {
           setPost(null);
+          return;
         }
+
+        const data = snap.data();
+
+        // Converte markdown em HTML (motor universal)
+        const fullHtml =
+          data.texto && typeof data.texto === "string"
+            ? markdownToHtml(data.texto)
+            : "";
+
+        setPost({
+          ...data,
+          fullContent: fullHtml,
+        });
       } catch (err) {
         console.error("Erro ao carregar postagem:", err);
         setPost(null);
       }
-    };
+    }
+
     carregar();
   }, [slug]);
 
@@ -37,6 +60,7 @@ export default function PostPage() {
     );
   }
 
+  // Escolhe o template correto
   let Conteudo;
 
   switch (post.tipo) {
@@ -46,7 +70,7 @@ export default function PostPage() {
           titulo={post.titulo}
           subtitulo={post.subtitulo}
           versiculo={post.versiculo}
-          texto={post.texto}
+          texto={post.fullContent} // AGORA SÍNCRONO COM O MOTOR
           autor={post.autor}
         />
       );
@@ -79,9 +103,10 @@ export default function PostPage() {
             {post.titulo}
           </h1>
 
-          <article className="whitespace-pre-line text-justify">
-            {post.texto}
-          </article>
+          <article
+            className="whitespace-pre-line text-justify"
+            dangerouslySetInnerHTML={{ __html: post.fullContent }}
+          />
         </div>
       );
   }
@@ -94,9 +119,7 @@ export default function PostPage() {
       versiculo={post.versiculo}
       referencia={post.referencia}
     >
-      <div className="w-full flex justify-center">
-        {Conteudo}
-      </div>
+      <div className="w-full flex justify-center">{Conteudo}</div>
     </PostWrapper>
   );
 }

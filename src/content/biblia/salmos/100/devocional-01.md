@@ -1,11 +1,14 @@
 ---
+slug: "salmos-100-devocional"
+titulo: ""
+tipo: "devocional"
+origem: "biblia"
 livro: "salmos"
 capitulo: "100"
-titulo: ""
-slug: "salmos-100-devocional"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "devocional"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

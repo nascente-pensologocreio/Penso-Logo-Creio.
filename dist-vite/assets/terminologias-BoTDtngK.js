@@ -1,0 +1,15 @@
+const t=`---
+livro: "tito"
+capitulo: "01"
+titulo: ""
+slug: "tito-01-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{t as default};
+//# sourceMappingURL=terminologias-BoTDtngK.js.map
