@@ -1,6 +1,8 @@
 // src/layouts/EditorialLayout.jsx
 import React from "react";
 
+import { parseFrontmatter, markdownToHtml } from "../utils/markdownProcessor.js"; // <-- ÚNICA ADIÇÃO
+
 export default function EditorialLayout({ titulo, children }) {
   return (
     <div className="editorial-grid-container animate-fade-in-up text-[#e8e8e8] font-serif">

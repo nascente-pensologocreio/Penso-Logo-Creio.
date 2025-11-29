@@ -1,11 +1,14 @@
 ---
+slug: "lucas-18-pregacao-tecnica"
+titulo: ""
+tipo: "pregacao-tecnica"
+origem: "biblia"
 livro: "lucas"
 capitulo: "18"
-titulo: ""
-slug: "lucas-18-pregacao-tecnica"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "pregacao-tecnica"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

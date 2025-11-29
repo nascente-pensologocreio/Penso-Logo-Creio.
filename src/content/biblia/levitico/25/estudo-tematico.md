@@ -1,11 +1,14 @@
 ---
+slug: "levitico-25-estudo-tematico"
+titulo: ""
+tipo: "estudo-tematico"
+origem: "biblia"
 livro: "levitico"
 capitulo: "25"
-titulo: ""
-slug: "levitico-25-estudo-tematico"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "estudo-tematico"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

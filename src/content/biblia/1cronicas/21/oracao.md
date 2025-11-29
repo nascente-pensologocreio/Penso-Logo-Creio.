@@ -1,11 +1,14 @@
 ---
+slug: "1cronicas-21-oracao"
+titulo: ""
+tipo: "oracao"
+origem: "biblia"
 livro: "1cronicas"
 capitulo: "21"
-titulo: ""
-slug: "1cronicas-21-oracao"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "oracao"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

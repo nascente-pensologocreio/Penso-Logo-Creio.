@@ -1,11 +1,14 @@
 ---
+slug: "2reis-13-oracao"
+titulo: ""
+tipo: "oracao"
+origem: "biblia"
 livro: "2reis"
 capitulo: "13"
-titulo: ""
-slug: "2reis-13-oracao"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "oracao"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

@@ -1,11 +1,14 @@
 ---
+slug: "deuteronomio-27-oracao"
+titulo: ""
+tipo: "oracao"
+origem: "biblia"
 livro: "deuteronomio"
 capitulo: "27"
-titulo: ""
-slug: "deuteronomio-27-oracao"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "oracao"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

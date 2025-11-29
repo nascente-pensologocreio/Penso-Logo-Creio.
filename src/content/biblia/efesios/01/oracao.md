@@ -1,11 +1,14 @@
 ---
+slug: "efesios-01-oracao"
+titulo: ""
+tipo: "oracao"
+origem: "biblia"
 livro: "efesios"
 capitulo: "01"
-titulo: ""
-slug: "efesios-01-oracao"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "oracao"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

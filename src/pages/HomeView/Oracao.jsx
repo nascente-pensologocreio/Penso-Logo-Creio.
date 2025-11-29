@@ -1,6 +1,7 @@
 // src/pages/HomeView/Oracao.jsx
 import React, { useEffect, useState } from "react";
 import MarkdownIt from "markdown-it";
+import { parseFrontmatter, markdownToHtml } from "../../utils/markdownProcessor.js"; // <-- ADIÇÃO ÚNICA
 
 /* ---------------------------------------------
    GLOB — carrega APENAS o arquivo correto da home
@@ -12,8 +13,9 @@ const GLOB_ORACAO_HOME = import.meta.glob(
 
 /* ---------------------------------------------
    Parser FrontMatter (manual e limpo)
+   (AINDA será substituído futuramente)
 --------------------------------------------- */
-function parseFrontmatter(raw) {
+function parseFrontmatterLegacy(raw) {
   if (!raw || !raw.startsWith("---")) {
     return { data: {}, content: raw || "" };
   }
@@ -74,7 +76,7 @@ export default function Oracao() {
       const fn = GLOB_ORACAO_HOME[caminhos[0]];
       const rawFile = await fn();
 
-      const parsed = parseFrontmatter(rawFile);
+      const parsed = parseFrontmatterLegacy(rawFile);
       const front = parsed.data;
       const html = md.render(parsed.content);
 

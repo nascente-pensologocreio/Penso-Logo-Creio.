@@ -1,11 +1,18 @@
 ---
-slug: "mensagem-pastoral"
+slug: "beijo-e-a-espada"
+tipo: "devocional"
 titulo: "Beijo e a Espada"
-tipo: "mensagem-pastoral"
+subtitulo: ""
+autor: "Capelão Nascente"
 data: "2025-11-22"
-readTime: "7 min de leitura"
-tag: "DESTAQUE"
+readTime: "7 min"
 imageUrl: "/Pomar em chamas.png"
+origem: "home"
+livro: ""
+capitulo: ""
+tema_principal: ""
+tags: ["DESTAQUE"]
+referencia: ""
 ---
 
 Mensagem Pastoral
@@ -59,5 +66,3 @@ Cristo não procura admiradores — procura discípulos.
 
 Cpl. Nascente  
 🙏
-
----

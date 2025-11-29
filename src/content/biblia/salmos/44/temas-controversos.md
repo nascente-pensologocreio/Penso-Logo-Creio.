@@ -1,11 +1,14 @@
 ---
+slug: "salmos-44-temas-controversos"
+titulo: ""
+tipo: "temas-controversos"
+origem: "biblia"
 livro: "salmos"
 capitulo: "44"
-titulo: ""
-slug: "salmos-44-temas-controversos"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "temas-controversos"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

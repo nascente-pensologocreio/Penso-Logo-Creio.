@@ -1,11 +1,14 @@
 ---
+slug: "numeros-24-oracao"
+titulo: ""
+tipo: "oracao"
+origem: "biblia"
 livro: "numeros"
 capitulo: "24"
-titulo: ""
-slug: "numeros-24-oracao"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "oracao"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

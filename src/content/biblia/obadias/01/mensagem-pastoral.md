@@ -1,11 +1,14 @@
 ---
+slug: "obadias-01-mensagem-pastoral"
+titulo: ""
+tipo: "mensagem-pastoral"
+origem: "biblia"
 livro: "obadias"
 capitulo: "01"
-titulo: ""
-slug: "obadias-01-mensagem-pastoral"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "mensagem-pastoral"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

@@ -6,6 +6,8 @@ import { getFirebaseDB } from "../firebase/config";
 
 import PostGrid from "../components/PostGrid.jsx";
 
+import { parseFrontmatter, markdownToHtml } from "../utils/markdownProcessor.js"; // <-- ÚNICA ADIÇÃO
+
 export default function Biblioteca() {
   const [posts, setPosts] = useState([]);
   const [carregando, setCarregando] = useState(true);

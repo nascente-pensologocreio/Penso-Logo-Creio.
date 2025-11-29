@@ -1,11 +1,14 @@
 ---
+slug: "esdras-02-mensagem-pastoral"
+titulo: ""
+tipo: "mensagem-pastoral"
+origem: "biblia"
 livro: "esdras"
 capitulo: "02"
-titulo: ""
-slug: "esdras-02-mensagem-pastoral"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "mensagem-pastoral"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

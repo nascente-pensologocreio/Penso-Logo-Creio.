@@ -40,13 +40,19 @@ export default function PostWrapper({
             )}
 
             {subtitulo && (
-              <h2 className={`text-lg md:text-xl italic ${tema.h2}`} style={tema.h2Style}>
+              <h2
+                className={`text-lg md:text-xl italic ${tema.h2}`}
+                style={tema.h2Style}
+              >
                 {subtitulo}
               </h2>
             )}
 
             {versiculo && (
-              <p className={`mt-4 text-base md:text-lg ${tema.versiculo}`} style={tema.versiculoStyle}>
+              <p
+                className={`mt-4 text-base md:text-lg ${tema.versiculo}`}
+                style={tema.versiculoStyle}
+              >
                 “{versiculo}”
                 {referencia && (
                   <>
@@ -67,10 +73,12 @@ export default function PostWrapper({
         )}
 
         {/* CORPO */}
-        <div className={`px-6 md:px-10 pb-10 ${tema.body}`} style={tema.bodyStyle}>
+        <div
+          className={`px-6 md:px-10 pb-10 ${tema.body}`}
+          style={tema.bodyStyle}
+        >
           {children}
         </div>
-
       </article>
     </section>
   );
@@ -81,17 +89,20 @@ export default function PostWrapper({
 function normalizarTipo(raw) {
   if (!raw) return "generico";
   const t = String(raw).toLowerCase();
+
   if (t.includes("devoc")) return "devocional";
   if (t.includes("preg") || t.includes("homil")) return "pregacao";
   if (t.includes("estud") || t.includes("escadaria")) return "estudo";
   if (t.includes("oraç") || t.includes("orac")) return "oracao";
   if (t.includes("longo")) return "longo";
+
   return t;
 }
 
 function temaPorTipo(tipo) {
   const baseGold = "#D4AF37";
   const glassBorder = "border-[#D4AF37]/30";
+
   const cardCommon = {
     cardBorder: glassBorder,
     cardBg: "bg-gradient-to-b from-black/80 via-[#0a0a0a]/90 to-black/85",

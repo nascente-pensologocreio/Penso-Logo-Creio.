@@ -1,11 +1,14 @@
 ---
+slug: "esdras-03-mensagem-pastoral"
+titulo: ""
+tipo: "mensagem-pastoral"
+origem: "biblia"
 livro: "esdras"
 capitulo: "03"
-titulo: ""
-slug: "esdras-03-mensagem-pastoral"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "mensagem-pastoral"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

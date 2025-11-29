@@ -1,11 +1,14 @@
 ---
+slug: "isaias-60-terminologias-chave"
+titulo: ""
+tipo: "terminologias-chave"
+origem: "biblia"
 livro: "isaias"
 capitulo: "60"
-titulo: ""
-slug: "isaias-60-terminologias-chave"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "terminologias-chave"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

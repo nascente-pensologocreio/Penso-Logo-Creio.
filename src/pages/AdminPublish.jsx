@@ -1,8 +1,11 @@
 // src/pages/AdminPublish.jsx
 // Publica TODOS os conteúdos .md no Firestore (modularizado)
+// Versão universal — motor PLC v5 LTS
 
 import React, { useState } from "react";
 import { carregarFirestore } from "../modules/admin/carregarFirestore.js";
+
+import { parseFrontmatter } from "../utils/markdownProcessor.js"; // motor universal
 
 // =========================================
 // IMPORTAÇÃO DOS ARQUIVOS .MD
@@ -21,53 +24,6 @@ const globBiblia = import.meta.glob("../content/biblia/**/*.md", {
 });
 
 // =========================================
-// PARSE DE FRONT-MATTER MANUAL
-// =========================================
-
-function parseFrontMatter(raw) {
-  if (!raw || typeof raw !== "string") return { data: {}, content: "" };
-
-  const txt = raw.trimStart();
-  if (!txt.startsWith("---")) return { data: {}, content: raw };
-
-  const end = txt.indexOf("\n---", 3);
-  if (end === -1) return { data: {}, content: raw };
-
-  const fmBlock = txt.slice(3, end).trim();
-  const body = txt.slice(end + 4).trimStart();
-
-  const data = {};
-
-  fmBlock.split("\n").forEach((line) => {
-    const i = line.indexOf(":");
-    if (i === -1) return;
-
-    const key = line.slice(0, i).trim();
-    let val = line.slice(i + 1).trim();
-
-    if (
-      (val.startsWith('"') && val.endsWith('"')) ||
-      (val.startsWith("'") && val.endsWith("'"))
-    ) {
-      val = val.slice(1, -1);
-    }
-
-    if (key === "tags") {
-      try {
-        data[key] = JSON.parse(val);
-      } catch {
-        data[key] = [];
-      }
-      return;
-    }
-
-    data[key] = val;
-  });
-
-  return { data, content: body };
-}
-
-// =========================================
 // MODELO UNIFICADO PARA FIRESTORE
 // =========================================
 
@@ -75,6 +31,7 @@ function montarDocumento(path, fm, content) {
   const base = {
     slug: fm.slug || "",
     titulo: fm.titulo || "",
+    subtitulo: fm.subtitulo || "",
     tipo: fm.tipo || "",
     data: fm.data || "",
     readTime: fm.readTime || "",
@@ -82,6 +39,7 @@ function montarDocumento(path, fm, content) {
     autor: fm.autor || "Capelão Nascente",
     tema_principal: fm.tema_principal || "",
     tags: Array.isArray(fm.tags) ? fm.tags : [],
+    referencia: fm.referencia || "",
     texto: content || "",
     origem: "",
     livro: "",
@@ -89,11 +47,13 @@ function montarDocumento(path, fm, content) {
     pathOriginal: path,
   };
 
+  // HOME
   if (path.includes("/home/")) {
     base.origem = "home";
     return base;
   }
 
+  // BÍBLIA
   const partes = path.split("/");
   const livro = partes[partes.length - 3];
   const capitulo = partes[partes.length - 2];
@@ -119,17 +79,22 @@ export default function AdminPublish() {
   async function enviarTudo() {
     setLog(["▶ Iniciando publicação…"]);
 
-    const todos = { ...globHome, ...globBiblia };
+    const todos = {
+      ...globHome,
+      ...globBiblia,
+    };
 
-    // Firebase carregado sob demanda
     const { doc, setDoc, collection, db } = await carregarFirestore();
 
     for (const path in todos) {
       try {
         const raw = todos[path];
-        const { data, content } = parseFrontMatter(raw);
 
-        if (!data.slug || !data.tipo || !data.data) {
+        // motor universal — remove parser manual antigo
+        const { data, content } = parseFrontmatter(raw);
+
+        // validação mínima
+        if (!data.slug || !data.tipo || !data.data || !data.titulo) {
           escrever(`⚠ Ignorado (front-matter incompleto): ${path}`);
           continue;
         }

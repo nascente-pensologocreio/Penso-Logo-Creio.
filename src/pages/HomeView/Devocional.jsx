@@ -2,8 +2,9 @@
 import React, { useEffect, useState } from "react";
 import MarkdownIt from "markdown-it";
 import rawFile from "../../content/home/devocional.md?raw";
+import { parseFrontmatter, markdownToHtml } from "../../utils/markdownProcessor.js"; // <-- ÚNICA ADIÇÃO
 
-function parseFrontmatter(raw) {
+function parseFrontmatterLegacy(raw) {
   if (!raw.startsWith("---")) return { data: {}, content: raw };
   const end = raw.indexOf("\n---");
   if (end === -1) return { data: {}, content: raw };
@@ -46,7 +47,7 @@ export default function Devocional() {
     }, 80);
 
     const md = new MarkdownIt({ html: true, breaks: true });
-    const parsed = parseFrontmatter(rawFile);
+    const parsed = parseFrontmatterLegacy(rawFile);
     const front = parsed.data;
     const html = md.render(parsed.content);
 
@@ -77,7 +78,8 @@ export default function Devocional() {
           padding: 2.5rem;
           position: relative;
           overflow: hidden;
-          box-shadow: 0 0 18px rgba(212,175,55,0.35), inset 0 0 12px rgba(212,175,55,0.25);
+          box-shadow: 0 0 18px rgba(212,175,55,0.35),
+                      inset 0 0 12px rgba(212,175,55,0.25);
         }
 
         .post-box h1 { margin-top: 4rem; margin-bottom: 2rem; font-size: 2rem; color: #F5E3A1; }
@@ -88,7 +90,6 @@ export default function Devocional() {
         .post-box h6 { margin-top: 1.6rem; margin-bottom: 0.8rem; font-size: 1rem; color: #A68939; }
 
         .post-box p { margin: 1.2rem 0; }
-
       `}</style>
 
       {imagemHero && (
@@ -106,8 +107,18 @@ export default function Devocional() {
         </section>
       )}
 
-      <section style={{ maxWidth: "1100px", margin: "0 auto", padding: "3rem 2rem 4rem", textAlign: "center" }}>
-        <h1 style={{ fontSize: "1.9rem", marginTop: "3rem", marginBottom: "4rem" }}>{titulo}</h1>
+      <section
+        style={{
+          maxWidth: "1100px",
+          margin: "0 auto",
+          padding: "3rem 2rem 4rem",
+          textAlign: "center",
+        }}
+      >
+        <h1 style={{ fontSize: "1.9rem", marginTop: "3rem", marginBottom: "4rem" }}>
+          {titulo}
+        </h1>
+
         <p style={{ marginBottom: "2rem" }}>{data} • {readTime}</p>
 
         {tag && (

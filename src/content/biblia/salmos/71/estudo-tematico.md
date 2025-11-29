@@ -1,11 +1,14 @@
 ---
+slug: "salmos-71-estudo-tematico"
+titulo: ""
+tipo: "estudo-tematico"
+origem: "biblia"
 livro: "salmos"
 capitulo: "71"
-titulo: ""
-slug: "salmos-71-estudo-tematico"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "estudo-tematico"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

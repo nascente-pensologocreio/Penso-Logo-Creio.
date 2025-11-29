@@ -1,11 +1,14 @@
 ---
+slug: "apocalipse-07-pregacao-tecnica"
+titulo: ""
+tipo: "pregacao-tecnica"
+origem: "biblia"
 livro: "apocalipse"
 capitulo: "07"
-titulo: ""
-slug: "apocalipse-07-pregacao-tecnica"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "pregacao-tecnica"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

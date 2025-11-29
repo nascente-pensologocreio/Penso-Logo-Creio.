@@ -1,7 +1,12 @@
 // src/pages/Post.jsx
+// Página que exibe posts da HOME e posts vindos do Firebase
+// Versão universal — motor PLC v5 LTS
+
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "../styles/post-page.css";
+
+import { parseFrontmatter, markdownToHtml } from "../utils/markdownProcessor.js";
 
 // Firebase LAZY
 import { getFirebaseDB } from "../firebase/config";
@@ -24,16 +29,20 @@ export default function Post() {
     let ativo = true;
 
     async function carregar() {
-      // 1) Local
+      // 1) LOCAL (HOME)
       const loadSinglePost = await carregarLoaderLocal();
       const local = await loadSinglePost(slug);
 
       if (local) {
-        if (ativo) setPost(local);
+        if (ativo)
+          setPost({
+            ...local,
+            fullContent: local.fullContent, // já vem convertido
+          });
         return;
       }
 
-      // 2) Firebase
+      // 2) FIREBASE
       try {
         const db = await getFirebaseDB();
         const { doc, getDoc } = await import("firebase/firestore");
@@ -44,10 +53,16 @@ export default function Post() {
         if (snap.exists() && ativo) {
           const data = snap.data();
 
+          // unificação — processar markdown também para Firestore
+          const fullHtml =
+            data.texto && typeof data.texto === "string"
+              ? markdownToHtml(data.texto)
+              : "";
+
           setPost({
             ...data,
             titulo: data.titulo || "(sem título)",
-            fullContent: data.texto || "",
+            fullContent: fullHtml,
             imageUrl: data.imageUrl || null,
           });
 
@@ -73,7 +88,7 @@ export default function Post() {
   }
 
   const imagemHero = post.imageUrl || post.imagem || null;
-  const conteudoFinal = post.fullContent || post.texto || "";
+  const conteudoFinal = post.fullContent || "";
 
   return (
     <main
@@ -95,7 +110,13 @@ export default function Post() {
             <img
               src={imagemHero}
               alt={post.titulo}
-              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
+              style={{
+                position: "absolute",
+                inset: 0,
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+              }}
             />
             <div
               style={{
@@ -133,20 +154,24 @@ export default function Post() {
           {(post.data || "")} • {(post.readTime || "")}
         </p>
 
-        {post.tag && (
-          <span
-            style={{
-              display: "inline-block",
-              padding: "0.35rem 1rem",
-              border: "1px solid rgba(212,175,55,0.4)",
-              borderRadius: "9999px",
-              fontSize: "0.65rem",
-              color: "#D4AF37",
-            }}
-          >
-            {post.tag}
-          </span>
-        )}
+        {Array.isArray(post.tags) &&
+          post.tags.length > 0 &&
+          post.tags.map((t, i) => (
+            <span
+              key={i}
+              style={{
+                display: "inline-block",
+                padding: "0.35rem 1rem",
+                border: "1px solid rgba(212,175,55,0.4)",
+                borderRadius: "9999px",
+                fontSize: "0.65rem",
+                color: "#D4AF37",
+                margin: "0 4px",
+              }}
+            >
+              {t}
+            </span>
+          ))}
       </section>
 
       <article

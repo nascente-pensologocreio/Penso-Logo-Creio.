@@ -1,5 +1,6 @@
 // scripts/preencherFrontMatterBiblia.mjs
-// Atualiza automaticamente o front-matter de TODOS os .md em src/content/biblia
+// GERADOR UNIVERSAL DE FRONT-MATTER — PLC v5 (LTS)
+// Atualiza TODOS os .md em src/content/biblia/** de forma padronizada e segura.
 
 import { promises as fs } from "fs";
 import path from "path";
@@ -7,116 +8,198 @@ import path from "path";
 const ROOT = process.cwd();
 const BIBLIA_DIR = path.join(ROOT, "src", "content", "biblia");
 
-// Percorre recursivamente a pasta da bíblia
-async function walk(dir, out) {
-  const entries = await fs.readdir(dir, { withFileTypes: true });
-  for (const entry of entries) {
-    const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) {
-      await walk(full, out);
-    } else if (entry.isFile() && entry.name.endsWith(".md")) {
-      out.push(full);
-    }
-  }
+// ======================================================
+// HELPERS — Inferência de tipo e slug
+// ======================================================
+
+function inferirTipo(filename) {
+  const n = filename.toLowerCase();
+
+  if (n.includes("devoc")) return "devocional";
+  if (n.includes("estudo")) return "estudo-tematico";
+  if (n.includes("expo") || n.includes("homil")) return "exposicao-homiletica";
+  if (n.includes("mensagem")) return "mensagem-pastoral";
+  if (n.includes("oracao") || n.includes("oração")) return "oracao";
+  if (n.includes("controvers")) return "temas-controversos";
+  if (n.includes("terminolog")) return "terminologias";
+
+  return "generico";
 }
 
-// Processa um único arquivo .md
-async function processFile(filePath) {
-  const raw = await fs.readFile(filePath, "utf8");
+function gerarSlug(livro, capitulo, tipo) {
+  return `${livro}-${capitulo}-${tipo}`
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9\-]/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+}
 
+// ======================================================
+// FRONT-MATTER PARSE
+// ======================================================
+
+function parseFrontMatter(raw) {
   if (!raw.startsWith("---")) {
-    console.warn("⚠️ Sem front-matter, pulando:", filePath);
-    return;
+    return { data: {}, body: raw };
   }
 
   const end = raw.indexOf("\n---", 3);
   if (end === -1) {
-    console.warn("⚠️ Front-matter sem fechamento, pulando:", filePath);
-    return;
+    return { data: {}, body: raw };
   }
 
   const headerRaw = raw.slice(3, end).trim();
-  const body = raw.slice(end + 4).replace(/^\s*\n/, "");
+  const body = raw.slice(end + 4); // preserva conteúdo original
 
-  // Parse bem simples "chave: valor"
   const data = {};
+
   headerRaw.split("\n").forEach((line) => {
     const i = line.indexOf(":");
     if (i === -1) return;
+
     const key = line.slice(0, i).trim();
     let val = line.slice(i + 1).trim();
+
+    // Arrays: [a, b, c]
+    if (val.startsWith("[") && val.endsWith("]")) {
+      const conteudo = val.slice(1, -1).trim();
+      data[key] = conteudo ? conteudo.split(",").map((v) => v.trim()) : [];
+      return;
+    }
+
+    // Aspas externas
     if (
       (val.startsWith('"') && val.endsWith('"')) ||
       (val.startsWith("'") && val.endsWith("'"))
     ) {
       val = val.slice(1, -1);
     }
+
     data[key] = val;
   });
 
-  // Inferir livro, capítulo e tipo a partir do path
-  const rel = path.relative(BIBLIA_DIR, filePath);
-  const parts = rel.split(path.sep); // [livro, capitulo, arquivo.md]
-  const livroDir = parts[0] || "";
-  const capituloDir = parts[1] || "";
-  const fileName = parts[2] || "";
-  const baseName = fileName.replace(/\.md$/, ""); // devocional, oracao, etc.
+  return { data, body };
+}
 
-  const livro = data.livro || livroDir;
-  const capitulo = data.capitulo || capituloDir;
-  const tipo = data.tipo || baseName;
+// ======================================================
+// FRONT-MATTER SERIALIZER — Ordem Oficial PLC v5
+// ======================================================
 
-  // Slug: se já existir e não for vazio, mantém; senão gera novo
-  const slugAnterior = data.slug;
-  const slug =
-    slugAnterior && slugAnterior.trim()
-      ? slugAnterior.trim()
-      : `${livro}-${capitulo}-${tipo}`.toLowerCase();
-
-  const autor =
-    data.autor && data.autor.trim()
-      ? data.autor.trim()
-      : "Capelão Nascente";
-
-  const titulo = data.titulo ?? "";
-  const dataCampo = data.data ?? "";
-  const temaPrincipal = data.tema_principal ?? "";
-
-  // Se já havia algo em tags, preserva texto cru; senão, []
-  const tags = data.tags !== undefined ? data.tags : "[]";
-
-  const headerNovoLines = [
-    `livro: "${livro}"`,
-    `capitulo: "${capitulo}"`,
-    `titulo: "${titulo}"`,
-    `slug: "${slug}"`,
-    `data: "${dataCampo}"`,
-    `autor: "${autor}"`,
-    `tipo: "${tipo}"`,
-    `tema_principal: "${temaPrincipal}"`,
-    `tags: ${tags}`,
+function serializeFrontMatter(data, body) {
+  const ordem = [
+    "slug",
+    "titulo",
+    "tipo",
+    "origem",
+    "livro",
+    "capitulo",
+    "data",
+    "autor",
+    "readTime",
+    "imageUrl",
+    "tema_principal",
+    "tags",
   ];
 
-  const novoConteudo =
-    `---\n${headerNovoLines.join("\n")}\n---\n\n` + body.trimStart() + "\n";
+  const linhas = [];
 
-  await fs.writeFile(filePath, novoConteudo, "utf8");
-  console.log("✅ Atualizado:", rel);
+  ordem.forEach((key) => {
+    if (data[key] === undefined) return;
+
+    const val = data[key];
+
+    if (Array.isArray(val)) {
+      linhas.push(`${key}: [${val.join(", ")}]`);
+    } else {
+      linhas.push(`${key}: "${String(val).replace(/"/g, '\\"')}"`);
+    }
+  });
+
+  // chaves extras
+  Object.keys(data)
+    .filter((k) => !ordem.includes(k))
+    .forEach((key) => {
+      const v = data[key];
+      if (Array.isArray(v)) {
+        linhas.push(`${key}: [${v.join(", ")}]`);
+      } else {
+        linhas.push(`${key}: "${String(v).replace(/"/g, '\\"')}"`);
+      }
+    });
+
+  return `---\n${linhas.join("\n")}\n---\n\n${body.trimStart()}\n`;
 }
 
-// Main
-async function main() {
-  const files = [];
-  await walk(BIBLIA_DIR, files);
+// ======================================================
+// PROCESSAMENTO DE CADA ARQUIVO
+// ======================================================
 
-  console.log("Encontrados", files.length, "arquivos .md em /biblia");
-  for (const file of files) {
-    await processFile(file);
+async function processFile(filePath) {
+  const raw = await fs.readFile(filePath, "utf8");
+
+  const { data: fmOrig, body } = parseFrontMatter(raw);
+
+  const rel = path.relative(BIBLIA_DIR, filePath);
+  const parts = rel.split(path.sep); // [livro, capitulo, arquivo.md]
+  const livro = parts[0];
+  const capitulo = parts[1];
+  const filename = parts[2];
+
+  const tipoInferido = inferirTipo(filename);
+
+  const hoje = new Date().toISOString().slice(0, 10);
+
+  // Aplicar schema unificado PLC v5
+  const fm = {
+    ...fmOrig,
+
+    // campos absolutos e obrigatórios
+    origem: "biblia",
+    livro: fmOrig.livro || livro,
+    capitulo: fmOrig.capitulo || capitulo,
+    tipo: fmOrig.tipo || tipoInferido,
+    slug: fmOrig.slug || gerarSlug(livro, capitulo, tipoInferido),
+
+    // campos padrão
+    titulo: fmOrig.titulo || "",
+    autor: fmOrig.autor || "Capelão Nascente",
+    data: fmOrig.data || hoje,
+    readTime: fmOrig.readTime || "7 min de leitura",
+    imageUrl: fmOrig.imageUrl || "",
+    tema_principal: fmOrig.tema_principal || "",
+    tags: Array.isArray(fmOrig.tags) ? fmOrig.tags : [],
+  };
+
+  const novo = serializeFrontMatter(fm, body);
+
+  await fs.writeFile(filePath, novo, "utf8");
+  console.log("✔ Atualizado:", rel);
+}
+
+// ======================================================
+// WALK RECURSIVO
+// ======================================================
+
+async function walk(dir) {
+  const entries = await fs.readdir(dir, { withFileTypes: true });
+
+  for (const entry of entries) {
+    const full = path.join(dir, entry.name);
+
+    if (entry.isDirectory()) {
+      await walk(full);
+    } else if (entry.isFile() && entry.name.endsWith(".md")) {
+      await processFile(full);
+    }
   }
-  console.log("✔️ Finalizado.");
 }
 
-main().catch((err) => {
-  console.error("❌ Erro geral:", err);
-  process.exit(1);
-});
+// ======================================================
+// MAIN
+// ======================================================
+
+console.log("▶ Iniciando atualização PLC Front-Matter v5 — Bíblia");
+await walk(BIBLIA_DIR);
+console.log("🏁 Concluído.");

@@ -1,11 +1,14 @@
 ---
+slug: "salmos-62-mensagem-pastoral"
+titulo: ""
+tipo: "mensagem-pastoral"
+origem: "biblia"
 livro: "salmos"
 capitulo: "62"
-titulo: ""
-slug: "salmos-62-mensagem-pastoral"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "mensagem-pastoral"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

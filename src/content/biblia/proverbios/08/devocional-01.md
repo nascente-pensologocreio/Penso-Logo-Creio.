@@ -1,11 +1,14 @@
 ---
+slug: "proverbios-08-devocional"
+titulo: ""
+tipo: "devocional"
+origem: "biblia"
 livro: "proverbios"
 capitulo: "08"
-titulo: ""
-slug: "proverbios-08-devocional"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "devocional"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

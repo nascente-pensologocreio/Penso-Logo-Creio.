@@ -1,11 +1,14 @@
 ---
+slug: "ezequiel-36-oracao"
+titulo: ""
+tipo: "oracao"
+origem: "biblia"
 livro: "ezequiel"
 capitulo: "36"
-titulo: ""
-slug: "ezequiel-36-oracao"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "oracao"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

@@ -1,11 +1,14 @@
 ---
+slug: "isaias-53-oracao"
+titulo: ""
+tipo: "oracao"
+origem: "biblia"
 livro: "isaias"
 capitulo: "53"
-titulo: ""
-slug: "isaias-53-oracao"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "oracao"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

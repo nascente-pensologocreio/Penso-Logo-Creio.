@@ -1,11 +1,14 @@
 ---
+slug: "lucas-23-oracao"
+titulo: ""
+tipo: "oracao"
+origem: "biblia"
 livro: "lucas"
 capitulo: "23"
-titulo: ""
-slug: "lucas-23-oracao"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "oracao"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

@@ -1,11 +1,14 @@
 ---
+slug: "2cronicas-19-estudo-tematico"
+titulo: ""
+tipo: "estudo-tematico"
+origem: "biblia"
 livro: "2cronicas"
 capitulo: "19"
-titulo: ""
-slug: "2cronicas-19-estudo-tematico"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "estudo-tematico"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

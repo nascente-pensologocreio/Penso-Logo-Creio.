@@ -1,11 +1,14 @@
 ---
+slug: "jeremias-41-devocional"
+titulo: ""
+tipo: "devocional"
+origem: "biblia"
 livro: "jeremias"
 capitulo: "41"
-titulo: ""
-slug: "jeremias-41-devocional"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "devocional"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

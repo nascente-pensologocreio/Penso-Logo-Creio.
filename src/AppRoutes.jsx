@@ -2,6 +2,8 @@
 import { Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 
+import { parseFrontmatter, markdownToHtml } from "./utils/markdownProcessor.js"; // <-- ÚNICA ADIÇÃO
+
 // Layout principal
 const LayoutPrincipal = lazy(() => import("./layouts/LayoutPrincipal.jsx"));
 

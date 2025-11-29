@@ -1,11 +1,14 @@
 ---
+slug: "atos-10-oracao"
+titulo: ""
+tipo: "oracao"
+origem: "biblia"
 livro: "atos"
 capitulo: "10"
-titulo: ""
-slug: "atos-10-oracao"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "oracao"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

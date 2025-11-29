@@ -1,11 +1,14 @@
 ---
+slug: "lucas-08-devocional"
+titulo: ""
+tipo: "devocional"
+origem: "biblia"
 livro: "lucas"
 capitulo: "08"
-titulo: ""
-slug: "lucas-08-devocional"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "devocional"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---
