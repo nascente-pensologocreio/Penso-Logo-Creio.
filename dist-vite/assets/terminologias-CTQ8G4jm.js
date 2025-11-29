@@ -1,0 +1,15 @@
+const n=`---
+livro: "mateus"
+capitulo: "21"
+titulo: ""
+slug: "mateus-21-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=terminologias-CTQ8G4jm.js.map

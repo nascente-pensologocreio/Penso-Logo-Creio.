@@ -1,0 +1,15 @@
+const n=`---
+livro: "romanos"
+capitulo: "16"
+titulo: ""
+slug: "romanos-16-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=devocional-01-Dpj2kXbk.js.map

@@ -1,0 +1,15 @@
+const n=`---
+livro: "joel"
+capitulo: "03"
+titulo: ""
+slug: "joel-03-pregacao-tecnica"
+data: ""
+autor: "Capelão Nascente"
+tipo: "pregacao-tecnica"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=exposicao-homiletica-BGjf8fPO.js.map

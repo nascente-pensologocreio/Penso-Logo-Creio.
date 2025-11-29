@@ -1,14 +1,12 @@
 // src/pages/AdminPublish.jsx
-// Publica TODOS os conteúdos .md no Firestore
-// Compatível com o script preencherFrontMatterBiblia.mjs
+// Publica TODOS os conteúdos .md no Firestore (modularizado)
 
 import React, { useState } from "react";
-import { db } from "../firebase/config";
-import { collection, setDoc, doc } from "firebase/firestore";
+import { carregarFirestore } from "../modules/admin/carregarFirestore.js";
 
-// ============================
-// IMPORTA TODO O CONTEÚDO .MD
-// ============================
+// =========================================
+// IMPORTAÇÃO DOS ARQUIVOS .MD
+// =========================================
 
 const globHome = import.meta.glob("../content/home/*.md", {
   eager: true,
@@ -22,12 +20,12 @@ const globBiblia = import.meta.glob("../content/biblia/**/*.md", {
   import: "default",
 });
 
-// ============================
-// PARSE FRONT-MATTER ROBUSTO
-// ============================
+// =========================================
+// PARSE DE FRONT-MATTER MANUAL
+// =========================================
 
 function parseFrontMatter(raw) {
-  if (typeof raw !== "string") return { data: {}, content: "" };
+  if (!raw || typeof raw !== "string") return { data: {}, content: "" };
 
   const txt = raw.trimStart();
   if (!txt.startsWith("---")) return { data: {}, content: raw };
@@ -45,35 +43,33 @@ function parseFrontMatter(raw) {
     if (i === -1) return;
 
     const key = line.slice(0, i).trim();
-    let value = line.slice(i + 1).trim();
+    let val = line.slice(i + 1).trim();
 
-    // Remove aspas externas
     if (
-      (value.startsWith('"') && value.endsWith('"')) ||
-      (value.startsWith("'") && value.endsWith("'"))
+      (val.startsWith('"') && val.endsWith('"')) ||
+      (val.startsWith("'") && val.endsWith("'"))
     ) {
-      value = value.slice(1, -1);
+      val = val.slice(1, -1);
     }
 
-    // Converte arrays
     if (key === "tags") {
       try {
-        data[key] = JSON.parse(value);
+        data[key] = JSON.parse(val);
       } catch {
         data[key] = [];
       }
       return;
     }
 
-    data[key] = value;
+    data[key] = val;
   });
 
   return { data, content: body };
 }
 
-// ============================
-// MODELO UNIFICADO FIRESTORE
-// ============================
+// =========================================
+// MODELO UNIFICADO PARA FIRESTORE
+// =========================================
 
 function montarDocumento(path, fm, content) {
   const base = {
@@ -93,13 +89,11 @@ function montarDocumento(path, fm, content) {
     pathOriginal: path,
   };
 
-  // HOME
   if (path.includes("/home/")) {
     base.origem = "home";
     return base;
   }
 
-  // BÍBLIA
   const partes = path.split("/");
   const livro = partes[partes.length - 3];
   const capitulo = partes[partes.length - 2];
@@ -111,9 +105,9 @@ function montarDocumento(path, fm, content) {
   return base;
 }
 
-// ============================
+// =========================================
 // COMPONENTE PRINCIPAL
-// ============================
+// =========================================
 
 export default function AdminPublish() {
   const [log, setLog] = useState([]);
@@ -127,26 +121,26 @@ export default function AdminPublish() {
 
     const todos = { ...globHome, ...globBiblia };
 
+    // Firebase carregado sob demanda
+    const { doc, setDoc, collection, db } = await carregarFirestore();
+
     for (const path in todos) {
       try {
         const raw = todos[path];
         const { data, content } = parseFrontMatter(raw);
 
-        // Checagem essencial
         if (!data.slug || !data.tipo || !data.data) {
           escrever(`⚠ Ignorado (front-matter incompleto): ${path}`);
           continue;
         }
 
-        const docFinal = montarDocumento(path, data, content);
+        const documento = montarDocumento(path, data, content);
 
-        await setDoc(
-          doc(collection(db, "publicacoes"), docFinal.slug),
-          docFinal,
-          { merge: true }
-        );
+        const ref = doc(collection(db, "publicacoes"), documento.slug);
 
-        escrever(`✔ Publicado: ${docFinal.slug}`);
+        await setDoc(ref, documento, { merge: true });
+
+        escrever(`✔ Publicado: ${documento.slug}`);
       } catch (err) {
         escrever(`❌ ERRO EM ${path}: ${err}`);
       }

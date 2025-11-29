@@ -1,10 +1,23 @@
 // src/pages/HomeView/Oracao.jsx
 import React, { useEffect, useState } from "react";
 import MarkdownIt from "markdown-it";
-import rawFile from "../../content/home/oracao.md?raw";
 
+/* ---------------------------------------------
+   GLOB — carrega APENAS o arquivo correto da home
+--------------------------------------------- */
+const GLOB_ORACAO_HOME = import.meta.glob(
+  "../../content/home/oracao.md",
+  { query: "?raw", import: "default" }
+);
+
+/* ---------------------------------------------
+   Parser FrontMatter (manual e limpo)
+--------------------------------------------- */
 function parseFrontmatter(raw) {
-  if (!raw.startsWith("---")) return { data: {}, content: raw };
+  if (!raw || !raw.startsWith("---")) {
+    return { data: {}, content: raw || "" };
+  }
+
   const end = raw.indexOf("\n---");
   if (end === -1) return { data: {}, content: raw };
 
@@ -15,20 +28,26 @@ function parseFrontmatter(raw) {
   fmRaw.split("\n").forEach((line) => {
     const idx = line.indexOf(":");
     if (idx === -1) return;
+
     const key = line.slice(0, idx).trim();
     let value = line.slice(idx + 1).trim();
+
     if (
       (value.startsWith('"') && value.endsWith('"')) ||
       (value.startsWith("'") && value.endsWith("'"))
     ) {
       value = value.slice(1, -1);
     }
+
     data[key] = value;
   });
 
   return { data, content: body };
 }
 
+/* ---------------------------------------------
+   COMPONENTE PRINCIPAL
+--------------------------------------------- */
 export default function Oracao() {
   const [post, setPost] = useState({
     titulo: "",
@@ -42,19 +61,34 @@ export default function Oracao() {
   useEffect(() => {
     setTimeout(() => window.scrollTo(0, 0), 50);
 
-    const md = new MarkdownIt({ html: true, breaks: true });
-    const parsed = parseFrontmatter(rawFile);
-    const front = parsed.data;
-    const html = md.render(parsed.content);
+    async function carregar() {
+      const md = new MarkdownIt({ html: true, breaks: true });
 
-    setPost({
-      titulo: front.titulo || "Oração",
-      data: front.data || "",
-      readTime: front.readTime || "",
-      tag: front.tag || "",
-      imagemHero: front.imageUrl || front.imagem || null,
-      conteudoFinal: html,
-    });
+      const caminhos = Object.keys(GLOB_ORACAO_HOME);
+
+      if (caminhos.length === 0) {
+        console.error("Nenhum arquivo de oração encontrado na HOME.");
+        return;
+      }
+
+      const fn = GLOB_ORACAO_HOME[caminhos[0]];
+      const rawFile = await fn();
+
+      const parsed = parseFrontmatter(rawFile);
+      const front = parsed.data;
+      const html = md.render(parsed.content);
+
+      setPost({
+        titulo: front.titulo || "Oração",
+        data: front.data || "",
+        readTime: front.readTime || "",
+        tag: front.tag || "",
+        imagemHero: front.imageUrl || null,
+        conteudoFinal: html,
+      });
+    }
+
+    carregar();
   }, []);
 
   const { titulo, data, readTime, tag, imagemHero, conteudoFinal } = post;
@@ -64,7 +98,6 @@ export default function Oracao() {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap');
 
-        /* Caixa do texto */
         .post-box {
           background-image: url('/Fundo-PostHome.jpeg');
           background-size: cover;
@@ -89,7 +122,6 @@ export default function Oracao() {
         }
         .post-box * { position: relative; z-index: 1; }
 
-        /* Títulos internos */
         .post-box h1,
         .post-box h2,
         .post-box h3,
@@ -101,7 +133,9 @@ export default function Oracao() {
         }
       `}</style>
 
-      {/* ========== HERO COMO BANNER (SEM CORTES) ========== */}
+      {/* ===============================================
+          HERO SEM CORTES (mantido exatamente como pediu)
+      ================================================ */}
       {imagemHero && (
         <section
           style={{
@@ -111,12 +145,11 @@ export default function Oracao() {
             backgroundImage: `url(${imagemHero})`,
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-            backgroundSize: "contain", // mostra 100% da imagem sem cortar
+            backgroundSize: "contain",
           }}
           aria-label={titulo}
         />
       )}
-      {/* ================================================ */}
 
       <section
         style={{
@@ -155,7 +188,10 @@ export default function Oracao() {
           padding: "2rem",
         }}
       >
-        <div className="post-box" dangerouslySetInnerHTML={{ __html: conteudoFinal }} />
+        <div
+          className="post-box"
+          dangerouslySetInnerHTML={{ __html: conteudoFinal }}
+        />
       </article>
     </main>
   );

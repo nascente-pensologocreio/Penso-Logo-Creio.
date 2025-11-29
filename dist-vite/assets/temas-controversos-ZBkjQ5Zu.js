@@ -1,0 +1,15 @@
+const n=`---
+livro: "isaias"
+capitulo: "04"
+titulo: ""
+slug: "isaias-04-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=temas-controversos-ZBkjQ5Zu.js.map

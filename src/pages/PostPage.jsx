@@ -1,8 +1,11 @@
+// src/pages/PostPage.jsx
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { doc, getDoc } from "firebase/firestore";
-import { db } from "../firebase/config";
 
+// Firebase LAZY
+import { getFirebaseDB } from "../firebase/config";
+
+// Templates
 import PostWrapper from "../components/PostWrapper.jsx";
 import DevocionalTemplate from "../templates/DevocionalTemplate.jsx";
 import PregacaoTemplate from "../templates/PregacaoTemplate.jsx";
@@ -12,10 +15,14 @@ export default function PostPage() {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    const carregar = async () => {
+    async function carregar() {
       try {
+        const db = await getFirebaseDB();
+        const { doc, getDoc } = await import("firebase/firestore");
+
         const ref = doc(db, "publicacoes", slug);
         const snap = await getDoc(ref);
+
         if (snap.exists()) {
           setPost(snap.data());
         } else {
@@ -25,7 +32,8 @@ export default function PostPage() {
         console.error("Erro ao carregar postagem:", err);
         setPost(null);
       }
-    };
+    }
+
     carregar();
   }, [slug]);
 
@@ -94,9 +102,7 @@ export default function PostPage() {
       versiculo={post.versiculo}
       referencia={post.referencia}
     >
-      <div className="w-full flex justify-center">
-        {Conteudo}
-      </div>
+      <div className="w-full flex justify-center">{Conteudo}</div>
     </PostWrapper>
   );
 }

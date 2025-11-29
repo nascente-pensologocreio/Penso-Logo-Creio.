@@ -1,0 +1,15 @@
+const n=`---
+livro: "salmos"
+capitulo: "71"
+titulo: ""
+slug: "salmos-71-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=terminologias-CFEMeYNY.js.map

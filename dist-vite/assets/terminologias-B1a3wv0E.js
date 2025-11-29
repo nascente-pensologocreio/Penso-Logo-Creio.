@@ -1,0 +1,15 @@
+const n=`---
+livro: "daniel"
+capitulo: "08"
+titulo: ""
+slug: "daniel-08-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=terminologias-B1a3wv0E.js.map

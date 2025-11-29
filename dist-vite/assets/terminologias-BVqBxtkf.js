@@ -1,0 +1,15 @@
+const n=`---
+livro: "jo"
+capitulo: "26"
+titulo: ""
+slug: "jo-26-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=terminologias-BVqBxtkf.js.map

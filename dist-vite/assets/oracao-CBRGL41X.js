@@ -1,0 +1,15 @@
+const n=`---
+livro: "2cronicas"
+capitulo: "27"
+titulo: ""
+slug: "2cronicas-27-oracao"
+data: ""
+autor: "Capelão Nascente"
+tipo: "oracao"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=oracao-CBRGL41X.js.map

@@ -1,0 +1,15 @@
+const o=`---
+livro: "proverbios"
+capitulo: "23"
+titulo: ""
+slug: "proverbios-23-oracao"
+data: ""
+autor: "Capelão Nascente"
+tipo: "oracao"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{o as default};
+//# sourceMappingURL=oracao-BFQbgVvn.js.map

@@ -1,0 +1,15 @@
+const t=`---
+livro: "1timoteo"
+capitulo: "06"
+titulo: ""
+slug: "1timoteo-06-mensagem-pastoral"
+data: ""
+autor: "Capelão Nascente"
+tipo: "mensagem-pastoral"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{t as default};
+//# sourceMappingURL=mensagem-pastoral-D9L7vW0K.js.map
