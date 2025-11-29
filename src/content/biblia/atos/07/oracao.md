@@ -1,11 +1,14 @@
 ---
+slug: "atos-07-oracao"
+titulo: ""
+tipo: "oracao"
+origem: "biblia"
 livro: "atos"
 capitulo: "07"
-titulo: ""
-slug: "atos-07-oracao"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "oracao"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

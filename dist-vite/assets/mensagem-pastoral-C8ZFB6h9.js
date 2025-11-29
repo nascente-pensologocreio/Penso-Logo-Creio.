@@ -1,0 +1,15 @@
+const n=`---
+livro: "neemias"
+capitulo: "10"
+titulo: ""
+slug: "neemias-10-mensagem-pastoral"
+data: ""
+autor: "Capelão Nascente"
+tipo: "mensagem-pastoral"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=mensagem-pastoral-C8ZFB6h9.js.map

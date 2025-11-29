@@ -1,11 +1,14 @@
 ---
+slug: "josue-18-oracao"
+titulo: ""
+tipo: "oracao"
+origem: "biblia"
 livro: "josue"
 capitulo: "18"
-titulo: ""
-slug: "josue-18-oracao"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "oracao"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

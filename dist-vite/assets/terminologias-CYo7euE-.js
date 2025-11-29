@@ -1,0 +1,15 @@
+const n=`---
+livro: "jo"
+capitulo: "38"
+titulo: ""
+slug: "jo-38-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=terminologias-CYo7euE-.js.map

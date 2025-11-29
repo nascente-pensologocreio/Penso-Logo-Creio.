@@ -1,11 +1,14 @@
 ---
+slug: "salmos-89-oracao"
+titulo: ""
+tipo: "oracao"
+origem: "biblia"
 livro: "salmos"
 capitulo: "89"
-titulo: ""
-slug: "salmos-89-oracao"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "oracao"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

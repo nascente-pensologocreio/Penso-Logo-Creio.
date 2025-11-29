@@ -1,11 +1,14 @@
 ---
+slug: "2reis-12-devocional"
+titulo: ""
+tipo: "devocional"
+origem: "biblia"
 livro: "2reis"
 capitulo: "12"
-titulo: ""
-slug: "2reis-12-devocional"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "devocional"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

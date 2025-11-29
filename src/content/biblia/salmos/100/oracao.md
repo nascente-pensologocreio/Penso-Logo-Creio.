@@ -1,11 +1,14 @@
 ---
+slug: "salmos-100-oracao"
+titulo: ""
+tipo: "oracao"
+origem: "biblia"
 livro: "salmos"
 capitulo: "100"
-titulo: ""
-slug: "salmos-100-oracao"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "oracao"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

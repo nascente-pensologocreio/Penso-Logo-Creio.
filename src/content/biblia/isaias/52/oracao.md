@@ -1,11 +1,14 @@
 ---
+slug: "isaias-52-oracao"
+titulo: ""
+tipo: "oracao"
+origem: "biblia"
 livro: "isaias"
 capitulo: "52"
-titulo: ""
-slug: "isaias-52-oracao"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "oracao"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

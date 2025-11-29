@@ -1,0 +1,15 @@
+const a=`---
+livro: "jeremias"
+capitulo: "06"
+titulo: ""
+slug: "jeremias-06-pregacao-tecnica"
+data: ""
+autor: "Capelão Nascente"
+tipo: "pregacao-tecnica"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{a as default};
+//# sourceMappingURL=exposicao-homiletica-Pn6C88r1.js.map

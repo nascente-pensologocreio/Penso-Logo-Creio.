@@ -1,11 +1,14 @@
 ---
+slug: "1reis-12-mensagem-pastoral"
+titulo: ""
+tipo: "mensagem-pastoral"
+origem: "biblia"
 livro: "1reis"
 capitulo: "12"
-titulo: ""
-slug: "1reis-12-mensagem-pastoral"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "mensagem-pastoral"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

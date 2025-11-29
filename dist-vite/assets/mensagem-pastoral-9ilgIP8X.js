@@ -1,0 +1,15 @@
+const n=`---
+livro: "2cronicas"
+capitulo: "05"
+titulo: ""
+slug: "2cronicas-05-mensagem-pastoral"
+data: ""
+autor: "Capelão Nascente"
+tipo: "mensagem-pastoral"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=mensagem-pastoral-9ilgIP8X.js.map

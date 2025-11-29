@@ -1,0 +1,15 @@
+const a=`---
+livro: "zacarias"
+capitulo: "09"
+titulo: ""
+slug: "zacarias-09-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{a as default};
+//# sourceMappingURL=devocional-01-ClUm0Ytp.js.map

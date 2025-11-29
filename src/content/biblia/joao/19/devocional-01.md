@@ -1,11 +1,14 @@
 ---
+slug: "joao-19-devocional"
+titulo: ""
+tipo: "devocional"
+origem: "biblia"
 livro: "joao"
 capitulo: "19"
-titulo: ""
-slug: "joao-19-devocional"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "devocional"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

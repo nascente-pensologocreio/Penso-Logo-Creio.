@@ -1,11 +1,14 @@
 ---
+slug: "isaias-53-devocional"
+titulo: ""
+tipo: "devocional"
+origem: "biblia"
 livro: "isaias"
 capitulo: "53"
-titulo: ""
-slug: "isaias-53-devocional"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "devocional"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

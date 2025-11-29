@@ -1,11 +1,14 @@
 ---
+slug: "ezequiel-36-pregacao-tecnica"
+titulo: ""
+tipo: "pregacao-tecnica"
+origem: "biblia"
 livro: "ezequiel"
 capitulo: "36"
-titulo: ""
-slug: "ezequiel-36-pregacao-tecnica"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "pregacao-tecnica"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

@@ -1,0 +1,15 @@
+const o=`---
+livro: "proverbios"
+capitulo: "19"
+titulo: ""
+slug: "proverbios-19-oracao"
+data: ""
+autor: "Capelão Nascente"
+tipo: "oracao"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{o as default};
+//# sourceMappingURL=oracao-zmQyfDfC.js.map

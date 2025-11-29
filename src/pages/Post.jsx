@@ -1,48 +1,75 @@
 // src/pages/Post.jsx
+// Página que exibe posts da HOME e posts vindos do Firebase
+// Versão universal — motor PLC v5 LTS
+
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "../styles/post-page.css";
-import { loadSinglePost } from "../utils/loadSinglePost.js";
-import { getDoc, doc } from "firebase/firestore";
-import { db } from "../firebase/config";
+
+import { parseFrontmatter, markdownToHtml } from "../utils/markdownProcessor.js";
+
+// Firebase LAZY
+import { getFirebaseDB } from "../firebase/config";
+
+// Loader-local LAZY
+async function carregarLoaderLocal() {
+  const { loadSinglePost } = await import("../utils/loadSinglePost.js");
+  return loadSinglePost;
+}
 
 export default function Post() {
   const { slug } = useParams();
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-    setTimeout(() => {
-      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-    }, 80);
+    window.scrollTo({ top: 0, behavior: "instant" });
   }, [slug]);
 
   useEffect(() => {
     let ativo = true;
 
     async function carregar() {
+      // 1) LOCAL (HOME)
+      const loadSinglePost = await carregarLoaderLocal();
       const local = await loadSinglePost(slug);
+
       if (local) {
-        if (ativo) setPost(local);
+        if (ativo)
+          setPost({
+            ...local,
+            fullContent: local.fullContent, // já vem convertido
+          });
         return;
       }
 
+      // 2) FIREBASE
       try {
+        const db = await getFirebaseDB();
+        const { doc, getDoc } = await import("firebase/firestore");
+
         const ref = doc(db, "publicacoes", slug);
         const snap = await getDoc(ref);
 
         if (snap.exists() && ativo) {
           const data = snap.data();
+
+          // unificação — processar markdown também para Firestore
+          const fullHtml =
+            data.texto && typeof data.texto === "string"
+              ? markdownToHtml(data.texto)
+              : "";
+
           setPost({
             ...data,
             titulo: data.titulo || "(sem título)",
-            fullContent: data.texto || "",
+            fullContent: fullHtml,
             imageUrl: data.imageUrl || null,
           });
+
           return;
         }
       } catch (err) {
-        console.error("Erro ao carregar do Firebase:", err);
+        console.error("Erro Firebase:", err);
       }
 
       if (ativo) setPost(null);
@@ -61,16 +88,12 @@ export default function Post() {
   }
 
   const imagemHero = post.imageUrl || post.imagem || null;
-  const conteudoFinal = post.fullContent || post.texto || "";
+  const conteudoFinal = post.fullContent || "";
 
   return (
     <main
       className="post-page-main"
-      style={{
-        minHeight: "100vh",
-        backgroundColor: "#010b0a",
-        color: "#EDEDED",
-      }}
+      style={{ minHeight: "100vh", backgroundColor: "#010b0a", color: "#EDEDED" }}
     >
       <section
         style={{
@@ -127,30 +150,28 @@ export default function Post() {
           {post.titulo}
         </h1>
 
-        <p
-          style={{
-            color: "#A8A8A8",
-            marginTop: "0.5rem",
-            marginBottom: "1.25rem",
-          }}
-        >
+        <p style={{ color: "#A8A8A8", marginTop: "0.5rem", marginBottom: "1.25rem" }}>
           {(post.data || "")} • {(post.readTime || "")}
         </p>
 
-        {post.tag && (
-          <span
-            style={{
-              display: "inline-block",
-              padding: "0.35rem 1rem",
-              border: "1px solid rgba(212, 175, 55, 0.4)",
-              borderRadius: "9999px",
-              fontSize: "0.65rem",
-              color: "#D4AF37",
-            }}
-          >
-            {post.tag}
-          </span>
-        )}
+        {Array.isArray(post.tags) &&
+          post.tags.length > 0 &&
+          post.tags.map((t, i) => (
+            <span
+              key={i}
+              style={{
+                display: "inline-block",
+                padding: "0.35rem 1rem",
+                border: "1px solid rgba(212,175,55,0.4)",
+                borderRadius: "9999px",
+                fontSize: "0.65rem",
+                color: "#D4AF37",
+                margin: "0 4px",
+              }}
+            >
+              {t}
+            </span>
+          ))}
       </section>
 
       <article
@@ -176,9 +197,7 @@ export default function Post() {
               lineHeight: 1.8,
               textAlign: "justify",
             }}
-            dangerouslySetInnerHTML={{
-              __html: conteudoFinal,
-            }}
+            dangerouslySetInnerHTML={{ __html: conteudoFinal }}
           />
         </div>
       </article>

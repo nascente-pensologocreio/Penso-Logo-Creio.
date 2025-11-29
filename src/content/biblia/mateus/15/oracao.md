@@ -1,11 +1,14 @@
 ---
+slug: "mateus-15-oracao"
+titulo: ""
+tipo: "oracao"
+origem: "biblia"
 livro: "mateus"
 capitulo: "15"
-titulo: ""
-slug: "mateus-15-oracao"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "oracao"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

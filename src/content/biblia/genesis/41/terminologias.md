@@ -1,11 +1,14 @@
 ---
+slug: "genesis-41-terminologias-chave"
+titulo: ""
+tipo: "terminologias-chave"
+origem: "biblia"
 livro: "genesis"
 capitulo: "41"
-titulo: ""
-slug: "genesis-41-terminologias-chave"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "terminologias-chave"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

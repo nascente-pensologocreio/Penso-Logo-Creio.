@@ -1,11 +1,14 @@
 ---
+slug: "1reis-06-oracao"
+titulo: ""
+tipo: "oracao"
+origem: "biblia"
 livro: "1reis"
 capitulo: "06"
-titulo: ""
-slug: "1reis-06-oracao"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "oracao"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

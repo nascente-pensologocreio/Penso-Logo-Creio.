@@ -1,11 +1,14 @@
 ---
+slug: "romanos-12-devocional"
+titulo: ""
+tipo: "devocional"
+origem: "biblia"
 livro: "romanos"
 capitulo: "12"
-titulo: ""
-slug: "romanos-12-devocional"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "devocional"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

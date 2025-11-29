@@ -1,11 +1,14 @@
 ---
+slug: "apocalipse-05-devocional"
+titulo: ""
+tipo: "devocional"
+origem: "biblia"
 livro: "apocalipse"
 capitulo: "05"
-titulo: ""
-slug: "apocalipse-05-devocional"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "devocional"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

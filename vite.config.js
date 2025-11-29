@@ -9,8 +9,6 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
-
-      // Caminhos absolutos do projeto PensoLogoCreio
       "@src": path.resolve(__dirname, "src"),
       "@components": path.resolve(__dirname, "src/components"),
       "@pages": path.resolve(__dirname, "src/pages"),
@@ -26,21 +24,36 @@ export default defineConfig({
     open: true,
     port: 5174,
     host: true,
-
-    // 👇 Cura DEFINITIVA para React Router 404 em modo DEV
     historyApiFallback: true,
   },
 
   build: {
+    manifest: true,
     minify: true,
     sourcemap: true,
     chunkSizeWarningLimit: 1000,
+
     rollupOptions: {
       output: {
         manualChunks: {
-          "react-vendor": ["react", "react-dom"],
-        },
-      },
-    },
-  },
+          "react-vendor": [
+            "react",
+            "react-dom",
+            "react-router-dom"
+          ],
+
+          "firebase-core": [
+            "firebase/app",
+            "firebase/firestore",
+            "firebase/auth",
+            "firebase/storage"
+          ],
+
+          "markdown-bundle": [
+            "markdown-it"
+          ]
+        }
+      }
+    }
+  }
 });

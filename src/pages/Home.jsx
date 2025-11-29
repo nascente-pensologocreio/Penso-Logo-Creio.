@@ -5,6 +5,8 @@ import { ArticleCard } from "../components/ArticleCard.jsx";
 import ArvoreDePostagens from "../components/ArvoreDePostagens.jsx";
 import { getHomePosts } from "../utils/loadHomePosts.js";
 
+import { parseFrontmatter, markdownToHtml } from "../utils/markdownProcessor.js"; // <-- ÚNICA ADIÇÃO
+
 export default function Home() {
   const fundoHero = "/Mockup da Homepage.png";
   const [postsHome, setPostsHome] = useState([]);

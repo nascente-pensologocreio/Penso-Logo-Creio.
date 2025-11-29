@@ -1,11 +1,14 @@
 ---
+slug: "1cronicas-25-mensagem-pastoral"
+titulo: ""
+tipo: "mensagem-pastoral"
+origem: "biblia"
 livro: "1cronicas"
 capitulo: "25"
-titulo: ""
-slug: "1cronicas-25-mensagem-pastoral"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "mensagem-pastoral"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

@@ -1,11 +1,14 @@
 ---
+slug: "2cronicas-24-devocional"
+titulo: ""
+tipo: "devocional"
+origem: "biblia"
 livro: "2cronicas"
 capitulo: "24"
-titulo: ""
-slug: "2cronicas-24-devocional"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "devocional"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

@@ -1,11 +1,14 @@
 ---
+slug: "2samuel-19-temas-controversos"
+titulo: ""
+tipo: "temas-controversos"
+origem: "biblia"
 livro: "2samuel"
 capitulo: "19"
-titulo: ""
-slug: "2samuel-19-temas-controversos"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "temas-controversos"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

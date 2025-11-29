@@ -1,11 +1,14 @@
 ---
+slug: "salmos-109-pregacao-tecnica"
+titulo: ""
+tipo: "pregacao-tecnica"
+origem: "biblia"
 livro: "salmos"
 capitulo: "109"
-titulo: ""
-slug: "salmos-109-pregacao-tecnica"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "pregacao-tecnica"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

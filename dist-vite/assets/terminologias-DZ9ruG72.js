@@ -1,0 +1,15 @@
+const n=`---
+livro: "joao"
+capitulo: "14"
+titulo: ""
+slug: "joao-14-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=terminologias-DZ9ruG72.js.map

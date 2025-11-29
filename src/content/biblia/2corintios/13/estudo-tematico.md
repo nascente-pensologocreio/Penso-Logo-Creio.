@@ -1,11 +1,14 @@
 ---
+slug: "2corintios-13-estudo-tematico"
+titulo: ""
+tipo: "estudo-tematico"
+origem: "biblia"
 livro: "2corintios"
 capitulo: "13"
-titulo: ""
-slug: "2corintios-13-estudo-tematico"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "estudo-tematico"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

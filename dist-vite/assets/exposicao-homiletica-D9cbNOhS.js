@@ -1,0 +1,15 @@
+const n=`---
+livro: "2corintios"
+capitulo: "02"
+titulo: ""
+slug: "2corintios-02-pregacao-tecnica"
+data: ""
+autor: "Capelão Nascente"
+tipo: "pregacao-tecnica"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=exposicao-homiletica-D9cbNOhS.js.map

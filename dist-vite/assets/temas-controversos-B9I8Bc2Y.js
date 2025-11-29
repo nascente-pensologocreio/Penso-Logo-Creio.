@@ -1,0 +1,15 @@
+const o=`---
+livro: "exodo"
+capitulo: "37"
+titulo: ""
+slug: "exodo-37-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{o as default};
+//# sourceMappingURL=temas-controversos-B9I8Bc2Y.js.map

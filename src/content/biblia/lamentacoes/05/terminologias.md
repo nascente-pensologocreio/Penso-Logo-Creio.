@@ -1,11 +1,14 @@
 ---
+slug: "lamentacoes-05-terminologias-chave"
+titulo: ""
+tipo: "terminologias-chave"
+origem: "biblia"
 livro: "lamentacoes"
 capitulo: "05"
-titulo: ""
-slug: "lamentacoes-05-terminologias-chave"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "terminologias-chave"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

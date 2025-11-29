@@ -1,0 +1,15 @@
+const n=`---
+livro: "isaias"
+capitulo: "43"
+titulo: ""
+slug: "isaias-43-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=devocional-01-D2_vPBTv.js.map

@@ -1,16 +1,21 @@
 ---
-slug: "oracao"
-titulo: "Por Pouco Não Me Persuades"
+slug: "por-pouco-nao-me-persuades"
 tipo: "oracao"
+titulo: "Por Pouco Não Me Persuades"
+subtitulo: ""
+autor: "Capelão Nascente"
 data: "2025-11-22"
-readTime: "7 min de leitura"
-tag: "DESTAQUE"
+readTime: "7 min"
 imageUrl: "/por-pouco-nao-me-persuades.png"
+origem: "home"
+livro: ""
+capitulo: ""
+tema_principal: ""
+tags: ["DESTAQUE"]
+referencia: ""
 ---
 
-
 Oração
-
 
 Há noites em que a eternidade se inclina sobre o tempo e beija a fronte da história com lábios de fogo. Noite em que o céu se curva até o chão e os anjos se recolhem para dar lugar ao peso de um cálice que nenhum querubim ousaria carregar. Lucas 22 não é apenas o registro de uma ceia ou de uma oração — é o corte no tecido do cosmos, o instante em que o sangue do Deus invisível começa a manchar o solo visível da terra.
 

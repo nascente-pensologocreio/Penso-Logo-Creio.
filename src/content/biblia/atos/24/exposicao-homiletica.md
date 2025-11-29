@@ -1,11 +1,14 @@
 ---
+slug: "atos-24-pregacao-tecnica"
+titulo: ""
+tipo: "pregacao-tecnica"
+origem: "biblia"
 livro: "atos"
 capitulo: "24"
-titulo: ""
-slug: "atos-24-pregacao-tecnica"
-data: ""
+data: "2025-11-29"
 autor: "Capelão Nascente"
-tipo: "pregacao-tecnica"
+readTime: "7 min de leitura"
+imageUrl: ""
 tema_principal: ""
 tags: []
 ---

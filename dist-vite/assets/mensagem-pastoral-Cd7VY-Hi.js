@@ -1,0 +1,15 @@
+const n=`---
+livro: "1corintios"
+capitulo: "16"
+titulo: ""
+slug: "1corintios-16-mensagem-pastoral"
+data: ""
+autor: "Capelão Nascente"
+tipo: "mensagem-pastoral"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=mensagem-pastoral-Cd7VY-Hi.js.map
