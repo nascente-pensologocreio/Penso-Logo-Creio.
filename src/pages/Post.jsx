@@ -1,6 +1,6 @@
 // src/pages/Post.jsx
 // Página que exibe posts da HOME e posts vindos do Firebase
-// Versão universal — motor PLC v5 LTS
+// Versão universal — motor PLC v5 LTS refinado + véu de leitura
 
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -29,7 +29,6 @@ export default function Post() {
     let ativo = true;
 
     async function carregar() {
-      // 1) LOCAL (HOME)
       const loadSinglePost = await carregarLoaderLocal();
       const local = await loadSinglePost(slug);
 
@@ -37,12 +36,11 @@ export default function Post() {
         if (ativo)
           setPost({
             ...local,
-            fullContent: local.fullContent, // já vem convertido
+            fullContent: local.fullContent,
           });
         return;
       }
 
-      // 2) FIREBASE
       try {
         const db = await getFirebaseDB();
         const { doc, getDoc } = await import("firebase/firestore");
@@ -53,7 +51,6 @@ export default function Post() {
         if (snap.exists() && ativo) {
           const data = snap.data();
 
-          // unificação — processar markdown também para Firestore
           const fullHtml =
             data.texto && typeof data.texto === "string"
               ? markdownToHtml(data.texto)
@@ -93,15 +90,19 @@ export default function Post() {
   return (
     <main
       className="post-page-main"
-      style={{ minHeight: "100vh", backgroundColor: "#010b0a", color: "#EDEDED" }}
+      style={{
+        minHeight: "100vh",
+        backgroundColor: "rgba(255,255,255,0.18)",  // NÃO ALTERADO (seu ajuste)
+        color: "#EDEDED",
+      }}
     >
+      {/* === HERO + TÍTULO === */}
       <section
         style={{
           position: "relative",
           width: "100%",
-          height: "60vh",
-          maxHeight: "520px",
-          minHeight: "420px",
+          height: "40vh",
+          minHeight: "300px",
           overflow: "hidden",
         }}
       >
@@ -116,64 +117,60 @@ export default function Post() {
                 width: "100%",
                 height: "100%",
                 objectFit: "cover",
+                filter: "brightness(0.78)",
               }}
             />
+
             <div
               style={{
                 position: "absolute",
                 inset: 0,
                 background:
-                  "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 40%, rgba(0,0,0,0.55) 100%)",
+                  "linear-gradient(to bottom, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.55) 100%)",
               }}
             />
           </>
         )}
-      </section>
 
-      <section
-        style={{
-          width: "100%",
-          maxWidth: "880px",
-          margin: "0 auto",
-          padding: "3rem 2rem 1.5rem",
-          textAlign: "center",
-        }}
-      >
-        <h1
+        <div
           style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: "clamp(1.75rem, 5vw, 2.75rem)",
-            fontWeight: 600,
-            color: "#F5E3A1",
+            position: "absolute",
+            bottom: "1.5rem",
+            left: "50%",
+            transform: "translateX(-50%)",
+            width: "100%",
+            maxWidth: "880px",
+            padding: "0 1rem",
+            textAlign: "center",
           }}
         >
-          {post.titulo}
-        </h1>
+          <p
+            style={{
+              color: "#D4AF37",
+              fontSize: "1.0rem",
+              opacity: 0.85,
+              marginBottom: "0.3rem",
+              letterSpacing: "0.6px",
+            }}
+          >
+            Artigo • {post.tipo || "conteúdo"}
+          </p>
 
-        <p style={{ color: "#A8A8A8", marginTop: "0.5rem", marginBottom: "1.25rem" }}>
-          {(post.data || "")} • {(post.readTime || "")}
-        </p>
-
-        {Array.isArray(post.tags) &&
-          post.tags.length > 0 &&
-          post.tags.map((t, i) => (
-            <span
-              key={i}
-              style={{
-                display: "inline-block",
-                padding: "0.35rem 1rem",
-                border: "1px solid rgba(212,175,55,0.4)",
-                borderRadius: "9999px",
-                fontSize: "0.65rem",
-                color: "#D4AF37",
-                margin: "0 4px",
-              }}
-            >
-              {t}
-            </span>
-          ))}
+          <h1
+            style={{
+              fontFamily: "Georgia, 'Times New Roman', serif",
+              fontSize: "2.50rem",
+              fontWeight: 300,
+              color: "#F5E3A1",
+              textShadow: "0 0 12px rgba(0,0,0,0.5)",
+            }}
+          >
+            {post.titulo}
+          </h1>
+        </div>
       </section>
 
+      {/* === CORPO DO POST === */}
       <article
         style={{
           width: "100%",
@@ -184,21 +181,64 @@ export default function Post() {
       >
         <div
           style={{
-            backgroundColor: "rgba(0, 0, 0, 0.32)",
+            backgroundImage: "url('/src/assets/template-read-card-home.jpeg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
             border: "1px solid rgba(212, 175, 55, 0.18)",
             borderRadius: "0.875rem",
             padding: "clamp(2rem, 5vw, 3rem)",
           }}
         >
+          {/* === VÉU DE LEITURA === */}
           <div
             style={{
-              color: "#E2E2E2",
-              fontSize: "1.08rem",
-              lineHeight: 1.8,
-              textAlign: "justify",
+              backgroundColor: "rgba(255, 255, 255, 0.32)", 
+              padding: "1rem",
+              borderRadius: "0.5rem",
             }}
-            dangerouslySetInnerHTML={{ __html: conteudoFinal }}
-          />
+          >
+            {/* ====== ESTILO EXCLUSIVO PARA TÍTULOS & SUBTÍTULOS ====== */}
+            <style>
+              {`
+                .post-headings h2,
+                .post-headings h3 {
+                  color: #0A0A0A !important;          /* ESCURECIDO */
+                  font-family: Georgia, 'Times New Roman', serif !important, bold;
+                  font-weight: 400 !important;
+                  letter-spacing: 0.2px;
+                  margin-top: 1.35rem;
+                  margin-bottom: 0.55rem;
+                  text-shadow: 0 0 1px rgba(255, 255, 255, 0.03);  /* SUTIL */
+                }
+
+                .post-headings h2 {
+                  font-size: 1.38rem;
+                }
+
+                .post-headings h3 {
+                  font-size: 1.22rem;
+                }
+              `}
+            </style>
+
+            {/* ====== TEXTO CORRIDO + HEADINGS DENTRO DA CLASSE ====== */}
+            <div
+              className="post-content post-headings"
+              style={{
+                color: "#111111",
+                fontFamily: "Georgia, 'Times New Roman', serif",
+                fontWeight: 300,
+                fontSize: "1.10rem",
+                lineHeight: 1.28,
+                letterSpacing: "0.03px",
+                wordSpacing: "0.6px",
+                textShadow: "0 0 1px rgba(255, 255, 255, 0)",
+                textAlign: "justify",
+              }}
+              dangerouslySetInnerHTML={{ __html: conteudoFinal }}
+            />
+          </div>
         </div>
       </article>
     </main>
