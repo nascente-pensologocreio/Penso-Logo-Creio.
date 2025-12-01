@@ -92,7 +92,7 @@ export default function Post() {
       className="post-page-main"
       style={{
         minHeight: "100vh",
-        backgroundColor: "rgba(255,255,255,0.18)",  // NÃO ALTERADO (seu ajuste)
+        backgroundColor: "rgba(15, 39, 34, 0.77)",  // NÃO ALTERADO
         color: "#EDEDED",
       }}
     >
@@ -101,9 +101,10 @@ export default function Post() {
         style={{
           position: "relative",
           width: "100%",
-          height: "40vh",
-          minHeight: "300px",
+          height: "80vh",   // altura dobrada (100% maior)
+          minHeight: "600px",
           overflow: "hidden",
+          backgroundColor: "#000",
         }}
       >
         {imagemHero && (
@@ -113,22 +114,17 @@ export default function Post() {
               alt={post.titulo}
               style={{
                 position: "absolute",
-                inset: 0,
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-                filter: "brightness(0.78)",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                maxWidth: "100%",
+                maxHeight: "100%",
+                objectFit: "contain"
+                // ❌ filtro removido
               }}
             />
 
-            <div
-              style={{
-                position: "absolute",
-                inset: 0,
-                background:
-                  "linear-gradient(to bottom, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.55) 100%)",
-              }}
-            />
+            {/* ❌ gradiente removido */}
           </>
         )}
 
@@ -162,7 +158,6 @@ export default function Post() {
               fontSize: "2.50rem",
               fontWeight: 300,
               color: "#F5E3A1",
-              textShadow: "0 0 12px rgba(0,0,0,0.5)",
             }}
           >
             {post.titulo}
@@ -193,7 +188,7 @@ export default function Post() {
           {/* === VÉU DE LEITURA === */}
           <div
             style={{
-              backgroundColor: "rgba(255, 255, 255, 0.32)", 
+              backgroundColor: "rgba(255, 255, 255, 0.23)", 
               padding: "1rem",
               borderRadius: "0.5rem",
             }}
@@ -203,13 +198,13 @@ export default function Post() {
               {`
                 .post-headings h2,
                 .post-headings h3 {
-                  color: #0A0A0A !important;          /* ESCURECIDO */
+                  color: #0A0A0A !important;
                   font-family: Georgia, 'Times New Roman', serif !important, bold;
                   font-weight: 400 !important;
                   letter-spacing: 0.2px;
                   margin-top: 1.35rem;
                   margin-bottom: 0.55rem;
-                  text-shadow: 0 0 1px rgba(255, 255, 255, 0.03);  /* SUTIL */
+                  text-shadow: 0 0 1px rgba(255, 255, 255, 0);
                 }
 
                 .post-headings h2 {
@@ -226,13 +221,13 @@ export default function Post() {
             <div
               className="post-content post-headings"
               style={{
-                color: "#111111",
+                color: "#0a0a0aff",
                 fontFamily: "Georgia, 'Times New Roman', serif",
                 fontWeight: 300,
                 fontSize: "1.10rem",
-                lineHeight: 1.28,
+                lineHeight: 0.8,
                 letterSpacing: "0.03px",
-                wordSpacing: "0.6px",
+                wordSpacing: "0.5px",
                 textShadow: "0 0 1px rgba(255, 255, 255, 0)",
                 textAlign: "justify",
               }}
