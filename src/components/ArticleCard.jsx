@@ -2,11 +2,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { parseFrontmatter, markdownToHtml } from "../utils/markdownProcessor.js"; // <-- ÚNICA ADIÇÃO
+import { parseFrontmatter, markdownToHtml } from "../utils/markdownProcessor.js";
 
-export const ArticleCard = ({ post, isMain = false, delay = 0.1 }) => {
+export const ArticleCard = ({ post, delay = 0.1 }) => {
   if (!post || typeof post !== "object") return null;
 
+  // ======== DADOS =========
   const titulo = post.titulo || "(sem título)";
   const slug = post.slug || "";
   const data = post.data || "";
@@ -14,6 +15,7 @@ export const ArticleCard = ({ post, isMain = false, delay = 0.1 }) => {
   const imagem = post.imagem || post.imageUrl || null;
   const conteudo = post.conteudo || post.content || "";
 
+  // ======== EXCERPT ========
   const gerarExcerpt = (texto) => {
     if (!texto) return "";
     const limpo = texto.replace(/[#>*_`~\-]/g, "").trim();
@@ -34,8 +36,8 @@ export const ArticleCard = ({ post, isMain = false, delay = 0.1 }) => {
       <style>{`
         .article-card {
           width: 100%;
-          max-width: ${isMain ? "900px" : "680px"};
-          margin: ${isMain ? "0 auto 3rem" : "2.2rem auto"};
+          max-width: 900px;
+          margin: 0 auto 3rem;
           border-radius: 1rem !important;
           backdrop-filter: blur(20px);
           background: rgba(0, 0, 0, 0.28);
@@ -58,30 +60,20 @@ export const ArticleCard = ({ post, isMain = false, delay = 0.1 }) => {
           object-fit: cover;
         }
 
-        .main-image-top {
+        /* ===== TAMANHO PADRÃO PARA TODOS OS CARDS ===== */
+        .image-top {
           height: 420px;
         }
 
-        .secondary-image-top {
-          height: 260px;
-        }
-
         .article-content {
-          padding: ${isMain ? "2.2rem" : "1.6rem"};
+          padding: 2.2rem;
         }
 
-        .article-title-main {
+        .article-title {
           font-family: 'Playfair Display', serif;
           font-size: 1.8rem;
           color: #D4AF37;
           margin-bottom: 1rem;
-        }
-
-        .article-title-secondary {
-          font-family: 'Playfair Display', serif;
-          font-size: 1.35rem;
-          color: #D4AF37;
-          margin-bottom: 0.8rem;
         }
 
         .article-meta {
@@ -96,13 +88,6 @@ export const ArticleCard = ({ post, isMain = false, delay = 0.1 }) => {
           font-size: 1rem;
           line-height: 1.6;
           color: #e5e5e5;
-          text-align: justify;
-        }
-
-        .article-text-secondary {
-          font-size: 0.9rem;
-          line-height: 1.5;
-          color: #d0d0d0;
           text-align: justify;
         }
 
@@ -141,23 +126,21 @@ export const ArticleCard = ({ post, isMain = false, delay = 0.1 }) => {
           <img
             src={imagem}
             alt={titulo}
-            className={isMain ? "main-image-top" : "secondary-image-top"}
+            className="image-top"
           />
         )}
 
         <div className="article-content">
-          <h2 className={isMain ? "article-title-main" : "article-title-secondary"}>
+          <h2 className="article-title">
             {titulo}
           </h2>
 
-          {isMain && (
-            <div className="article-meta">
-              <span>{data}</span>
-              <span style={{ color: "#D4AF37" }}>{readTime}</span>
-            </div>
-          )}
+          <div className="article-meta">
+            <span>{data}</span>
+            <span style={{ color: "#D4AF37" }}>{readTime}</span>
+          </div>
 
-          <p className={isMain ? "article-text" : "article-text-secondary"}>
+          <p className="article-text">
             {excerptFinal}
           </p>
 

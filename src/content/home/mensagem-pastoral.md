@@ -15,7 +15,8 @@ tags: ["DESTAQUE"]
 referencia: ""
 ---
 
-Mensagem Pastoral
+<br><br>
+
 
 Estas são as célebres palavras do rei Herodes Agripa a Paulo, quando este se defendia perante Festo em Cesareia. Paulo era acusado injustamente por lideranças judaicas radicais que o acusavam de trair Moisés e desprezar a Lei. A tensão era tamanha que o apóstolo foi escoltado por centenas de soldados para não ser linchado.
 
@@ -25,9 +26,10 @@ Dias depois, Agripa — homem instruído e familiarizado com as Escrituras — d
 
 "Por pouco não me persuades…"
 
----
+<br><br>
 
 ## Convencidos, mas Não Convertidos
+<br>
 
 Agripa é o símbolo do homem moderno: informado, inteligente, quase rendido — mas ainda assim à porta. A Bíblia é categórica: "Há um só mediador entre Deus e os homens: Cristo Jesus." (1 Tm 2:5). Muitos reconhecem isso, mas permanecem na margem da fé.
 
@@ -37,9 +39,10 @@ Fé sem decisão é apenas simpatia religiosa.
 Ser cristão é cruzamento, não superfície.  
 É renúncia, transformação e obediência amorosa.
 
----
+<br><br>
 
 ## Cristianismo Autêntico: Um Compromisso com a Verdade
+<br><br>
 
 Cristão é quem:
 
@@ -50,8 +53,7 @@ Cristão é quem:
 
 "Não farás para ti imagem de escultura…" (Êx 20:4-5)
 
----
-
+<br><br>
 ## Uma Fé que se Revela em Atitude
 
 O cristianismo bíblico não é mero discurso — é vida. Fé é obediência, é fruto, é renúncia.
@@ -60,9 +62,13 @@ Agripa teve quase tudo:
 informação, curiosidade, oportunidade.
 
 Mas lhe faltou a única coisa que poderia salvá-lo:  
-**decisão**.
+
+<br><br>
+**DECISÃO**.
 
 Cristo não procura admiradores — procura discípulos.
+
+<br><br>
 
 Cpl. Nascente  
 🙏
