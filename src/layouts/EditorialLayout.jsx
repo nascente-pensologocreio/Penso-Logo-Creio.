@@ -1,50 +1,55 @@
 // src/layouts/EditorialLayout.jsx
 import React from "react";
+import "../styles/editorial-grid.css";
 
-import { parseFrontmatter, markdownToHtml } from "../utils/markdownProcessor.js"; // <-- ÚNICA ADIÇÃO
+export default function EditorialLayout({ titulo, indice, children }) {
+  const mostrarCardsLaterais = titulo !== "Caminho das Escrituras";
 
-export default function EditorialLayout({ titulo, children }) {
   return (
     <div className="editorial-grid-container animate-fade-in-up text-[#e8e8e8] font-serif">
-      
       {/* TÍTULO */}
       <h1 className="text-center text-4xl font-bold mb-10 text-[#D4AF37] text-glow">
         {titulo}
       </h1>
 
-      {/* GRID PRINCIPAL (2 COLUNAS) */}
+      {/* GRID PRINCIPAL (2 COLUNAS + ÍNDICE) */}
       <div className="editorial-grid-2cols">
-
         {/* COLUNA ESQUERDA (SIDEBAR) */}
         <aside className="editorial-sidebar-left">
+          {mostrarCardsLaterais && (
+            <>
+              {/* REFLEXÃO */}
+              <div className="editorial-box">
+                <h3 className="editorial-box-title">Reflexão</h3>
+                <p className="editorial-box-text">
+                  "A Palavra ilumina o caminho de quem caminha com o coração desperto."
+                </p>
+              </div>
 
-          {/* REFLEXÃO */}
-          <div className="editorial-box">
-            <h3 className="editorial-box-title">Reflexão</h3>
-            <p className="editorial-box-text">
-              "A Palavra ilumina o caminho de quem caminha com o coração desperto."
-            </p>
-          </div>
-
-          {/* VERSÍCULO DO DIA */}
-          <div className="editorial-box mt-6">
-            <h3 className="editorial-box-title">Versículo do Dia</h3>
-            <p className="italic opacity-90 leading-relaxed">
-              “Lâmpada para os meus pés é a Tua Palavra,<br />
-              e luz para o meu caminho.”<br />
-              — Salmo 119:105
-            </p>
-          </div>
-
+              {/* VERSÍCULO DO DIA */}
+              <div className="editorial-box mt-6">
+                <h3 className="editorial-box-title">Versículo do Dia</h3>
+                <p className="italic opacity-90 leading-relaxed">
+                  “Lâmpada para os meus pés é a Tua Palavra,<br />
+                  e luz para o meu caminho.”<br />
+                  — Salmo 119:105
+                </p>
+              </div>
+            </>
+          )}
         </aside>
 
         {/* COLUNA PRINCIPAL — CONTEÚDO */}
         <main className="editorial-main">
-          <div className="editorial-main-wrapper">
-            {children}
-          </div>
+          <div className="editorial-main-wrapper">{children}</div>
         </main>
 
+        {/* COLUNA DIREITA — ÍNDICE BÍBLICO (SE HOUVER) */}
+        {indice && (
+          <aside className="editorial-sidebar-right">
+            {indice}
+          </aside>
+        )}
       </div>
     </div>
   );

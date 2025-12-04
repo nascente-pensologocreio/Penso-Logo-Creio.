@@ -1,5 +1,6 @@
 // src/pages/CaminhoDasEscrituras.jsx
 import React from "react";
+
 import ConteudoDoDia from "../components/ConteudoDoDia.jsx";
 import EditorialLayout from "../layouts/EditorialLayout.jsx";
 import IndiceBiblico from "../components/IndiceBiblico.jsx";
@@ -15,7 +16,7 @@ export default function CaminhoDasEscrituras() {
     livro,
     capitulo,
     selecionarCapitulo,
-    limparSelecao
+    limparSelecao,
   } = useCapituloSelecionado();
 
   const mensagemPastoral = {
@@ -47,12 +48,13 @@ export default function CaminhoDasEscrituras() {
   };
 
   return (
-    <EditorialLayout
-      titulo="Caminho das Escrituras"
-      indice={<IndiceBiblico onSelecionarCapitulo={selecionarCapitulo} />}
-    >
+    <EditorialLayout titulo="Caminho das Escrituras">
+      {/* ÍNDICE BÍBLICO NO CORPO, LOGO APÓS O TÍTULO */}
+      <div className="mt-8 mb-10 caminho-indice-horizontal">
+        <IndiceBiblico onSelecionarCapitulo={selecionarCapitulo} />
+      </div>
 
-      {/* SE NENHUM CAPÍTULO FOI SELECIONADO */}
+      {/* CARDS DE HOMILIA (POSTAGEM CENTRAL + BOTÃO DE ALTERNÂNCIA) */}
       {!capitulo && (
         <EditorialSwap
           principal={mensagemPastoral}
@@ -60,7 +62,6 @@ export default function CaminhoDasEscrituras() {
         />
       )}
 
-      {/* SE CAPÍTULO FOI SELECIONADO */}
       {capitulo && (
         <>
           <EditorialSwap
@@ -76,7 +77,6 @@ export default function CaminhoDasEscrituras() {
           </button>
         </>
       )}
-
     </EditorialLayout>
   );
 }

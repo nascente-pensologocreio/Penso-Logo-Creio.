@@ -2,41 +2,58 @@
 import React, { useState } from "react";
 import "./editorial-swap.css";
 
-export default function EditorialSwap({ devocional, oracao }) {
+export default function EditorialSwap(props) {
+  const { principal, alternativo, devocional, oracao } = props;
+
   // PLACEHOLDER SE O ARQUIVO ESTIVER VAZIO
   const vazio = {
     titulo: "Conteúdo ainda não disponível",
+    resumo: "",
+    imageUrl: null,
     content:
       "<p style='color:#ccc; font-size:1rem;'>Este conteúdo ainda não foi preenchido.</p>",
-    imageUrl: null,
-    resumo: "",
+    component: null,
   };
 
-  // GARANTE QUE NUNCA RETORNA NULL
-  const dev = devocional || vazio;
-  const ora = oracao || vazio;
+  // Detecta modo de uso:
+  const modoComponent =
+    principal && alternativo && (principal.component || alternativo.component);
 
-  const [ativo, setAtivo] = useState("devocional");
+  // Dados normalizados para cada modo
+  const dev = devocional || principal || vazio;
+  const ora = oracao || alternativo || vazio;
+
+  const [ativo, setAtivo] = useState("primeiro");
 
   const trocar = () =>
-    setAtivo((a) => (a === "devocional" ? "oracao" : "devocional"));
+    setAtivo((a) => (a === "primeiro" ? "segundo" : "primeiro"));
 
-  const ativoConteudo = ativo === "devocional" ? dev : ora;
-  const cardConteudo = ativo === "devocional" ? ora : dev;
+  const ativoConteudo = ativo === "primeiro" ? dev : ora;
+  const cardConteudo = ativo === "primeiro" ? ora : dev;
 
   return (
     <div className="editorialSwapGrid">
       <div className="editorialPrincipal fadeIn">
-        <h2 className="editorialTitulo">{ativoConteudo.titulo}</h2>
+        <h2 className="editorialTitulo">
+          {ativoConteudo.titulo || vazio.titulo}
+        </h2>
 
-        <div
-          className="editorialConteudo"
-          dangerouslySetInnerHTML={{ __html: ativoConteudo.content }}
-        />
+        {modoComponent && ativoConteudo.component ? (
+          // MODO HOMILIA / ESTUDOS → renderiza componente React
+          <div className="editorialConteudo">{ativoConteudo.component}</div>
+        ) : (
+          // MODO DEVOCIONAL → renderiza HTML
+          <div
+            className="editorialConteudo"
+            dangerouslySetInnerHTML={{
+              __html: ativoConteudo.content || vazio.content,
+            }}
+          />
+        )}
       </div>
 
       <div className="editorialCard" onClick={trocar}>
-        <h3>{cardConteudo.titulo}</h3>
+        <h3>{cardConteudo.titulo || vazio.titulo}</h3>
 
         {cardConteudo.imageUrl && (
           <img

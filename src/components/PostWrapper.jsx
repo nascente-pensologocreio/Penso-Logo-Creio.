@@ -89,14 +89,6 @@ export default function PostWrapper({
         )}
 
         {/* corpo do conteúdo */}
-        {/* corpo do conteúdo */}
-         <div
-  className={`px-6 md:px-10 pb-10 ${tema.body}`}
-  style={{ ...tema.bodyStyle, outline: "3px solid magenta" }}
->
-  {children}
-</div>
-
         <div className={`px-6 md:px-10 pb-10 ${tema.body}`} style={tema.bodyStyle}>
           {children}
         </div>
