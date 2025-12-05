@@ -2,6 +2,8 @@
 // Carrega todas as facetas bíblicas (por capítulo) na ordem canônica do Menu Bar PLC – V5
 
 import { parseFrontmatter, markdownToHtml } from "./markdownProcessor.js";
+import livrosSBB from "../data/livrosSBB.js";
+
 const cache = new Map();
 
 /* ---------------------------------------------------------
@@ -18,9 +20,8 @@ const globBiblia = import.meta.glob("/src/content/biblia/**/*.md", {
    Necessário porque IndiceBiblico passa IDs como "rm", "1co", etc
    mas os diretórios usam nomes completos como "romanos", "1corintios"
 --------------------------------------------------------- */
-import livrosSBB from "../data/livrosSBB.js";
 const ID_PARA_PASTA = livrosSBB.reduce((acc, livro) => {
-  acc[livro.id] = livro.nome.toLowerCase().normalize("NFD").replace(/\u0300-\u036f/g, "").replace(/s+/g, "");
+  acc[livro.id] = livro.nome.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "");
   return acc;
 }, {});
 
@@ -46,13 +47,18 @@ export const ORDEM_FACETAS = [
 
 /* ---------------------------------------------------------
    Função Principal
-   loadBiblePosts(livro, capitulo)
+   loadBiblePosts(livro, capitulo) → retorna TODAS as facetas daquele capítulo
+   já ordenadas conforme o MENU BAR
+--------------------------------------------------------- */
+export function loadBiblePosts(livro, capitulo) {
   const cacheKey = `${livro}-${capitulo}`;
   if (cache.has(cacheKey)) return cache.get(cacheKey);
-export function loadBiblePosts(livro, capitulo) {
+
   let livroNormalizado = String(livro).toLowerCase().trim();
 
   // Se recebeu um ID (ex: "rm"), converte para nome da pasta (ex: "romanos")
+  if (ID_PARA_PASTA[livroNormalizado]) {
+    livroNormalizado = ID_PARA_PASTA[livroNormalizado];
   }
 
   const capituloStr = String(capitulo).padStart(2, "0");
@@ -108,9 +114,9 @@ export function loadBiblePosts(livro, capitulo) {
     }
 
     const tipo = tipoBruto;
-  if (import.meta.env.DEV && !ORDEM_FACETAS.includes(tipo)) {
-    console.warn(`Tipo desconhecido "${tipo}" em ${path}`);
-  }
+    if (import.meta.env.DEV && !ORDEM_FACETAS.includes(tipo)) {
+      console.warn(`Tipo desconhecido "${tipo}" em ${path}`);
+    }
 
     resultados.push({
       ...data,
@@ -134,8 +140,8 @@ export function loadBiblePosts(livro, capitulo) {
     const sb = ib === -1 ? ORDEM_FACETAS.length : ib;
     return sa - sb;
   });
-  cache.set(cacheKey, resultados);
 
+  cache.set(cacheKey, resultados);
   return resultados;
 }
 

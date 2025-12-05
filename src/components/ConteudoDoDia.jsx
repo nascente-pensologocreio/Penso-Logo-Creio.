@@ -1,7 +1,8 @@
 // src/components/ConteudoDoDia.jsx
 import React, { useEffect, useState } from "react";
 import { loadBiblePosts } from "../utils/loadBiblePosts.js";
-import PostWrapper from "./PostWrapper.jsx";
+// import PostWrapper from "./PostWrapper.jsx";
+import ArtigoBiblico from "./ArtigoBiblico.jsx";
 
 /**
  * ConteudoDoDia
@@ -120,19 +121,13 @@ export default function ConteudoDoDia({
     return render(post);
   }
 
-  // renderização padrão com PostWrapper (card em papel claro)
+  // renderização padrão agora com o layout de artigo da Home
   return (
-    <PostWrapper
+    <ArtigoBiblico
       tipo={post.tipo}
       titulo={titulo || post.titulo}
-      subtitulo={post.subtitulo}
-      versiculo={post.versiculo}
-      referencia={post.referencia}
-    >
-      <div
-        className="prose max-w-none"
-        dangerouslySetInnerHTML={{ __html: post.html }}
-      />
-    </PostWrapper>
+      imagemHero={post.imageUrl || post.imagem || null}
+      conteudoHtml={post.html}
+    />
   );
 }
