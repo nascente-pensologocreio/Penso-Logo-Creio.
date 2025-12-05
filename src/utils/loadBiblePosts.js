@@ -110,6 +110,9 @@ export function loadBiblePosts(livro, capitulo) {
     }
 
     const tipo = tipoBruto;
+  if (import.meta.env.DEV && !ORDEM_FACETAS.includes(tipo)) {
+    console.warn(`Tipo desconhecido "${tipo}" em ${path}`);
+  }
 
     resultados.push({
       ...data,
