@@ -2,6 +2,7 @@
 // Carrega todas as facetas bíblicas (por capítulo) na ordem canônica do Menu Bar PLC – V5
 
 import { parseFrontmatter, markdownToHtml } from "./markdownProcessor.js";
+const cache = new Map();
 
 /* ---------------------------------------------------------
    GLOB — captura TUDO que está em /src/content/biblia
@@ -46,15 +47,12 @@ export const ORDEM_FACETAS = [
 /* ---------------------------------------------------------
    Função Principal
    loadBiblePosts(livro, capitulo)
-   → retorna TODAS as facetas daquele capítulo
-     já ordenadas conforme o MENU BAR
---------------------------------------------------------- */
+  const cacheKey = `${livro}-${capitulo}`;
+  if (cache.has(cacheKey)) return cache.get(cacheKey);
 export function loadBiblePosts(livro, capitulo) {
   let livroNormalizado = String(livro).toLowerCase().trim();
 
   // Se recebeu um ID (ex: "rm"), converte para nome da pasta (ex: "romanos")
-  if (ID_PARA_PASTA[livroNormalizado]) {
-    livroNormalizado = ID_PARA_PASTA[livroNormalizado];
   }
 
   const capituloStr = String(capitulo).padStart(2, "0");
@@ -136,6 +134,7 @@ export function loadBiblePosts(livro, capitulo) {
     const sb = ib === -1 ? ORDEM_FACETAS.length : ib;
     return sa - sb;
   });
+  cache.set(cacheKey, resultados);
 
   return resultados;
 }
