@@ -2,8 +2,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { parseFrontmatter, markdownToHtml } from "../utils/markdownProcessor.js";
-
 export const ArticleCard = ({ post, delay = 0.1 }) => {
   if (!post || typeof post !== "object") return null;
 
@@ -131,18 +129,14 @@ export const ArticleCard = ({ post, delay = 0.1 }) => {
         )}
 
         <div className="article-content">
-          <h2 className="article-title">
-            {titulo}
-          </h2>
+          <h2 className="article-title">{titulo}</h2>
 
           <div className="article-meta">
             <span>{data}</span>
             <span style={{ color: "#D4AF37" }}>{readTime}</span>
           </div>
 
-          <p className="article-text">
-            {excerptFinal}
-          </p>
+          <p className="article-text">{excerptFinal}</p>
 
           <div className="article-footer">
             <Link

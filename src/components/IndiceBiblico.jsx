@@ -6,7 +6,6 @@ import "../styles/indice-biblico.css";
 export default function IndiceBiblico({ onSelecionarCapitulo }) {
   const [livroSelecionado, setLivroSelecionado] = useState(null);
 
-  // Agrupar por Testamento > Grupo
   const gruposPorTestamento = livrosSBB.reduce((acc, livro) => {
     if (!acc[livro.testamento]) acc[livro.testamento] = {};
     if (!acc[livro.testamento][livro.grupo]) acc[livro.testamento][livro.grupo] = [];
@@ -14,94 +13,60 @@ export default function IndiceBiblico({ onSelecionarCapitulo }) {
     return acc;
   }, {});
 
+  const handleLivroClick = (livroId) => {
+    setLivroSelecionado((atual) => (atual === livroId ? null : livroId));
+  };
+
   return (
-    <div className="indice-container animate-fade-in-up">
+    <div className="indice-container compacto animate-fade-in-up">
+      {["AT", "NT"].map((testamento) => (
+        <section key={testamento} className="testamento-bloco-inline">
+          <h2 className="testamento-titulo-inline">
+            {testamento === "AT" ? "Antigo Testamento" : "Novo Testamento"}
+          </h2>
 
-      {/* Antigo Testamento */}
-      <section className="testamento-bloco">
-        <h2 className="testamento-titulo">Antigo Testamento</h2>
+          <div className="grupos-linha">
+            {Object.entries(gruposPorTestamento[testamento]).map(([grupo, livros]) => (
+              <div key={grupo} className="grupo-inline">
+                <span className="grupo-label">{grupo}:</span>
 
-        {Object.entries(gruposPorTestamento["AT"]).map(([grupo, livros]) => (
-          <div key={grupo} className="grupo-bloco">
-            <h3 className="grupo-titulo">{grupo}</h3>
-
-            <div className="livros-grid">
-              {livros.map((livro) => (
-                <button
-                  key={livro.id}
-                  className={`livro-card ${livroSelecionado === livro.id ? "ativo" : ""}`}
-                  onClick={() => setLivroSelecionado(livro.id)}
-                >
-                  {livro.nome}
-                </button>
-              ))}
-            </div>
-
-            {/* Capítulos do livro selecionado */}
-            {livroSelecionado &&
-              livros.find((l) => l.id === livroSelecionado) && (
-                <div className="capitulos-grid">
-                  {[...Array(
-                    livros.find((l) => l.id === livroSelecionado).capitulos
-                  ).keys()].map((i) => (
+                <div className="livros-linha">
+                  {livros.map((livro) => (
                     <button
-                      key={i + 1}
-                      className="capitulo-card"
-                      onClick={() =>
-                        onSelecionarCapitulo(livroSelecionado, i + 1)
-                      }
+                      key={livro.id}
+                      className={`livro-pill ${
+                        livroSelecionado === livro.id ? "ativo" : ""
+                      }`}
+                      onClick={() => handleLivroClick(livro.id)}
                     >
-                      {i + 1}
+                      {livro.nome}
                     </button>
                   ))}
                 </div>
-              )}
+
+                {livroSelecionado &&
+                  livros.find((l) => l.id === livroSelecionado) && (
+                    <div className="capitulos-linha">
+                      {[...Array(
+                        livros.find((l) => l.id === livroSelecionado).capitulos
+                      ).keys()].map((i) => (
+                        <button
+                          key={i + 1}
+                          className="capitulo-pill"
+                          onClick={() =>
+                            onSelecionarCapitulo(livroSelecionado, i + 1)
+                          }
+                        >
+                          {i + 1}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+              </div>
+            ))}
           </div>
-        ))}
-      </section>
-
-      {/* Novo Testamento */}
-      <section className="testamento-bloco">
-        <h2 className="testamento-titulo">Novo Testamento</h2>
-
-        {Object.entries(gruposPorTestamento["NT"]).map(([grupo, livros]) => (
-          <div key={grupo} className="grupo-bloco">
-            <h3 className="grupo-titulo">{grupo}</h3>
-
-            <div className="livros-grid">
-              {livros.map((livro) => (
-                <button
-                  key={livro.id}
-                  className={`livro-card ${livroSelecionado === livro.id ? "ativo" : ""}`}
-                  onClick={() => setLivroSelecionado(livro.id)}
-                >
-                  {livro.nome}
-                </button>
-              ))}
-            </div>
-
-            {/* Capítulos */}
-            {livroSelecionado &&
-              livros.find((l) => l.id === livroSelecionado) && (
-                <div className="capitulos-grid">
-                  {[...Array(
-                    livros.find((l) => l.id === livroSelecionado).capitulos
-                  ).keys()].map((i) => (
-                    <button
-                      key={i + 1}
-                      className="capitulo-card"
-                      onClick={() =>
-                        onSelecionarCapitulo(livroSelecionado, i + 1)
-                      }
-                    >
-                      {i + 1}
-                    </button>
-                  ))}
-                </div>
-              )}
-          </div>
-        ))}
-      </section>
+        </section>
+      ))}
     </div>
   );
 }

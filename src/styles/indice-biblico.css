@@ -1,82 +1,133 @@
-.indice-container {
-  padding: 2rem;
-  margin-top: 2rem;
-}
+/* src/styles/indice-biblico.css */
 
-.testamento-bloco {
-  margin-bottom: 2.5rem;
-}
-
-.testamento-titulo {
-  font-size: 2rem;
-  color: #D4AF37;
-  margin-bottom: 1.5rem;
-  font-weight: bold;
-  text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
-  text-align: center;
-}
-
-.grupo-bloco {
-  margin-bottom: 2rem;
-}
-
-.grupo-titulo {
-  color: #e8e8e8;
-  font-size: 1.2rem;
-  opacity: 0.85;
-  margin-bottom: 0.7rem;
-  text-align: left;
-  border-left: 4px solid #D4AF37;
-  padding-left: 0.6rem;
-}
-
-.livros-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 0.7rem;
-}
-
-.livro-card {
-  background: rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(212, 175, 55, 0.25);
-  padding: 0.6rem 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-  color: #e8e8e8;
-  font-size: 1rem;
-  font-family: serif;
-}
-
-.livro-card:hover {
-  background: rgba(212, 175, 55, 0.2);
-  transform: translateY(-2px);
-}
-
-.livro-card.ativo {
-  background: rgba(212, 175, 55, 0.35);
-  border-color: rgba(212, 175, 55, 0.7);
-}
-
-.capitulos-grid {
+/* container geral, versão compacta para Homilia */
+.indice-container.compacto {
+  padding: 1.5rem 1.75rem;
   margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
-  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+
+  max-width: 980px;   /* largura máxima da faixa */
+  margin-left: auto;  /* centraliza horizontalmente */
+  margin-right: auto;
+
+  background: #051F20; /* fundo sólido da paleta */
+  border-radius: 14px;
+  border: 1px solid rgba(212, 175, 55, 0.35);
 }
 
-.capitulo-card {
-  background: rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(212, 175, 55, 0.3);
-  padding: 0.5rem 0;
-  border-radius: 5px;
-  color: #e8e8e8;
+/* bloco por testamento em linha */
+.testamento-bloco-inline + .testamento-bloco-inline {
+  margin-top: 1.25rem;
+  border-top: 1px solid rgba(212, 175, 55, 0.15);
+  padding-top: 1rem;
+}
+
+.testamento-titulo-inline {
+  font-size: 1.1rem;
+  color: #d4af37;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* linha de grupos (Pentateuco, Históricos etc.) */
+.grupos-linha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+
+/* cada grupo em linha */
+.grupo-inline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.7rem;
+}
+
+/* rótulo do grupo */
+.grupo-label {
+  font-size: 0.9rem;
+  color: #f0e6c0;
+  font-weight: 500;
+}
+
+/* livros em pills horizontais */
+.livros-linha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.livro-pill {
+  background: #163832;           /* verde médio da paleta */
+  border: 1px solid #235347;     /* borda um tom acima */
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
   cursor: pointer;
-  transition: 0.2s;
+  color: #DAF1DE;                /* texto bem claro */
+  font-size: 0.85rem;
   font-family: serif;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
 }
 
-.capitulo-card:hover {
-  background: rgba(212, 175, 55, 0.25);
-  transform: translateY(-2px);
+.livro-pill:hover {
+  background: #235347;
+  border-color: #8EB69B;         /* destaque suave */
+  transform: translateY(-1px);
+}
+
+.livro-pill.ativo {
+  background: #8EB69B;           /* verde claro em destaque */
+  border-color: #DAF1DE;
+  color: #051F20;                /* texto escuro para contraste */
+}
+
+/* capítulos em faixa logo abaixo do grupo ativo */
+.capitulos-linha {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 0.35rem;
+  margin-left: 2.2rem; /* alinhado após o rótulo do grupo */
+}
+
+.capitulo-pill {
+  background: #0B2B26;
+  border: 1px solid #235347;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  color: #DAF1DE;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.capitulo-pill:hover {
+  background: #235347;
+  border-color: #8EB69B;
+  transform: translateY(-1px);
+}
+
+/* responsivo: empilha melhor em telas pequenas */
+@media (max-width: 768px) {
+  .indice-container.compacto {
+    padding: 1.25rem 1rem;
+  }
+
+  .grupos-linha {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .capitulos-linha {
+    margin-left: 1.4rem;
+  }
 }

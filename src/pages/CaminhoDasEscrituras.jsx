@@ -49,33 +49,26 @@ export default function CaminhoDasEscrituras() {
 
   return (
     <EditorialLayout titulo="Caminho das Escrituras">
-      {/* ÍNDICE BÍBLICO NO CORPO, LOGO APÓS O TÍTULO */}
-      <div className="mt-8 mb-10 caminho-indice-horizontal">
+      {/* ÍNDICE BÍBLICO – faixa compacta logo abaixo do título */}
+      <div className="mt-6 mb-10 caminho-indice-horizontal">
         <IndiceBiblico onSelecionarCapitulo={selecionarCapitulo} />
       </div>
 
-      {/* CARDS DE HOMILIA (POSTAGEM CENTRAL + BOTÃO DE ALTERNÂNCIA) */}
-      {!capitulo && (
+      {/* CARDS DE HOMILIA */}
+      <div className="mt-4">
         <EditorialSwap
           principal={mensagemPastoral}
           alternativo={pregacaoTecnica}
         />
-      )}
+      </div>
 
       {capitulo && (
-        <>
-          <EditorialSwap
-            principal={mensagemPastoral}
-            alternativo={pregacaoTecnica}
-          />
-
-          <button
-            onClick={limparSelecao}
-            className="mt-12 text-sm text-[#D4AF37] underline opacity-80 hover:opacity-100"
-          >
-            Voltar para o Conteúdo do Dia
-          </button>
-        </>
+        <button
+          onClick={limparSelecao}
+          className="mt-12 text-sm text-[#D4AF37] underline opacity-80 hover:opacity-100"
+        >
+          Voltar para o Conteúdo do Dia
+        </button>
       )}
     </EditorialLayout>
   );

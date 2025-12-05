@@ -7,7 +7,8 @@ import PostWrapper from "./PostWrapper.jsx";
  * ConteudoDoDia
  *
  * Props:
- * - tipo: string (ex.: "mensagem-pastoral", "pregacao-tecnica", "estudo-tematico", "terminologias-chave", "temas-controversos", "devocional", "oracao")
+ * - tipo: string (ex.: "mensagem-pastoral", "pregacao-tecnica", "estudo-tematico",
+ *         "terminologias-chave", "temas-controversos", "devocional", "oracao")
  * - titulo: string opcional para o cabeçalho
  * - livro: string (nome do livro bíblico, ex.: "Romanos")
  * - capitulo: number | string (número do capítulo)
@@ -57,7 +58,8 @@ export default function ConteudoDoDia({
         if (cancelado) return;
 
         const encontrado = posts.find(
-          (p) => String(p.tipo).toLowerCase() === String(tipo).toLowerCase()
+          (p) =>
+            String(p.tipo).toLowerCase() === String(tipo).toLowerCase()
         );
 
         if (!encontrado) {
@@ -118,7 +120,7 @@ export default function ConteudoDoDia({
     return render(post);
   }
 
-  // renderização padrão com PostWrapper
+  // renderização padrão com PostWrapper (card em papel claro)
   return (
     <PostWrapper
       tipo={post.tipo}
@@ -128,7 +130,7 @@ export default function ConteudoDoDia({
       referencia={post.referencia}
     >
       <div
-        className="prose prose-invert max-w-none"
+        className="prose max-w-none"
         dangerouslySetInnerHTML={{ __html: post.html }}
       />
     </PostWrapper>

@@ -1,19 +1,11 @@
 // src/components/PostWrapper.jsx
 import React from "react";
 import "../styles/editorial-grid.css";
+import paperBg from "../assets/template-read-card-home.jpeg";
 
 /**
  * PostWrapper
- * - Aplica atmosfera visual, tipografia premium e microinterações
- * - Determina paleta e animações por tipo de conteúdo (categoria/template/tipo)
- *
- * Props:
- * - tipo: string opcional (devocional, pregacao, estudo, oracao, longo)
- * - titulo: string opcional para cabeçalho
- * - subtitulo: string opcional
- * - versiculo: string opcional (linha espiritual)
- * - referencia: string opcional (referência bíblica)
- * - children: conteúdo do post (template específico)
+ * - Atmosfera visual + card de leitura em "papel" claro
  */
 export default function PostWrapper({
   tipo,
@@ -24,72 +16,86 @@ export default function PostWrapper({
   children,
 }) {
   const t = normalizarTipo(tipo);
-
   const tema = temaPorTipo(t);
 
   return (
     <section
-      className={`min-h-screen px-6 md:px-12 py-14 relative overflow-hidden text-[#E8E8E8] ${tema.bg}`}
+      className={`px-6 md:px-12 py-14 relative overflow-hidden text-[#E8E8E8] ${tema.bg}`}
       style={tema.bgStyle}
     >
-      {/* luz difusa / atmosfera */}
+      {/* luz difusa / atmosfera do fundo da página */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={tema.atmosfera}
       />
 
-      {/* container */}
+      {/* cabeçalho acima do card de leitura */}
+      {(titulo || subtitulo || versiculo) && (
+        <header className="max-w-5xl mx-auto text-center px-6 md:px-10 pt-4 pb-8 relative z-10 animate-fade-in-down">
+          {titulo && (
+            <h1
+              className={`font-['Playfair_Display'] text-3xl md:text-5xl mb-2 ${tema.h1}`}
+              style={tema.h1Style}
+            >
+              {titulo}
+            </h1>
+          )}
+
+          {subtitulo && (
+            <h2
+              className={`text-lg md:text-xl italic ${tema.h2}`}
+              style={tema.h2Style}
+            >
+              {subtitulo}
+            </h2>
+          )}
+
+          {versiculo && (
+            <p
+              className={`mt-4 text-base md:text-lg ${tema.versiculo}`}
+              style={tema.versiculoStyle}
+            >
+              “{versiculo}”
+              {referencia && (
+                <>
+                  <br />
+                  <span className="text-sm italic opacity-75">
+                    ({referencia})
+                  </span>
+                </>
+              )}
+            </p>
+          )}
+
+          <div
+            className="h-[2px] w-24 mx-auto mt-4"
+            style={{ background: "rgba(212,175,55,0.6)" }}
+          />
+        </header>
+      )}
+
+      {/* CARD DE LEITURA EM PAPEL CLARO */}
       <article
-        className={`max-w-5xl mx-auto relative z-10 rounded-2xl border ${tema.cardBorder} ${tema.cardBg} shadow-2xl backdrop-blur-md transition-smooth`}
-        style={tema.cardStyle}
+        className="w-full max-w-5xl mx-auto relative z-10 shadow-2xl rounded-[18px] overflow-hidden border border-black/15"
+        style={{
+          backgroundImage: `url(${paperBg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center top",
+        }}
       >
-        {/* cabeçalho */}
-        {(titulo || subtitulo || versiculo) && (
-          <header className="text-center px-6 md:px-10 pt-10 pb-6 animate-fade-in-down">
-            {titulo && (
-              <h1
-                className={`font-['Playfair_Display'] text-3xl md:text-5xl mb-2 ${tema.h1}`}
-                style={tema.h1Style}
-              >
-                {titulo}
-              </h1>
-            )}
+        {/* véu suave: preserva textura, só reduz contraste */}
+        <div className="absolute inset-0 bg-[#F5F0E5]/12" />
 
-            {subtitulo && (
-              <h2
-                className={`text-lg md:text-xl italic ${tema.h2}`}
-                style={tema.h2Style}
-              >
-                {subtitulo}
-              </h2>
-            )}
-
-            {versiculo && (
-              <p
-                className={`mt-4 text-base md:text-lg ${tema.versiculo}`}
-                style={tema.versiculoStyle}
-              >
-                “{versiculo}”
-                {referencia && (
-                  <>
-                    <br />
-                    <span className="text-sm italic opacity-75">
-                      ({referencia})
-                    </span>
-                  </>
-                )}
-              </p>
-            )}
-
-            <div
-              className="h-[2px] w-24 mx-auto mt-4"
-              style={{ background: "rgba(212,175,55,0.6)" }}
-            />
-          </header>
-        )}
-
-        {/* corpo do conteúdo */}
-        <div className={`px-6 md:px-10 pb-10 ${tema.body}`} style={tema.bodyStyle}>
+        <div
+          className="relative px-8 md:px-12 py-10 text-justify"
+          style={{
+            fontFamily: "'Playfair Display', serif",
+            fontSize: "1.05rem",
+            lineHeight: 1.8,
+            color: "#111111",
+            textRendering: "optimizeLegibility",
+          }}
+        >
           {children}
         </div>
       </article>
@@ -111,28 +117,18 @@ function normalizarTipo(raw) {
 }
 
 function temaPorTipo(tipo) {
-  const baseGold = "#D4AF37";
-  const glassBorder = "border-[#D4AF37]/30";
   const cardCommon = {
-    cardBorder: glassBorder,
-    cardBg: "bg-gradient-to-b from-black/80 via-[#0a0a0a]/90 to-black/85",
-    cardStyle: {
-      boxShadow:
-        "0 0 25px rgba(212,175,55,0.18), inset 0 0 10px rgba(212,175,55,0.08)",
-    },
     h1: "text-gradient-animated",
     h1Style: {
       textShadow:
         "0 0 16px rgba(212,175,55,0.6), 0 0 6px rgba(255,255,255,0.25)",
     },
-    h2: "text-[#cfcfcf]",
+    h2: "text-[#f0e6c0]",
     h2Style: { opacity: 0.95 },
-    versiculo: "text-[#EDEDED]",
+    versiculo: "text-[#F7F3E8]",
     versiculoStyle: {
       textShadow: "0 0 8px rgba(212,175,55,0.35)",
     },
-    body: "text-justify leading-relaxed",
-    bodyStyle: { fontFamily: "'Inter', sans-serif" },
   };
 
   const temas = {
@@ -144,15 +140,6 @@ function temaPorTipo(tipo) {
           "radial-gradient(60% 60% at 50% 10%, rgba(212,175,55,0.10), transparent), radial-gradient(40% 40% at 10% 80%, rgba(60, 90, 70, 0.25), transparent)",
       },
       ...cardCommon,
-      h1Style: {
-        ...cardCommon.h1Style,
-        textShadow: "0 0 12px rgba(212,175,55,0.5)",
-      },
-      bodyStyle: {
-        ...cardCommon.bodyStyle,
-        textIndent: "1.3rem",
-        opacity: 0.94,
-      },
     },
     pregacao: {
       bg: "gradient-dark",
@@ -162,16 +149,6 @@ function temaPorTipo(tipo) {
           "radial-gradient(40% 40% at 50% 0%, rgba(212,175,55,0.18), transparent), radial-gradient(30% 30% at 90% 80%, rgba(212,175,55,0.10), transparent)",
       },
       ...cardCommon,
-      h1Style: {
-        ...cardCommon.h1Style,
-        textShadow: "0 0 20px rgba(212,175,55,0.7)",
-        letterSpacing: "0.02em",
-      },
-      bodyStyle: {
-        ...cardCommon.bodyStyle,
-        fontSize: "1.06rem",
-        opacity: 0.96,
-      },
     },
     estudo: {
       bg: "gradient-dark",
@@ -182,13 +159,6 @@ function temaPorTipo(tipo) {
       },
       ...cardCommon,
       h1: "text-[#D4AF37]",
-      h1Style: {
-        textShadow: "0 0 10px rgba(212,175,55,0.45)",
-      },
-      bodyStyle: {
-        ...cardCommon.bodyStyle,
-        opacity: 0.92,
-      },
     },
     oracao: {
       bg: "gradient-dark",
@@ -199,16 +169,6 @@ function temaPorTipo(tipo) {
       },
       ...cardCommon,
       h1: "text-[#D4AF37]",
-      h1Style: {
-        textShadow: "0 0 14px rgba(212,175,55,0.55)",
-        letterSpacing: "0.02em",
-      },
-      bodyStyle: {
-        ...cardCommon.bodyStyle,
-        textIndent: "1.5rem",
-        fontSize: "1.10rem",
-        opacity: 0.95,
-      },
     },
     longo: {
       bg: "gradient-dark",
@@ -219,7 +179,6 @@ function temaPorTipo(tipo) {
       },
       ...cardCommon,
       h1: "text-[#D4AF37]",
-      h1Style: { textShadow: "0 0 10px rgba(212,175,55,0.45)" },
     },
     generico: {
       bg: "gradient-dark",
@@ -230,7 +189,6 @@ function temaPorTipo(tipo) {
       },
       ...cardCommon,
       h1: "text-[#D4AF37]",
-      h1Style: { textShadow: "0 0 10px rgba(212,175,55,0.45)" },
     },
   };
 

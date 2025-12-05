@@ -1,9 +1,11 @@
 // src/modules/admin/carregarFirestore.js
 export async function carregarFirestore() {
-  const [{ doc, setDoc, collection }, { db }] = await Promise.all([
+  const [{ doc, setDoc, collection }, { getFirebaseDB }] = await Promise.all([
     import("firebase/firestore"),
-    import("../../firebase/config")
+    import("../../firebase/config.js"),
   ]);
+
+  const db = await getFirebaseDB();
 
   return { doc, setDoc, collection, db };
 }
