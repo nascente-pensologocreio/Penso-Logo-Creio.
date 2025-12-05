@@ -17,77 +17,11 @@ const globBiblia = import.meta.glob("/src/content/biblia/**/*.md", {
    Necessário porque IndiceBiblico passa IDs como "rm", "1co", etc
    mas os diretórios usam nomes completos como "romanos", "1corintios"
 --------------------------------------------------------- */
-const ID_PARA_PASTA = {
-  // Antigo Testamento
-  gn: "genesis",
-  ex: "exodo",
-  lv: "levitico",
-  nm: "numeros",
-  dt: "deuteronomio",
-  js: "josue",
-  jz: "juizes",
-  rt: "rute",
-  "1sm": "1samuel",
-  "2sm": "2samuel",
-  "1rs": "1reis",
-  "2rs": "2reis",
-  "1cr": "1cronicas",
-  "2cr": "2cronicas",
-  ed: "esdras",
-  ne: "neemias",
-  et: "ester",
-  job: "jo",
-  sl: "salmos",
-  pv: "proverbios",
-  ec: "eclesiastes",
-  ct: "cantares",
-  is: "isaias",
-  jr: "jeremias",
-  lm: "lamentacoes",
-  ez: "ezequiel",
-  dn: "daniel",
-  os: "oseias",
-  jl: "joel",
-  am: "amos",
-  ob: "obadias",
-  jn: "jonas",
-  mq: "miqueias",
-  na: "naum",
-  hc: "habacuque",
-  sf: "sofonias",
-  ag: "ageu",
-  zc: "zacarias",
-  ml: "malaquias",
-
-  // Novo Testamento
-  mt: "mateus",
-  mc: "marcos",
-  lc: "lucas",
-  jo: "joao",
-  at: "atos",
-  rm: "romanos",
-  "1co": "1corintios",
-  "2co": "2corintios",
-  gl: "galatas",
-  ef: "efesios",
-  fp: "filipenses",
-  cl: "colossenses",
-  "1ts": "1tessalonicenses",
-  "2ts": "2tessalonicenses",
-  "1tm": "1timoteo",
-  "2tm": "2timoteo",
-  tt: "tito",
-  fm: "filemom",
-  hb: "hebreus",
-  tg: "tiago",
-  "1pd": "1pedro",
-  "2pd": "2pedro",
-  "1jo": "1joao",
-  "2jo": "2joao",
-  "3jo": "3joao",
-  jd: "judas",
-  ap: "apocalipse",
-};
+import livrosSBB from "../data/livrosSBB.js";
+const ID_PARA_PASTA = livrosSBB.reduce((acc, livro) => {
+  acc[livro.id] = livro.nome.toLowerCase().normalize("NFD").replace(/\u0300-\u036f/g, "").replace(/s+/g, "");
+  return acc;
+}, {});
 
 /* ---------------------------------------------------------
    ORDEM CANÔNICA — exatamente conforme o MENU BAR
