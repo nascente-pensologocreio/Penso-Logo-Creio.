@@ -1,0 +1,212 @@
+/* ============================================================
+   GRID PRINCIPAL DA PÁGINA
+   ============================================================ */
+
+.devocional-diaria-grid {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+@media (max-width: 1024px) {
+  .devocional-diaria-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* ============================================================
+   COLUNA ESQUERDA – ARQUIVO DE DEVOCIONAIS
+   ============================================================ */
+
+.devocional-diaria-lista {
+  background: radial-gradient(circle at top left, #272012 0%, #050c0a 65%);
+  border-radius: 24px;
+  padding: 1.75rem 1.5rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(212, 175, 55, 0.45);
+}
+
+.devocional-diaria-lista-titulo {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #f4e6b3;
+  margin: 0 0 1rem 0;
+}
+
+.devocional-diaria-lista-titulo::after {
+  content: "";
+  display: block;
+  margin-top: 0.75rem;
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(212, 175, 55, 0.8),
+    rgba(212, 175, 55, 0)
+  );
+}
+
+.devocional-diaria-lista-itens {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* ============================================================
+   ITENS DA LISTA – CARDS ESQUERDA
+   ============================================================ */
+
+.devocional-diaria-item {
+  width: 100%;
+  border-radius: 16px;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  background: radial-gradient(circle at top left, #15110a 0%, #050806 70%);
+  color: #e7dec5;
+  text-align: left;
+
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  cursor: pointer;
+  transition:
+    background 0.2s ease-out,
+    border-color 0.2s ease-out,
+    transform 0.15s ease-out,
+    box-shadow 0.15s ease-out;
+}
+
+.devocional-diaria-item:hover {
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 0 16px rgba(212, 175, 55, 0.35);
+  transform: translateY(-1px);
+}
+
+.devocional-diaria-item--ativo {
+  background: radial-gradient(circle at top, #3b2c10 0%, #0b0904 70%);
+  border-color: rgba(212, 175, 55, 0.9);
+  box-shadow: 0 0 22px rgba(212, 175, 55, 0.55);
+}
+
+/* “Coluna” informativa – tipo do conteúdo */
+.devocional-diaria-item-tipo {
+  min-width: 110px;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.64rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  text-align: center;
+
+  color: #daf1de;
+  background: rgba(11, 43, 38, 0.96);
+  box-shadow: 0 0 0 1px rgba(142, 182, 155, 0.7);
+}
+
+.devocional-diaria-item--ativo .devocional-diaria-item-tipo {
+  background: linear-gradient(135deg, #daf1de, #8eb69b);
+  color: #051f20;
+}
+
+/* Bloco com título + data */
+.devocional-diaria-item-conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.devocional-diaria-item-titulo {
+  font-size: 0.8rem;
+  line-height: 1.3;
+  color: #f1e6c2;
+}
+
+.devocional-diaria-item-data {
+  margin-top: 0.1rem;
+  font-size: 0.7rem;
+  color: #b89c5b;
+}
+
+/* ============================================================
+   MENSAGENS DE FEEDBACK
+   ============================================================ */
+
+.devocional-diaria-feedback {
+  margin-top: 1rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  color: #e5ddc0;
+  background: rgba(5, 12, 10, 0.85);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+}
+
+.devocional-diaria-feedback.erro {
+  border-color: rgba(220, 38, 38, 0.7);
+  color: #fecaca;
+}
+
+.devocional-diaria-feedback.vazio {
+  opacity: 0.85;
+}
+
+/* ============================================================
+   COLUNA DIREITA – ÁREA DE LEITURA
+   ============================================================ */
+
+.devocional-diaria-leitura {
+  min-height: 320px;
+}
+
+/* Card que envolve o DevocionalTemplate */
+.devocional-diaria-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 34px;
+  padding: 0;
+
+  background-image: url("../assets/template-read-card-home.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+}
+
+/* Overlay escuro para garantir legibilidade do texto */
+.devocional-diaria-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      circle at top center,
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.92)
+    );
+  pointer-events: none;
+}
+
+/* Garante que o conteúdo do DevocionalTemplate fique acima do overlay */
+.devocional-diaria-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Pequena animação de entrada (usa fadeIn global, se existir) */
+.devocional-diaria-card.fadeIn {
+  animation: fadeIn 1.6s ease-out;
+}
+
+@media (max-width: 768px) {
+  .devocional-diaria-lista {
+    margin-bottom: 2rem;
+  }
+}

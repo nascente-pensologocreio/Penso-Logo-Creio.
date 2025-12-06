@@ -1,0 +1,15 @@
+const t=`---
+livro: "lucas"
+capitulo: "18"
+titulo: ""
+slug: "lucas-18-estudo-tematico"
+data: ""
+autor: "Capelão Nascente"
+tipo: "estudo-tematico"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{t as default};
+//# sourceMappingURL=estudo-tematico-BY06nDpZ.js.map

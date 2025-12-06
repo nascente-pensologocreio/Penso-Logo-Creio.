@@ -1,0 +1,2 @@
+import{j as o}from"./index-uLl4F_Hm.js";import"./react-vendor-Bx3nAkti.js";import{E as i,C as t}from"./EditorialLayout-B0KtSkVw.js";/* empty css                       */function n(){return o.jsx(i,{titulo:"Devocional Diária",children:o.jsx("div",{className:"editorial-centro",children:o.jsx(t,{tipo:"devocional",titulo:"Devocional do Dia"})})})}export{n as default};
+//# sourceMappingURL=DevocionalDiaria-3cssTaWA.js.map

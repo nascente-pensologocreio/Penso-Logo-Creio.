@@ -1,0 +1,15 @@
+const a=`---
+livro: "mateus"
+capitulo: "26"
+titulo: ""
+slug: "mateus-26-oracao"
+data: ""
+autor: "Capelão Nascente"
+tipo: "oracao"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{a as default};
+//# sourceMappingURL=oracao-Bcy4wihI.js.map

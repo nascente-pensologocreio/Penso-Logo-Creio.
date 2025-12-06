@@ -1,0 +1,15 @@
+const t=`---
+livro: "mateus"
+capitulo: "22"
+titulo: ""
+slug: "mateus-22-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{t as default};
+//# sourceMappingURL=temas-controversos-3RmmhVSI.js.map

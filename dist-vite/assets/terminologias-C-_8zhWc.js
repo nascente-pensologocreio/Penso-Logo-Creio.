@@ -1,0 +1,15 @@
+const n=`---
+livro: "juizes"
+capitulo: "16"
+titulo: ""
+slug: "juizes-16-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=terminologias-C-_8zhWc.js.map

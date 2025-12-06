@@ -1,0 +1,15 @@
+const n=`---
+livro: "1cronicas"
+capitulo: "18"
+titulo: ""
+slug: "1cronicas-18-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=temas-controversos-D29O7s8i.js.map

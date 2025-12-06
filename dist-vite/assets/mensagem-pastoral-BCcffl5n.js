@@ -1,0 +1,15 @@
+const n=`---
+livro: "2corintios"
+capitulo: "13"
+titulo: ""
+slug: "2corintios-13-mensagem-pastoral"
+data: ""
+autor: "Capelão Nascente"
+tipo: "mensagem-pastoral"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=mensagem-pastoral-BCcffl5n.js.map

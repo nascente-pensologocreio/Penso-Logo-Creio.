@@ -1,0 +1,124 @@
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+
+const links = [
+  { to: "/", label: "Início" },
+  { to: "/caminho-das-escrituras", label: "Caminho das Escrituras" },
+  { to: "/escadaria-do-conhecimento", label: "Escadaria do Conhecimento" },
+  { to: "/devocional-diaria", label: "Devocional Diária" },
+  { to: "/temas-da-vida", label: "Temas da Vida" },
+  { to: "/oracoes", label: "Oração" },
+  { to: "/contato", label: "Contato" },
+  { to: "/calendario", label: "🕰️ Calendário" },
+];
+
+export default function NavBar() {
+  const location = useLocation();
+  const path = location.pathname || "/";
+
+  return (
+    <header
+      className="w-full relative z-40"
+      style={{
+        background: "transparent",
+        backdropFilter: "blur(6px)",
+        WebkitBackdropFilter: "blur(6px)",
+      }}
+    >
+      <nav aria-label="Main navigation" className="w-full">
+        <div className="max-w-6xl mx-auto px-4">
+          <ul
+            className="flex flex-wrap justify-center items-center py-6"
+            style={{ margin: 0, padding: 0, listStyle: "none", gap: "3.2rem" }}
+          >
+            {links.map(({ to, label }) => {
+              const active = path === to || (to !== "/" && path.startsWith(to));
+              const isCalendario = to === "/calendario";
+
+              return (
+                <li key={to}>
+                  <Link
+                    to={to}
+                    className={`nav-link ${active ? "active" : ""} ${
+                      isCalendario ? "calendar-link" : ""
+                    }`}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <span>{label}</span>
+                    <span aria-hidden="true" className="nav-underline" />
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </nav>
+
+      <style>{`
+        .nav-link {
+          --gold: #D4AF37;
+          display: inline-block;
+          position: relative;
+          color: var(--gold);
+          font-family: 'Playfair Display', serif;
+          font-weight: 700;
+          font-size: 1.125rem;
+          letter-spacing: 0.6px;
+          padding: 6px 2px;
+          transition: all 220ms ease;
+          text-shadow: 0 0 6px rgba(212,175,55,0.25);
+        }
+
+        .nav-link:hover,
+        .nav-link:focus {
+          color: #fff;
+          transform: translateY(-3px) scale(1.05);
+          text-shadow:
+            0 0 4px #fff,
+            0 0 16px var(--gold),
+            0 0 28px rgba(212,175,55,0.95);
+        }
+
+        .nav-link.active {
+          color: #fff;
+          text-shadow:
+            0 0 5px #fff,
+            0 0 20px var(--gold),
+            0 0 32px rgba(212,175,55,0.95);
+        }
+
+        .nav-underline {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(90deg, transparent, var(--gold), transparent);
+          opacity: 0;
+          transform: scaleX(0.8);
+          transition: all 240ms ease;
+        }
+
+        .nav-link:hover .nav-underline,
+        .nav-link.active .nav-underline {
+          opacity: 1;
+          transform: scaleX(1);
+        }
+
+        .calendar-link {
+          border: 1px solid rgba(212,175,55,0.4);
+          border-radius: 8px;
+          padding: 6px 12px;
+          transition: all 260ms ease;
+          box-shadow: 0 0 10px rgba(212,175,55,0.15);
+        }
+
+        .calendar-link:hover {
+          background-color: rgba(212,175,55,0.08);
+          box-shadow: 0 0 20px rgba(212,175,55,0.25);
+        }
+      `}</style>
+    </header>
+  );
+}

@@ -1,0 +1,15 @@
+const a=`---
+livro: "zacarias"
+capitulo: "07"
+titulo: ""
+slug: "zacarias-07-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{a as default};
+//# sourceMappingURL=temas-controversos-CoOqC9Ip.js.map

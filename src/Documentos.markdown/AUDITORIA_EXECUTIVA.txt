@@ -1,0 +1,416 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║          AUDITORIA TÉCNICA - PROJETO PENSO LOGO CREIO SITE                    ║
+║                    Relatório Executivo Completo                               ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+┌─ SCORE DE SAÚDE DO PROJETO ─────────────────────────────────────────────────────┐
+│                                                                                  │
+│  Limpeza de Código      ████░░░░░░ 40%  [CRÍTICO - 4 componentes órfãos]       │
+│  Dependências           ███░░░░░░░ 30%  [CRÍTICO - 1 dep não usada]             │
+│  Estrutura              █████░░░░░ 50%  [ALTO - Pages órfãs]                   │
+│  CSS Organization       ███░░░░░░░ 30%  [ALTO - Muito duplicado]               │
+│  Consistência Naming    ██████░░░░ 60%  [MODERADO - Alguns nomes genéricos]    │
+│                                                                                  │
+│  SCORE GERAL: ★★★☆☆ 42% - AÇÃO IMEDIATA RECOMENDADA                           │
+└──────────────────────────────────────────────────────────────────────────────────┘
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║ SEÇÃO 1: COMPONENTES E LÓGICA                                                  ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+┌─ 1.1 BACKUP FILES ──────────────────────────────────────────────────────────────┐
+│ [✗] CRÍTICO: src/components/NavBar.jsx.bak (1.019 bytes)                        │
+│     └─ Cópia antiga de NavBar, nunca importada                                 │
+│     └─ AÇÃO: Deletar imediatamente                                             │
+└──────────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 1.2 COMPONENTES ÓRFÃOS (Definidos mas não utilizados) ───────────────────────┐
+│                                                                                 │
+│ [✗] PageTransition.jsx        (23 linhas)  - Wrapper de animação não usado    │
+│ [✗] VersiculoDestaque.jsx     (13 linhas)  - Card com versículo não usado     │
+│ [✗] Footer.jsx                (68 linhas)  - Footer alternativo não usado      │
+│ [✗] useScrollAnimation.js     (65 linhas)  - Hook não importado em lugar algum│
+│                                                                                 │
+│ IMPACTO: 169 linhas de código desnecessário                                    │
+│ AÇÃO: Deletar ou reimplementar com roteamento                                  │
+└──────────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 1.3 PÁGINAS ÓRFÃS (7 componentes de página) ────────────────────────────────┐
+│                                                                                 │
+│ [✗] /src/pages/Home.jsx                    - Placeholder, nunca roteado       │
+│ [✗] /src/pages/Post.jsx                    - Placeholder, nunca roteado       │
+│ [✗] /src/pages/CaminhoDasEscrituras.jsx    - Vazio, nunca roteado            │
+│ [✗] /src/pages/EscadariaDoConhecimento.jsx - Vazio, nunca roteado            │
+│ [✗] /src/pages/DevocionalDiaria.jsx        - Vazio, nunca roteado            │
+│ [✗] /src/pages/TemasDaVida.jsx             - Vazio, nunca roteado            │
+│ [✗] /src/pages/Contato.jsx                 - Tem conteúdo, nunca roteado      │
+│                                                                                 │
+│ IMPACTO: 32K em arquivos desnecessários                                        │
+│ CAUSA: React Router instalado mas BrowserRouter não tem <Route>                │
+│ AÇÃO: Implementar roteamento OU deletar /pages/                               │
+└──────────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 1.4 DUPLICAÇÃO DE LÓGICA ──────────────────────────────────────────────────────┐
+│                                                                                  │
+│ 1. ArticleCard.jsx (269 linhas) vs ReflexaoDiaria.jsx (224 linhas)             │
+│    ├─ Similaridade: 65-70%                                                      │
+│    ├─ Efeito spotlight com mouseMove praticamente idêntico                      │
+│    ├─ Variáveis CSS --mouse-x e --mouse-y iguais                               │
+│    ├─ Estilos hover praticamente copiados                                       │
+│    └─ SOLUÇÃO: Extrair BaseCard.jsx com lógica compartilhada                   │
+│                                                                                  │
+│ 2. Templates (DevocionalTemplate, EstudoTemplate, PregacaoTemplate)            │
+│    ├─ Similaridade: 70-75%                                                      │
+│    ├─ Estrutura header/section/footer duplicada                                │
+│    ├─ Tipografia e cores (#D4AF37) duplicadas                                  │
+│    ├─ Layout max-width idêntico                                                │
+│    └─ SOLUÇÃO: Criar PageTemplate.jsx base                                    │
+│                                                                                  │
+│ IMPACTO: ~140 linhas poderiam ser consolidadas                                 │
+└──────────────────────────────────────────────────────────────────────────────────┘
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║ SEÇÃO 2: DEPENDÊNCIAS E PACKAGE.JSON                                           ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+┌─ 2.1 ANÁLISE DE DEPENDÊNCIAS ────────────────────────────────────────────────┐
+│                                                                                │
+│ DEPENDENCIES (3 pacotes):                                                     │
+│ ├─ [✓] react                     ^19.1.1  - Última versão, OK                │
+│ ├─ [✓] react-dom                 ^19.1.1  - Sincronizada com React, OK       │
+│ └─ [✗] react-router-dom          ^7.9.5   - ❌ INSTALADO MAS NÃO USADO       │
+│                                                                               │
+│ ISSUE: BrowserRouter carregado em main.jsx mas ZERO Routes no projeto       │
+│        Nenhum <Link>, <Navigate>, <Route> em lugar nenhum                   │
+│        Todas as 7 páginas em /pages/ estão órfãs                           │
+│                                                                               │
+│ AÇÃO: Remover react-router-dom OU implementar roteamento completo           │
+│                                                                               │
+└────────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 2.2 VERSÕES DESATUALIZADAS ────────────────────────────────────────────────┐
+│                                                                               │
+│ CRÍTICO:                                                                      │
+│ [✗] vitest                       ^0.34.6  ← VERSÃO ABANDONADA               │
+│     └─ Atual: 1.6.0+                                                         │
+│     └─ Risco: Vulnerabilidades, incompatibilidade com Node 20+              │
+│     └─ AÇÃO: npm update vitest@latest                                        │
+│                                                                               │
+│ MODERADO:                                                                     │
+│ [⚠] autoprefixer                 ^10.4.21 ← Versão legado                   │
+│     └─ Atual: 12.0.0+                                                        │
+│     └─ AÇÃO: npm update autoprefixer                                         │
+│                                                                               │
+└────────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 2.3 DEVDEPENDENCIES - COMPLETO ────────────────────────────────────────────┐
+│                                                                               │
+│ ✓  @eslint/js               ^9.36.0   OK                                    │
+│ ✓  @tailwindcss/postcss     ^4.1.16   OK (Tailwind v4 moderno)              │
+│ ✓  @types/react             ^19.1.16  OK                                    │
+│ ✓  @types/react-dom         ^19.1.9   OK                                    │
+│ ✓  @vitejs/plugin-react     ^5.0.4    OK                                    │
+│ ⚠  autoprefixer             ^10.4.21  DESATUALIZADO (versão 10 → 12)         │
+│ ✓  eslint                   ^9.36.0   OK                                    │
+│ ✓  eslint-config-prettier   ^9.0.0    OK                                    │
+│ ✓  eslint-plugin-react-hooks ^5.2.0   OK                                    │
+│ ✓  eslint-plugin-react-refresh ^0.4.22 OK                                   │
+│ ✓  globals                  ^16.4.0   OK                                    │
+│ ✓  postcss                  ^8.5.6    OK                                    │
+│ ✓  prettier                 ^3.1.0    OK                                    │
+│ ✓  tailwindcss              ^4.1.16   OK                                    │
+│ ✗  vitest                   ^0.34.6   CRÍTICO DESATUALIZADO (0.34 → 1.6)     │
+│                                                                               │
+│ Total DevDependencies: 15 pacotes                                           │
+│ Desatualizados: 2 (13%)                                                     │
+│ Críticos: 1 (7%)                                                            │
+│ AÇÃO RECOMENDADA: npm audit fix && npm update                               │
+│                                                                               │
+└────────────────────────────────────────────────────────────────────────────────┘
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║ SEÇÃO 3: ESTRUTURA DE PASTAS                                                   ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+┌─ 3.1 ESTRUTURA COMPLETA COM ANÁLISE ─────────────────────────────────────────┐
+│                                                                                │
+│ src/  (1.640 linhas totais)                                                  │
+│ │                                                                             │
+│ ├─ 📄 App.jsx                          (295 linhas) ✓ Principal, bem-feito   │
+│ ├─ 📄 main.jsx                         (16 linhas)  ⚠ BrowserRouter não uso  │
+│ ├─ 🎨 App.css                          (93 linhas)  ⚠ Duplicado em JSX       │
+│ ├─ 🎨 index.css                        (23 linhas)  ✓ Minimal, bom           │
+│ │                                                                             │
+│ ├─ 📁 components/ (52K)                4 usados, 3 órfãos               │
+│ │  ├─ ArticleCard.jsx              (269 linhas) ✓ Usado em App           │
+│ │  ├─ ReflexaoDiaria.jsx           (224 linhas) ✓ Usado em App           │
+│ │  ├─ ArvoreDePostagens.jsx        (179 linhas) ✓ Usado em App           │
+│ │  ├─ NavBar.jsx                   (129 linhas) ✓ Usado em App           │
+│ │  ├─ Footer.jsx                   (68 linhas)  ✗ ÓRFÃO                 │
+│ │  ├─ PageTransition.jsx           (23 linhas)  ✗ ÓRFÃO                 │
+│ │  ├─ VersiculoDestaque.jsx        (13 linhas)  ✗ ÓRFÃO                 │
+│ │  ├─ NavBar.css                   (100 linhas) ⚠ Deveria estar em styles/ │
+│ │  └─ NavBar.jsx.bak               (backup)     ✗ DELETAR IMEDIATAMENTE     │
+│ │                                                                             │
+│ ├─ 📁 pages/ (32K) ⚠ CRÍTICO - TODOS ÓRFÃOS                         │
+│ │  ├─ Home.jsx                    (15 linhas) ✗ Não roteado            │
+│ │  ├─ Post.jsx                    (15 linhas) ✗ Não roteado            │
+│ │  ├─ CaminhoDasEscrituras.jsx    (15 linhas) ✗ Não roteado            │
+│ │  ├─ EscadariaDoConhecimento.jsx (15 linhas) ✗ Não roteado            │
+│ │  ├─ DevocionalDiaria.jsx        (15 linhas) ✗ Não roteado            │
+│ │  ├─ TemasDaVida.jsx             (15 linhas) ✗ Não roteado            │
+│ │  └─ Contato.jsx                 (23 linhas) ✗ Não roteado            │
+│ │                                                                             │
+│ ├─ 📁 templates/ (16K) ✓ Bem-estruturados                       │
+│ │  ├─ DevocionalTemplate.jsx      (34 linhas) ✓ Bem definido            │
+│ │  ├─ EstudoTemplate.jsx          (32 linhas) ✓ Bem definido            │
+│ │  └─ PregacaoTemplate.jsx        (41 linhas) ✓ Bem definido            │
+│ │                                                                             │
+│ ├─ 📁 hooks/ (8K)                 1 órfão                            │
+│ │  └─ useScrollAnimation.js       (65 linhas) ✗ ÓRFÃO                 │
+│ │                                                                             │
+│ ├─ 📁 utils/ (8K) ✓ Bem-estruturado                            │
+│ │  └─ getAllPosts.js              (37 linhas) ✓ Usado em ArvoreDePostagens  │
+│ │                                                                             │
+│ ├─ 📁 content/ (44K) ✓ Bem-estruturado                         │
+│ │  ├─ index.js                   (19 linhas) ✓ Exporta para App.jsx     │
+│ │  ├─ beijo-e-espada.js          (22 linhas) ✓ Principal post          │
+│ │  ├─ pomar-em-chamas.js         (17 linhas) ✓ Secundário 1            │
+│ │  ├─ quando-o-menos-e-mais.js   (17 linhas) ✓ Secundário 2            │
+│ │  ├─ devocional/                                                         │
+│ │  │  └─ clamor-da-alma.js       (9 linhas) ✓ Usado via getAllPosts    │
+│ │  ├─ estudos/                                                            │
+│ │  │  └─ dogma-e-misterio.js     (9 linhas) ✓ Usado via getAllPosts    │
+│ │  └─ teologia/                                                           │
+│ │     └─ beijo-e-espada.js       (9 linhas) ✓ Usado via getAllPosts    │
+│ │                                                                             │
+│ ├─ 🎨 styles/ (16K) ✓ Bem-organizado                            │
+│ │  └─ animations.css             (585 linhas) ✓ OK                     │
+│ │                                                                             │
+│ └─ 📁 assets/ (12K) ✓ Imagens e recursos                         │
+│                                                                             │
+│ PROBLEMAS DE ORGANIZAÇÃO:                                                  │
+│ 1. NavBar.css deveria estar em styles/                                   │
+│ 2. App.css deveria estar em styles/                                      │
+│ 3. beijo-e-espada.js duplicado (content/ e content/teologia/)            │
+│                                                                             │
+└────────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 3.2 ANÁLISE DE TAMANHO DOS DIRETÓRIOS ──────────────────────────────────────┐
+│                                                                               │
+│  52K  components/   - 9 arquivos, 4 usados, 5 problemáticos                │
+│  44K  content/      - Bem-organizado, conteúdo do site                      │
+│  32K  pages/        - Completamente órfão, 7 placeholders não-roteados      │
+│  16K  styles/       - Bem-organizado, mas CSS spilled em JSX                │
+│  16K  templates/    - Bem-estruturado, 3 componentes reutilizáveis          │
+│  12K  assets/       - Imagens e recursos                                    │
+│   8K  hooks/        - 1 arquivo órfão (useScrollAnimation)                  │
+│   8K  utils/        - 1 arquivo muito bem usado (getAllPosts)               │
+│  12K  App.jsx + CSS - Principal, mas com CSS duplicado                      │
+│                                                                               │
+│  TOTAL: ~224K (excluindo node_modules)                                      │
+│                                                                               │
+└────────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 3.3 PASTAS VAZIAS ──────────────────────────────────────────────────────────┐
+│                                                                               │
+│  ✓ Nenhuma pasta vazia detectada                                            │
+│                                                                               │
+└────────────────────────────────────────────────────────────────────────────────┘
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║ SEÇÃO 4: ANÁLISE DE CSS                                                        ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+┌─ 4.1 DUPLICAÇÃO DE ESTILOS INLINE ────────────────────────────────────────────┐
+│                                                                               │
+│ Instâncias de style={{}} em JSX:                                            │
+│   • 45+ instâncias de inline styles                                        │
+│   • #D4AF37 (cor dourada) aparece 50+ vezes                               │
+│   • text-shadow duplicado em 20+ lugares                                   │
+│   • backdrop-filter: blur(20px) repetido 5+ vezes                         │
+│   • rgba(212,175,55,*) border colors 15+ vezes                            │
+│                                                                               │
+│ EXEMPLO DE DUPLICAÇÃO:                                                     │
+│                                                                               │
+│  ArticleCard.jsx:                                                           │
+│    border: 1px solid rgba(212, 175, 55, 0.3)                              │
+│    backdrop-filter: blur(20px)                                             │
+│                                                                               │
+│  ReflexaoDiaria.jsx:                                                        │
+│    border: 1px solid rgba(212, 175, 55, 0.3)                              │
+│    backdrop-filter: blur(20px)                                             │
+│                                                                               │
+│  ArvoreDePostagens.jsx:                                                      │
+│    border: 1px solid rgba(212, 175, 55, 0.3)                              │
+│    backdrop-filter: blur(20px)                                             │
+│                                                                               │
+│  NavBar.jsx:                                                                │
+│    color: #D4AF37                                                           │
+│    text-shadow: 0 0 6px rgba(212,175,55,0.25)                             │
+│                                                                               │
+│ IMPACTO: ~25% do código poderia ser consolidado com CSS variables          │
+│                                                                               │
+└────────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 4.2 ARQUIVOS CSS ─────────────────────────────────────────────────────────┐
+│                                                                             │
+│ src/styles/animations.css          (585 linhas) ✓ Bem-organizado          │
+│ src/components/NavBar.css           (100 linhas) ⚠ Deveria estar em styles/ │
+│ src/App.css                         (93 linhas)  ⚠ Deveria estar em styles/  │
+│ src/index.css                       (23 linhas)  ✓ Minimal, bom            │
+│                                                                             │
+│ Total: 801 linhas CSS (excluindo Tailwind do node_modules)                 │
+│                                                                             │
+│ OBSERVAÇÃO:                                                               │
+│   • animations.css está bem organizado                                     │
+│   • App.css e NavBar.css têm estilos que já existem em JSX inline         │
+│   • Tailwind v4 está instalado mas subutilizado (muito CSS inline)        │
+│                                                                             │
+└────────────────────────────────────────────────────────────────────────────────┘
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║ SEÇÃO 5: INCONSISTÊNCIAS DE NOMENCLATURA                                       ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+┌─ 5.1 PROBLEMAS DE NAMING ──────────────────────────────────────────────────────┐
+│                                                                                  │
+│ 1. VARIÁVEIS GENÉRICAS                                                          │
+│    [✗] NavBar.jsx:39 - variável 'l' para 'link'                                │
+│        └─ Muito genérica, prejudica legibilidade                              │
+│        └─ AÇÃO: Renomear para 'link'                                           │
+│                                                                                  │
+│ 2. NOMES SEM SIGNIFICADO                                                        │
+│    [✗] content/index.js - post1, post2, post3                                  │
+│        └─ Sem significado semântico                                            │
+│        └─ AÇÃO: Usar nomes como mainArticle, secondaryArticles               │
+│                                                                                  │
+│ 3. FUNÇÃO MUITO SIMPLES                                                         │
+│    [✓] NavBar.jsx:20 - getPath() - OK, mas poderia ser inline                 │
+│        └─ Função com uma linha pode ser substituída por expressão             │
+│                                                                                  │
+│ 4. NOMES EM PORTUGUÊS                                                           │
+│    [✓] ArvoreDePostagens.jsx:10 - 'carregar'  OK, consistente com projeto    │
+│        └─ Projeto é em português, está correto                                │
+│                                                                                  │
+│ 5. INCONSISTÊNCIA camelCase vs kebab-case                                      │
+│    [✗] ReflexaoCard (componente) vs reflexao-card (CSS class)                 │
+│        └─ Padrão em React: Components em PascalCase, CSS classes em kebab    │
+│        └─ Projeto segue padrão correto mas há mistura                         │
+│        └─ AÇÃO: Padronizar CSS classes sempre em kebab-case                  │
+│                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────┘
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║ SEÇÃO 6: RESUMO EXECUTIVO E PLANO DE AÇÃO                                      ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+┌─ 6.1 PROBLEMAS POR SEVERIDADE ────────────────────────────────────────────────┐
+│                                                                                │
+│ ⛔ CRÍTICOS (Corrigir imediatamente):                                         │
+│    1. vitest@0.34.6 desatualizado (vulnerável)                              │
+│    2. react-router-dom instalado mas não usado                              │
+│    3. NavBar.jsx.bak arquivo backup deve ser deletado                      │
+│    4. 4 componentes órfãos sem uso (PageTransition, VersiculoDestaque,     │
+│       Footer, useScrollAnimation)                                           │
+│                                                                                │
+│ 🔴 ALTOS (Refatorar proximamente):                                            │
+│    1. 7 páginas em /pages/ completamente órfãs e sem roteamento             │
+│    2. BrowserRouter carregado mas sem Routes em lugar nenhum                │
+│    3. CSS duplicado em 45+ instâncias (~25% do código)                      │
+│    4. 65-70% similaridade entre ArticleCard e ReflexaoDiaria                │
+│    5. 70-75% similaridade entre Templates                                    │
+│                                                                                │
+│ 🟠 MODERADOS (Melhorar próximas iterações):                                  │
+│    1. Organização de arquivos (CSS espalhado)                               │
+│    2. Variáveis genéricas ('l' em NavBar)                                   │
+│    3. Nomes sem significado (post1, post2, post3)                           │
+│    4. autoprefixer@10 desatualizado (moderado)                              │
+│    5. Estilos inline em excesso (usar Tailwind puro)                        │
+│                                                                                │
+│ 🟡 BAIXOS (Nice-to-have):                                                     │
+│    1. Consolidar templates em base abstrata                                  │
+│    2. Usar CSS custom properties para cores                                  │
+│    3. Mover estilos para Tailwind                                            │
+│                                                                                │
+└──────────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 6.2 PLANO DE AÇÃO FASEADO ────────────────────────────────────────────────────┐
+│                                                                                │
+│ FASE 1: CLEANUP (1-2 horas)                                                  │
+│ ├─ [ ] Deletar: src/components/NavBar.jsx.bak                              │
+│ ├─ [ ] Deletar: src/components/PageTransition.jsx                          │
+│ ├─ [ ] Deletar: src/components/VersiculoDestaque.jsx                       │
+│ ├─ [ ] Deletar: src/components/Footer.jsx                                  │
+│ ├─ [ ] Deletar: src/hooks/useScrollAnimation.js                            │
+│ ├─ [ ] Atualizar vitest: npm update vitest@latest                         │
+│ └─ [ ] Atualizar autoprefixer: npm update autoprefixer                    │
+│                                                                                │
+│ FASE 2: DECISÃO SOBRE ROTEAMENTO (30 minutos)                              │
+│ ├─ [ ] OPÇÃO A: Implementar React Router completo                         │
+│ │       └─ Adicionar <Route> para cada página em /pages/                  │
+│ │       └─ Criar Layout wrapper com <Outlet>                              │
+│ │       └─ Testar navegação entre páginas                                 │
+│ │       └─ Tempo: ~8-10 horas                                             │
+│ │                                                                           │
+│ └─ [ ] OPÇÃO B: Remover React Router (se SPA pura é objetivo)             │
+│         └─ Deletar /pages/ directory                                       │
+│         └─ Remover react-router-dom de package.json                        │
+│         └─ Remover <BrowserRouter> de main.jsx                             │
+│         └─ npm uninstall react-router-dom                                  │
+│         └─ Tempo: ~15 minutos                                              │
+│                                                                                │
+│ FASE 3: REFATORAÇÃO CSS (4-6 horas)                                         │
+│ ├─ [ ] Criar arquivo de CSS variables (:root)                              │
+│ ├─ [ ] Mover App.css → src/styles/app.css                                  │
+│ ├─ [ ] Consolidar NavBar.css em NavBar.jsx ou Tailwind                     │
+│ ├─ [ ] Extrair cores e estilos duplicados para variables                   │
+│ ├─ [ ] Refatorar ArticleCard e ReflexaoDiaria para usar BaseCard           │
+│ └─ [ ] Consolidar templates em PageTemplate.jsx                            │
+│                                                                                │
+│ FASE 4: NOMEAÇÃO (30 minutos)                                               │
+│ ├─ [ ] Renomear 'l' → 'link' em NavBar.jsx                                 │
+│ ├─ [ ] Renomear post1, post2, post3 → nomes significativos                 │
+│ └─ [ ] Padronizar CSS class names em kebab-case                            │
+│                                                                                │
+│ FASE 5: VALIDAÇÃO (1 hora)                                                  │
+│ ├─ [ ] npm run lint                                                         │
+│ ├─ [ ] npm run format                                                       │
+│ ├─ [ ] npm run build                                                        │
+│ ├─ [ ] npm run preview                                                      │
+│ └─ [ ] Testar em navegador                                                 │
+│                                                                                │
+└──────────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 6.3 MÉTRICAS ESPERADAS PÓS-AUDITORIA ────────────────────────────────────────┐
+│                                                                                │
+│ Métrica                    | Antes  | Depois | Melhoria                       │
+│ ───────────────────────────|───────────────────────────────────────────────── │
+│ Linhas desnecessárias      | 169    | 0      | -100%                          │
+│ Componentes órfãos         | 4      | 0      | -100%                          │
+│ Páginas órfãs              | 7      | 0      | -100% (após decisão)           │
+│ Duplic. CSS inline         | 45+    | 10     | -77%                           │
+│ Artigos duplicados         | 2      | 1      | -50%                           │
+│ DevDep desatualizadas      | 2      | 0      | -100%                          │
+│ Dep não usadas             | 1      | 0      | -100%                          │
+│ Score Geral                | 42%    | 85%    | +103%                          │
+│                                                                                │
+└──────────────────────────────────────────────────────────────────────────────────┘
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║ CONCLUSÃO                                                                      ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+O projeto "Penso Logo Creio" possui uma base sólida de design e UI, mas sofre de:
+
+1. Organização técnica dispersa (orphaned files e componentes)
+2. Duplicação de código (~25% do projeto)
+3. Decisão arquitetural indefinida (React Router sem uso)
+4. Dependências desatualizado (vitest crítico)
+
+Com a execução do plano de ação acima, o projeto passaria de 42% para ~85% de
+saúde técnica em aproximadamente 10-15 horas de trabalho.
+
+PRIORIDADE MÁXIMA: Fase 1 (Cleanup) + Decisão sobre roteamento
+TIMELINE RECOMENDADO: Implementar Fase 1 + Fase 2 nas próximas 48 horas
+

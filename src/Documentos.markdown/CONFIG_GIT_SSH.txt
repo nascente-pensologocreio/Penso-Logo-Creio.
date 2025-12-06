@@ -1,0 +1,37 @@
+# CONFIGURAÇÃO GIT E SSH – PROJETO PENSO LOGO CREIO
+(Última atualização: 07/11/2025)
+
+👤 Usuário Git:
+Nascente
+
+📧 E-mail Git:
+nascente@pensologocreio.com.br
+
+📂 Repositório principal:
+git@github.com:Nascente-190/site-oficial-homepage-finished.git
+
+🔒 Autenticação:
+SSH (chave id_ed25519)
+
+🗝️ Chave pública adicionada no GitHub:
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHsKGa2qAUtDgG8WikqlJaZsXgpNLH41TwCAVCqCsG8H nascente@pensologocreio.com.br
+
+💾 Backup da chave privada:
+~/Documents/id_ed25519_backup
+
+🔐 Segurança:
+- Todos os tokens HTTPS antigos removidos
+- Autenticação GPG desativada e chave excluída
+- Nenhum arquivo de credencial em texto plano
+- Conexão GitHub → SSH testada e validada com sucesso:
+  “Hi Nascente-190! You've successfully authenticated, but GitHub does not provide shell access.”
+
+🧠 Observações:
+- Para restaurar em novo sistema:
+  1. Copiar id_ed25519 para ~/.ssh/
+  2. Executar: chmod 600 ~/.ssh/id_ed25519
+  3. Testar com: ssh -T git@github.com
+- Se reconfigurar o Git, usar:
+  git config --global user.name "Nascente"
+  git config --global user.email "nascente@pensologocreio.com.br"
+

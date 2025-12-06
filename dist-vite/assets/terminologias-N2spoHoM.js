@@ -1,0 +1,15 @@
+const n=`---
+livro: "ezequiel"
+capitulo: "09"
+titulo: ""
+slug: "ezequiel-09-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=terminologias-N2spoHoM.js.map

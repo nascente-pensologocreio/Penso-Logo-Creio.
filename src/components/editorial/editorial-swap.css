@@ -1,0 +1,233 @@
+/* GRID PRINCIPAL DO EDITORIAL SWAP */
+.editorialSwapGrid {
+  display: grid;
+  grid-template-columns: 4fr 1.2fr;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* COLUNA PRINCIPAL (conteúdo ativo) */
+.editorialPrincipal {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 10px;
+  padding: 2.75rem 3rem;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s;
+}
+
+.editorialPrincipal:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.75);
+  border-color: rgba(212, 175, 55, 0.55);
+}
+
+/* COLUNA LATERAL (cards de alternância) */
+.editorialLateral {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* CARD DE ALTERNÂNCIA (botão com recorte dourado) */
+.editorialCard {
+  position: relative;
+  background: radial-gradient(circle at top left, rgba(212, 175, 55, 0.15), rgba(0, 0, 0, 0.75));
+  border-radius: 14px;
+  padding: 2rem 2.25rem;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid rgba(212, 175, 55, 0.85); /* borda dourada bem visível */
+  box-shadow:
+    0 12px 26px rgba(0, 0, 0, 0.7),
+    0 0 20px rgba(212, 175, 55, 0.2); /* glow sutil externo */
+  transition:
+    transform 0.3s ease-out,
+    box-shadow 0.3s ease-out,
+    border-color 0.3s ease-out,
+    background 0.3s ease-out;
+}
+
+/* Recorte dourado interno (borda dupla) */
+.editorialCard::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 12px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  opacity: 0.8;
+  pointer-events: none;
+  transition: opacity 0.3s ease, border-color 0.3s ease;
+}
+
+/* Glow dinâmico no hover */
+.editorialCard::after {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  background: radial-gradient(circle at center, rgba(212, 175, 55, 0.4), transparent 60%);
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+  pointer-events: none;
+}
+
+/* HOVER: elevação + escala + brilho */
+.editorialCard:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.85),
+    0 0 35px rgba(255, 215, 100, 0.5); /* glow dourado intenso */
+  border-color: rgba(255, 215, 100, 0.95);
+  background: radial-gradient(circle at top left, rgba(240, 210, 120, 0.28), rgba(10, 10, 10, 0.9));
+}
+
+.editorialCard:hover::before {
+  opacity: 1;
+  border-color: rgba(255, 215, 100, 0.6);
+}
+
+.editorialCard:hover::after {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* ESTADO ATIVO (quando esse conteúdo está sendo exibido) */
+.editorialCard--active {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow:
+    0 22px 50px rgba(0, 0, 0, 0.95),
+    0 0 40px rgba(255, 225, 150, 0.7),
+    inset 0 0 20px rgba(212, 175, 55, 0.15); /* glow interno */
+  border-color: rgba(255, 235, 180, 1);
+  background: radial-gradient(circle at top left, rgba(255, 225, 150, 0.35), rgba(15, 15, 15, 0.95));
+}
+
+.editorialCard--active::before {
+  opacity: 1;
+  border-color: rgba(255, 235, 180, 0.7);
+}
+
+.editorialCard--active::after {
+  opacity: 0.9;
+  transform: scale(1.15);
+}
+
+/* Conteúdo interno do card */
+.editorialCard h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #f5e6b8;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.6);
+  letter-spacing: 0.03em;
+}
+
+.editorialCardResumo {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  opacity: 0.88;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.editorialCardHint {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.78rem;
+  color: rgba(212, 175, 55, 0.85);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* CABEÇALHO DO CONTEÚDO PRINCIPAL */
+.editorialHeader {
+  margin-bottom: 1.75rem;
+}
+
+.editorialHeaderTitulo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f5e6b8;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+
+.editorialHeaderSubtitulo {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  opacity: 0.9;
+}
+
+/* ÁREA DE CONTEÚDO INTERNO (onde entra o template) */
+.editorialConteudo {
+  margin-top: 1.5rem;
+}
+
+/* TIPOGRAFIA DO TEXTO RICO (markdown renderizado) */
+.editorialPrincipal .prose {
+  max-width: 100%;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Remove limite de largura quando usado no layout sem coluna esquerda */
+.editorial-grid-no-left .editorialPrincipal .prose {
+  max-width: 100%;
+}
+
+/* ESTADOS DE TRANSIÇÃO/ANIMAÇÃO */
+.editorialPrincipal.fadeIn {
+  animation: editorialFadeIn 0.35s ease-out;
+}
+
+@keyframes editorialFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+  .editorialSwapGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .editorialPrincipal {
+    padding: 1.6rem 1.5rem;
+  }
+
+  .editorialLateral {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+
+  .editorialCard {
+    min-width: 220px;
+  }
+
+  .editorialPrincipal .prose {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .editorialPrincipal {
+    padding: 1.4rem 1.2rem;
+  }
+
+  .editorialHeaderTitulo {
+    font-size: 1.2rem;
+  }
+}

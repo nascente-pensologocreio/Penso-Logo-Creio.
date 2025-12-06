@@ -1,0 +1,15 @@
+const n=`---
+livro: "2cronicas"
+capitulo: "20"
+titulo: ""
+slug: "2cronicas-20-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=terminologias-B2M2yziL.js.map

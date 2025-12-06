@@ -1,0 +1,15 @@
+const n=`---
+livro: "levitico"
+capitulo: "22"
+titulo: ""
+slug: "levitico-22-mensagem-pastoral"
+data: ""
+autor: "Capelão Nascente"
+tipo: "mensagem-pastoral"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=mensagem-pastoral-DmnFZ_zu.js.map

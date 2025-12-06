@@ -1,0 +1,15 @@
+const n=`---
+livro: "salmos"
+capitulo: "20"
+titulo: ""
+slug: "salmos-20-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=temas-controversos-D6LgHjwY.js.map

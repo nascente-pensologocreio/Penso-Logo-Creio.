@@ -1,0 +1,15 @@
+const o=`---
+livro: "proverbios"
+capitulo: "12"
+titulo: ""
+slug: "proverbios-12-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{o as default};
+//# sourceMappingURL=temas-controversos-DkDg0PnJ.js.map

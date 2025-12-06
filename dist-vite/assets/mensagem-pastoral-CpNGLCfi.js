@@ -1,0 +1,15 @@
+const a=`---
+livro: "zacarias"
+capitulo: "11"
+titulo: ""
+slug: "zacarias-11-mensagem-pastoral"
+data: ""
+autor: "Capelão Nascente"
+tipo: "mensagem-pastoral"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{a as default};
+//# sourceMappingURL=mensagem-pastoral-CpNGLCfi.js.map

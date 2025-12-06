@@ -1,0 +1,15 @@
+const a=`---
+livro: "isaias"
+capitulo: "12"
+titulo: ""
+slug: "isaias-12-mensagem-pastoral"
+data: ""
+autor: "Capelão Nascente"
+tipo: "mensagem-pastoral"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{a as default};
+//# sourceMappingURL=mensagem-pastoral-DeRSI3-K.js.map
