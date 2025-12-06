@@ -5,7 +5,6 @@ import IndiceBiblico from "../components/IndiceBiblico.jsx";
 import useCapituloSelecionado from "../hooks/useCapituloSelecionado.js";
 import EditorialSwapTriple from "../components/editorial/EditorialSwapTriple.jsx";
 
-import "../styles/editorial-grid.css";
 import "../styles/indice-biblico.css";
 import "../components/editorial/editorial-grid-triple.css";
 
@@ -14,7 +13,7 @@ export default function EscadariaDoConhecimento() {
     livro,
     capitulo,
     selecionarCapitulo,
-    limparSelecao
+    limparSelecao,
   } = useCapituloSelecionado();
 
   return (
@@ -22,21 +21,20 @@ export default function EscadariaDoConhecimento() {
       titulo="Escadaria do Conhecimento"
       indice={<IndiceBiblico onSelecionarCapitulo={selecionarCapitulo} />}
     >
-
       {/* SEM CAPÍTULO SELECIONADO → CONTEÚDO DO DIA */}
       {!capitulo && (
         <EditorialSwapTriple
           principal={{
             tipo: "estudo-tematico",
-            titulo: "Estudo Temático Geral"
+            titulo: "Estudo Temático Geral",
           }}
           lateral1={{
-            tipo: "terminologias",
-            titulo: "Terminologias-Chave"
+            tipo: "terminologias-chave",
+            titulo: "Terminologias-Chave",
           }}
           lateral2={{
             tipo: "temas-controversos",
-            titulo: "Temas Controversos"
+            titulo: "Temas Controversos",
           }}
         />
       )}
@@ -47,15 +45,15 @@ export default function EscadariaDoConhecimento() {
           <EditorialSwapTriple
             principal={{
               tipo: "estudo-tematico",
-              titulo: "Estudo Temático Geral"
+              titulo: "Estudo Temático Geral",
             }}
             lateral1={{
-              tipo: "terminologias",
-              titulo: "Terminologias-Chave"
+              tipo: "terminologias-chave",
+              titulo: "Terminologias-Chave",
             }}
             lateral2={{
               tipo: "temas-controversos",
-              titulo: "Temas Controversos"
+              titulo: "Temas Controversos",
             }}
             livro={livro}
             capitulo={capitulo}
@@ -69,7 +67,6 @@ export default function EscadariaDoConhecimento() {
           </button>
         </>
       )}
-
     </EditorialLayout>
   );
 }

@@ -3,7 +3,15 @@ import React from "react";
 import "../styles/editorial-grid.css";
 
 export default function EditorialLayout({ titulo, indice, children }) {
-  const mostrarCardsLaterais = titulo !== "Caminho das Escrituras";
+  const mostrarCardsLaterais =
+    titulo !== "Caminho das Escrituras" &&
+    titulo !== "Escadaria do Conhecimento";
+
+  const gridClass = mostrarCardsLaterais
+    ? "editorial-grid-2cols"
+    : indice
+    ? "editorial-grid-no-left"
+    : "editorial-grid-full";
 
   return (
     <div className="editorial-grid-container animate-fade-in-up text-[#e8e8e8] font-serif">
@@ -12,32 +20,32 @@ export default function EditorialLayout({ titulo, indice, children }) {
         {titulo}
       </h1>
 
-      {/* GRID PRINCIPAL (2 COLUNAS + ÍNDICE) */}
-      <div className="editorial-grid-2cols">
+      {/* GRID PRINCIPAL */}
+      <div className={gridClass}>
         {/* COLUNA ESQUERDA (SIDEBAR) */}
-        <aside className="editorial-sidebar-left">
-          {mostrarCardsLaterais && (
-            <>
-              {/* REFLEXÃO */}
-              <div className="editorial-box">
-                <h3 className="editorial-box-title">Reflexão</h3>
-                <p className="editorial-box-text">
-                  "A Palavra ilumina o caminho de quem caminha com o coração desperto."
-                </p>
-              </div>
+        {mostrarCardsLaterais && (
+          <aside className="editorial-sidebar-left">
+            {/* REFLEXÃO */}
+            <div className="editorial-box">
+              <h3 className="editorial-box-title">Reflexão</h3>
+              <p className="editorial-box-text">
+                "A Palavra ilumina o caminho de quem caminha com o coração
+                desperto."
+              </p>
+            </div>
 
-              {/* VERSÍCULO DO DIA */}
-              <div className="editorial-box mt-6">
-                <h3 className="editorial-box-title">Versículo do Dia</h3>
-                <p className="italic opacity-90 leading-relaxed">
-                  “Lâmpada para os meus pés é a Tua Palavra,<br />
-                  e luz para o meu caminho.”<br />
-                  — Salmo 119:105
-                </p>
-              </div>
-            </>
-          )}
-        </aside>
+            {/* VERSÍCULO DO DIA */}
+            <div className="editorial-box mt-6">
+              <h3 className="editorial-box-title">Versículo do Dia</h3>
+              <p className="italic opacity-90 leading-relaxed">
+                “Lâmpada para os meus pés é a Tua Palavra,
+                <br />
+                e luz para o meu caminho.”
+                <br />— Salmo 119:105
+              </p>
+            </div>
+          </aside>
+        )}
 
         {/* COLUNA PRINCIPAL — CONTEÚDO */}
         <main className="editorial-main">
@@ -45,11 +53,7 @@ export default function EditorialLayout({ titulo, indice, children }) {
         </main>
 
         {/* COLUNA DIREITA — ÍNDICE BÍBLICO (SE HOUVER) */}
-        {indice && (
-          <aside className="editorial-sidebar-right">
-            {indice}
-          </aside>
-        )}
+        {indice && <aside className="editorial-sidebar-right">{indice}</aside>}
       </div>
     </div>
   );

@@ -48,12 +48,10 @@ export default function CaminhoDasEscrituras() {
   };
 
   return (
-    <EditorialLayout titulo="Caminho das Escrituras">
-      {/* ÍNDICE BÍBLICO – faixa compacta logo abaixo do título */}
-      <div className="mt-6 mb-10 caminho-indice-horizontal">
-        <IndiceBiblico onSelecionarCapitulo={selecionarCapitulo} />
-      </div>
-
+    <EditorialLayout
+      titulo="Caminho das Escrituras"
+      indice={<IndiceBiblico onSelecionarCapitulo={selecionarCapitulo} />}
+    >
       {/* CARDS DE HOMILIA */}
       <div className="mt-4">
         <EditorialSwap

@@ -7,7 +7,7 @@ export default function EditorialSwapTriple({
   lateral1,
   lateral2,
   livro,
-  capitulo
+  capitulo,
 }) {
   // Estado do card selecionado
   const [selecionado, setSelecionado] = useState(null);
@@ -28,16 +28,34 @@ export default function EditorialSwapTriple({
     }
   };
 
+  // Resolve o rótulo amigável para o título exibido
+  const resolverTitulo = () => {
+    if (!selecionado) return null;
+
+    switch (selecionado) {
+      case "principal":
+        return principal.titulo;
+      case "lateral1":
+        return lateral1.titulo;
+      case "lateral2":
+        return lateral2.titulo;
+      default:
+        return null;
+    }
+  };
+
   const tipoSelecionado = resolverTipo();
+  const tituloSelecionado = resolverTitulo();
 
   return (
     <div className="w-full flex flex-col md:flex-row gap-10 mt-16">
-
       {/* COLUNA FINAL: 3 CARDS */}
       <aside className="md:w-1/4 flex flex-col gap-6">
         {/* CARD 1 */}
         <button
-          className={`editorial-card ${selecionado === "principal" ? "card-ativo" : ""}`}
+          className={`editorial-card ${
+            selecionado === "principal" ? "card-ativo" : ""
+          }`}
           onClick={() => setSelecionado("principal")}
         >
           <h3 className="editorial-card-title">{principal.titulo}</h3>
@@ -45,7 +63,9 @@ export default function EditorialSwapTriple({
 
         {/* CARD 2 */}
         <button
-          className={`editorial-card ${selecionado === "lateral1" ? "card-ativo" : ""}`}
+          className={`editorial-card ${
+            selecionado === "lateral1" ? "card-ativo" : ""
+          }`}
           onClick={() => setSelecionado("lateral1")}
         >
           <h3 className="editorial-card-title">{lateral1.titulo}</h3>
@@ -53,7 +73,9 @@ export default function EditorialSwapTriple({
 
         {/* CARD 3 */}
         <button
-          className={`editorial-card ${selecionado === "lateral2" ? "card-ativo" : ""}`}
+          className={`editorial-card ${
+            selecionado === "lateral2" ? "card-ativo" : ""
+          }`}
           onClick={() => setSelecionado("lateral2")}
         >
           <h3 className="editorial-card-title">{lateral2.titulo}</h3>
@@ -62,7 +84,6 @@ export default function EditorialSwapTriple({
 
       {/* ÁREA CENTRAL */}
       <main className="md:w-3/4 editorial-main-area">
-
         {/* Nada selecionado ainda → mostra apenas o capítulo */}
         {!tipoSelecionado && (
           <div className="text-center opacity-70 py-20 font-serif">
@@ -82,13 +103,12 @@ export default function EditorialSwapTriple({
         {tipoSelecionado && (
           <ConteudoDoDia
             tipo={tipoSelecionado}
-            titulo={tipoSelecionado}
+            titulo={tituloSelecionado}
             livro={livro}
             capitulo={capitulo}
           />
         )}
       </main>
-
     </div>
   );
 }
