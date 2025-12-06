@@ -31,8 +31,7 @@ export default function Home() {
     postsHome.length === 3
       ? [...postsHome].sort(
           (a, b) =>
-            ordemDesejada.indexOf(a.tipo) -
-            ordemDesejada.indexOf(b.tipo)
+            ordemDesejada.indexOf(a.tipo) - ordemDesejada.indexOf(b.tipo)
         )
       : postsHome;
 
@@ -83,15 +82,10 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
           <div className="lg:col-span-3">
             <div className="flex flex-col items-center gap-[6rem] w-full">
-
               {/* CARD PRINCIPAL */}
               <div className="w-full flex justify-center">
                 {mainPost && (
-                  <ArticleCard
-                    post={mainPost}
-                    isMain={true}
-                    delay={0.1}
-                  />
+                  <ArticleCard post={mainPost} isMain={true} delay={0.1} />
                 )}
               </div>
 
@@ -116,7 +110,6 @@ export default function Home() {
                   />
                 </div>
               )}
-
             </div>
           </div>
         </div>

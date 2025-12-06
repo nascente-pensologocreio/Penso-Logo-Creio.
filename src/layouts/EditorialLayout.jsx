@@ -5,7 +5,8 @@ import "../styles/editorial-grid.css";
 export default function EditorialLayout({ titulo, indice, children }) {
   const mostrarCardsLaterais =
     titulo !== "Caminho das Escrituras" &&
-    titulo !== "Escadaria do Conhecimento";
+    titulo !== "Escadaria do Conhecimento" &&
+    titulo !== "Devocional Diária";
 
   const gridClass = mostrarCardsLaterais
     ? "editorial-grid-2cols"
