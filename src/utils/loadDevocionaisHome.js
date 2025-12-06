@@ -21,11 +21,13 @@ export async function loadDevocionaisHome(options = {}) {
     return cache.get(cacheKey);
   }
 
-  // Captura tudo em /src/content/home/devocionais-*.md
-  // e também os arquivos antigos diretos, para compatibilidade.
+  // Captura os 3 arquivos principais da Home
+  // e também conteúdos históricos em subpastas
   const globHome = import.meta.glob(
     [
-      "/src/content/home/*.md",
+      "/src/content/home/devocional.md",
+      "/src/content/home/mensagem-pastoral.md",
+      "/src/content/home/oracao.md",
       "/src/content/home/devocionais/*.md",
       "/src/content/home/mensagens/*.md",
       "/src/content/home/oracoes/*.md",

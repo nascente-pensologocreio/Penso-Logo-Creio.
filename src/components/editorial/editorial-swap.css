@@ -11,7 +11,7 @@
   background: rgba(0, 0, 0, 0.35);
   border: 1px solid rgba(212, 175, 55, 0.3);
   border-radius: 10px;
-  padding: 2rem 2.25rem;
+  padding: 2.75rem 3rem;
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s;
@@ -35,7 +35,7 @@
   position: relative;
   background: radial-gradient(circle at top left, rgba(212, 175, 55, 0.15), rgba(0, 0, 0, 0.75));
   border-radius: 14px;
-  padding: 1.6rem 1.9rem;
+  padding: 2rem 2.25rem;
   cursor: pointer;
   overflow: hidden;
   border: 2px solid rgba(212, 175, 55, 0.85); /* borda dourada bem visível */
@@ -116,7 +116,7 @@
 
 /* Conteúdo interno do card */
 .editorialCard h3 {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: #f5e6b8;
   margin-bottom: 0.5rem;
@@ -169,8 +169,8 @@
 
 /* TIPOGRAFIA DO TEXTO RICO (markdown renderizado) */
 .editorialPrincipal .prose {
-  max-width: 60rem;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0;
   font-size: 1rem;
   line-height: 1.8;
 }
