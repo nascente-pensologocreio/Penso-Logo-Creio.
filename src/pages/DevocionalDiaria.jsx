@@ -18,18 +18,27 @@ export default function DevocionalDiaria() {
     async function carregar() {
       try {
         setEstado("carregando");
-        const todos = await loadDevocionaisHome({ tipo: "devocional" });
+
+        // Traz TODOS os conteúdos da home (devocional, mensagem-pastoral, oracao)
+        const todos = await loadDevocionaisHome();
 
         if (cancelado) return;
 
-        if (!todos || todos.length === 0) {
+        // Mantém apenas os 3 tipos que devem compor o arquivo
+        const validos = (todos || []).filter((post) =>
+          ["devocional", "mensagem-pastoral", "oracao"].includes(
+            (post.tipo || "").toLowerCase()
+          )
+        );
+
+        if (!validos || validos.length === 0) {
           setPosts([]);
           setEstado("vazio");
           return;
         }
 
-        setPosts(todos);
-        setSelecionadoSlug(todos[0].slug);
+        setPosts(validos);
+        setSelecionadoSlug(validos[0].slug);
         setEstado("ok");
       } catch (err) {
         console.error("Erro ao carregar histórico de devocionais da Home:", err);

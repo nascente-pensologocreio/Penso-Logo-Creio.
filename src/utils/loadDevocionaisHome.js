@@ -15,7 +15,8 @@ const cache = new Map();
  */
 export async function loadDevocionaisHome(options = {}) {
   const { tipo = null } = options;
-  const cacheKey = tipo ? `home-${tipo}` : "home-todos";
+  const tipoNormalizadoFiltro = tipo ? normalizarTipo(tipo) : null;
+  const cacheKey = tipoNormalizadoFiltro ? `home-${tipoNormalizadoFiltro}` : "home-todos";
 
   if (cache.has(cacheKey)) {
     return cache.get(cacheKey);
@@ -46,34 +47,41 @@ export async function loadDevocionaisHome(options = {}) {
 
     const { data, content } = parseFrontmatter(raw);
 
-    // Normalização leve de tipo
-    let tipoBruto = (data.tipo || "").toLowerCase().trim();
+    // Normaliza tipo (front-matter + nome do arquivo)
+    const tipoBruto = (data.tipo || "").toString();
+    let tipoNormalizado = normalizarTipo(tipoBruto);
 
-    if (!tipoBruto) {
-      // tenta inferir pelo nome do arquivo
-      const filename = path.split("/").pop() || "";
-      if (filename.includes("devocional")) {
-        tipoBruto = "devocional";
-      } else if (filename.includes("mensagem")) {
-        tipoBruto = "mensagem-pastoral";
-      } else if (filename.includes("oracao") || filename.includes("oração")) {
-        tipoBruto = "oracao";
+    if (!tipoNormalizado) {
+      const filename = (path.split("/").pop() || "").toLowerCase();
+      const filenameNormalizado = removerAcentos(filename);
+
+      if (filenameNormalizado.includes("devocional")) {
+        tipoNormalizado = "devocional";
+      } else if (
+        filenameNormalizado.includes("mensagem") ||
+        filenameNormalizado.includes("pastoral")
+      ) {
+        tipoNormalizado = "mensagem-pastoral";
+      } else if (filenameNormalizado.includes("oracao")) {
+        tipoNormalizado = "oracao";
       }
     }
 
     // filtro por tipo, se solicitado
-    if (tipo && tipoBruto !== tipo) continue;
+    if (tipoNormalizadoFiltro && tipoNormalizado !== tipoNormalizadoFiltro) {
+      continue;
+    }
 
     const slug =
       data.slug ||
-      filenameToSlug(path, tipoBruto || "devocional") ||
+      filenameToSlug(path, tipoNormalizado || "devocional") ||
       `${Date.now()}-${Math.random().toString(36).slice(2)}`;
 
     const dataPublicacao = normalizarData(data.data);
 
     resultados.push({
       ...data,
-      tipo: tipoBruto || data.tipo || "devocional",
+      tipo: tipoNormalizado || data.tipo || "devocional",
       origem: data.origem || "home",
       slug,
       path,
@@ -99,10 +107,8 @@ function filenameToSlug(path, fallbackTipo) {
   try {
     const filename = path.split("/").pop().replace(".md", "");
     if (!filename) return `${fallbackTipo}-${Date.now()}`;
-    return filename
+    return removerAcentos(filename)
       .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/(^-|-$)+/g, "");
   } catch {
@@ -119,4 +125,32 @@ function normalizarData(valor) {
     if (!Number.isNaN(d.getTime())) return d;
   }
   return null;
+}
+
+function removerAcentos(texto = "") {
+  return texto
+    .toString()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
+function normalizarTipo(tipo = "") {
+  let t = removerAcentos(tipo.toString().toLowerCase().trim());
+
+  if (!t) return "";
+
+  // Normalizações conhecidas
+  if (t === "mensagem" || t === "mensagempastoral" || t === "pastoral") {
+    return "mensagem-pastoral";
+  }
+
+  if (t === "oracao" || t === "oracaododia") {
+    return "oracao";
+  }
+
+  if (t === "devocional" || t === "devocionaldiario") {
+    return "devocional";
+  }
+
+  return t;
 }
