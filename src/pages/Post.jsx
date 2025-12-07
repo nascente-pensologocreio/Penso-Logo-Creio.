@@ -188,7 +188,7 @@ export default function Post() {
           {/* === VÉU DE LEITURA === */}
           <div
             style={{
-              backgroundColor: "rgba(255, 255, 255, 0.23)", 
+              backgroundColor: "rgba(49, 47, 47, 0.06)", 
               padding: "1rem",
               borderRadius: "0.5rem",
             }}

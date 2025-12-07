@@ -226,12 +226,13 @@ export default function DevocionalDiaria() {
 
           {estado === "ok" && selecionado && (
             <article className="devocional-diaria-card fadeIn">
+              {/* HERO + TÍTULO – imagem grande */}
               <section
                 style={{
                   position: "relative",
                   width: "100%",
-                  height: "60vh",
-                  minHeight: "360px",
+                  height: "80vh",      // hero alto
+                  minHeight: "600px",
                   overflow: "hidden",
                   backgroundColor: "#000",
                 }}
@@ -261,7 +262,7 @@ export default function DevocionalDiaria() {
                     left: "50%",
                     transform: "translateX(-50%)",
                     width: "100%",
-                    maxWidth: "880px",
+                    maxWidth: "1180px", // título largo
                     padding: "0 1rem",
                     textAlign: "center",
                   }}
@@ -279,12 +280,13 @@ export default function DevocionalDiaria() {
                 </div>
               </section>
 
+              {/* CORPO DO TEXTO – papel largo */}
               <article
                 style={{
                   width: "100%",
-                  maxWidth: "880px",
+                  maxWidth: "1180px",
                   margin: "0 auto",
-                  padding: "2.5rem 2rem 4.5rem",
+                  padding: "2.5rem 0.5rem 4.5rem",
                 }}
               >
                 <div
@@ -299,10 +301,11 @@ export default function DevocionalDiaria() {
                     padding: "clamp(2rem, 5vw, 3rem)",
                   }}
                 >
+                  {/* VÉU DE LEITURA */}
                   <div
                     style={{
-                      backgroundColor: "rgba(255, 255, 255, 0.23)",
-                      padding: "1rem",
+                      backgroundColor: "rgba(49, 47, 47, 0.06)", 
+                      padding: "6rem",
                       borderRadius: "0.5rem",
                     }}
                   >
@@ -312,10 +315,10 @@ export default function DevocionalDiaria() {
                         .devocional-diaria-headings h3 {
                           color: #0A0A0A !important;
                           font-family: Georgia, 'Times New Roman', serif !important, bold;
-                          font-weight: 400 !important;
+                          font-weight: 300 !important;
                           letter-spacing: 0.2px;
-                          margin-top: 1.35rem;
-                          margin-bottom: 0.55rem;
+                          margin-top: 0.50rem;
+                          margin-bottom: 1.50rem;
                           text-shadow: 0 0 1px rgba(255, 255, 255, 0);
                         }
 
@@ -336,7 +339,7 @@ export default function DevocionalDiaria() {
                         fontFamily: "Georgia, 'Times New Roman', serif",
                         fontWeight: 300,
                         fontSize: "1.10rem",
-                        lineHeight: 1.6,
+                        lineHeight: 0.8,
                         letterSpacing: "0.03px",
                         wordSpacing: "0.5px",
                         textShadow:

@@ -16,19 +16,29 @@ const cache = new Map();
 export async function loadDevocionaisHome(options = {}) {
   const { tipo = null } = options;
   const tipoNormalizadoFiltro = tipo ? normalizarTipo(tipo) : null;
-  const cacheKey = tipoNormalizadoFiltro ? `home-${tipoNormalizadoFiltro}` : "home-todos";
+  const cacheKey = tipoNormalizadoFiltro
+    ? `home-${tipoNormalizadoFiltro}`
+    : "home-todos";
 
   if (cache.has(cacheKey)) {
     return cache.get(cacheKey);
   }
 
   // Captura os 3 arquivos principais da Home
-  // e também conteúdos históricos em subpastas
+  // e também conteúdos históricos em subpastas de calendário
   const globHome = import.meta.glob(
     [
+      // trio atual da Home
       "/src/content/home/devocional.md",
       "/src/content/home/mensagem-pastoral.md",
       "/src/content/home/oracao.md",
+
+      // histórico em calendar/
+      "/src/content/home/calendar/devocional/*.md",
+      "/src/content/home/calendar/mensagem-pastoral/*.md",
+      "/src/content/home/calendar/oracao/*.md",
+
+      // compatibilidade opcional com pastas antigas, se algum dia existirem
       "/src/content/home/devocionais/*.md",
       "/src/content/home/mensagens/*.md",
       "/src/content/home/oracoes/*.md",
