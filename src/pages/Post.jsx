@@ -7,8 +7,6 @@ import { useParams } from "react-router-dom";
 import "../styles/post-page.css";
 
 import { parseFrontmatter, markdownToHtml } from "../utils/markdownProcessor.js";
-
-// Firebase LAZY
 import { getFirebaseDB } from "../firebase/config";
 
 // Loader-local LAZY
@@ -92,51 +90,48 @@ export default function Post() {
       className="post-page-main"
       style={{
         minHeight: "100vh",
-        backgroundColor: "rgba(15, 39, 34, 0.77)",  // NÃO ALTERADO
+        backgroundColor: "rgba(15, 39, 34, 0.77)",
         color: "#EDEDED",
       }}
     >
       {/* === HERO + TÍTULO === */}
       <section
         style={{
-          position: "relative",
           width: "100%",
-          height: "80vh",   // altura dobrada (100% maior)
-          minHeight: "600px",
-          overflow: "hidden",
           backgroundColor: "#000",
+          paddingTop: "2rem",
+          paddingBottom: "2rem",
         }}
       >
         {imagemHero && (
-          <>
+          <div
+            style={{
+              maxWidth: "1100px",
+              margin: "0 auto",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <img
               src={imagemHero}
               alt={post.titulo}
               style={{
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
                 maxWidth: "100%",
-                maxHeight: "100%",
-                objectFit: "contain"
-                // ❌ filtro removido
+                maxHeight: "80vh",
+                height: "auto",
+                objectFit: "contain",
+                display: "block",
               }}
             />
-
-            {/* ❌ gradiente removido */}
-          </>
+          </div>
         )}
 
         <div
           style={{
-            position: "absolute",
-            bottom: "1.5rem",
-            left: "50%",
-            transform: "translateX(-50%)",
-            width: "100%",
             maxWidth: "880px",
-            padding: "0 1rem",
+            margin: "1.5rem auto 0",
+            padding: "0 1rem 1.5rem",
             textAlign: "center",
           }}
         >
@@ -185,15 +180,13 @@ export default function Post() {
             padding: "clamp(2rem, 5vw, 3rem)",
           }}
         >
-          {/* === VÉU DE LEITURA === */}
           <div
             style={{
-              backgroundColor: "rgba(49, 47, 47, 0.06)", 
+              backgroundColor: "rgba(49, 47, 47, 0.06)",
               padding: "1rem",
               borderRadius: "0.5rem",
             }}
           >
-            {/* ====== ESTILO EXCLUSIVO PARA TÍTULOS & SUBTÍTULOS ====== */}
             <style>
               {`
                 .post-headings h2,
@@ -217,7 +210,6 @@ export default function Post() {
               `}
             </style>
 
-            {/* ====== TEXTO CORRIDO + HEADINGS DENTRO DA CLASSE ====== */}
             <div
               className="post-content post-headings"
               style={{

@@ -93,15 +93,23 @@ export default function Devocional() {
       `}</style>
 
       {imagemHero && (
-        <section style={{ width: "100%", height: "55vh", overflow: "hidden" }}>
+        <section
+          style={{
+            width: "100%",
+            height: "60vh",
+            minHeight: "420px",
+            backgroundColor: "#000",
+            overflow: "hidden",
+          }}
+        >
           <img
             src={imagemHero}
             alt={titulo}
             style={{
               width: "100%",
               height: "100%",
-              objectFit: "cover",
-              filter: "brightness(0.85)",
+              objectFit: "contain",
+              objectPosition: "center center",
             }}
           />
         </section>
@@ -119,7 +127,9 @@ export default function Devocional() {
           {titulo}
         </h1>
 
-        <p style={{ marginBottom: "2rem" }}>{data} • {readTime}</p>
+        <p style={{ marginBottom: "2rem" }}>
+          {data} • {readTime}
+        </p>
 
         {tag && (
           <span

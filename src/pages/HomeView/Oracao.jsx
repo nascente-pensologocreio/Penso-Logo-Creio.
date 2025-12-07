@@ -135,14 +135,12 @@ export default function Oracao() {
         }
       `}</style>
 
-      {/* ===============================================
-          HERO SEM CORTES (mantido exatamente como pediu)
-      ================================================ */}
       {imagemHero && (
         <section
           style={{
             width: "100%",
-            height: "55vh",
+            height: "60vh",
+            minHeight: "420px",
             backgroundColor: "#000",
             backgroundImage: `url(${imagemHero})`,
             backgroundRepeat: "no-repeat",

@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import MarkdownIt from "markdown-it";
 import rawFile from "../../content/home/mensagem-pastoral.md?raw";
-import { parseFrontmatter, markdownToHtml } from "../../utils/markdownProcessor.js"; // <-- ÚNICA ADIÇÃO
+import { parseFrontmatter, markdownToHtml } from "../../utils/markdownProcessor.js";
 
 function parseFrontmatterLegacy(raw) {
   if (!raw.startsWith("---")) return { data: {}, content: raw };
@@ -59,7 +59,8 @@ export default function MensagemPastoral() {
       data: front.data || "",
       readTime: front.readTime || "",
       tag: front.tag || "",
-      imagemHero: front.imageUrl || null,
+      // use a mesma chave de imagem que o card da home usa no frontmatter:
+      imagemHero: front.imagemHero || front.image || front.capa || null,
       conteudoFinal: html,
     });
   }, []);
@@ -79,11 +80,24 @@ export default function MensagemPastoral() {
       `}</style>
 
       {imagemHero && (
-        <section style={{ width: "100%", height: "55vh", overflow: "hidden" }}>
+        <section
+          style={{
+            width: "100%",
+            height: "60vh",
+            minHeight: "420px",
+            backgroundColor: "#000",
+            overflow: "hidden",
+          }}
+        >
           <img
             src={imagemHero}
             alt={titulo}
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "contain",
+              objectPosition: "center center",
+            }}
           />
         </section>
       )}
@@ -106,7 +120,9 @@ export default function MensagemPastoral() {
           {titulo}
         </h1>
 
-        <p>{data} • {readTime}</p>
+        <p>
+          {data} • {readTime}
+        </p>
 
         {tag && (
           <span
