@@ -16,7 +16,13 @@ export const ArticleCard = ({ post, delay = 0.1 }) => {
   // ======== EXCERPT ========
   const gerarExcerpt = (texto) => {
     if (!texto) return "";
-    const limpo = texto.replace(/[#>*_`~\-]/g, "").trim();
+
+    // remove tags HTML básicas (ex.: <br>, <p>, <strong>...)
+    const semHtml = texto.replace(/<\/?[^>]+(>|$)/g, "");
+
+    // remove símbolos markdown
+    const limpo = semHtml.replace(/[#>*_`~\-]/g, "").trim();
+
     return limpo.substring(0, 200) + "...";
   };
 
@@ -55,12 +61,12 @@ export const ArticleCard = ({ post, delay = 0.1 }) => {
         .article-card img {
           width: 100%;
           display: block;
-          object-fit: cover;
+          object-fit: contain;
         }
 
         /* ===== TAMANHO PADRÃO PARA TODOS OS CARDS ===== */
         .image-top {
-          height: 420px;
+          max-height: 420px;
         }
 
         .article-content {

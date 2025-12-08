@@ -6,7 +6,7 @@ subtitulo: "Não esmagará a cana quebrada, nem apagará o pavio que fumega."
 autor: "Capelão Nascente"
 data: "2025-12-07"
 readTime: "8 min"
-imageUrl: "src/assets/mensagem-pastoral-home.png"
+imageUrl: "/src/assets/mensagem-pastoral-home.png"
 origem: "home"
 livro: "Isaías / Mateus"
 capitulo: "Isaías 42 / Mateus 12"
@@ -15,13 +15,15 @@ tags: ["DESTAQUE", "Batalha", "Depressao", "Desemprego", "Dividas", "Doenca-mort
 referencia: "Isaías 42:3; Mateus 12:20"
 ---
 
-<br><br><br>
+
+
+<br><br>
 
 # Quando a Luta Chega, Os Amigos Fogem e a Solidão Bate Forte.
 
 <br><br><br>
 
-## Tema: Cristo e a Cana Quebrada 
+### Tema: Cristo e a Cana Quebrada 
 
 <br>
 
@@ -30,7 +32,7 @@ Texto base: Isaías 42:3 / Mateus 12:20 – “Não esmagará a cana quebrada, n
 
 <br><br><br>
 
-### Introdução 
+## Introdução 
 
 Quando os Amigos Fogem e a Solidão Bate Forte — E Você Percebe que Tornou-se Invisível aos Olhos Dos Outros, É Nesse Momento Que Deus Te Acolhe.
 Imagine esta casa, nesta noite, como uma pequena sala do hospital de Deus. 
@@ -46,11 +48,11 @@ Não para perguntar o quanto você aguenta, mas para proclamar Quem é Aquele qu
 
 <br>
 
-### Desenvolvimento 
+## Desenvolvimento 
 
 <br>
 
-#### 1. A cana quebrada e o pavio que fumega: um retrato de nós 
+### 1. A cana quebrada e o pavio que fumega: um retrato de nós 
 
 No tempo bíblico, uma cana era algo comum, barato, facilmente descartável. 
 Servia, por exemplo, para fazer uma pequena flauta ou um apoio simples. 
@@ -76,7 +78,7 @@ Deus escreveu seu retrato aqui, não para expor sua fraqueza, mas para revelar a
 
 <br>
 
-#### 2. O modo de Cristo: Ele não esmaga, não apaga
+### 2. O modo de Cristo: Ele não esmaga, não apaga
 
 O texto não diz apenas quem somos, mas como Cristo nos trata: “Não esmagará a cana quebrada, nem apagará o pavio que fumega.”
 Note bem: Ele não nega que a cana está quebrada, nem que o pavio está quase apagando.
@@ -103,7 +105,7 @@ Se você tem medo de se aproximar de Deus por causa da sua condição, entenda: 
 
 <br>
 
-#### 3. O que Cristo faz com quem está quebrado
+### 3. O que Cristo faz com quem está quebrado
 
 Observe algo precioso: o texto não diz apenas o que Ele não faz.
 Diz o que Ele deixa implícito que fará.
@@ -135,7 +137,7 @@ Vai continuar tentando esconder as rachaduras da sua alma, ou vai colocá-las na
 
 <br>
 
-### Conclusão
+## Conclusão
 
 Talvez, se fosse possível ouvir o coração desta casa agora, ouviríamos um coro silencioso de cansaço, medo, vergonha, culpa, frustração.
 Mas, acima desse coro, há uma voz mais suave, mais firme, mais verdadeira: a voz de Cristo, o Servo manso, o Amigo de pecadores, o Médico das almas.

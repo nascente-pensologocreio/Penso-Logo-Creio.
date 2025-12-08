@@ -6,7 +6,7 @@ subtitulo: "Quando o pouco de nós encontra o muito de Cristo."
 autor: "Capelão Nascente"
 data: "2025-12-07"
 readTime: "4 min"
-imageUrl: "src/assets/oracao-home.png"
+imageUrl: "/src/assets/oracao-home.png"
 origem: "home"
 livro: "Isaías / Mateus"
 capitulo: "Isaías 42 / Mateus 12"
@@ -15,13 +15,15 @@ tags: ["DESTAQUE", "Batalha", "Depressao", "Desemprego", "Dividas", "Doenca-mort
 referencia: "Isaías 42:3; Mateus 12:20"
 ---
 
-<br><br><br>
 
-## O Clamor da Cana Quebrada
 
 <br><br><br>
 
-Texto base: “Não esmagará a cana quebrada, nem apagará o pavio que fumega.” 
+# O Clamor da Cana Quebrada
+
+<br><br><br>
+
+## Texto base: “Não esmagará a cana quebrada, nem apagará o pavio que fumega.” 
 
 <br><br>
 
