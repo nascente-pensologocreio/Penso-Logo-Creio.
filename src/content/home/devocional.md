@@ -66,6 +66,7 @@ Toma o que sobrou de mim e faz nascer aqui dentro uma vida nova, Tua, e não min
 Se você chegar a Ele assim, em pedaços, não tema: Ele não coleciona escombros, Ele reconstrói templos.
 A mesma mão que não esmaga a cana quebrada é a mão que a levanta, a limpa, a unge — e a faz tocar de novo a melodia da graça para este mundo cansado.
 
+
 <br>
 
 Cpl. Nascente 
