@@ -124,7 +124,7 @@ export default function DevocionalDiaria() {
 
   return (
     <EditorialLayout titulo="Devocional Diária">
-      <div className="devocional-diaria-calendario-wrapper">
+      <div className="devocional-diaria-calendario-wrapper" style={{ marginBottom: "2rem" }}>
         <CalendarioMensal
           diasComConteudo={diasComConteudo}
           onSelectDia={(data, chave) => {
@@ -231,7 +231,7 @@ export default function DevocionalDiaria() {
                 style={{
                   position: "relative",
                   width: "100%",
-                  height: "80vh",      // hero alto
+                  height: "80vh",
                   minHeight: "600px",
                   overflow: "hidden",
                   backgroundColor: "#000",
@@ -262,7 +262,7 @@ export default function DevocionalDiaria() {
                     left: "50%",
                     transform: "translateX(-50%)",
                     width: "100%",
-                    maxWidth: "1180px", // título largo
+                    maxWidth: "1180px",
                     padding: "0 1rem",
                     textAlign: "center",
                   }}
@@ -284,7 +284,7 @@ export default function DevocionalDiaria() {
               <article
                 style={{
                   width: "100%",
-                  maxWidth: "1180px",
+                  maxWidth: "1280px",
                   margin: "0 auto",
                   padding: "2.5rem 0.5rem 4.5rem",
                 }}
@@ -304,8 +304,8 @@ export default function DevocionalDiaria() {
                   {/* VÉU DE LEITURA */}
                   <div
                     style={{
-                      backgroundColor: "rgba(49, 47, 47, 0.06)", 
-                      padding: "6rem",
+                      backgroundColor: "rgba(49, 47, 47, 0)", 
+                      padding: "1rem 0rem",
                       borderRadius: "0.5rem",
                     }}
                   >
@@ -338,7 +338,7 @@ export default function DevocionalDiaria() {
                         color: "#0a0a0aff",
                         fontFamily: "Georgia, 'Times New Roman', serif",
                         fontWeight: 300,
-                        fontSize: "1.10rem",
+                        fontSize: "0.980rem",
                         lineHeight: 0.8,
                         letterSpacing: "0.03px",
                         wordSpacing: "0.5px",

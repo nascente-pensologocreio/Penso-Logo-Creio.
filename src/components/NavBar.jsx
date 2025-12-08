@@ -1,3 +1,4 @@
+// src/components/NavBar.jsx
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -12,23 +13,46 @@ const links = [
   { to: "/calendario", label: "🕰️ Calendário" },
 ];
 
+// função que normaliza a rota atual para um “menu alvo”
+function getActiveRoot(pathname) {
+  if (!pathname || pathname === "/") return "/";
+
+  // posts premium da home: /artigo/:slug → Início
+  if (pathname.startsWith("/artigo/")) return "/";
+
+  // posts Firebase: /post/:slug → Biblioteca (não há item, então nenhum ativo)
+  if (pathname.startsWith("/post/")) return null;
+
+  // demais rotas: usa o primeiro segmento como base
+  // ex.: /caminho-das-escrituras/lucas/5 → /caminho-das-escrituras
+  const parts = pathname.split("/").filter(Boolean);
+  if (parts.length === 0) return "/";
+
+  return `/${parts[0]}`;
+}
+
 export default function NavBar() {
   const location = useLocation();
   const path = location.pathname || "/";
+  const activeRoot = getActiveRoot(path);
 
   return (
     <ul
       className="flex flex-wrap justify-center items-center gap-12 px-6 py-4"
-      style={{ 
-        margin: 0, 
+      style={{
+        margin: 0,
         padding: "16px 24px",
         listStyle: "none",
         background: "transparent",
       }}
     >
       {links.map(({ to, label }) => {
-        const active = path === to || (to !== "/" && path.startsWith(to));
         const isCalendario = to === "/calendario";
+
+        const active =
+          activeRoot === to ||
+          // preserva o comportamento anterior para rotas base
+          (to !== "/" && path.startsWith(to));
 
         return (
           <li key={to} style={{ margin: 0, padding: 0 }}>
@@ -79,7 +103,6 @@ export default function NavBar() {
           background: transparent;
         }
 
-        /* Sublinha elegante */
         .nav-accent {
           content: "";
           position: absolute;
@@ -100,7 +123,6 @@ export default function NavBar() {
           z-index: 1;
         }
 
-        /* Glow aura */
         .nav-glow {
           position: absolute;
           inset: -8px -10px;
@@ -117,7 +139,6 @@ export default function NavBar() {
           pointer-events: none;
         }
 
-        /* Estados hover e active */
         .nav-link:hover .nav-label,
         .nav-link.active .nav-label {
           color: #fff;
@@ -144,7 +165,6 @@ export default function NavBar() {
           transform: translateY(0px) scale(0.98);
         }
 
-        /* Link do Calendário - estilo especial */
         .calendar-link {
           border: 1.5px solid rgba(112, 175, 30, 0.5);
           border-radius: 12px;
@@ -181,7 +201,6 @@ export default function NavBar() {
             inset 0 0 20px rgba(212, 175, 55, 0.15);
         }
 
-        /* Efeito ripple sutil ao clicar */
         @keyframes navRipple {
           0% {
             box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
@@ -198,7 +217,6 @@ export default function NavBar() {
           animation: navRipple 0.6s ease-out;
         }
 
-        /* Responsividade */
         @media (max-width: 1024px) {
           .nav-label {
             font-size: 1rem;

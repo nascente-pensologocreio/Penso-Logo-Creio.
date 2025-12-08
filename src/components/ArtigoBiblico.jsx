@@ -37,7 +37,7 @@ export default function ArtigoBiblico({
       {/* CABEÇALHO INLINE (USA O CARD EXTERNO) */}
       <div
         style={{
-          maxWidth: "980px",
+          maxWidth: "1100px",
           margin: "0 auto 1.5rem",
           textAlign: "center",
         }}
@@ -66,10 +66,10 @@ export default function ArtigoBiblico({
         </h1>
       </div>
 
-      {/* TEMPLATE DE PAPEL PADRONIZADO */}
+      {/* TEMPLATE DE PAPEL PADRONIZADO (HOMILIA / ESTUDOS) */}
       <div
         style={{
-          maxWidth: "1100px", // largura fixa e controlada do papel
+          maxWidth: "1100px",
           margin: "0 auto",
           backgroundImage:
             "url('/src/assets/template-read-card-home.jpeg')",

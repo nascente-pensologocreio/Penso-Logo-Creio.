@@ -53,17 +53,42 @@ export default function DevocionalTemplate({
         )}
       </header>
 
-      {/* Conteúdo principal */}
-      <section className="text-lg leading-relaxed prose prose-invert max-w-none">
-        {temHtml ? (
-          <div
-            dangerouslySetInnerHTML={{ __html: conteudo }}
-          />
-        ) : temTexto ? (
-          <p className="whitespace-pre-line">{texto}</p>
-        ) : (
-          <p>Conteúdo não disponível.</p>
-        )}
+      {/* FOLHA EXCLUSIVA PARA DEVOCIONAL DIÁRIA */}
+      <section className="flex justify-center">
+        <div
+          style={{
+            maxWidth: "1100px",
+            width: "100%",
+            backgroundImage:
+              "url('/src/assets/template-read-card-home.jpeg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            borderRadius: "0.875rem",
+            border: "1px solid rgba(212, 175, 55, 0.18)",
+            padding: "clamp(2rem, 4vw, 3rem)",
+            fontFamily: "Georgia, 'Times New Roman', serif",
+            fontSize: "1.05rem",
+            lineHeight: 1.7,
+            color: "#0a0a0a",
+            textAlign: "justify",
+          }}
+        >
+          {temHtml ? (
+            <div
+              style={{ 
+                maxWidth: "none",
+                width: "100%",
+                margin: "0 auto"
+              }}
+              dangerouslySetInnerHTML={{ __html: conteudo }}
+            />
+          ) : temTexto ? (
+            <p style={{ whiteSpace: "pre-line" }}>{texto}</p>
+          ) : (
+            <p>Conteúdo não disponível.</p>
+          )}
+        </div>
       </section>
 
       {/* Autor */}
