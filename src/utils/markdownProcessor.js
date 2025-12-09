@@ -1,21 +1,16 @@
+// src/utils/markdownProcessor.js
+
 /**
  * ================================================================
- *  PLC Markdown Processor — v5.0 (LTS)
+ *  PLC Markdown Processor — v5.1 (LTS)
  * ================================================================
- * Núcleo responsável por:
- * - Parsing universal de front-matter (todos os conteúdos)
+ * - Parsing universal de front-matter (com suporte a arrays simples)
  * - Conversão simplificada de markdown → HTML
- * - Padronização da leitura para loaders e templates
- *
- * Este módulo substitui:
- * - parseFrontmatter.js
- * - Parsers duplicados em HomeView
- * - Parsers internos de loaders
  * ================================================================
  */
 
 // ---------------------------------------------------------------
-// PARSER UNIVERSAL DE FRONT-MATTER
+// PARSER UNIVERSAL DE FRONT-MATTER (com suporte a arrays)
 // ---------------------------------------------------------------
 export function parseFrontmatter(raw) {
   if (!raw || typeof raw !== "string") {
@@ -40,7 +35,6 @@ export function parseFrontmatter(raw) {
 
   const data = {};
 
-  // Quebra o bloco linha por linha
   fmBlock.split("\n").forEach((line) => {
     const idx = line.indexOf(":");
     if (idx === -1) return;
@@ -48,7 +42,28 @@ export function parseFrontmatter(raw) {
     const key = line.slice(0, idx).trim();
     let val = line.slice(idx + 1).trim();
 
-    // Remove aspas simples ou duplas
+    // Suporte básico a arrays do tipo: tags: ["a", "b", "c"]
+    if (val.startsWith("[") && val.endsWith("]")) {
+      const inner = val.slice(1, -1).trim();
+      if (!inner) {
+        data[key] = [];
+        return;
+      }
+      const items = inner.split(",").map((item) => {
+        let v = item.trim();
+        if (
+          (v.startsWith('"') && v.endsWith('"')) ||
+          (v.startsWith("'") && v.endsWith("'"))
+        ) {
+          v = v.slice(1, -1);
+        }
+        return v;
+      });
+      data[key] = items;
+      return;
+    }
+
+    // Remove aspas simples ou duplas em valores escalares
     if (
       (val.startsWith('"') && val.endsWith('"')) ||
       (val.startsWith("'") && val.endsWith("'"))

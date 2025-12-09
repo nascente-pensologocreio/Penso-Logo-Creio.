@@ -10,7 +10,7 @@ autor: "Capelão Nascente"
 readTime: "7 min de leitura"
 imageUrl: ""
 tema_principal: ""
-tags: []
+tags: ["esperanca", "futuro", "medo", "duvida"]
 ---
 # Estudo Temático: Romanos 1
 ## O Evangelho, a Revelação e a Rebelião Humana

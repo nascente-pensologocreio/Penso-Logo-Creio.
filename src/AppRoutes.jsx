@@ -2,8 +2,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 
-import { parseFrontmatter, markdownToHtml } from "./utils/markdownProcessor.js"; // <-- ÚNICA ADIÇÃO
-
 // Layout principal
 const LayoutPrincipal = lazy(() => import("./layouts/LayoutPrincipal.jsx"));
 
@@ -72,7 +70,11 @@ export default function AppRoutes() {
             element={<EscadariaDoConhecimento />}
           />
           <Route path="devocional-diaria" element={<DevocionalDiaria />} />
+          
+          {/* TEMAS DA VIDA - DUAS ROTAS */}
           <Route path="temas-da-vida" element={<TemasDaVida />} />
+          <Route path="temas-da-vida/:tag" element={<TemasDaVida />} />
+          
           <Route path="contato" element={<Contato />} />
 
           {/* HOME → artigo premium */}

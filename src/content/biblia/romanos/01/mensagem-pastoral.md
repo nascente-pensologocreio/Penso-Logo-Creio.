@@ -1,16 +1,16 @@
 ---
 slug: "romanos-01-mensagem-pastoral"
-titulo: ""
+titulo: "Não Tenho Vergonha: A Coragem de Crer num Mundo em Ruínas"
 tipo: "mensagem-pastoral"
 origem: "biblia"
 livro: "romanos"
 capitulo: "01"
 data: "2025-11-29"
 autor: "Capelão Nascente"
-readTime: "7 min de leitura"
+readTime: "25 min de leitura"
 imageUrl: ""
-tema_principal: ""
-tags: []
+tema_principal: "poder-evangelho-fe"
+tags: ["esperanca", "duvida", "medo", "ansiedade", "frustracao", "solidao", "futuro"]
 ---
 
 # Mensagem Pastoral: Romanos 1

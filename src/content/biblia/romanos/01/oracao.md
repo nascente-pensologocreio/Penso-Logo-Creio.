@@ -1,6 +1,6 @@
 ---
 slug: "romanos-01-oracao"
-titulo: ""
+titulo: "Senhor da Luz que Nunca se Apaga"
 tipo: "oracao"
 origem: "biblia"
 livro: "romanos"
@@ -10,7 +10,7 @@ autor: "Capelão Nascente"
 readTime: "7 min de leitura"
 imageUrl: ""
 tema_principal: ""
-tags: []
+tags: ["esperanca", "futuro", "medo", "duvida"]
 ---
 
 # Oração: Romanos 1

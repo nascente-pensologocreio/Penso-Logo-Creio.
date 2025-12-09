@@ -1,11 +1,18 @@
 // src/utils/loadSinglePost.js
-// Carregador oficial dos posts da HOME (via .md)
+// Carregador oficial dos posts da HOME e conteúdos bíblicos (.md)
 // Versão universal — motor v5 LTS
 
 import { parseFrontmatter, markdownToHtml } from "./markdownProcessor.js";
 
-// GLOB REAL da home
+// GLOB da home
 const globHome = import.meta.glob("../content/home/*.md", {
+  eager: true,
+  query: "?raw",
+  import: "default",
+});
+
+// GLOB da Bíblia
+const globBiblia = import.meta.glob("../content/biblia/**/*.md", {
   eager: true,
   query: "?raw",
   import: "default",
@@ -13,11 +20,9 @@ const globHome = import.meta.glob("../content/home/*.md", {
 
 // função auxiliar para garantir imageUrl
 function resolverImagemParaPost(data) {
-  // se o próprio frontmatter já trouxe imageUrl ou imagem, usa
   if (data.imageUrl) return data.imageUrl;
   if (data.imagem) return data.imagem;
 
-  // tenta inferir pelo tipo ou slug
   const tipo = (data.tipo || "").toLowerCase();
   const slug = (data.slug || "").toLowerCase();
 
@@ -37,7 +42,6 @@ function resolverImagemParaPost(data) {
     return "/Oracao-home.png";
   }
 
-  // fallback: nenhuma imagem conhecida
   return null;
 }
 
@@ -46,6 +50,7 @@ export async function loadSinglePost(slug) {
   try {
     const encontrados = [];
 
+    // 1) Procurar primeiro nos conteúdos da HOME
     for (const [path, raw] of Object.entries(globHome)) {
       const { data, content } = parseFrontmatter(raw);
 
@@ -56,7 +61,27 @@ export async function loadSinglePost(slug) {
 
         return {
           ...data,
-          imagem: imageUrl,          // compatível com Post.jsx e ArticleCard
+          imagem: imageUrl,
+          imageUrl,
+          content,
+          fullContent: markdownToHtml(content),
+          path,
+        };
+      }
+    }
+
+    // 2) Procurar nos conteúdos da BÍBLIA
+    for (const [path, raw] of Object.entries(globBiblia)) {
+      const { data, content } = parseFrontmatter(raw);
+
+      if (data.slug) encontrados.push(data.slug);
+
+      if (data.slug === slug) {
+        const imageUrl = resolverImagemParaPost(data);
+
+        return {
+          ...data,
+          imagem: imageUrl,
           imageUrl,
           content,
           fullContent: markdownToHtml(content),

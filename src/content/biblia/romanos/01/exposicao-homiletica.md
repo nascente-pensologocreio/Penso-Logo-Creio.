@@ -1,6 +1,6 @@
 ---
 slug: "romanos-01-pregacao-tecnica"
-titulo: ""
+titulo: "O Poder que Não se Envergonha"
 tipo: "pregacao-tecnica"
 origem: "biblia"
 livro: "romanos"
@@ -10,7 +10,7 @@ autor: "Capelão Nascente"
 readTime: "7 min de leitura"
 imageUrl: ""
 tema_principal: ""
-tags: []
+tags: ["esperanca", "futuro", "medo", "duvida"]
 ---
 
 # Exposição Homilética: Romanos 1
