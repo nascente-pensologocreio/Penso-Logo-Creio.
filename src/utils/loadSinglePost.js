@@ -27,7 +27,7 @@ function resolverImagemParaPost(data) {
   const slug = (data.slug || "").toLowerCase();
 
   if (tipo === "devocional" || slug.includes("devocional")) {
-    return "/Devocional-home.png";
+    return "/src/assets/devocional-home.webp";
   }
 
   if (
@@ -35,11 +35,11 @@ function resolverImagemParaPost(data) {
     tipo === "pregacao" ||
     slug.includes("mensagem-pastoral")
   ) {
-    return "/Mensagem-pastoral-home.png";
+    return "/src/assets/mensagem-pastoral-home.webp";
   }
 
   if (tipo === "oracao" || slug.includes("oracao")) {
-    return "/Oracao-home.png";
+    return "/src/assets/oracao-home.webp";
   }
 
   return null;

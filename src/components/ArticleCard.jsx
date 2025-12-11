@@ -17,10 +17,7 @@ export const ArticleCard = ({ post, delay = 0.1 }) => {
   const gerarExcerpt = (texto) => {
     if (!texto) return "";
 
-    // remove tags HTML básicas (ex.: <br>, <p>, <strong>...)
     const semHtml = texto.replace(/<\/?[^>]+(>|$)/g, "");
-
-    // remove símbolos markdown
     const limpo = semHtml.replace(/[#>*_`~\-]/g, "").trim();
 
     return limpo.substring(0, 200) + "...";
@@ -64,7 +61,6 @@ export const ArticleCard = ({ post, delay = 0.1 }) => {
           object-fit: contain;
         }
 
-        /* ===== TAMANHO PADRÃO PARA TODOS OS CARDS ===== */
         .image-top {
           max-height: 420px;
         }
@@ -131,6 +127,7 @@ export const ArticleCard = ({ post, delay = 0.1 }) => {
             src={imagem}
             alt={titulo}
             className="image-top"
+            loading="lazy"
           />
         )}
 

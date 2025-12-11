@@ -8,7 +8,7 @@ import { getHomePosts } from "../utils/loadHomePosts.js";
 import { parseFrontmatter, markdownToHtml } from "../utils/markdownProcessor.js"; // <-- ÚNICA ADIÇÃO
 
 export default function Home() {
-  const fundoHero = "/Mockup da Homepage.png";
+  const fundoHero = "/src/assets/Mockup da Homepage.webp";
   const [postsHome, setPostsHome] = useState([]);
 
   useEffect(() => {

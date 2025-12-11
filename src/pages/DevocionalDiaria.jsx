@@ -7,6 +7,8 @@ import CalendarioMensal from "../components/CalendarioMensal.jsx";
 import "../styles/editorial-grid.css";
 import "../styles/editorial-devocional-diaria.css";
 
+import templateReadCard from "../assets/template-read-card-home.webp";
+
 function formatKey(date) {
   return date.toISOString().slice(0, 10); // YYYY-MM-DD
 }
@@ -238,21 +240,19 @@ export default function DevocionalDiaria() {
                 }}
               >
                 {imagemHero && (
-                  <>
-                    <img
-                      src={imagemHero}
-                      alt={selecionado.titulo}
-                      style={{
-                        position: "absolute",
-                        top: "50%",
-                        left: "50%",
-                        transform: "translate(-50%, -50%)",
-                        maxWidth: "100%",
-                        maxHeight: "100%",
-                        objectFit: "contain",
-                      }}
-                    />
-                  </>
+                  <img
+                    src={imagemHero}
+                    alt={selecionado.titulo}
+                    style={{
+                      position: "absolute",
+                      top: "50%",
+                      left: "50%",
+                      transform: "translate(-50%, -50%)",
+                      maxWidth: "100%",
+                      maxHeight: "100%",
+                      objectFit: "contain",
+                    }}
+                  />
                 )}
 
                 <div
@@ -291,8 +291,7 @@ export default function DevocionalDiaria() {
               >
                 <div
                   style={{
-                    backgroundImage:
-                      "url('/src/assets/template-read-card-home.jpeg')",
+                    backgroundImage: `url(${templateReadCard})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
@@ -301,10 +300,9 @@ export default function DevocionalDiaria() {
                     padding: "clamp(2rem, 5vw, 3rem)",
                   }}
                 >
-                  {/* VÉU DE LEITURA */}
                   <div
                     style={{
-                      backgroundColor: "rgba(49, 47, 47, 0)", 
+                      backgroundColor: "rgba(49, 47, 47, 0)",
                       padding: "1rem 0rem",
                       borderRadius: "0.5rem",
                     }}
@@ -342,8 +340,7 @@ export default function DevocionalDiaria() {
                         lineHeight: 0.8,
                         letterSpacing: "0.03px",
                         wordSpacing: "0.5px",
-                        textShadow:
-                          "0 0 1px rgba(255, 255, 255, 0)",
+                        textShadow: "0 0 1px rgba(255, 255, 255, 0)",
                         textAlign: "justify",
                       }}
                       dangerouslySetInnerHTML={{ __html: conteudoFinal }}

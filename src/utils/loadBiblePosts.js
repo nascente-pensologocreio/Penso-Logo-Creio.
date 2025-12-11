@@ -1,5 +1,6 @@
 // src/utils/loadBiblePosts.js
 // Carrega todas as facetas bíblicas (por capítulo) na ordem canônica do Menu Bar PLC – V5
+// Otimizado: glob LAZY, carregando só o livro/capítulo necessários.
 
 import { parseFrontmatter, markdownToHtml } from "./markdownProcessor.js";
 import livrosSBB from "../data/livrosSBB.js";
@@ -7,21 +8,21 @@ import livrosSBB from "../data/livrosSBB.js";
 const cache = new Map();
 
 /* ---------------------------------------------------------
-   GLOB — captura TUDO que está em /src/content/biblia
+   GLOB — LAZY: importa os .md como string somente quando chamado
 --------------------------------------------------------- */
 const globBiblia = import.meta.glob("/src/content/biblia/**/*.md", {
-  eager: true,
-  query: "?raw",
-  import: "default",
+  as: "raw",
 });
 
 /* ---------------------------------------------------------
    MAPEAMENTO DE IDs (livrosSBB) PARA NOMES DE PASTA
-   Necessário porque IndiceBiblico passa IDs como "rm", "1co", etc
-   mas os diretórios usam nomes completos como "romanos", "1corintios"
 --------------------------------------------------------- */
 const ID_PARA_PASTA = livrosSBB.reduce((acc, livro) => {
-  acc[livro.id] = livro.nome.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "");
+  acc[livro.id] = livro.nome
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, "");
   return acc;
 }, {});
 
@@ -50,13 +51,12 @@ export const ORDEM_FACETAS = [
    loadBiblePosts(livro, capitulo) → retorna TODAS as facetas daquele capítulo
    já ordenadas conforme o MENU BAR
 --------------------------------------------------------- */
-export function loadBiblePosts(livro, capitulo) {
+export async function loadBiblePosts(livro, capitulo) {
   const cacheKey = `${livro}-${capitulo}`;
   if (cache.has(cacheKey)) return cache.get(cacheKey);
 
   let livroNormalizado = String(livro).toLowerCase().trim();
 
-  // Se recebeu um ID (ex: "rm"), converte para nome da pasta (ex: "romanos")
   if (ID_PARA_PASTA[livroNormalizado]) {
     livroNormalizado = ID_PARA_PASTA[livroNormalizado];
   }
@@ -65,23 +65,22 @@ export function loadBiblePosts(livro, capitulo) {
 
   const resultados = [];
 
-  for (const [path, raw] of Object.entries(globBiblia)) {
-    // Ex: /src/content/biblia/romanos/03/devocional.md
-    if (
-      !path.includes(`/${livroNormalizado}/`) ||
-      !path.includes(`/${capituloStr}/`)
-    ) {
-      continue;
-    }
+  const entradas = Object.entries(globBiblia).filter(([path]) => {
+    return (
+      path.includes(`/${livroNormalizado}/`) &&
+      path.includes(`/${capituloStr}/`)
+    );
+  });
 
+  // carrega apenas os arquivos que batem com livro/capítulo pedidos
+  for (const [path, loader] of entradas) {
+    const raw = await loader();
     const { data, content } = parseFrontmatter(raw);
 
     const filename = path.split("/").pop().replace(".md", "");
 
-    // Tipo primário vindo do front-matter, com fallback para o nome do arquivo
     let tipoBruto = (data.tipo || filename).toLowerCase().trim();
 
-    // Normalização forte dos tipos para bater com o MENU BAR / ConteudoDoDia
     if (tipoBruto.includes("mensagem") || tipoBruto.includes("pastoral")) {
       tipoBruto = "mensagem-pastoral";
     } else if (
@@ -130,9 +129,6 @@ export function loadBiblePosts(livro, capitulo) {
     });
   }
 
-  /* ---------------------------------------------------------
-     ORDENADOR — usa a ordem definitiva do MENU BAR
-  --------------------------------------------------------- */
   resultados.sort((a, b) => {
     const ia = ORDEM_FACETAS.indexOf(a.tipo);
     const ib = ORDEM_FACETAS.indexOf(b.tipo);
@@ -146,13 +142,11 @@ export function loadBiblePosts(livro, capitulo) {
 }
 
 /* ---------------------------------------------------------
-   Função Auxiliar
    listChapters(livro) → retorna capítulos existentes
 --------------------------------------------------------- */
-export function listChapters(livro) {
+export async function listChapters(livro) {
   let livroNormalizado = String(livro).toLowerCase().trim();
 
-  // Se recebeu um ID (ex: "rm"), converte para nome da pasta (ex: "romanos")
   if (ID_PARA_PASTA[livroNormalizado]) {
     livroNormalizado = ID_PARA_PASTA[livroNormalizado];
   }
@@ -171,10 +165,9 @@ export function listChapters(livro) {
 }
 
 /* ---------------------------------------------------------
-   Função Auxiliar
    listBooks() → lista todos os livros existentes
 --------------------------------------------------------- */
-export function listBooks() {
+export async function listBooks() {
   const livros = new Set();
 
   for (const path of Object.keys(globBiblia)) {

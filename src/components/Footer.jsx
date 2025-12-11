@@ -1,8 +1,9 @@
 import React from "react";
 
 export default function Footer() {
-  const brasao = "/ass-brasao-cpl-nascente.png";
-  const backgroundTemplate = "/Template Verde espelhado Listas brancas verticais 300 DPI.png";
+  const brasao = "/src/assets/ass-brasao-cpl-nascente.webp";
+  const backgroundTemplate =
+    "/src/assets/Template Verde espelhado Listas brancas verticais 300 DPI.webp";
 
   return (
     <footer

@@ -1,47 +1,55 @@
 // src/utils/loadHomePosts.js
 // Carrega e normaliza os 3 posts oficiais da HOME a partir de /src/content/home/*.md
+// Mantém 100% o uso de front-matter como motor de metadados.
 
 import { parseFrontmatter, markdownToHtml } from "./markdownProcessor.js";
 
-// GLOB REAL da home
+// GLOB da home, AGORA LAZY (sem eager)
 const globHome = import.meta.glob("/src/content/home/*.md", {
-  eager: true,
-  query: "?raw",
-  import: "default",
+  as: "raw",
 });
 
+/**
+ * Carrega apenas os arquivos realmente existentes em /src/content/home,
+ * preservando front-matter como fonte de:
+ * - tipo
+ * - slug
+ * - imageUrl
+ * - demais campos
+ */
 export async function getHomePosts() {
   try {
-    const posts = Object.entries(globHome).map(([path, raw]) => {
-      // Usa o motor universal
-      const { data, content } = parseFrontmatter(raw);
+    const entries = Object.entries(globHome);
 
-      const filename = path.split("/").pop().toLowerCase();
+    // Carrega todos os .md da pasta home sob demanda (em paralelo)
+    const posts = await Promise.all(
+      entries.map(async ([path, loader]) => {
+        const raw = await loader(); // string markdown
+        const { data, content } = parseFrontmatter(raw);
 
-      const tipo =
-        data.tipo ||
-        filename.replace(".md", "").trim();
+        const filename = path.split("/").pop().toLowerCase();
 
-      const imagem = data.imageUrl || null;
+        const tipo = (data.tipo ||
+          filename.replace(".md", "").trim()
+        ).toLowerCase();
 
-      const html = markdownToHtml(content);
+        const imagem = data.imageUrl || null;
 
-      return {
-        ...data,
-        tipo,
-        imagem,
-        conteudo: content,
-        conteudoHtml: html,
-        filename,
-      };
-    });
+        const html = markdownToHtml(content);
 
-    // Ordem fixa da HOME
-    const ordemFixa = [
-      "devocional.md",
-      "mensagem-pastoral.md",
-      "oracao.md",
-    ];
+        return {
+          ...data,
+          tipo,
+          imagem,
+          conteudo: content,
+          conteudoHtml: html,
+          filename,
+        };
+      })
+    );
+
+    // Ordem fixa da HOME (mantida)
+    const ordemFixa = ["devocional.md", "mensagem-pastoral.md", "oracao.md"];
 
     return posts.sort(
       (a, b) => ordemFixa.indexOf(a.filename) - ordemFixa.indexOf(b.filename)

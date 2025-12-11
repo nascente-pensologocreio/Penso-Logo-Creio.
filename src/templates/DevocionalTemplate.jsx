@@ -60,7 +60,7 @@ export default function DevocionalTemplate({
             maxWidth: "1100px",
             width: "100%",
             backgroundImage:
-              "url('/src/assets/template-read-card-home.jpeg')",
+              "url('/src/assets/template-read-card-home.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",

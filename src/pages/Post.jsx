@@ -17,7 +17,9 @@ async function carregarLoaderLocal() {
 
 export default function Post() {
   const { slug } = useParams();
+
   const [post, setPost] = useState(null);
+  const [estado, setEstado] = useState("carregando"); // "carregando" | "ok" | "nao-encontrado"
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
@@ -27,18 +29,29 @@ export default function Post() {
     let ativo = true;
 
     async function carregar() {
-      const loadSinglePost = await carregarLoaderLocal();
-      const local = await loadSinglePost(slug);
+      setEstado("carregando");
+      setPost(null);
 
-      if (local) {
-        if (ativo)
+      // 1) Tentar conteúdo local (Markdown com front-matter)
+      try {
+        const loadSinglePost = await carregarLoaderLocal();
+        const local = await loadSinglePost(slug);
+
+        if (!ativo) return;
+
+        if (local) {
           setPost({
             ...local,
             fullContent: local.fullContent,
           });
-        return;
+          setEstado("ok");
+          return;
+        }
+      } catch (err) {
+        console.error("Erro ao carregar post local:", err);
       }
 
+      // 2) Tentar Firebase
       try {
         const db = await getFirebaseDB();
         const { doc, getDoc } = await import("firebase/firestore");
@@ -46,7 +59,9 @@ export default function Post() {
         const ref = doc(db, "publicacoes", slug);
         const snap = await getDoc(ref);
 
-        if (snap.exists() && ativo) {
+        if (!ativo) return;
+
+        if (snap.exists()) {
           const data = snap.data();
 
           const fullHtml =
@@ -61,20 +76,37 @@ export default function Post() {
             imageUrl: data.imageUrl || null,
           });
 
+          setEstado("ok");
           return;
         }
       } catch (err) {
         console.error("Erro Firebase:", err);
       }
 
-      if (ativo) setPost(null);
+      if (ativo) {
+        setEstado("nao-encontrado");
+        setPost(null);
+      }
     }
 
     carregar();
-    return () => (ativo = false);
+    return () => {
+      ativo = false;
+    };
   }, [slug]);
 
-  if (!post) {
+  if (estado === "carregando") {
+    return (
+      <main
+        className="min-h-[60vh] flex items-center justify-center text-gray-300 text-xl"
+        style={{ backgroundColor: "#010b0a" }}
+      >
+        Carregando conteúdo...
+      </main>
+    );
+  }
+
+  if (estado === "nao-encontrado") {
     return (
       <div className="min-h-[60vh] flex items-center justify-center text-gray-400 text-xl italic">
         Postagem não encontrada.
@@ -82,6 +114,7 @@ export default function Post() {
     );
   }
 
+  // estado === "ok"
   const imagemHero = post.imageUrl || post.imagem || null;
   const conteudoFinal = post.fullContent || "";
 
@@ -171,7 +204,7 @@ export default function Post() {
       >
         <div
           style={{
-            backgroundImage: "url('/src/assets/template-read-card-home.jpeg')",
+            backgroundImage: "url('/src/assets/template-read-card-home.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",

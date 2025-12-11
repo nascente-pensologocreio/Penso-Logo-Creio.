@@ -13,14 +13,12 @@ import { parseFrontmatter } from "../utils/markdownProcessor.js"; // motor unive
 
 const globHome = import.meta.glob("../content/home/*.md", {
   eager: true,
-  query: "?raw",
-  import: "default",
+  as: "raw",
 });
 
 const globBiblia = import.meta.glob("../content/biblia/**/*.md", {
   eager: true,
-  query: "?raw",
-  import: "default",
+  as: "raw",
 });
 
 // =========================================
@@ -88,9 +86,8 @@ export default function AdminPublish() {
 
     for (const path in todos) {
       try {
-        const raw = todos[path];
+        const raw = todos[path]; // string com markdown
 
-        // motor universal — remove parser manual antigo
         const { data, content } = parseFrontmatter(raw);
 
         // validação mínima

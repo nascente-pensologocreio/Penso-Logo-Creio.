@@ -6,8 +6,9 @@ import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
 
 export default function LayoutPrincipal() {
-  const backgroundTemplate = "/Template Verde espelhado Listas brancas verticais 300 DPI.png";
-  const logo = "/logo-site-fundo-transparene.png";
+  const backgroundTemplate =
+    "/src/assets/Template Verde espelhado Listas brancas verticais 300 DPI.webp";
+  const logo = "/src/assets/logo-site-fundo-transparene.webp";
   const location = useLocation();
   const isHome = location.pathname === "/";
 

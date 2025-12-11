@@ -1,6 +1,6 @@
 ---
 slug: "romanos-01-estudo-tematico"
-titulo: ""
+titulo: "O Evangelho, a Revelação e a Rebelião Humana"
 tipo: "estudo-tematico"
 origem: "biblia"
 livro: "romanos"

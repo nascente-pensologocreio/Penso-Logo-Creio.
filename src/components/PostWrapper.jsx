@@ -1,7 +1,7 @@
 // src/components/PostWrapper.jsx
 import React from "react";
 import "../styles/editorial-grid.css";
-import paperBg from "../assets/template-read-card-home.jpeg";
+import paperBg from "../assets/template-read-card-home.webp";
 
 /**
  * PostWrapper

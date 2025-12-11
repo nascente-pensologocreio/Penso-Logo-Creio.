@@ -6,7 +6,7 @@ subtitulo: "Não esmagará a cana quebrada, nem apagará o pavio que fumega."
 autor: "Capelão Nascente"
 data: "2025-12-07"
 readTime: "3 min"
-imageUrl: "/src/assets/devocional-home.png"
+imageUrl: "/src/assets/devocional-home.webp"
 origem: "home"
 livro: "Isaías / Mateus"
 capitulo: "Isaías 42 / Mateus 12"
@@ -14,6 +14,7 @@ tema_principal: "Consolo de Cristo para os quebrantados"
 tags: ["DESTAQUE", "Batalha", "Depressao", "Desemprego", "Dividas", "Doenca-morte", "medo", "solidao", "vicio"]
 referencia: "Isaías 42:3; Mateus 12:20"
 ---
+
 
 
 

@@ -71,7 +71,7 @@ export default function MensagemPastoral() {
     <main style={{ minHeight: "100vh", backgroundColor: "#010b0a", color: "#ededed" }}>
       <style>{`
         .post-box {
-          background-image: url('/Fundo-PostHome.jpeg');
+          background-image: url('/src/assets/Fundo-PostHome.webp');
           background-size: cover;
           padding: 2.5rem;
           border: 1px solid rgba(212,175,55,0.45);
