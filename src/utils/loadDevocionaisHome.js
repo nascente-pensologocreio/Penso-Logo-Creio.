@@ -89,6 +89,9 @@ export async function loadDevocionaisHome(options = {}) {
 
     const dataPublicacao = normalizarData(data.data);
 
+    // CORREÇÃO: Resolver imageUrl corretamente
+    const imageUrl = resolverImageUrl(data, tipoNormalizado);
+
     resultados.push({
       ...data,
       tipo: tipoNormalizado || data.tipo || "devocional",
@@ -97,6 +100,8 @@ export async function loadDevocionaisHome(options = {}) {
       path,
       data: dataPublicacao,
       dataOriginal: data.data || null,
+      imageUrl,
+      imagem: imageUrl,
       html: markdownToHtml(content),
       raw: content,
     });
@@ -111,6 +116,36 @@ export async function loadDevocionaisHome(options = {}) {
 
   cache.set(cacheKey, resultados);
   return resultados;
+}
+
+// NOVA FUNÇÃO: Resolve imageUrl do front-matter ou fallback por tipo
+function resolverImageUrl(data, tipo) {
+  // Se tem imageUrl no front-matter, corrige o caminho
+  if (data.imageUrl) {
+    return data.imageUrl.replace(/^\/src\/assets\//, '/assets/');
+  }
+  
+  // Se tem campo 'imagem', corrige o caminho
+  if (data.imagem) {
+    return data.imagem.replace(/^\/src\/assets\//, '/assets/');
+  }
+
+  // Fallback baseado no tipo
+  const tipoLower = (tipo || "").toLowerCase();
+  
+  if (tipoLower === "devocional") {
+    return "/assets/devocional-home.webp";
+  }
+  
+  if (tipoLower === "mensagem-pastoral") {
+    return "/assets/mensagem-pastoral-home.webp";
+  }
+  
+  if (tipoLower === "oracao") {
+    return "/assets/oracao-home.webp";
+  }
+
+  return null;
 }
 
 function filenameToSlug(path, fallbackTipo) {

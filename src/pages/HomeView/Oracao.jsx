@@ -101,7 +101,7 @@ export default function Oracao() {
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap');
 
         .post-box {
-          background-image: url('/src/assets/Fundo-PostHome.webp');
+          background-image: url('/assets/Fundo-PostHome.webp');
           background-size: cover;
           background-position: center;
           border: 1px solid rgba(212,175,55,0.45);

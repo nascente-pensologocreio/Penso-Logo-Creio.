@@ -2,10 +2,11 @@
 
 /**
  * ================================================================
- *  PLC Markdown Processor — v5.1 (LTS)
+ *  PLC Markdown Processor — v5.2 (LTS, com cache em memória)
  * ================================================================
  * - Parsing universal de front-matter (com suporte a arrays simples)
  * - Conversão simplificada de markdown → HTML
+ * - Cache leve em memória para markdownToHtml
  * ================================================================
  */
 
@@ -78,10 +79,18 @@ export function parseFrontmatter(raw) {
 }
 
 // ---------------------------------------------------------------
-// CONVERSOR DE MARKDOWN → HTML (SIMPLIFICADO)
+// CONVERSOR DE MARKDOWN → HTML (SIMPLIFICADO) + CACHE
 // ---------------------------------------------------------------
+
+// Cache simples em memória para conversões repetidas
+const markdownCache = new Map();
+
 export function markdownToHtml(md) {
   if (!md) return "";
+
+  // Se já foi processado, devolve do cache
+  const existing = markdownCache.get(md);
+  if (existing) return existing;
 
   let html = md;
 
@@ -97,6 +106,9 @@ export function markdownToHtml(md) {
   // Parágrafos (duas quebras)
   html = html.replace(/(?:\r?\n){2,}/g, "</p><p>");
   html = "<p>" + html + "</p>";
+
+  // Guarda no cache antes de retornar
+  markdownCache.set(md, html);
 
   return html;
 }

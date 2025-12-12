@@ -4,30 +4,34 @@
 
 import { parseFrontmatter, markdownToHtml } from "./markdownProcessor.js";
 
-// GLOB da home
+// GLOB da home (lazy, só lê arquivo quando precisar)
 const globHome = import.meta.glob("../content/home/*.md", {
-  eager: true,
-  query: "?raw",
-  import: "default",
+  as: "raw",
 });
 
-// GLOB da Bíblia
+// GLOB da Bíblia (lazy)
 const globBiblia = import.meta.glob("../content/biblia/**/*.md", {
-  eager: true,
-  query: "?raw",
-  import: "default",
+  as: "raw",
 });
 
 // função auxiliar para garantir imageUrl
 function resolverImagemParaPost(data) {
-  if (data.imageUrl) return data.imageUrl;
-  if (data.imagem) return data.imagem;
+  // Se já tem imageUrl definida, usa ela (removendo /src/ se necessário)
+  if (data.imageUrl) {
+    return data.imageUrl.replace(/^\/src\/assets\//, '/assets/');
+  }
+  
+  // Se tem campo 'imagem', usa ele (removendo /src/ se necessário)
+  if (data.imagem) {
+    return data.imagem.replace(/^\/src\/assets\//, '/assets/');
+  }
 
+  // Fallback baseado em tipo/slug
   const tipo = (data.tipo || "").toLowerCase();
   const slug = (data.slug || "").toLowerCase();
 
   if (tipo === "devocional" || slug.includes("devocional")) {
-    return "/src/assets/devocional-home.webp";
+    return "/assets/devocional-home.webp";
   }
 
   if (
@@ -35,11 +39,11 @@ function resolverImagemParaPost(data) {
     tipo === "pregacao" ||
     slug.includes("mensagem-pastoral")
   ) {
-    return "/src/assets/mensagem-pastoral-home.webp";
+    return "/assets/mensagem-pastoral-home.webp";
   }
 
   if (tipo === "oracao" || slug.includes("oracao")) {
-    return "/src/assets/oracao-home.webp";
+    return "/assets/oracao-home.webp";
   }
 
   return null;
@@ -51,7 +55,8 @@ export async function loadSinglePost(slug) {
     const encontrados = [];
 
     // 1) Procurar primeiro nos conteúdos da HOME
-    for (const [path, raw] of Object.entries(globHome)) {
+    for (const [path, loader] of Object.entries(globHome)) {
+      const raw = await loader();
       const { data, content } = parseFrontmatter(raw);
 
       if (data.slug) encontrados.push(data.slug);
@@ -71,7 +76,8 @@ export async function loadSinglePost(slug) {
     }
 
     // 2) Procurar nos conteúdos da BÍBLIA
-    for (const [path, raw] of Object.entries(globBiblia)) {
+    for (const [path, loader] of Object.entries(globBiblia)) {
+      const raw = await loader();
       const { data, content } = parseFrontmatter(raw);
 
       if (data.slug) encontrados.push(data.slug);

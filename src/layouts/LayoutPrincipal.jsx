@@ -7,8 +7,8 @@ import ScrollToTop from "../components/ScrollToTop";
 
 export default function LayoutPrincipal() {
   const backgroundTemplate =
-    "/src/assets/Template Verde espelhado Listas brancas verticais 300 DPI.webp";
-  const logo = "/src/assets/logo-site-fundo-transparene.webp";
+    "/assets/Template Verde espelhado Listas brancas verticais 300 DPI.webp";
+  const logo = "/assets/logo-site-fundo-transparene.webp";
   const location = useLocation();
   const isHome = location.pathname === "/";
 

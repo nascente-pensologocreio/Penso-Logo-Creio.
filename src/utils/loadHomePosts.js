@@ -33,7 +33,10 @@ export async function getHomePosts() {
           filename.replace(".md", "").trim()
         ).toLowerCase();
 
-        const imagem = data.imageUrl || null;
+        // CORREÇÃO: Remove /src/ do caminho da imagem
+        const imagem = data.imageUrl 
+          ? data.imageUrl.replace(/^\/src\/assets\//, '/assets/')
+          : null;
 
         const html = markdownToHtml(content);
 
@@ -41,6 +44,7 @@ export async function getHomePosts() {
           ...data,
           tipo,
           imagem,
+          imageUrl: imagem, // Garante que ambos os campos existam
           conteudo: content,
           conteudoHtml: html,
           filename,

@@ -204,7 +204,7 @@ export default function Post() {
       >
         <div
           style={{
-            backgroundImage: "url('/src/assets/template-read-card-home.webp')",
+            backgroundImage: "url('/assets/template-read-card-home.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",

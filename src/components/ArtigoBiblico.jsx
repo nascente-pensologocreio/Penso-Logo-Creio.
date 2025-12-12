@@ -72,7 +72,7 @@ export default function ArtigoBiblico({
           maxWidth: "1100px",
           margin: "0 auto",
           backgroundImage:
-            "url('/src/assets/template-read-card-home.webp')",
+            "url('/assets/template-read-card-home.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
