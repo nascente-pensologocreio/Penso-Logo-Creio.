@@ -1,0 +1,70 @@
+{
+  "ansiedade": [
+    "romanos/01/mensagem-pastoral.md",
+    "romanos/02/devocional-01.md",
+    "romanos/02/estudo-tematico.md",
+    "romanos/02/oracao.md"
+  ],
+  "duvida": [
+    "romanos/01/devocional-01.md",
+    "romanos/01/estudo-tematico.md",
+    "romanos/01/exposicao-homiletica.md",
+    "romanos/01/mensagem-pastoral.md",
+    "romanos/01/oracao.md",
+    "romanos/01/temas-controversos.md",
+    "romanos/01/terminologias.md"
+  ],
+  "esperanca": [
+    "romanos/01/devocional-01.md",
+    "romanos/01/estudo-tematico.md",
+    "romanos/01/exposicao-homiletica.md",
+    "romanos/01/mensagem-pastoral.md",
+    "romanos/01/oracao.md",
+    "romanos/01/temas-controversos.md",
+    "romanos/01/terminologias.md",
+    "romanos/02/devocional-01.md",
+    "romanos/02/estudo-tematico.md",
+    "romanos/02/exposicao-homiletica.md",
+    "romanos/02/mensagem-pastoral.md",
+    "romanos/02/oracao.md"
+  ],
+  "frustracao": [
+    "romanos/01/mensagem-pastoral.md"
+  ],
+  "futuro": [
+    "romanos/01/devocional-01.md",
+    "romanos/01/estudo-tematico.md",
+    "romanos/01/exposicao-homiletica.md",
+    "romanos/01/mensagem-pastoral.md",
+    "romanos/01/oracao.md"
+  ],
+  "medo": [
+    "romanos/01/devocional-01.md",
+    "romanos/01/estudo-tematico.md",
+    "romanos/01/exposicao-homiletica.md",
+    "romanos/01/mensagem-pastoral.md",
+    "romanos/01/oracao.md",
+    "romanos/01/temas-controversos.md",
+    "romanos/01/terminologias.md",
+    "romanos/02/devocional-01.md",
+    "romanos/02/oracao.md"
+  ],
+  "mudanca": [
+    "romanos/02/estudo-tematico.md",
+    "romanos/02/exposicao-homiletica.md",
+    "romanos/02/mensagem-pastoral.md",
+    "romanos/02/temas-controversos.md",
+    "romanos/02/terminologias.md"
+  ],
+  "perdao": [
+    "romanos/02/devocional-01.md",
+    "romanos/02/estudo-tematico.md",
+    "romanos/02/exposicao-homiletica.md",
+    "romanos/02/mensagem-pastoral.md",
+    "romanos/02/oracao.md",
+    "romanos/02/temas-controversos.md"
+  ],
+  "solidao": [
+    "romanos/01/mensagem-pastoral.md"
+  ]
+}

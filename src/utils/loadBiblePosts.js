@@ -11,7 +11,7 @@ const cache = new Map();
    GLOB — LAZY: importa os .md como string somente quando chamado
 --------------------------------------------------------- */
 const globBiblia = import.meta.glob("/src/content/biblia/**/*.md", {
-  as: "raw",
+  query: "?raw", import: "default",
 });
 
 /* ---------------------------------------------------------

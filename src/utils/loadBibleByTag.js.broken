@@ -1,3 +1,4 @@
+cat > src/utils/loadBibleByTag.js << 'EOF'
 // src/utils/loadBibleByTag.js
 import { parseFrontmatter, markdownToHtml } from "./markdownProcessor.js";
 import tagIndex from "@data/tag-index.json";
@@ -43,7 +44,7 @@ export async function loadBibleByTag(tag) {
       }
 
       try {
-        const rawMd = await loader();
+        const rawMd = await loader(); // LAZY: só carrega quando chamado
         const { data, content } = parseFrontmatter(rawMd);
 
         console.log(`📄 Processado: ${relativePath}`);
@@ -88,6 +89,7 @@ export async function loadBibleByTag(tag) {
     console.log("   - Devocionais:", resultados.devocional.length);
     console.log("   - Orações:", resultados.oracao.length);
 
+    // Ordenar por livro e capítulo
     const ordenar = (arr) =>
       arr.sort((a, b) => {
         if (a.livro !== b.livro) return a.livro.localeCompare(b.livro);
@@ -103,3 +105,4 @@ export async function loadBibleByTag(tag) {
     return { devocional: [], oracao: [] };
   }
 }
+EOF

@@ -4,13 +4,16 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/build-tag-index.mjs",
     "dev": "vite",
+    "prebuild": "node scripts/build-tag-index.mjs",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "format": "prettier --write \"src/**/*.{js,jsx,css}\"",
     "clean": "rm -rf node_modules package-lock.json && npm install",
-    "test": "vitest"
+    "test": "vitest",
+    "index-tags": "node scripts/build-tag-index.mjs"
   },
   "dependencies": {
     "@dataconnect/generated": "file:src/dataconnect-generated",

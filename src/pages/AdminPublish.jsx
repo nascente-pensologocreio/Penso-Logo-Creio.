@@ -13,12 +13,12 @@ import { parseFrontmatter } from "../utils/markdownProcessor.js"; // motor unive
 
 const globHome = import.meta.glob("../content/home/*.md", {
   eager: true,
-  as: "raw",
+  query: "?raw", import: "default",
 });
 
 const globBiblia = import.meta.glob("../content/biblia/**/*.md", {
   eager: true,
-  as: "raw",
+  query: "?raw", import: "default",
 });
 
 // =========================================

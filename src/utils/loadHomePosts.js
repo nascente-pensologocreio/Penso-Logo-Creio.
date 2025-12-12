@@ -6,7 +6,7 @@ import { parseFrontmatter, markdownToHtml } from "./markdownProcessor.js";
 
 // GLOB da home, AGORA LAZY (sem eager)
 const globHome = import.meta.glob("/src/content/home/*.md", {
-  as: "raw",
+  query: "?raw", import: "default",
 });
 
 /**
