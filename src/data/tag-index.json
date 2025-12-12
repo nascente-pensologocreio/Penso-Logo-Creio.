@@ -1,70 +1,220 @@
 {
   "ansiedade": [
-    "romanos/01/mensagem-pastoral.md",
-    "romanos/02/devocional-01.md",
-    "romanos/02/estudo-tematico.md",
-    "romanos/02/oracao.md"
+    {
+      "path": "romanos/01/mensagem-pastoral.md",
+      "slug": "romanos-01-mensagem-pastoral"
+    },
+    {
+      "path": "romanos/02/devocional-01.md",
+      "slug": "romanos-02-devocional"
+    },
+    {
+      "path": "romanos/02/estudo-tematico.md",
+      "slug": "romanos-02-estudo-tematico"
+    },
+    {
+      "path": "romanos/02/oracao.md",
+      "slug": "romanos-02-oracao"
+    }
   ],
   "duvida": [
-    "romanos/01/devocional-01.md",
-    "romanos/01/estudo-tematico.md",
-    "romanos/01/exposicao-homiletica.md",
-    "romanos/01/mensagem-pastoral.md",
-    "romanos/01/oracao.md",
-    "romanos/01/temas-controversos.md",
-    "romanos/01/terminologias.md"
+    {
+      "path": "romanos/01/devocional-01.md",
+      "slug": "romanos-01-devocional"
+    },
+    {
+      "path": "romanos/01/estudo-tematico.md",
+      "slug": "romanos-01-estudo-tematico"
+    },
+    {
+      "path": "romanos/01/exposicao-homiletica.md",
+      "slug": "romanos-01-pregacao-tecnica"
+    },
+    {
+      "path": "romanos/01/mensagem-pastoral.md",
+      "slug": "romanos-01-mensagem-pastoral"
+    },
+    {
+      "path": "romanos/01/oracao.md",
+      "slug": "romanos-01-oracao"
+    },
+    {
+      "path": "romanos/01/temas-controversos.md",
+      "slug": "romanos-01-temas-controversos"
+    },
+    {
+      "path": "romanos/01/terminologias.md",
+      "slug": "romanos-01-terminologias-chave"
+    }
   ],
   "esperanca": [
-    "romanos/01/devocional-01.md",
-    "romanos/01/estudo-tematico.md",
-    "romanos/01/exposicao-homiletica.md",
-    "romanos/01/mensagem-pastoral.md",
-    "romanos/01/oracao.md",
-    "romanos/01/temas-controversos.md",
-    "romanos/01/terminologias.md",
-    "romanos/02/devocional-01.md",
-    "romanos/02/estudo-tematico.md",
-    "romanos/02/exposicao-homiletica.md",
-    "romanos/02/mensagem-pastoral.md",
-    "romanos/02/oracao.md"
+    {
+      "path": "romanos/01/devocional-01.md",
+      "slug": "romanos-01-devocional"
+    },
+    {
+      "path": "romanos/01/estudo-tematico.md",
+      "slug": "romanos-01-estudo-tematico"
+    },
+    {
+      "path": "romanos/01/exposicao-homiletica.md",
+      "slug": "romanos-01-pregacao-tecnica"
+    },
+    {
+      "path": "romanos/01/mensagem-pastoral.md",
+      "slug": "romanos-01-mensagem-pastoral"
+    },
+    {
+      "path": "romanos/01/oracao.md",
+      "slug": "romanos-01-oracao"
+    },
+    {
+      "path": "romanos/01/temas-controversos.md",
+      "slug": "romanos-01-temas-controversos"
+    },
+    {
+      "path": "romanos/01/terminologias.md",
+      "slug": "romanos-01-terminologias-chave"
+    },
+    {
+      "path": "romanos/02/devocional-01.md",
+      "slug": "romanos-02-devocional"
+    },
+    {
+      "path": "romanos/02/estudo-tematico.md",
+      "slug": "romanos-02-estudo-tematico"
+    },
+    {
+      "path": "romanos/02/exposicao-homiletica.md",
+      "slug": "romanos-02-pregacao-tecnica"
+    },
+    {
+      "path": "romanos/02/mensagem-pastoral.md",
+      "slug": "romanos-02-mensagem-pastoral"
+    },
+    {
+      "path": "romanos/02/oracao.md",
+      "slug": "romanos-02-oracao"
+    }
   ],
   "frustracao": [
-    "romanos/01/mensagem-pastoral.md"
+    {
+      "path": "romanos/01/mensagem-pastoral.md",
+      "slug": "romanos-01-mensagem-pastoral"
+    }
   ],
   "futuro": [
-    "romanos/01/devocional-01.md",
-    "romanos/01/estudo-tematico.md",
-    "romanos/01/exposicao-homiletica.md",
-    "romanos/01/mensagem-pastoral.md",
-    "romanos/01/oracao.md"
+    {
+      "path": "romanos/01/devocional-01.md",
+      "slug": "romanos-01-devocional"
+    },
+    {
+      "path": "romanos/01/estudo-tematico.md",
+      "slug": "romanos-01-estudo-tematico"
+    },
+    {
+      "path": "romanos/01/exposicao-homiletica.md",
+      "slug": "romanos-01-pregacao-tecnica"
+    },
+    {
+      "path": "romanos/01/mensagem-pastoral.md",
+      "slug": "romanos-01-mensagem-pastoral"
+    },
+    {
+      "path": "romanos/01/oracao.md",
+      "slug": "romanos-01-oracao"
+    }
   ],
   "medo": [
-    "romanos/01/devocional-01.md",
-    "romanos/01/estudo-tematico.md",
-    "romanos/01/exposicao-homiletica.md",
-    "romanos/01/mensagem-pastoral.md",
-    "romanos/01/oracao.md",
-    "romanos/01/temas-controversos.md",
-    "romanos/01/terminologias.md",
-    "romanos/02/devocional-01.md",
-    "romanos/02/oracao.md"
+    {
+      "path": "romanos/01/devocional-01.md",
+      "slug": "romanos-01-devocional"
+    },
+    {
+      "path": "romanos/01/estudo-tematico.md",
+      "slug": "romanos-01-estudo-tematico"
+    },
+    {
+      "path": "romanos/01/exposicao-homiletica.md",
+      "slug": "romanos-01-pregacao-tecnica"
+    },
+    {
+      "path": "romanos/01/mensagem-pastoral.md",
+      "slug": "romanos-01-mensagem-pastoral"
+    },
+    {
+      "path": "romanos/01/oracao.md",
+      "slug": "romanos-01-oracao"
+    },
+    {
+      "path": "romanos/01/temas-controversos.md",
+      "slug": "romanos-01-temas-controversos"
+    },
+    {
+      "path": "romanos/01/terminologias.md",
+      "slug": "romanos-01-terminologias-chave"
+    },
+    {
+      "path": "romanos/02/devocional-01.md",
+      "slug": "romanos-02-devocional"
+    },
+    {
+      "path": "romanos/02/oracao.md",
+      "slug": "romanos-02-oracao"
+    }
   ],
   "mudanca": [
-    "romanos/02/estudo-tematico.md",
-    "romanos/02/exposicao-homiletica.md",
-    "romanos/02/mensagem-pastoral.md",
-    "romanos/02/temas-controversos.md",
-    "romanos/02/terminologias.md"
+    {
+      "path": "romanos/02/estudo-tematico.md",
+      "slug": "romanos-02-estudo-tematico"
+    },
+    {
+      "path": "romanos/02/exposicao-homiletica.md",
+      "slug": "romanos-02-pregacao-tecnica"
+    },
+    {
+      "path": "romanos/02/mensagem-pastoral.md",
+      "slug": "romanos-02-mensagem-pastoral"
+    },
+    {
+      "path": "romanos/02/temas-controversos.md",
+      "slug": "romanos-02-temas-controversos"
+    },
+    {
+      "path": "romanos/02/terminologias.md",
+      "slug": "romanos-02-terminologias-chave"
+    }
   ],
   "perdao": [
-    "romanos/02/devocional-01.md",
-    "romanos/02/estudo-tematico.md",
-    "romanos/02/exposicao-homiletica.md",
-    "romanos/02/mensagem-pastoral.md",
-    "romanos/02/oracao.md",
-    "romanos/02/temas-controversos.md"
+    {
+      "path": "romanos/02/devocional-01.md",
+      "slug": "romanos-02-devocional"
+    },
+    {
+      "path": "romanos/02/estudo-tematico.md",
+      "slug": "romanos-02-estudo-tematico"
+    },
+    {
+      "path": "romanos/02/exposicao-homiletica.md",
+      "slug": "romanos-02-pregacao-tecnica"
+    },
+    {
+      "path": "romanos/02/mensagem-pastoral.md",
+      "slug": "romanos-02-mensagem-pastoral"
+    },
+    {
+      "path": "romanos/02/oracao.md",
+      "slug": "romanos-02-oracao"
+    },
+    {
+      "path": "romanos/02/temas-controversos.md",
+      "slug": "romanos-02-temas-controversos"
+    }
   ],
   "solidao": [
-    "romanos/01/mensagem-pastoral.md"
+    {
+      "path": "romanos/01/mensagem-pastoral.md",
+      "slug": "romanos-01-mensagem-pastoral"
+    }
   ]
 }

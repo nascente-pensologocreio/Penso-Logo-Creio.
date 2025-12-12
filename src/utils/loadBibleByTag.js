@@ -19,20 +19,21 @@ export async function loadBibleByTag(tag) {
   try {
     const normalizedTag = tag.toLowerCase().trim();
     
-    // LOOKUP O(1) no índice
-    const filePaths = tagIndex[normalizedTag];
+    // LOOKUP O(1) no índice (agora com path + slug)
+    const indexedItems = tagIndex[normalizedTag];
     
-    if (!filePaths || filePaths.length === 0) {
+    if (!indexedItems || indexedItems.length === 0) {
       console.log(`📭 Nenhum arquivo encontrado para tag "${tag}"`);
       return { devocional: [], oracao: [] };
     }
 
-    console.log(`📁 Arquivos indexados para "${tag}":`, filePaths.length);
+    console.log(`📁 Arquivos indexados para "${tag}":`, indexedItems.length);
 
     const resultados = { devocional: [], oracao: [] };
 
     // CARREGA APENAS OS ARQUIVOS DA TAG (lazy)
-    for (const relativePath of filePaths) {
+    for (const item of indexedItems) {
+      const relativePath = item.path;
       const fullPath = `/src/content/biblia/${relativePath}`;
       
       const loader = lazyModules[fullPath];
@@ -49,6 +50,8 @@ export async function loadBibleByTag(tag) {
         console.log(`📄 Processado: ${relativePath}`);
 
         const tipo = (data?.tipo || "").toLowerCase();
+        
+        // ACEITAR APENAS devocional e oracao
         if (tipo !== "devocional" && tipo !== "oracao") {
           console.log(`   ⏭️ Pulado (tipo: ${tipo})`);
           continue;
@@ -57,7 +60,7 @@ export async function loadBibleByTag(tag) {
         const html = markdownToHtml(content);
 
         const post = {
-          slug: data.slug || relativePath.split("/").pop().replace(".md", ""),
+          slug: data.slug || item.slug || relativePath.split("/").pop().replace(".md", ""),
           titulo: data.titulo || "Sem título",
           tipo,
           origem: data.origem || "biblia",
@@ -75,7 +78,7 @@ export async function loadBibleByTag(tag) {
         if (tipo === "devocional") {
           resultados.devocional.push(post);
           console.log("   ✅ Adicionado a devocional");
-        } else {
+        } else if (tipo === "oracao") {
           resultados.oracao.push(post);
           console.log("   ✅ Adicionado a oracao");
         }

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * PensoLogoCreio - Tag Index Generator
- * Gera índice JSON de tags → arquivos markdown
+ * PensoLogoCreio - Tag Index Generator v2
+ * Gera índice JSON de tags → {path, slug} para lookup 100% confiável
  * Roda automaticamente em dev e build
  */
 
@@ -74,12 +74,13 @@ function parseFrontmatter(raw) {
 }
 
 // ============================================
-// INDEXADOR RECURSIVO
+// INDEXADOR RECURSIVO (AGORA INCLUI SLUGS)
 // ============================================
 function indexTags(dir) {
   const tagIndex = {};
   let filesProcessed = 0;
   let filesWithTags = 0;
+  let filesWithoutSlug = 0;
 
   function traverse(currentDir) {
     const entries = fs.readdirSync(currentDir, { withFileTypes: true });
@@ -105,6 +106,14 @@ function indexTags(dir) {
               fullPath
             ).replace(/\\/g, '/');
 
+            // Extrair slug do frontmatter
+            const slug = data.slug || null;
+            
+            if (!slug) {
+              filesWithoutSlug++;
+              console.warn(`⚠️  Arquivo sem slug: ${relativePath}`);
+            }
+
             for (const tag of data.tags) {
               const normalizedTag = tag.toLowerCase().trim();
               
@@ -112,7 +121,11 @@ function indexTags(dir) {
                 tagIndex[normalizedTag] = [];
               }
               
-              tagIndex[normalizedTag].push(relativePath);
+              // Armazenar objeto com path E slug
+              tagIndex[normalizedTag].push({
+                path: relativePath,
+                slug: slug
+              });
             }
           }
         } catch (error) {
@@ -123,17 +136,32 @@ function indexTags(dir) {
   }
 
   traverse(dir);
-  return { tagIndex, filesProcessed, filesWithTags };
+  return { tagIndex, filesProcessed, filesWithTags, filesWithoutSlug };
 }
 
 // ============================================
-// OTIMIZADOR (remove duplicatas, ordena)
+// OTIMIZADOR (remove duplicatas por slug, ordena)
 // ============================================
 function optimizeIndex(index) {
   const optimized = {};
 
-  for (const [tag, paths] of Object.entries(index)) {
-    optimized[tag] = [...new Set(paths)].sort();
+  for (const [tag, items] of Object.entries(index)) {
+    // Remover duplicatas baseando-se no slug
+    const uniqueItems = [];
+    const seenSlugs = new Set();
+    
+    for (const item of items) {
+      if (item.slug && !seenSlugs.has(item.slug)) {
+        seenSlugs.add(item.slug);
+        uniqueItems.push(item);
+      } else if (!item.slug) {
+        // Manter itens sem slug (embora não sejam ideais)
+        uniqueItems.push(item);
+      }
+    }
+    
+    // Ordenar por path
+    optimized[tag] = uniqueItems.sort((a, b) => a.path.localeCompare(b.path));
   }
 
   return Object.keys(optimized)
@@ -154,7 +182,7 @@ if (!fs.existsSync(BIBLIA_DIR)) {
   process.exit(1);
 }
 
-const { tagIndex, filesProcessed, filesWithTags } = indexTags(BIBLIA_DIR);
+const { tagIndex, filesProcessed, filesWithTags, filesWithoutSlug } = indexTags(BIBLIA_DIR);
 const optimizedIndex = optimizeIndex(tagIndex);
 
 // Garantir que o diretório src/data existe
@@ -170,6 +198,7 @@ console.log('✅ Indexação concluída!\n');
 console.log(`📊 Estatísticas:`);
 console.log(`   • Arquivos processados: ${filesProcessed}`);
 console.log(`   • Arquivos com tags: ${filesWithTags}`);
+console.log(`   • Arquivos sem slug: ${filesWithoutSlug}`);
 console.log(`   • Tags únicas: ${Object.keys(optimizedIndex).length}`);
 console.log(`\n📁 Índice salvo em: ${OUTPUT_FILE}`);
 
@@ -178,8 +207,8 @@ if (Object.keys(optimizedIndex).length > 0) {
   console.log(`\n🔖 Preview (5 primeiras tags):`);
   Object.entries(optimizedIndex)
     .slice(0, 5)
-    .forEach(([tag, files]) => {
-      console.log(`   • ${tag}: ${files.length} arquivo(s)`);
+    .forEach(([tag, items]) => {
+      console.log(`   • ${tag}: ${items.length} arquivo(s)`);
     });
 } else {
   console.log(`\n💡 Nenhuma tag encontrada ainda (arquivos estão vazios)`);

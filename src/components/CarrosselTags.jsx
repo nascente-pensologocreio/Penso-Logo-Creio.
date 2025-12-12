@@ -1,41 +1,64 @@
 // src/components/CarrosselTags.jsx
 import React, { useRef, useEffect, useState } from "react";
 
-// usar APENAS src/assets como fonte oficial das imagens
+// USAR IMAGENS OTIMIZADAS (99% menores!)
 const TAG_IMAGES = {
-  amor: "/assets/tag-amor.webp",
-  ansiedade: "/assets/tag-ansiedade.webp",
-  batalha: "/assets/tag-batalha.webp",
-  depressao: "/assets/tag-depressao.webp",
-  desemprego: "/assets/tag-desemprego.webp",
-  dividas: "/assets/tag-dividas.webp",
-  "doenca-morte": "/assets/tag-doenca-morte.webp",
-  duvida: "/assets/tag-duvida.webp",
-  esperanca: "/assets/tag-esperanca.webp",
-  frustracao: "/assets/tag-frustracao.webp",
-  futuro: "/assets/tag-futuro.webp",
-  insonia: "/assets/tag-insonia.webp",
-  luto: "/assets/tag-luto.webp",
-  medo: "/assets/tag-medo.webp",
-  mudanca: "/assets/tag-mudanca.webp",
-  perdao: "/assets/tag-perdao.webp",
-  separacao: "/assets/tag-separacao.webp",
-  solidao: "/assets/tag-solidao.webp",
-  sonho: "/assets/tag-sonho.webp",
-  vicio: "/assets/tag-vicio.webp",
+  amor: "/assets/tags-optimized/tag-amor.webp",
+  ansiedade: "/assets/tags-optimized/tag-ansiedade.webp",
+  batalha: "/assets/tags-optimized/tag-batalha.webp",
+  depressao: "/assets/tags-optimized/tag-depressao.webp",
+  desemprego: "/assets/tags-optimized/tag-desemprego.webp",
+  dividas: "/assets/tags-optimized/tag-dividas.webp",
+  "doenca-morte": "/assets/tags-optimized/tag-doenca-morte.webp",
+  duvida: "/assets/tags-optimized/tag-duvida.webp",
+  esperanca: "/assets/tags-optimized/tag-esperanca.webp",
+  frustracao: "/assets/tags-optimized/tag-frustracao.webp",
+  futuro: "/assets/tags-optimized/tag-futuro.webp",
+  insonia: "/assets/tags-optimized/tag-insonia.webp",
+  luto: "/assets/tags-optimized/tag-luto.webp",
+  medo: "/assets/tags-optimized/tag-medo.webp",
+  mudanca: "/assets/tags-optimized/tag-mudanca.webp",
+  perdao: "/assets/tags-optimized/tag-perdao.webp",
+  separacao: "/assets/tags-optimized/tag-separacao.webp",
+  solidao: "/assets/tags-optimized/tag-solidao.webp",
+  sonho: "/assets/tags-optimized/tag-sonho.webp",
+  vicio: "/assets/tags-optimized/tag-vicio.webp",
 };
 
 export default function CarrosselTags({ tags, onSelectTag }) {
   const faixa = useRef(null);
   const containerRef = useRef(null);
   const [displayTags, setDisplayTags] = useState([]);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
   const CARD_WIDTH = 160;
   const STEP = 2 * CARD_WIDTH;
 
+  // Preload apenas das primeiras 3 imagens visíveis
   useEffect(() => {
-    setDisplayTags([...tags, ...tags, ...tags]);
+    const preloadImages = async () => {
+      const firstThree = tags.slice(0, 3);
+      const promises = firstThree.map((tag) => {
+        return new Promise((resolve) => {
+          const img = new Image();
+          img.onload = resolve;
+          img.onerror = resolve;
+          img.src = TAG_IMAGES[tag] || TAG_IMAGES["amor"];
+        });
+      });
+      
+      await Promise.all(promises);
+      setImagesLoaded(true);
+    };
+
+    preloadImages();
   }, [tags]);
+
+  useEffect(() => {
+    if (imagesLoaded) {
+      setDisplayTags([...tags, ...tags, ...tags]);
+    }
+  }, [tags, imagesLoaded]);
 
   const esquerda = () => {
     if (!faixa.current) return;
@@ -129,6 +152,14 @@ export default function CarrosselTags({ tags, onSelectTag }) {
       card.style.transform = "rotateX(0deg) rotateY(0deg)";
     }
   };
+
+  if (!imagesLoaded) {
+    return (
+      <div className="relative w-full py-16 flex justify-center">
+        <div className="text-yellow-400 text-lg">Carregando temas...</div>
+      </div>
+    );
+  }
 
   return (
     <div className="relative w-full py-16 flex justify-center">
@@ -224,6 +255,7 @@ export default function CarrosselTags({ tags, onSelectTag }) {
                       alt={tag}
                       className="h-40 w-full object-cover rounded-t-lg"
                       loading="lazy"
+                      decoding="async"
                     />
 
                     <div className="p-4 text-center bg-gradient-to-t from-black/80 to-transparent">

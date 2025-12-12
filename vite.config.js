@@ -2,19 +2,36 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import { fileURLToPath, URL } from "url";
-import { copyFileSync, mkdirSync } from "fs";
+import { copyFileSync, mkdirSync, readdirSync } from "fs";
 
 export default defineConfig({
   plugins: [
     react(),
     {
-      name: 'copy-tag-index',
+      name: 'copy-data-files',
       writeBundle() {
-        // Criar pasta dist/data se não existir
+        // Copiar tag-index.json
         mkdirSync('dist/data', { recursive: true });
-        // Copiar arquivo
         copyFileSync('src/data/tag-index.json', 'dist/data/tag-index.json');
         console.log('✅ tag-index.json copiado para dist/data/');
+        
+        // Copiar imagens otimizadas do carrossel
+        mkdirSync('dist/assets/tags-optimized', { recursive: true });
+        const tagsDir = 'src/assets/tags-optimized';
+        const files = readdirSync(tagsDir);
+        
+        let count = 0;
+        files.forEach(file => {
+          if (file.endsWith('.webp')) {
+            copyFileSync(
+              `${tagsDir}/${file}`,
+              `dist/assets/tags-optimized/${file}`
+            );
+            count++;
+          }
+        });
+        
+        console.log(`✅ ${count} imagens otimizadas copiadas para dist/assets/tags-optimized/`);
       }
     }
   ],

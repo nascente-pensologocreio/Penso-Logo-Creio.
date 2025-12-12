@@ -1,8 +1,9 @@
 // src/utils/loadSinglePost.js
-// Carregador otimizado com lookup direto por slug
-// Versão v7 — Performance O(1) com fallback para variações de nome
+// Carregador otimizado com lookup 100% confiável via tag-index.json
+// Versão v8 — Performance O(1) garantida
 
 import { parseFrontmatter, markdownToHtml } from "./markdownProcessor.js";
+import tagIndex from "@data/tag-index.json";
 
 // GLOB da home (lazy)
 const globHome = import.meta.glob("../content/home/*.md", {
@@ -10,11 +11,23 @@ const globHome = import.meta.glob("../content/home/*.md", {
   import: "default",
 });
 
-// GLOB da Bíblia (lazy) - mantido para fallback
+// GLOB da Bíblia (lazy)
 const globBiblia = import.meta.glob("../content/biblia/**/*.md", {
   query: "?raw", 
   import: "default",
 });
+
+// Criar índice inverso: slug → path (uma única vez)
+const slugToPath = {};
+for (const [tag, items] of Object.entries(tagIndex)) {
+  for (const item of items) {
+    if (item.slug) {
+      slugToPath[item.slug] = `../content/biblia/${item.path}`;
+    }
+  }
+}
+
+console.log("📚 Índice slug→path criado:", Object.keys(slugToPath).length, "slugs");
 
 // Função auxiliar para resolver imagem
 function resolverImagemParaPost(data) {
@@ -45,44 +58,7 @@ function resolverImagemParaPost(data) {
 }
 
 /**
- * Constrói paths prováveis a partir do slug
- * Ex: "romanos-01-devocional" → ["../content/biblia/romanos/01/devocional.md", "../content/biblia/romanos/01/devocional-01.md"]
- */
-function construirPathDeSlug(slug) {
-  const partes = slug.split('-');
-  
-  if (partes.length < 3) {
-    return null;
-  }
-
-  // Procurar primeiro número (capítulo)
-  let indiceCapitulo = -1;
-  for (let i = 0; i < partes.length; i++) {
-    if (/^\d+$/.test(partes[i])) {
-      indiceCapitulo = i;
-      break;
-    }
-  }
-  
-  if (indiceCapitulo === -1) {
-    return null;
-  }
-  
-  const livro = partes.slice(0, indiceCapitulo).join('-');
-  const capitulo = partes[indiceCapitulo].padStart(2, '0');
-  const tipo = partes.slice(indiceCapitulo + 1).join('-');
-  
-  const pathBase = `../content/biblia/${livro}/${capitulo}`;
-  
-  // Retornar array com as possibilidades
-  return [
-    `${pathBase}/${tipo}.md`,                          // Ex: devocional-01.md
-    `${pathBase}/${tipo.replace(/-\d+$/, '')}.md`     // Ex: devocional.md (sem sufixo)
-  ];
-}
-
-/**
- * Carrega post por slug com lookup direto O(1)
+ * Carrega post por slug com lookup direto 100% confiável
  */
 export async function loadSinglePost(slug) {
   console.log("🔍 loadSinglePost chamado com slug:", slug);
@@ -108,24 +84,18 @@ export async function loadSinglePost(slug) {
       }
     }
 
-    // 2️⃣ LOOKUP DIRETO NA BÍBLIA (O(1) - instantâneo!)
-    const pathsPossiveis = construirPathDeSlug(slug);
-    console.log("🔍 Paths construídos:", pathsPossiveis);
-
-    let pathEncontrado = null;
-    if (pathsPossiveis) {
-      pathEncontrado = pathsPossiveis.find(p => globBiblia[p]);
-      console.log("🔍 Path encontrado:", pathEncontrado || "nenhum");
-    }
-
-    if (pathEncontrado) {
-      console.log("🎯 Lookup direto bem-sucedido:", pathEncontrado);
+    // 2️⃣ LOOKUP DIRETO 100% CONFIÁVEL (O(1) - instantâneo!)
+    const pathDireto = slugToPath[slug];
+    
+    if (pathDireto) {
+      console.log("🎯 Lookup direto bem-sucedido:", pathDireto);
       
-      const loader = globBiblia[pathEncontrado];
-      const raw = await loader();
-      const { data, content } = parseFrontmatter(raw);
+      const loader = globBiblia[pathDireto];
       
-      if (data.slug === slug) {
+      if (loader) {
+        const raw = await loader();
+        const { data, content } = parseFrontmatter(raw);
+        
         const imageUrl = resolverImagemParaPost(data);
         
         return {
@@ -134,13 +104,16 @@ export async function loadSinglePost(slug) {
           imageUrl,
           content,
           fullContent: markdownToHtml(content),
-          path: pathEncontrado,
+          path: pathDireto,
         };
+      } else {
+        console.warn("⚠️ Path encontrado no índice mas loader não existe:", pathDireto);
       }
     }
 
-    // 3️⃣ FALLBACK: Busca lenta (apenas se lookup direto falhou)
-    console.warn("⚠️ Lookup direto falhou, tentando busca completa...");
+    // 3️⃣ FALLBACK: Busca lenta (APENAS se não estiver no índice)
+    console.warn("⚠️ Slug não encontrado no índice, tentando busca completa...");
+    console.warn("⚠️ Isso indica que o arquivo não tem tags ou o índice está desatualizado!");
     
     for (const [path, loader] of Object.entries(globBiblia)) {
       const raw = await loader();
