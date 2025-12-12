@@ -1,6 +1,6 @@
 ---
 slug: "beijo-e-a-espada"
-tipo: "devocional"
+tipo: "mensagem-pastoral"
 titulo: "Beijo e a Espada"
 subtitulo: ""
 autor: "Capelão Nascente"

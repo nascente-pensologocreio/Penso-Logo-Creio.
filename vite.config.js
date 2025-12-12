@@ -10,10 +10,16 @@ export default defineConfig({
     {
       name: 'copy-data-files',
       writeBundle() {
-        // Copiar tag-index.json
+        // Criar pasta dist/data
         mkdirSync('dist/data', { recursive: true });
+        
+        // Copiar tag-index.json
         copyFileSync('src/data/tag-index.json', 'dist/data/tag-index.json');
         console.log('✅ tag-index.json copiado para dist/data/');
+        
+        // Copiar home-index.json
+        copyFileSync('src/data/home-index.json', 'dist/data/home-index.json');
+        console.log('✅ home-index.json copiado para dist/data/');
         
         // Copiar imagens otimizadas do carrossel
         mkdirSync('dist/assets/tags-optimized', { recursive: true });

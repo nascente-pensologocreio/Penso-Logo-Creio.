@@ -1,65 +1,143 @@
 // src/utils/loadHomePosts.js
-// Carrega e normaliza os 3 posts oficiais da HOME a partir de /src/content/home/*.md
-// Mantém 100% o uso de front-matter como motor de metadados.
+// Carrega posts da HOME usando home-index.json para lookup O(1)
+// Versão v2 - Otimizado com índice
 
 import { parseFrontmatter, markdownToHtml } from "./markdownProcessor.js";
+import homeIndex from "@data/home-index.json";
 
-// GLOB da home, AGORA LAZY (sem eager)
-const globHome = import.meta.glob("/src/content/home/*.md", {
-  query: "?raw", import: "default",
+// GLOB da home (lazy)
+const globHome = import.meta.glob("/src/content/home/**/*.md", {
+  query: "?raw",
+  import: "default",
 });
 
+// Criar índice inverso: slug → path (uma única vez)
+const slugToPath = {};
+for (const [tipo, items] of Object.entries(homeIndex)) {
+  for (const item of items) {
+    if (item.slug) {
+      slugToPath[item.slug] = `/src/content/home/${item.path}`;
+    }
+  }
+}
+
+console.log("🏠 Índice slug→path HOME criado:", Object.keys(slugToPath).length, "slugs");
+
 /**
- * Carrega apenas os arquivos realmente existentes em /src/content/home,
- * preservando front-matter como fonte de:
- * - tipo
- * - slug
- * - imageUrl
- * - demais campos
+ * Carrega os 3 posts ativos da HOME (raiz da pasta)
+ * Ordem fixa: devocional, mensagem-pastoral, oracao
  */
 export async function getHomePosts() {
   try {
-    const entries = Object.entries(globHome);
+    // Slugs dos 3 posts ativos (sempre na raiz)
+    const activeSlugs = [
+      "cristo-e-a-cana-quebrada-devocional",
+      "cristo-e-a-cana-quebrada",
+      "cristo-e-a-cana-quebrada-oracao"
+    ];
 
-    // Carrega todos os .md da pasta home sob demanda (em paralelo)
-    const posts = await Promise.all(
-      entries.map(async ([path, loader]) => {
-        const raw = await loader(); // string markdown
-        const { data, content } = parseFrontmatter(raw);
+    const posts = [];
 
-        const filename = path.split("/").pop().toLowerCase();
+    for (const slug of activeSlugs) {
+      const path = slugToPath[slug];
+      
+      if (!path) {
+        console.warn(`⚠️ Slug não encontrado no índice: ${slug}`);
+        continue;
+      }
 
-        const tipo = (data.tipo ||
-          filename.replace(".md", "").trim()
-        ).toLowerCase();
+      const loader = globHome[path];
+      
+      if (!loader) {
+        console.warn(`⚠️ Loader não encontrado: ${path}`);
+        continue;
+      }
 
-        // CORREÇÃO: Remove /src/ do caminho da imagem
-        const imagem = data.imageUrl 
-          ? data.imageUrl.replace(/^\/src\/assets\//, '/assets/')
-          : null;
+      const raw = await loader();
+      const { data, content } = parseFrontmatter(raw);
 
-        const html = markdownToHtml(content);
+      const tipo = (data.tipo || "").toLowerCase();
 
-        return {
-          ...data,
-          tipo,
-          imagem,
-          imageUrl: imagem, // Garante que ambos os campos existam
-          conteudo: content,
-          conteudoHtml: html,
-          filename,
-        };
-      })
+      // Corrigir caminho da imagem
+      const imagem = data.imageUrl 
+        ? data.imageUrl.replace(/^\/src\/assets\//, '/assets/')
+        : null;
+
+      const html = markdownToHtml(content);
+
+      posts.push({
+        ...data,
+        tipo,
+        imagem,
+        imageUrl: imagem,
+        conteudo: content,
+        conteudoHtml: html,
+        slug: data.slug
+      });
+    }
+
+    // Manter ordem fixa: devocional, mensagem-pastoral, oracao
+    const ordemFixa = ["devocional", "mensagem-pastoral", "oracao"];
+    
+    return posts.sort((a, b) => 
+      ordemFixa.indexOf(a.tipo) - ordemFixa.indexOf(b.tipo)
     );
 
-    // Ordem fixa da HOME (mantida)
-    const ordemFixa = ["devocional.md", "mensagem-pastoral.md", "oracao.md"];
-
-    return posts.sort(
-      (a, b) => ordemFixa.indexOf(a.filename) - ordemFixa.indexOf(b.filename)
-    );
   } catch (err) {
-    console.error("ERRO EM getHomePosts():", err);
+    console.error("❌ ERRO em getHomePosts():", err);
+    return [];
+  }
+}
+
+/**
+ * Carrega posts da HOME por tipo (para futuras expansões)
+ * @param {string} tipo - "devocional", "mensagem-pastoral", "oracao"
+ * @param {number} limit - Número máximo de posts (padrão: 10)
+ */
+export async function getHomePostsByType(tipo, limit = 10) {
+  try {
+    const normalizedTipo = tipo.toLowerCase();
+    const items = homeIndex[normalizedTipo] || [];
+
+    if (items.length === 0) {
+      return [];
+    }
+
+    const posts = [];
+
+    for (const item of items.slice(0, limit)) {
+      const path = `/src/content/home/${item.path}`;
+      const loader = globHome[path];
+      
+      if (!loader) {
+        console.warn(`⚠️ Loader não encontrado: ${path}`);
+        continue;
+      }
+
+      const raw = await loader();
+      const { data, content } = parseFrontmatter(raw);
+
+      const imagem = data.imageUrl 
+        ? data.imageUrl.replace(/^\/src\/assets\//, '/assets/')
+        : null;
+
+      const html = markdownToHtml(content);
+
+      posts.push({
+        ...data,
+        tipo: normalizedTipo,
+        imagem,
+        imageUrl: imagem,
+        conteudo: content,
+        conteudoHtml: html,
+        slug: data.slug
+      });
+    }
+
+    return posts;
+
+  } catch (err) {
+    console.error(`❌ ERRO em getHomePostsByType(${tipo}):`, err);
     return [];
   }
 }

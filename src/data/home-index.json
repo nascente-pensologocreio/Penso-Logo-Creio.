@@ -1,0 +1,80 @@
+{
+  "devocional": [
+    {
+      "slug": "cristo-e-a-cana-quebrada-devocional",
+      "path": "devocional.md",
+      "data": "2025-12-07",
+      "tags": [
+        "DESTAQUE",
+        "Batalha",
+        "Depressao",
+        "Desemprego",
+        "Dividas",
+        "Doenca-morte",
+        "medo",
+        "solidao",
+        "vicio"
+      ]
+    },
+    {
+      "slug": "quando-o-cansaco-clama-por-solidao-mas-a-alma-por-companhia",
+      "path": "calendar/devocional/2025-11-21-devocional.md",
+      "data": "2025-11-22",
+      "tags": [
+        "DESTAQUE"
+      ]
+    }
+  ],
+  "mensagem-pastoral": [
+    {
+      "slug": "cristo-e-a-cana-quebrada",
+      "path": "mensagem-pastoral.md",
+      "data": "2025-12-07",
+      "tags": [
+        "DESTAQUE",
+        "Batalha",
+        "Depressao",
+        "Desemprego",
+        "Dividas",
+        "Doenca-morte",
+        "medo",
+        "solidao",
+        "vicio"
+      ]
+    },
+    {
+      "slug": "beijo-e-a-espada",
+      "path": "calendar/mensagem-pastoral/2025-11-21-mensagem-pastoral.md",
+      "data": "2025-11-22",
+      "tags": [
+        "DESTAQUE"
+      ]
+    }
+  ],
+  "oracao": [
+    {
+      "slug": "cristo-e-a-cana-quebrada-oracao",
+      "path": "oracao.md",
+      "data": "2025-12-07",
+      "tags": [
+        "DESTAQUE",
+        "Batalha",
+        "Depressao",
+        "Desemprego",
+        "Dividas",
+        "Doenca-morte",
+        "medo",
+        "solidao",
+        "vicio"
+      ]
+    },
+    {
+      "slug": "por-pouco-nao-me-persuades",
+      "path": "calendar/oracao/2025-11-21-oracao.md",
+      "data": "2025-11-22",
+      "tags": [
+        "DESTAQUE"
+      ]
+    }
+  ]
+}

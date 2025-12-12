@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "predev": "node scripts/build-tag-index.mjs",
+    "predev": "node scripts/build-tag-index.mjs && node scripts/build-home-index.mjs",
     "dev": "vite",
-    "prebuild": "node scripts/build-tag-index.mjs",
+    "prebuild": "node scripts/build-tag-index.mjs && node scripts/build-home-index.mjs",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
