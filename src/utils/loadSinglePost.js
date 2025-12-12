@@ -1,6 +1,6 @@
 // src/utils/loadSinglePost.js
 // Carregador otimizado com lookup direto por slug
-// Versão v6 — Performance O(1)
+// Versão v7 — Performance O(1) com fallback para variações de nome
 
 import { parseFrontmatter, markdownToHtml } from "./markdownProcessor.js";
 
@@ -45,8 +45,8 @@ function resolverImagemParaPost(data) {
 }
 
 /**
- * Constrói path provável a partir do slug
- * Ex: "romanos-01-oracao" → "../content/biblia/romanos/01/oracao.md"
+ * Constrói paths prováveis a partir do slug
+ * Ex: "romanos-01-devocional" → ["../content/biblia/romanos/01/devocional.md", "../content/biblia/romanos/01/devocional-01.md"]
  */
 function construirPathDeSlug(slug) {
   const partes = slug.split('-');
@@ -55,10 +55,6 @@ function construirPathDeSlug(slug) {
     return null;
   }
 
-  let livro = '';
-  let capitulo = '';
-  let tipo = '';
-  
   // Procurar primeiro número (capítulo)
   let indiceCapitulo = -1;
   for (let i = 0; i < partes.length; i++) {
@@ -72,11 +68,17 @@ function construirPathDeSlug(slug) {
     return null;
   }
   
-  livro = partes.slice(0, indiceCapitulo).join('-');
-  capitulo = partes[indiceCapitulo].padStart(2, '0');
-  tipo = partes.slice(indiceCapitulo + 1).join('-');
+  const livro = partes.slice(0, indiceCapitulo).join('-');
+  const capitulo = partes[indiceCapitulo].padStart(2, '0');
+  const tipo = partes.slice(indiceCapitulo + 1).join('-');
   
-  return `../content/biblia/${livro}/${capitulo}/${tipo}.md`;
+  const pathBase = `../content/biblia/${livro}/${capitulo}`;
+  
+  // Retornar array com as possibilidades
+  return [
+    `${pathBase}/${tipo}.md`,                          // Ex: devocional-01.md
+    `${pathBase}/${tipo.replace(/-\d+$/, '')}.md`     // Ex: devocional.md (sem sufixo)
+  ];
 }
 
 /**
@@ -107,12 +109,19 @@ export async function loadSinglePost(slug) {
     }
 
     // 2️⃣ LOOKUP DIRETO NA BÍBLIA (O(1) - instantâneo!)
-    const pathProvavel = construirPathDeSlug(slug);
-    
-    if (pathProvavel && globBiblia[pathProvavel]) {
-      console.log("🎯 Lookup direto bem-sucedido:", pathProvavel);
+    const pathsPossiveis = construirPathDeSlug(slug);
+    console.log("🔍 Paths construídos:", pathsPossiveis);
+
+    let pathEncontrado = null;
+    if (pathsPossiveis) {
+      pathEncontrado = pathsPossiveis.find(p => globBiblia[p]);
+      console.log("🔍 Path encontrado:", pathEncontrado || "nenhum");
+    }
+
+    if (pathEncontrado) {
+      console.log("🎯 Lookup direto bem-sucedido:", pathEncontrado);
       
-      const loader = globBiblia[pathProvavel];
+      const loader = globBiblia[pathEncontrado];
       const raw = await loader();
       const { data, content } = parseFrontmatter(raw);
       
@@ -125,7 +134,7 @@ export async function loadSinglePost(slug) {
           imageUrl,
           content,
           fullContent: markdownToHtml(content),
-          path: pathProvavel,
+          path: pathEncontrado,
         };
       }
     }

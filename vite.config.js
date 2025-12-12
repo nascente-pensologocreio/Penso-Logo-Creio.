@@ -2,9 +2,22 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import { fileURLToPath, URL } from "url";
+import { copyFileSync, mkdirSync } from "fs";
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    {
+      name: 'copy-tag-index',
+      writeBundle() {
+        // Criar pasta dist/data se não existir
+        mkdirSync('dist/data', { recursive: true });
+        // Copiar arquivo
+        copyFileSync('src/data/tag-index.json', 'dist/data/tag-index.json');
+        console.log('✅ tag-index.json copiado para dist/data/');
+      }
+    }
+  ],
 
   resolve: {
     alias: {
@@ -36,22 +49,9 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          "react-vendor": [
-            "react",
-            "react-dom",
-            "react-router-dom"
-          ],
-
-          "firebase-core": [
-            "firebase/app",
-            "firebase/firestore",
-            "firebase/auth",
-            "firebase/storage"
-          ],
-
-          "markdown-bundle": [
-            "markdown-it"
-          ]
+          "react-vendor": ["react", "react-dom", "react-router-dom"],
+          "firebase-core": ["firebase/app", "firebase/firestore", "firebase/auth", "firebase/storage"],
+          "markdown-bundle": ["markdown-it"]
         }
       }
     }
