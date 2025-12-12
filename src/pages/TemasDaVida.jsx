@@ -3,7 +3,9 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 import CarrosselTags from "@components/CarrosselTags.jsx";
+import AccordionLivros from "@components/AccordionLivros.jsx";
 import { loadBibleByTag } from "@utils/loadBibleByTag.js";
+import { extrairLivroDoPath, testamentoDoLivro } from "@utils/mapearLivros.js";
 
 import "@components/editorial/editorial-swap.css";
 
@@ -38,14 +40,13 @@ export default function TemasDaVida() {
   const [posts, setPosts] = useState({ devocional: [], oracao: [] });
   const [loading, setLoading] = useState(false);
   const [tipoSelecionado, setTipoSelecionado] = useState("devocional");
-  const [capituloSelecionadoKey, setCapituloSelecionadoKey] = useState(null);
+  const [testamentoSelecionado, setTestamentoSelecionado] = useState("todos"); // "todos", "AT", "NT"
 
   useEffect(() => {
     if (!tag) return;
 
     async function carregar() {
       setLoading(true);
-      setCapituloSelecionadoKey(null);
 
       try {
         const resultado = await loadBibleByTag(tag);
@@ -74,48 +75,49 @@ export default function TemasDaVida() {
     navigate(`/temas-da-vida/${t}`);
   };
 
-  // Agrupamento por capítulo (um post por tipo+capítulo)
-  const agrupadoPorCapitulo = useMemo(() => {
-    const resultado = { devocional: {}, oracao: {} };
+  const handleSelectPost = (post) => {
+    navigate(`/artigo/${post.slug}`, { state: { from: 'temas-da-vida' } });
+  };
 
-    const processar = (tipo) => {
-      const lista = Array.isArray(posts[tipo]) ? posts[tipo] : [];
-      for (const post of lista) {
-        const livro = (post.livro || "").toLowerCase();
-        const cap = String(post.capitulo || "").padStart(2, "0");
-        const chave = `${livro}-${cap}`; // ex: "romanos-01"
-        if (!resultado[tipo][chave]) {
-          resultado[tipo][chave] = post;
-        }
+  // Agrupar posts por livro
+  const livrosAgrupados = useMemo(() => {
+    const lista = Array.isArray(posts[tipoSelecionado]) ? posts[tipoSelecionado] : [];
+    
+    // Filtrar por testamento
+    const listaFiltrada = lista.filter(post => {
+      if (testamentoSelecionado === "todos") return true;
+      const livroSlug = (post.livro || "").toLowerCase();
+      const testamento = testamentoDoLivro(livroSlug);
+      return testamento === testamentoSelecionado;
+    });
+
+    // Agrupar por livro
+    const grupos = {};
+    for (const post of listaFiltrada) {
+      const livro = (post.livro || "").toLowerCase();
+      if (!grupos[livro]) {
+        grupos[livro] = [];
       }
-    };
+      grupos[livro].push(post);
+    }
 
-    processar("devocional");
-    processar("oracao");
+    // Ordenar capítulos dentro de cada livro
+    for (const livro in grupos) {
+      grupos[livro].sort((a, b) => {
+        return parseInt(a.capitulo || 0) - parseInt(b.capitulo || 0);
+      });
+    }
+
+    // Converter para array e ordenar livros alfabeticamente
+    const resultado = Object.entries(grupos)
+      .map(([livro, posts]) => ({ livro, posts }))
+      .sort((a, b) => a.livro.localeCompare(b.livro));
+
     return resultado;
-  }, [posts]);
+  }, [posts, tipoSelecionado, testamentoSelecionado]);
 
-  // capítulos disponíveis para o tipo atual
-  const capitulosDoTipo = useMemo(() => {
-    const mapa = agrupadoPorCapitulo[tipoSelecionado] || {};
-    const entradas = Object.entries(mapa);
-    entradas.sort((a, b) => a[0].localeCompare(b[0]));
-    return entradas; // [ [chave, post], ... ]
-  }, [agrupadoPorCapitulo, tipoSelecionado]);
-
-  // garantir capítulo selecionado
-  useEffect(() => {
-    if (!capitulosDoTipo.length) {
-      setCapituloSelecionadoKey(null);
-      return;
-    }
-    const existe = capitulosDoTipo.some(
-      ([chave]) => chave === capituloSelecionadoKey
-    );
-    if (!existe) {
-      setCapituloSelecionadoKey(capitulosDoTipo[0][0]);
-    }
-  }, [capitulosDoTipo, capituloSelecionadoKey]);
+  // Verificar se tem conteúdo no tipo atual (antes do filtro de testamento)
+  const temConteudo = posts[tipoSelecionado]?.length > 0;
 
   return (
     <main
@@ -241,8 +243,8 @@ export default function TemasDaVida() {
             </div>
           )}
 
-          {/* VAZIO GERAL */}
-          {!loading && capitulosDoTipo.length === 0 && (
+          {/* VAZIO TOTAL (sem nenhum post do tipo) */}
+          {!loading && !temConteudo && (
             <div
               style={{
                 textAlign: "center",
@@ -255,20 +257,15 @@ export default function TemasDaVida() {
             </div>
           )}
 
-          {/* NÍVEL 2: LISTA DE CAPÍTULOS */}
-          {!loading && capitulosDoTipo.length > 0 && (
-            <div
-              style={{
-                maxWidth: "640px",
-                margin: "0 auto",
-              }}
-            >
+          {/* NÍVEL 2: FILTRO DE TESTAMENTO + ACCORDION */}
+          {!loading && temConteudo && (
+            <>
               <h2
                 style={{
                   fontFamily: "'Playfair Display', serif",
                   fontSize: "1.5rem",
                   color: "#D4AF37",
-                  marginBottom: "1rem",
+                  marginBottom: "1.5rem",
                   textAlign: "center",
                 }}
               >
@@ -277,57 +274,97 @@ export default function TemasDaVida() {
                   : "Escolha o capítulo para ler a oração"}
               </h2>
 
-              <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                {capitulosDoTipo.map(([chave, post]) => {
-                  const labelCapitulo = `${post.livro} ${parseInt(
-                    post.capitulo || "0",
-                    10
-                  )}`;
-                  const ativo = chave === capituloSelecionadoKey;
+              {/* FILTRO DE TESTAMENTO */}
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  gap: "1rem",
+                  marginBottom: "2rem",
+                }}
+              >
+                <button
+                  onClick={() => setTestamentoSelecionado("todos")}
+                  style={{
+                    fontFamily: "Georgia, serif",
+                    fontSize: "0.95rem",
+                    color: testamentoSelecionado === "todos" ? "#1A202C" : "#D4AF37",
+                    background: testamentoSelecionado === "todos"
+                      ? "linear-gradient(90deg, #d4af37, #f6e27a)"
+                      : "transparent",
+                    border: "1px solid rgba(212, 175, 55, 0.5)",
+                    borderRadius: "999px",
+                    padding: "0.5rem 1.5rem",
+                    cursor: "pointer",
+                    transition: "all 0.3s ease",
+                  }}
+                >
+                  Todos
+                </button>
 
-                  return (
-                    <li key={chave} style={{ marginBottom: "0.75rem" }}>
-                      <button
-                        type="button"
-                        onClick={() => navigate(`/artigo/${post.slug}`)}
-                        style={{
-                          width: "100%",
-                          display: "flex",
-                          justifyContent: "space-between",
-                          alignItems: "center",
-                          padding: "0.9rem 1.25rem",
-                          borderRadius: "999px",
-                          border: ativo
-                            ? "1px solid rgba(212, 175, 55, 0.9)"
-                            : "1px solid rgba(212, 175, 55, 0.4)",
-                          background: ativo
-                            ? "linear-gradient(90deg, #d4af37, #f6e27a)"
-                            : "rgba(8, 26, 23, 0.9)",
-                          color: ativo ? "#1A202C" : "#EDEDED",
-                          fontFamily: "Georgia, 'Times New Roman', serif",
-                          fontSize: "0.95rem",
-                          cursor: "pointer",
-                          boxShadow: ativo
-                            ? "0 0 18px rgba(212, 175, 55, 0.8)"
-                            : "0 0 0 rgba(0, 0, 0, 0)",
-                          transition: "all 0.25s ease",
-                        }}
-                      >
-                        <span>{labelCapitulo}</span>
-                        <span
-                          style={{
-                            fontSize: "0.85rem",
-                            opacity: ativo ? 0.85 : 0.75,
-                          }}
-                        >
-                          {post.titulo || "(sem título)"}
-                        </span>
-                      </button>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
+                <button
+                  onClick={() => setTestamentoSelecionado("AT")}
+                  style={{
+                    fontFamily: "Georgia, serif",
+                    fontSize: "0.95rem",
+                    color: testamentoSelecionado === "AT" ? "#1A202C" : "#D4AF37",
+                    background: testamentoSelecionado === "AT"
+                      ? "linear-gradient(90deg, #d4af37, #f6e27a)"
+                      : "transparent",
+                    border: "1px solid rgba(212, 175, 55, 0.5)",
+                    borderRadius: "999px",
+                    padding: "0.5rem 1.5rem",
+                    cursor: "pointer",
+                    transition: "all 0.3s ease",
+                  }}
+                >
+                  Antigo Testamento
+                </button>
+
+                <button
+                  onClick={() => setTestamentoSelecionado("NT")}
+                  style={{
+                    fontFamily: "Georgia, serif",
+                    fontSize: "0.95rem",
+                    color: testamentoSelecionado === "NT" ? "#1A202C" : "#D4AF37",
+                    background: testamentoSelecionado === "NT"
+                      ? "linear-gradient(90deg, #d4af37, #f6e27a)"
+                      : "transparent",
+                    border: "1px solid rgba(212, 175, 55, 0.5)",
+                    borderRadius: "999px",
+                    padding: "0.5rem 1.5rem",
+                    cursor: "pointer",
+                    transition: "all 0.3s ease",
+                  }}
+                >
+                  Novo Testamento
+                </button>
+              </div>
+
+              {/* VAZIO APÓS FILTRO DE TESTAMENTO */}
+              {livrosAgrupados.length === 0 && (
+                <div
+                  style={{
+                    textAlign: "center",
+                    color: "#718096",
+                    padding: "2rem",
+                    fontSize: "1rem",
+                  }}
+                >
+                  Ainda não há {tipoSelecionado}s marcados com esta tag no{" "}
+                  {testamentoSelecionado === "AT" ? "Antigo" : "Novo"} Testamento.
+                </div>
+              )}
+
+              {/* ACCORDION DE LIVROS */}
+              {livrosAgrupados.length > 0 && (
+                <AccordionLivros
+                  livrosAgrupados={livrosAgrupados}
+                  onSelectPost={handleSelectPost}
+                  slugAtivo={null}
+                />
+              )}
+            </>
           )}
         </section>
       )}

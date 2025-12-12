@@ -13,12 +13,18 @@ const links = [
   { to: "/calendario", label: "🕰️ Calendário" },
 ];
 
-// função que normaliza a rota atual para um “menu alvo”
-function getActiveRoot(pathname) {
+// função que normaliza a rota atual para um "menu alvo"
+function getActiveRoot(pathname, locationState) {
   if (!pathname || pathname === "/") return "/";
 
-  // posts premium da home: /artigo/:slug → Início
-  if (pathname.startsWith("/artigo/")) return "/";
+  // posts premium da home: /artigo/:slug
+  // Detectar origem pelo location.state
+  if (pathname.startsWith("/artigo/")) {
+    if (locationState?.from === 'temas-da-vida') {
+      return "/temas-da-vida";
+    }
+    return "/";  // Default: Home
+  }
 
   // posts Firebase: /post/:slug → Biblioteca (não há item, então nenhum ativo)
   if (pathname.startsWith("/post/")) return null;
@@ -34,7 +40,7 @@ function getActiveRoot(pathname) {
 export default function NavBar() {
   const location = useLocation();
   const path = location.pathname || "/";
-  const activeRoot = getActiveRoot(path);
+  const activeRoot = getActiveRoot(path, location.state);
 
   return (
     <ul
