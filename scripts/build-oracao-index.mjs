@@ -36,7 +36,7 @@ function buscarOracoes(dir) {
               tags: frontmatter.tags || [],
               livro: frontmatter.livro || livro,
               capitulo: frontmatter.capitulo || capitulo,
-              caminho: `/biblia/${livro}/${livro}-${capitulo}-oracao`
+              caminho: `/biblia/${livro}/${frontmatter.slug || livro + "-" + capitulo + "-oracao"}`
             });
           }
         } catch (err) {

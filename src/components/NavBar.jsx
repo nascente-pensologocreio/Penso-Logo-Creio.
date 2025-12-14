@@ -27,6 +27,11 @@ function getActiveRoot(pathname, locationState) {
   }
 
   // posts Firebase: /post/:slug → Biblioteca (não há item, então nenhum ativo)
+
+  // orações bíblicas: /biblia/:livro/:slug → Oração
+  if (pathname.startsWith("/biblia/")) {
+    return "/oracoes";
+  }
   if (pathname.startsWith("/post/")) return null;
 
   // demais rotas: usa o primeiro segmento como base
