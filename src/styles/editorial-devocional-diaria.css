@@ -5,7 +5,7 @@
 .devocional-diaria-grid {
   display: grid;
   /* coluna esquerda menor para sobrar mais espaço de leitura */
-  grid-template-columns: 260px minmax(0, 1fr);
+  grid-template-columns: 320px minmax(0, 1fr);
   gap: 3rem;
   align-items: flex-start;
 }

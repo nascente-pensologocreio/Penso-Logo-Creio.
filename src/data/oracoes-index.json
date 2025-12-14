@@ -1,0 +1,5947 @@
+[
+  {
+    "livro": "1corintios",
+    "capitulo": "01",
+    "slug": "1corintios-01-oracao"
+  },
+  {
+    "livro": "1corintios",
+    "capitulo": "02",
+    "slug": "1corintios-02-oracao"
+  },
+  {
+    "livro": "1corintios",
+    "capitulo": "03",
+    "slug": "1corintios-03-oracao"
+  },
+  {
+    "livro": "1corintios",
+    "capitulo": "04",
+    "slug": "1corintios-04-oracao"
+  },
+  {
+    "livro": "1corintios",
+    "capitulo": "05",
+    "slug": "1corintios-05-oracao"
+  },
+  {
+    "livro": "1corintios",
+    "capitulo": "06",
+    "slug": "1corintios-06-oracao"
+  },
+  {
+    "livro": "1corintios",
+    "capitulo": "07",
+    "slug": "1corintios-07-oracao"
+  },
+  {
+    "livro": "1corintios",
+    "capitulo": "08",
+    "slug": "1corintios-08-oracao"
+  },
+  {
+    "livro": "1corintios",
+    "capitulo": "09",
+    "slug": "1corintios-09-oracao"
+  },
+  {
+    "livro": "1corintios",
+    "capitulo": "10",
+    "slug": "1corintios-10-oracao"
+  },
+  {
+    "livro": "1corintios",
+    "capitulo": "11",
+    "slug": "1corintios-11-oracao"
+  },
+  {
+    "livro": "1corintios",
+    "capitulo": "12",
+    "slug": "1corintios-12-oracao"
+  },
+  {
+    "livro": "1corintios",
+    "capitulo": "13",
+    "slug": "1corintios-13-oracao"
+  },
+  {
+    "livro": "1corintios",
+    "capitulo": "14",
+    "slug": "1corintios-14-oracao"
+  },
+  {
+    "livro": "1corintios",
+    "capitulo": "15",
+    "slug": "1corintios-15-oracao"
+  },
+  {
+    "livro": "1corintios",
+    "capitulo": "16",
+    "slug": "1corintios-16-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "01",
+    "slug": "1cronicas-01-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "02",
+    "slug": "1cronicas-02-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "03",
+    "slug": "1cronicas-03-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "04",
+    "slug": "1cronicas-04-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "05",
+    "slug": "1cronicas-05-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "06",
+    "slug": "1cronicas-06-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "07",
+    "slug": "1cronicas-07-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "08",
+    "slug": "1cronicas-08-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "09",
+    "slug": "1cronicas-09-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "10",
+    "slug": "1cronicas-10-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "11",
+    "slug": "1cronicas-11-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "12",
+    "slug": "1cronicas-12-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "13",
+    "slug": "1cronicas-13-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "14",
+    "slug": "1cronicas-14-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "15",
+    "slug": "1cronicas-15-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "16",
+    "slug": "1cronicas-16-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "17",
+    "slug": "1cronicas-17-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "18",
+    "slug": "1cronicas-18-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "19",
+    "slug": "1cronicas-19-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "20",
+    "slug": "1cronicas-20-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "21",
+    "slug": "1cronicas-21-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "22",
+    "slug": "1cronicas-22-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "23",
+    "slug": "1cronicas-23-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "24",
+    "slug": "1cronicas-24-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "25",
+    "slug": "1cronicas-25-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "26",
+    "slug": "1cronicas-26-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "27",
+    "slug": "1cronicas-27-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "28",
+    "slug": "1cronicas-28-oracao"
+  },
+  {
+    "livro": "1cronicas",
+    "capitulo": "29",
+    "slug": "1cronicas-29-oracao"
+  },
+  {
+    "livro": "1joao",
+    "capitulo": "01",
+    "slug": "1joao-01-oracao"
+  },
+  {
+    "livro": "1joao",
+    "capitulo": "02",
+    "slug": "1joao-02-oracao"
+  },
+  {
+    "livro": "1joao",
+    "capitulo": "03",
+    "slug": "1joao-03-oracao"
+  },
+  {
+    "livro": "1joao",
+    "capitulo": "04",
+    "slug": "1joao-04-oracao"
+  },
+  {
+    "livro": "1joao",
+    "capitulo": "05",
+    "slug": "1joao-05-oracao"
+  },
+  {
+    "livro": "1pedro",
+    "capitulo": "01",
+    "slug": "1pedro-01-oracao"
+  },
+  {
+    "livro": "1pedro",
+    "capitulo": "02",
+    "slug": "1pedro-02-oracao"
+  },
+  {
+    "livro": "1pedro",
+    "capitulo": "03",
+    "slug": "1pedro-03-oracao"
+  },
+  {
+    "livro": "1pedro",
+    "capitulo": "04",
+    "slug": "1pedro-04-oracao"
+  },
+  {
+    "livro": "1pedro",
+    "capitulo": "05",
+    "slug": "1pedro-05-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "01",
+    "slug": "1reis-01-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "02",
+    "slug": "1reis-02-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "03",
+    "slug": "1reis-03-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "04",
+    "slug": "1reis-04-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "05",
+    "slug": "1reis-05-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "06",
+    "slug": "1reis-06-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "07",
+    "slug": "1reis-07-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "08",
+    "slug": "1reis-08-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "09",
+    "slug": "1reis-09-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "10",
+    "slug": "1reis-10-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "11",
+    "slug": "1reis-11-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "12",
+    "slug": "1reis-12-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "13",
+    "slug": "1reis-13-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "14",
+    "slug": "1reis-14-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "15",
+    "slug": "1reis-15-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "16",
+    "slug": "1reis-16-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "17",
+    "slug": "1reis-17-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "18",
+    "slug": "1reis-18-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "19",
+    "slug": "1reis-19-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "20",
+    "slug": "1reis-20-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "21",
+    "slug": "1reis-21-oracao"
+  },
+  {
+    "livro": "1reis",
+    "capitulo": "22",
+    "slug": "1reis-22-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "01",
+    "slug": "1samuel-01-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "02",
+    "slug": "1samuel-02-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "03",
+    "slug": "1samuel-03-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "04",
+    "slug": "1samuel-04-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "05",
+    "slug": "1samuel-05-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "06",
+    "slug": "1samuel-06-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "07",
+    "slug": "1samuel-07-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "08",
+    "slug": "1samuel-08-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "09",
+    "slug": "1samuel-09-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "10",
+    "slug": "1samuel-10-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "11",
+    "slug": "1samuel-11-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "12",
+    "slug": "1samuel-12-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "13",
+    "slug": "1samuel-13-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "14",
+    "slug": "1samuel-14-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "15",
+    "slug": "1samuel-15-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "16",
+    "slug": "1samuel-16-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "17",
+    "slug": "1samuel-17-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "18",
+    "slug": "1samuel-18-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "19",
+    "slug": "1samuel-19-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "20",
+    "slug": "1samuel-20-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "21",
+    "slug": "1samuel-21-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "22",
+    "slug": "1samuel-22-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "23",
+    "slug": "1samuel-23-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "24",
+    "slug": "1samuel-24-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "25",
+    "slug": "1samuel-25-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "26",
+    "slug": "1samuel-26-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "27",
+    "slug": "1samuel-27-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "28",
+    "slug": "1samuel-28-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "29",
+    "slug": "1samuel-29-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "30",
+    "slug": "1samuel-30-oracao"
+  },
+  {
+    "livro": "1samuel",
+    "capitulo": "31",
+    "slug": "1samuel-31-oracao"
+  },
+  {
+    "livro": "1tessalonicenses",
+    "capitulo": "01",
+    "slug": "1tessalonicenses-01-oracao"
+  },
+  {
+    "livro": "1tessalonicenses",
+    "capitulo": "02",
+    "slug": "1tessalonicenses-02-oracao"
+  },
+  {
+    "livro": "1tessalonicenses",
+    "capitulo": "03",
+    "slug": "1tessalonicenses-03-oracao"
+  },
+  {
+    "livro": "1tessalonicenses",
+    "capitulo": "04",
+    "slug": "1tessalonicenses-04-oracao"
+  },
+  {
+    "livro": "1tessalonicenses",
+    "capitulo": "05",
+    "slug": "1tessalonicenses-05-oracao"
+  },
+  {
+    "livro": "1timoteo",
+    "capitulo": "01",
+    "slug": "1timoteo-01-oracao"
+  },
+  {
+    "livro": "1timoteo",
+    "capitulo": "02",
+    "slug": "1timoteo-02-oracao"
+  },
+  {
+    "livro": "1timoteo",
+    "capitulo": "03",
+    "slug": "1timoteo-03-oracao"
+  },
+  {
+    "livro": "1timoteo",
+    "capitulo": "04",
+    "slug": "1timoteo-04-oracao"
+  },
+  {
+    "livro": "1timoteo",
+    "capitulo": "05",
+    "slug": "1timoteo-05-oracao"
+  },
+  {
+    "livro": "1timoteo",
+    "capitulo": "06",
+    "slug": "1timoteo-06-oracao"
+  },
+  {
+    "livro": "2corintios",
+    "capitulo": "01",
+    "slug": "2corintios-01-oracao"
+  },
+  {
+    "livro": "2corintios",
+    "capitulo": "02",
+    "slug": "2corintios-02-oracao"
+  },
+  {
+    "livro": "2corintios",
+    "capitulo": "03",
+    "slug": "2corintios-03-oracao"
+  },
+  {
+    "livro": "2corintios",
+    "capitulo": "04",
+    "slug": "2corintios-04-oracao"
+  },
+  {
+    "livro": "2corintios",
+    "capitulo": "05",
+    "slug": "2corintios-05-oracao"
+  },
+  {
+    "livro": "2corintios",
+    "capitulo": "06",
+    "slug": "2corintios-06-oracao"
+  },
+  {
+    "livro": "2corintios",
+    "capitulo": "07",
+    "slug": "2corintios-07-oracao"
+  },
+  {
+    "livro": "2corintios",
+    "capitulo": "08",
+    "slug": "2corintios-08-oracao"
+  },
+  {
+    "livro": "2corintios",
+    "capitulo": "09",
+    "slug": "2corintios-09-oracao"
+  },
+  {
+    "livro": "2corintios",
+    "capitulo": "10",
+    "slug": "2corintios-10-oracao"
+  },
+  {
+    "livro": "2corintios",
+    "capitulo": "11",
+    "slug": "2corintios-11-oracao"
+  },
+  {
+    "livro": "2corintios",
+    "capitulo": "12",
+    "slug": "2corintios-12-oracao"
+  },
+  {
+    "livro": "2corintios",
+    "capitulo": "13",
+    "slug": "2corintios-13-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "01",
+    "slug": "2cronicas-01-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "02",
+    "slug": "2cronicas-02-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "03",
+    "slug": "2cronicas-03-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "04",
+    "slug": "2cronicas-04-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "05",
+    "slug": "2cronicas-05-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "06",
+    "slug": "2cronicas-06-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "07",
+    "slug": "2cronicas-07-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "08",
+    "slug": "2cronicas-08-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "09",
+    "slug": "2cronicas-09-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "10",
+    "slug": "2cronicas-10-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "11",
+    "slug": "2cronicas-11-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "12",
+    "slug": "2cronicas-12-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "13",
+    "slug": "2cronicas-13-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "14",
+    "slug": "2cronicas-14-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "15",
+    "slug": "2cronicas-15-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "16",
+    "slug": "2cronicas-16-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "17",
+    "slug": "2cronicas-17-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "18",
+    "slug": "2cronicas-18-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "19",
+    "slug": "2cronicas-19-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "20",
+    "slug": "2cronicas-20-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "21",
+    "slug": "2cronicas-21-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "22",
+    "slug": "2cronicas-22-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "23",
+    "slug": "2cronicas-23-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "24",
+    "slug": "2cronicas-24-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "25",
+    "slug": "2cronicas-25-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "26",
+    "slug": "2cronicas-26-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "27",
+    "slug": "2cronicas-27-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "28",
+    "slug": "2cronicas-28-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "29",
+    "slug": "2cronicas-29-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "30",
+    "slug": "2cronicas-30-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "31",
+    "slug": "2cronicas-31-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "32",
+    "slug": "2cronicas-32-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "33",
+    "slug": "2cronicas-33-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "34",
+    "slug": "2cronicas-34-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "35",
+    "slug": "2cronicas-35-oracao"
+  },
+  {
+    "livro": "2cronicas",
+    "capitulo": "36",
+    "slug": "2cronicas-36-oracao"
+  },
+  {
+    "livro": "2joao",
+    "capitulo": "01",
+    "slug": "2joao-01-oracao"
+  },
+  {
+    "livro": "2pedro",
+    "capitulo": "01",
+    "slug": "2pedro-01-oracao"
+  },
+  {
+    "livro": "2pedro",
+    "capitulo": "02",
+    "slug": "2pedro-02-oracao"
+  },
+  {
+    "livro": "2pedro",
+    "capitulo": "03",
+    "slug": "2pedro-03-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "01",
+    "slug": "2reis-01-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "02",
+    "slug": "2reis-02-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "03",
+    "slug": "2reis-03-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "04",
+    "slug": "2reis-04-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "05",
+    "slug": "2reis-05-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "06",
+    "slug": "2reis-06-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "07",
+    "slug": "2reis-07-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "08",
+    "slug": "2reis-08-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "09",
+    "slug": "2reis-09-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "10",
+    "slug": "2reis-10-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "11",
+    "slug": "2reis-11-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "12",
+    "slug": "2reis-12-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "13",
+    "slug": "2reis-13-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "14",
+    "slug": "2reis-14-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "15",
+    "slug": "2reis-15-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "16",
+    "slug": "2reis-16-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "17",
+    "slug": "2reis-17-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "18",
+    "slug": "2reis-18-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "19",
+    "slug": "2reis-19-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "20",
+    "slug": "2reis-20-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "21",
+    "slug": "2reis-21-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "22",
+    "slug": "2reis-22-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "23",
+    "slug": "2reis-23-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "24",
+    "slug": "2reis-24-oracao"
+  },
+  {
+    "livro": "2reis",
+    "capitulo": "25",
+    "slug": "2reis-25-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "01",
+    "slug": "2samuel-01-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "02",
+    "slug": "2samuel-02-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "03",
+    "slug": "2samuel-03-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "04",
+    "slug": "2samuel-04-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "05",
+    "slug": "2samuel-05-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "06",
+    "slug": "2samuel-06-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "07",
+    "slug": "2samuel-07-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "08",
+    "slug": "2samuel-08-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "09",
+    "slug": "2samuel-09-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "10",
+    "slug": "2samuel-10-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "11",
+    "slug": "2samuel-11-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "12",
+    "slug": "2samuel-12-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "13",
+    "slug": "2samuel-13-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "14",
+    "slug": "2samuel-14-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "15",
+    "slug": "2samuel-15-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "16",
+    "slug": "2samuel-16-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "17",
+    "slug": "2samuel-17-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "18",
+    "slug": "2samuel-18-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "19",
+    "slug": "2samuel-19-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "20",
+    "slug": "2samuel-20-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "21",
+    "slug": "2samuel-21-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "22",
+    "slug": "2samuel-22-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "23",
+    "slug": "2samuel-23-oracao"
+  },
+  {
+    "livro": "2samuel",
+    "capitulo": "24",
+    "slug": "2samuel-24-oracao"
+  },
+  {
+    "livro": "2tessalonicenses",
+    "capitulo": "01",
+    "slug": "2tessalonicenses-01-oracao"
+  },
+  {
+    "livro": "2tessalonicenses",
+    "capitulo": "02",
+    "slug": "2tessalonicenses-02-oracao"
+  },
+  {
+    "livro": "2tessalonicenses",
+    "capitulo": "03",
+    "slug": "2tessalonicenses-03-oracao"
+  },
+  {
+    "livro": "2timoteo",
+    "capitulo": "01",
+    "slug": "2timoteo-01-oracao"
+  },
+  {
+    "livro": "2timoteo",
+    "capitulo": "02",
+    "slug": "2timoteo-02-oracao"
+  },
+  {
+    "livro": "2timoteo",
+    "capitulo": "03",
+    "slug": "2timoteo-03-oracao"
+  },
+  {
+    "livro": "2timoteo",
+    "capitulo": "04",
+    "slug": "2timoteo-04-oracao"
+  },
+  {
+    "livro": "3joao",
+    "capitulo": "01",
+    "slug": "3joao-01-oracao"
+  },
+  {
+    "livro": "ageu",
+    "capitulo": "01",
+    "slug": "ageu-01-oracao"
+  },
+  {
+    "livro": "ageu",
+    "capitulo": "02",
+    "slug": "ageu-02-oracao"
+  },
+  {
+    "livro": "amos",
+    "capitulo": "01",
+    "slug": "amos-01-oracao"
+  },
+  {
+    "livro": "amos",
+    "capitulo": "02",
+    "slug": "amos-02-oracao"
+  },
+  {
+    "livro": "amos",
+    "capitulo": "03",
+    "slug": "amos-03-oracao"
+  },
+  {
+    "livro": "amos",
+    "capitulo": "04",
+    "slug": "amos-04-oracao"
+  },
+  {
+    "livro": "amos",
+    "capitulo": "05",
+    "slug": "amos-05-oracao"
+  },
+  {
+    "livro": "amos",
+    "capitulo": "06",
+    "slug": "amos-06-oracao"
+  },
+  {
+    "livro": "amos",
+    "capitulo": "07",
+    "slug": "amos-07-oracao"
+  },
+  {
+    "livro": "amos",
+    "capitulo": "08",
+    "slug": "amos-08-oracao"
+  },
+  {
+    "livro": "amos",
+    "capitulo": "09",
+    "slug": "amos-09-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "01",
+    "slug": "apocalipse-01-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "02",
+    "slug": "apocalipse-02-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "03",
+    "slug": "apocalipse-03-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "04",
+    "slug": "apocalipse-04-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "05",
+    "slug": "apocalipse-05-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "06",
+    "slug": "apocalipse-06-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "07",
+    "slug": "apocalipse-07-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "08",
+    "slug": "apocalipse-08-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "09",
+    "slug": "apocalipse-09-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "10",
+    "slug": "apocalipse-10-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "11",
+    "slug": "apocalipse-11-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "12",
+    "slug": "apocalipse-12-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "13",
+    "slug": "apocalipse-13-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "14",
+    "slug": "apocalipse-14-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "15",
+    "slug": "apocalipse-15-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "16",
+    "slug": "apocalipse-16-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "17",
+    "slug": "apocalipse-17-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "18",
+    "slug": "apocalipse-18-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "19",
+    "slug": "apocalipse-19-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "20",
+    "slug": "apocalipse-20-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "21",
+    "slug": "apocalipse-21-oracao"
+  },
+  {
+    "livro": "apocalipse",
+    "capitulo": "22",
+    "slug": "apocalipse-22-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "01",
+    "slug": "atos-01-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "02",
+    "slug": "atos-02-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "03",
+    "slug": "atos-03-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "04",
+    "slug": "atos-04-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "05",
+    "slug": "atos-05-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "06",
+    "slug": "atos-06-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "07",
+    "slug": "atos-07-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "08",
+    "slug": "atos-08-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "09",
+    "slug": "atos-09-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "10",
+    "slug": "atos-10-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "11",
+    "slug": "atos-11-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "12",
+    "slug": "atos-12-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "13",
+    "slug": "atos-13-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "14",
+    "slug": "atos-14-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "15",
+    "slug": "atos-15-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "16",
+    "slug": "atos-16-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "17",
+    "slug": "atos-17-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "18",
+    "slug": "atos-18-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "19",
+    "slug": "atos-19-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "20",
+    "slug": "atos-20-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "21",
+    "slug": "atos-21-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "22",
+    "slug": "atos-22-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "23",
+    "slug": "atos-23-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "24",
+    "slug": "atos-24-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "25",
+    "slug": "atos-25-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "26",
+    "slug": "atos-26-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "27",
+    "slug": "atos-27-oracao"
+  },
+  {
+    "livro": "atos",
+    "capitulo": "28",
+    "slug": "atos-28-oracao"
+  },
+  {
+    "livro": "cantares",
+    "capitulo": "01",
+    "slug": "cantares-01-oracao"
+  },
+  {
+    "livro": "cantares",
+    "capitulo": "02",
+    "slug": "cantares-02-oracao"
+  },
+  {
+    "livro": "cantares",
+    "capitulo": "03",
+    "slug": "cantares-03-oracao"
+  },
+  {
+    "livro": "cantares",
+    "capitulo": "04",
+    "slug": "cantares-04-oracao"
+  },
+  {
+    "livro": "cantares",
+    "capitulo": "05",
+    "slug": "cantares-05-oracao"
+  },
+  {
+    "livro": "cantares",
+    "capitulo": "06",
+    "slug": "cantares-06-oracao"
+  },
+  {
+    "livro": "cantares",
+    "capitulo": "07",
+    "slug": "cantares-07-oracao"
+  },
+  {
+    "livro": "cantares",
+    "capitulo": "08",
+    "slug": "cantares-08-oracao"
+  },
+  {
+    "livro": "colossenses",
+    "capitulo": "01",
+    "slug": "colossenses-01-oracao"
+  },
+  {
+    "livro": "colossenses",
+    "capitulo": "02",
+    "slug": "colossenses-02-oracao"
+  },
+  {
+    "livro": "colossenses",
+    "capitulo": "03",
+    "slug": "colossenses-03-oracao"
+  },
+  {
+    "livro": "colossenses",
+    "capitulo": "04",
+    "slug": "colossenses-04-oracao"
+  },
+  {
+    "livro": "daniel",
+    "capitulo": "01",
+    "slug": "daniel-01-oracao"
+  },
+  {
+    "livro": "daniel",
+    "capitulo": "02",
+    "slug": "daniel-02-oracao"
+  },
+  {
+    "livro": "daniel",
+    "capitulo": "03",
+    "slug": "daniel-03-oracao"
+  },
+  {
+    "livro": "daniel",
+    "capitulo": "04",
+    "slug": "daniel-04-oracao"
+  },
+  {
+    "livro": "daniel",
+    "capitulo": "05",
+    "slug": "daniel-05-oracao"
+  },
+  {
+    "livro": "daniel",
+    "capitulo": "06",
+    "slug": "daniel-06-oracao"
+  },
+  {
+    "livro": "daniel",
+    "capitulo": "07",
+    "slug": "daniel-07-oracao"
+  },
+  {
+    "livro": "daniel",
+    "capitulo": "08",
+    "slug": "daniel-08-oracao"
+  },
+  {
+    "livro": "daniel",
+    "capitulo": "09",
+    "slug": "daniel-09-oracao"
+  },
+  {
+    "livro": "daniel",
+    "capitulo": "10",
+    "slug": "daniel-10-oracao"
+  },
+  {
+    "livro": "daniel",
+    "capitulo": "11",
+    "slug": "daniel-11-oracao"
+  },
+  {
+    "livro": "daniel",
+    "capitulo": "12",
+    "slug": "daniel-12-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "01",
+    "slug": "deuteronomio-01-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "02",
+    "slug": "deuteronomio-02-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "03",
+    "slug": "deuteronomio-03-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "04",
+    "slug": "deuteronomio-04-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "05",
+    "slug": "deuteronomio-05-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "06",
+    "slug": "deuteronomio-06-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "07",
+    "slug": "deuteronomio-07-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "08",
+    "slug": "deuteronomio-08-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "09",
+    "slug": "deuteronomio-09-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "10",
+    "slug": "deuteronomio-10-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "11",
+    "slug": "deuteronomio-11-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "12",
+    "slug": "deuteronomio-12-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "13",
+    "slug": "deuteronomio-13-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "14",
+    "slug": "deuteronomio-14-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "15",
+    "slug": "deuteronomio-15-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "16",
+    "slug": "deuteronomio-16-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "17",
+    "slug": "deuteronomio-17-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "18",
+    "slug": "deuteronomio-18-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "19",
+    "slug": "deuteronomio-19-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "20",
+    "slug": "deuteronomio-20-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "21",
+    "slug": "deuteronomio-21-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "22",
+    "slug": "deuteronomio-22-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "23",
+    "slug": "deuteronomio-23-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "24",
+    "slug": "deuteronomio-24-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "25",
+    "slug": "deuteronomio-25-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "26",
+    "slug": "deuteronomio-26-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "27",
+    "slug": "deuteronomio-27-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "28",
+    "slug": "deuteronomio-28-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "29",
+    "slug": "deuteronomio-29-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "30",
+    "slug": "deuteronomio-30-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "31",
+    "slug": "deuteronomio-31-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "32",
+    "slug": "deuteronomio-32-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "33",
+    "slug": "deuteronomio-33-oracao"
+  },
+  {
+    "livro": "deuteronomio",
+    "capitulo": "34",
+    "slug": "deuteronomio-34-oracao"
+  },
+  {
+    "livro": "eclesiastes",
+    "capitulo": "01",
+    "slug": "eclesiastes-01-oracao"
+  },
+  {
+    "livro": "eclesiastes",
+    "capitulo": "02",
+    "slug": "eclesiastes-02-oracao"
+  },
+  {
+    "livro": "eclesiastes",
+    "capitulo": "03",
+    "slug": "eclesiastes-03-oracao"
+  },
+  {
+    "livro": "eclesiastes",
+    "capitulo": "04",
+    "slug": "eclesiastes-04-oracao"
+  },
+  {
+    "livro": "eclesiastes",
+    "capitulo": "05",
+    "slug": "eclesiastes-05-oracao"
+  },
+  {
+    "livro": "eclesiastes",
+    "capitulo": "06",
+    "slug": "eclesiastes-06-oracao"
+  },
+  {
+    "livro": "eclesiastes",
+    "capitulo": "07",
+    "slug": "eclesiastes-07-oracao"
+  },
+  {
+    "livro": "eclesiastes",
+    "capitulo": "08",
+    "slug": "eclesiastes-08-oracao"
+  },
+  {
+    "livro": "eclesiastes",
+    "capitulo": "09",
+    "slug": "eclesiastes-09-oracao"
+  },
+  {
+    "livro": "eclesiastes",
+    "capitulo": "10",
+    "slug": "eclesiastes-10-oracao"
+  },
+  {
+    "livro": "eclesiastes",
+    "capitulo": "11",
+    "slug": "eclesiastes-11-oracao"
+  },
+  {
+    "livro": "eclesiastes",
+    "capitulo": "12",
+    "slug": "eclesiastes-12-oracao"
+  },
+  {
+    "livro": "efesios",
+    "capitulo": "01",
+    "slug": "efesios-01-oracao"
+  },
+  {
+    "livro": "efesios",
+    "capitulo": "02",
+    "slug": "efesios-02-oracao"
+  },
+  {
+    "livro": "efesios",
+    "capitulo": "03",
+    "slug": "efesios-03-oracao"
+  },
+  {
+    "livro": "efesios",
+    "capitulo": "04",
+    "slug": "efesios-04-oracao"
+  },
+  {
+    "livro": "efesios",
+    "capitulo": "05",
+    "slug": "efesios-05-oracao"
+  },
+  {
+    "livro": "efesios",
+    "capitulo": "06",
+    "slug": "efesios-06-oracao"
+  },
+  {
+    "livro": "esdras",
+    "capitulo": "01",
+    "slug": "esdras-01-oracao"
+  },
+  {
+    "livro": "esdras",
+    "capitulo": "02",
+    "slug": "esdras-02-oracao"
+  },
+  {
+    "livro": "esdras",
+    "capitulo": "03",
+    "slug": "esdras-03-oracao"
+  },
+  {
+    "livro": "esdras",
+    "capitulo": "04",
+    "slug": "esdras-04-oracao"
+  },
+  {
+    "livro": "esdras",
+    "capitulo": "05",
+    "slug": "esdras-05-oracao"
+  },
+  {
+    "livro": "esdras",
+    "capitulo": "06",
+    "slug": "esdras-06-oracao"
+  },
+  {
+    "livro": "esdras",
+    "capitulo": "07",
+    "slug": "esdras-07-oracao"
+  },
+  {
+    "livro": "esdras",
+    "capitulo": "08",
+    "slug": "esdras-08-oracao"
+  },
+  {
+    "livro": "esdras",
+    "capitulo": "09",
+    "slug": "esdras-09-oracao"
+  },
+  {
+    "livro": "esdras",
+    "capitulo": "10",
+    "slug": "esdras-10-oracao"
+  },
+  {
+    "livro": "ester",
+    "capitulo": "01",
+    "slug": "ester-01-oracao"
+  },
+  {
+    "livro": "ester",
+    "capitulo": "02",
+    "slug": "ester-02-oracao"
+  },
+  {
+    "livro": "ester",
+    "capitulo": "03",
+    "slug": "ester-03-oracao"
+  },
+  {
+    "livro": "ester",
+    "capitulo": "04",
+    "slug": "ester-04-oracao"
+  },
+  {
+    "livro": "ester",
+    "capitulo": "05",
+    "slug": "ester-05-oracao"
+  },
+  {
+    "livro": "ester",
+    "capitulo": "06",
+    "slug": "ester-06-oracao"
+  },
+  {
+    "livro": "ester",
+    "capitulo": "07",
+    "slug": "ester-07-oracao"
+  },
+  {
+    "livro": "ester",
+    "capitulo": "08",
+    "slug": "ester-08-oracao"
+  },
+  {
+    "livro": "ester",
+    "capitulo": "09",
+    "slug": "ester-09-oracao"
+  },
+  {
+    "livro": "ester",
+    "capitulo": "10",
+    "slug": "ester-10-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "01",
+    "slug": "exodo-01-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "02",
+    "slug": "exodo-02-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "03",
+    "slug": "exodo-03-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "04",
+    "slug": "exodo-04-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "05",
+    "slug": "exodo-05-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "06",
+    "slug": "exodo-06-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "07",
+    "slug": "exodo-07-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "08",
+    "slug": "exodo-08-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "09",
+    "slug": "exodo-09-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "10",
+    "slug": "exodo-10-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "11",
+    "slug": "exodo-11-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "12",
+    "slug": "exodo-12-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "13",
+    "slug": "exodo-13-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "14",
+    "slug": "exodo-14-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "15",
+    "slug": "exodo-15-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "16",
+    "slug": "exodo-16-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "17",
+    "slug": "exodo-17-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "18",
+    "slug": "exodo-18-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "19",
+    "slug": "exodo-19-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "20",
+    "slug": "exodo-20-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "21",
+    "slug": "exodo-21-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "22",
+    "slug": "exodo-22-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "23",
+    "slug": "exodo-23-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "24",
+    "slug": "exodo-24-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "25",
+    "slug": "exodo-25-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "26",
+    "slug": "exodo-26-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "27",
+    "slug": "exodo-27-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "28",
+    "slug": "exodo-28-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "29",
+    "slug": "exodo-29-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "30",
+    "slug": "exodo-30-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "31",
+    "slug": "exodo-31-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "32",
+    "slug": "exodo-32-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "33",
+    "slug": "exodo-33-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "34",
+    "slug": "exodo-34-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "35",
+    "slug": "exodo-35-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "36",
+    "slug": "exodo-36-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "37",
+    "slug": "exodo-37-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "38",
+    "slug": "exodo-38-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "39",
+    "slug": "exodo-39-oracao"
+  },
+  {
+    "livro": "exodo",
+    "capitulo": "40",
+    "slug": "exodo-40-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "01",
+    "slug": "ezequiel-01-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "02",
+    "slug": "ezequiel-02-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "03",
+    "slug": "ezequiel-03-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "04",
+    "slug": "ezequiel-04-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "05",
+    "slug": "ezequiel-05-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "06",
+    "slug": "ezequiel-06-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "07",
+    "slug": "ezequiel-07-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "08",
+    "slug": "ezequiel-08-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "09",
+    "slug": "ezequiel-09-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "10",
+    "slug": "ezequiel-10-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "11",
+    "slug": "ezequiel-11-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "12",
+    "slug": "ezequiel-12-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "13",
+    "slug": "ezequiel-13-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "14",
+    "slug": "ezequiel-14-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "15",
+    "slug": "ezequiel-15-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "16",
+    "slug": "ezequiel-16-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "17",
+    "slug": "ezequiel-17-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "18",
+    "slug": "ezequiel-18-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "19",
+    "slug": "ezequiel-19-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "20",
+    "slug": "ezequiel-20-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "21",
+    "slug": "ezequiel-21-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "22",
+    "slug": "ezequiel-22-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "23",
+    "slug": "ezequiel-23-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "24",
+    "slug": "ezequiel-24-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "25",
+    "slug": "ezequiel-25-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "26",
+    "slug": "ezequiel-26-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "27",
+    "slug": "ezequiel-27-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "28",
+    "slug": "ezequiel-28-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "29",
+    "slug": "ezequiel-29-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "30",
+    "slug": "ezequiel-30-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "31",
+    "slug": "ezequiel-31-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "32",
+    "slug": "ezequiel-32-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "33",
+    "slug": "ezequiel-33-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "34",
+    "slug": "ezequiel-34-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "35",
+    "slug": "ezequiel-35-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "36",
+    "slug": "ezequiel-36-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "37",
+    "slug": "ezequiel-37-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "38",
+    "slug": "ezequiel-38-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "39",
+    "slug": "ezequiel-39-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "40",
+    "slug": "ezequiel-40-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "41",
+    "slug": "ezequiel-41-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "42",
+    "slug": "ezequiel-42-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "43",
+    "slug": "ezequiel-43-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "44",
+    "slug": "ezequiel-44-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "45",
+    "slug": "ezequiel-45-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "46",
+    "slug": "ezequiel-46-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "47",
+    "slug": "ezequiel-47-oracao"
+  },
+  {
+    "livro": "ezequiel",
+    "capitulo": "48",
+    "slug": "ezequiel-48-oracao"
+  },
+  {
+    "livro": "filemom",
+    "capitulo": "01",
+    "slug": "filemom-01-oracao"
+  },
+  {
+    "livro": "filipenses",
+    "capitulo": "01",
+    "slug": "filipenses-01-oracao"
+  },
+  {
+    "livro": "filipenses",
+    "capitulo": "02",
+    "slug": "filipenses-02-oracao"
+  },
+  {
+    "livro": "filipenses",
+    "capitulo": "03",
+    "slug": "filipenses-03-oracao"
+  },
+  {
+    "livro": "filipenses",
+    "capitulo": "04",
+    "slug": "filipenses-04-oracao"
+  },
+  {
+    "livro": "galatas",
+    "capitulo": "01",
+    "slug": "galatas-01-oracao"
+  },
+  {
+    "livro": "galatas",
+    "capitulo": "02",
+    "slug": "galatas-02-oracao"
+  },
+  {
+    "livro": "galatas",
+    "capitulo": "03",
+    "slug": "galatas-03-oracao"
+  },
+  {
+    "livro": "galatas",
+    "capitulo": "04",
+    "slug": "galatas-04-oracao"
+  },
+  {
+    "livro": "galatas",
+    "capitulo": "05",
+    "slug": "galatas-05-oracao"
+  },
+  {
+    "livro": "galatas",
+    "capitulo": "06",
+    "slug": "galatas-06-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "01",
+    "slug": "genesis-01-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "02",
+    "slug": "genesis-02-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "03",
+    "slug": "genesis-03-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "04",
+    "slug": "genesis-04-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "05",
+    "slug": "genesis-05-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "06",
+    "slug": "genesis-06-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "07",
+    "slug": "genesis-07-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "08",
+    "slug": "genesis-08-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "09",
+    "slug": "genesis-09-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "10",
+    "slug": "genesis-10-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "11",
+    "slug": "genesis-11-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "12",
+    "slug": "genesis-12-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "13",
+    "slug": "genesis-13-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "14",
+    "slug": "genesis-14-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "15",
+    "slug": "genesis-15-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "16",
+    "slug": "genesis-16-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "17",
+    "slug": "genesis-17-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "18",
+    "slug": "genesis-18-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "19",
+    "slug": "genesis-19-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "20",
+    "slug": "genesis-20-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "21",
+    "slug": "genesis-21-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "22",
+    "slug": "genesis-22-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "23",
+    "slug": "genesis-23-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "24",
+    "slug": "genesis-24-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "25",
+    "slug": "genesis-25-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "26",
+    "slug": "genesis-26-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "27",
+    "slug": "genesis-27-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "28",
+    "slug": "genesis-28-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "29",
+    "slug": "genesis-29-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "30",
+    "slug": "genesis-30-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "31",
+    "slug": "genesis-31-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "32",
+    "slug": "genesis-32-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "33",
+    "slug": "genesis-33-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "34",
+    "slug": "genesis-34-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "35",
+    "slug": "genesis-35-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "36",
+    "slug": "genesis-36-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "37",
+    "slug": "genesis-37-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "38",
+    "slug": "genesis-38-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "39",
+    "slug": "genesis-39-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "40",
+    "slug": "genesis-40-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "41",
+    "slug": "genesis-41-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "42",
+    "slug": "genesis-42-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "43",
+    "slug": "genesis-43-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "44",
+    "slug": "genesis-44-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "45",
+    "slug": "genesis-45-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "46",
+    "slug": "genesis-46-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "47",
+    "slug": "genesis-47-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "48",
+    "slug": "genesis-48-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "49",
+    "slug": "genesis-49-oracao"
+  },
+  {
+    "livro": "genesis",
+    "capitulo": "50",
+    "slug": "genesis-50-oracao"
+  },
+  {
+    "livro": "habacuque",
+    "capitulo": "01",
+    "slug": "habacuque-01-oracao"
+  },
+  {
+    "livro": "habacuque",
+    "capitulo": "02",
+    "slug": "habacuque-02-oracao"
+  },
+  {
+    "livro": "habacuque",
+    "capitulo": "03",
+    "slug": "habacuque-03-oracao"
+  },
+  {
+    "livro": "hebreus",
+    "capitulo": "01",
+    "slug": "hebreus-01-oracao"
+  },
+  {
+    "livro": "hebreus",
+    "capitulo": "02",
+    "slug": "hebreus-02-oracao"
+  },
+  {
+    "livro": "hebreus",
+    "capitulo": "03",
+    "slug": "hebreus-03-oracao"
+  },
+  {
+    "livro": "hebreus",
+    "capitulo": "04",
+    "slug": "hebreus-04-oracao"
+  },
+  {
+    "livro": "hebreus",
+    "capitulo": "05",
+    "slug": "hebreus-05-oracao"
+  },
+  {
+    "livro": "hebreus",
+    "capitulo": "06",
+    "slug": "hebreus-06-oracao"
+  },
+  {
+    "livro": "hebreus",
+    "capitulo": "07",
+    "slug": "hebreus-07-oracao"
+  },
+  {
+    "livro": "hebreus",
+    "capitulo": "08",
+    "slug": "hebreus-08-oracao"
+  },
+  {
+    "livro": "hebreus",
+    "capitulo": "09",
+    "slug": "hebreus-09-oracao"
+  },
+  {
+    "livro": "hebreus",
+    "capitulo": "10",
+    "slug": "hebreus-10-oracao"
+  },
+  {
+    "livro": "hebreus",
+    "capitulo": "11",
+    "slug": "hebreus-11-oracao"
+  },
+  {
+    "livro": "hebreus",
+    "capitulo": "12",
+    "slug": "hebreus-12-oracao"
+  },
+  {
+    "livro": "hebreus",
+    "capitulo": "13",
+    "slug": "hebreus-13-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "01",
+    "slug": "isaias-01-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "02",
+    "slug": "isaias-02-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "03",
+    "slug": "isaias-03-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "04",
+    "slug": "isaias-04-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "05",
+    "slug": "isaias-05-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "06",
+    "slug": "isaias-06-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "07",
+    "slug": "isaias-07-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "08",
+    "slug": "isaias-08-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "09",
+    "slug": "isaias-09-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "10",
+    "slug": "isaias-10-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "11",
+    "slug": "isaias-11-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "12",
+    "slug": "isaias-12-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "13",
+    "slug": "isaias-13-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "14",
+    "slug": "isaias-14-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "15",
+    "slug": "isaias-15-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "16",
+    "slug": "isaias-16-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "17",
+    "slug": "isaias-17-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "18",
+    "slug": "isaias-18-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "19",
+    "slug": "isaias-19-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "20",
+    "slug": "isaias-20-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "21",
+    "slug": "isaias-21-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "22",
+    "slug": "isaias-22-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "23",
+    "slug": "isaias-23-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "24",
+    "slug": "isaias-24-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "25",
+    "slug": "isaias-25-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "26",
+    "slug": "isaias-26-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "27",
+    "slug": "isaias-27-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "28",
+    "slug": "isaias-28-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "29",
+    "slug": "isaias-29-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "30",
+    "slug": "isaias-30-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "31",
+    "slug": "isaias-31-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "32",
+    "slug": "isaias-32-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "33",
+    "slug": "isaias-33-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "34",
+    "slug": "isaias-34-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "35",
+    "slug": "isaias-35-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "36",
+    "slug": "isaias-36-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "37",
+    "slug": "isaias-37-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "38",
+    "slug": "isaias-38-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "39",
+    "slug": "isaias-39-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "40",
+    "slug": "isaias-40-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "41",
+    "slug": "isaias-41-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "42",
+    "slug": "isaias-42-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "43",
+    "slug": "isaias-43-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "44",
+    "slug": "isaias-44-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "45",
+    "slug": "isaias-45-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "46",
+    "slug": "isaias-46-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "47",
+    "slug": "isaias-47-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "48",
+    "slug": "isaias-48-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "49",
+    "slug": "isaias-49-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "50",
+    "slug": "isaias-50-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "51",
+    "slug": "isaias-51-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "52",
+    "slug": "isaias-52-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "53",
+    "slug": "isaias-53-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "54",
+    "slug": "isaias-54-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "55",
+    "slug": "isaias-55-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "56",
+    "slug": "isaias-56-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "57",
+    "slug": "isaias-57-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "58",
+    "slug": "isaias-58-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "59",
+    "slug": "isaias-59-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "60",
+    "slug": "isaias-60-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "61",
+    "slug": "isaias-61-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "62",
+    "slug": "isaias-62-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "63",
+    "slug": "isaias-63-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "64",
+    "slug": "isaias-64-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "65",
+    "slug": "isaias-65-oracao"
+  },
+  {
+    "livro": "isaias",
+    "capitulo": "66",
+    "slug": "isaias-66-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "01",
+    "slug": "jeremias-01-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "02",
+    "slug": "jeremias-02-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "03",
+    "slug": "jeremias-03-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "04",
+    "slug": "jeremias-04-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "05",
+    "slug": "jeremias-05-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "06",
+    "slug": "jeremias-06-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "07",
+    "slug": "jeremias-07-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "08",
+    "slug": "jeremias-08-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "09",
+    "slug": "jeremias-09-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "10",
+    "slug": "jeremias-10-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "11",
+    "slug": "jeremias-11-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "12",
+    "slug": "jeremias-12-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "13",
+    "slug": "jeremias-13-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "14",
+    "slug": "jeremias-14-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "15",
+    "slug": "jeremias-15-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "16",
+    "slug": "jeremias-16-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "17",
+    "slug": "jeremias-17-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "18",
+    "slug": "jeremias-18-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "19",
+    "slug": "jeremias-19-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "20",
+    "slug": "jeremias-20-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "21",
+    "slug": "jeremias-21-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "22",
+    "slug": "jeremias-22-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "23",
+    "slug": "jeremias-23-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "24",
+    "slug": "jeremias-24-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "25",
+    "slug": "jeremias-25-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "26",
+    "slug": "jeremias-26-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "27",
+    "slug": "jeremias-27-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "28",
+    "slug": "jeremias-28-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "29",
+    "slug": "jeremias-29-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "30",
+    "slug": "jeremias-30-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "31",
+    "slug": "jeremias-31-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "32",
+    "slug": "jeremias-32-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "33",
+    "slug": "jeremias-33-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "34",
+    "slug": "jeremias-34-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "35",
+    "slug": "jeremias-35-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "36",
+    "slug": "jeremias-36-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "37",
+    "slug": "jeremias-37-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "38",
+    "slug": "jeremias-38-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "39",
+    "slug": "jeremias-39-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "40",
+    "slug": "jeremias-40-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "41",
+    "slug": "jeremias-41-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "42",
+    "slug": "jeremias-42-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "43",
+    "slug": "jeremias-43-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "44",
+    "slug": "jeremias-44-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "45",
+    "slug": "jeremias-45-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "46",
+    "slug": "jeremias-46-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "47",
+    "slug": "jeremias-47-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "48",
+    "slug": "jeremias-48-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "49",
+    "slug": "jeremias-49-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "50",
+    "slug": "jeremias-50-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "51",
+    "slug": "jeremias-51-oracao"
+  },
+  {
+    "livro": "jeremias",
+    "capitulo": "52",
+    "slug": "jeremias-52-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "01",
+    "slug": "jo-01-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "02",
+    "slug": "jo-02-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "03",
+    "slug": "jo-03-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "04",
+    "slug": "jo-04-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "05",
+    "slug": "jo-05-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "06",
+    "slug": "jo-06-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "07",
+    "slug": "jo-07-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "08",
+    "slug": "jo-08-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "09",
+    "slug": "jo-09-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "10",
+    "slug": "jo-10-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "11",
+    "slug": "jo-11-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "12",
+    "slug": "jo-12-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "13",
+    "slug": "jo-13-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "14",
+    "slug": "jo-14-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "15",
+    "slug": "jo-15-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "16",
+    "slug": "jo-16-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "17",
+    "slug": "jo-17-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "18",
+    "slug": "jo-18-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "19",
+    "slug": "jo-19-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "20",
+    "slug": "jo-20-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "21",
+    "slug": "jo-21-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "22",
+    "slug": "jo-22-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "23",
+    "slug": "jo-23-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "24",
+    "slug": "jo-24-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "25",
+    "slug": "jo-25-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "26",
+    "slug": "jo-26-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "27",
+    "slug": "jo-27-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "28",
+    "slug": "jo-28-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "29",
+    "slug": "jo-29-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "30",
+    "slug": "jo-30-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "31",
+    "slug": "jo-31-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "32",
+    "slug": "jo-32-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "33",
+    "slug": "jo-33-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "34",
+    "slug": "jo-34-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "35",
+    "slug": "jo-35-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "36",
+    "slug": "jo-36-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "37",
+    "slug": "jo-37-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "38",
+    "slug": "jo-38-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "39",
+    "slug": "jo-39-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "40",
+    "slug": "jo-40-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "41",
+    "slug": "jo-41-oracao"
+  },
+  {
+    "livro": "jo",
+    "capitulo": "42",
+    "slug": "jo-42-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "01",
+    "slug": "joao-01-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "02",
+    "slug": "joao-02-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "03",
+    "slug": "joao-03-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "04",
+    "slug": "joao-04-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "05",
+    "slug": "joao-05-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "06",
+    "slug": "joao-06-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "07",
+    "slug": "joao-07-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "08",
+    "slug": "joao-08-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "09",
+    "slug": "joao-09-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "10",
+    "slug": "joao-10-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "11",
+    "slug": "joao-11-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "12",
+    "slug": "joao-12-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "13",
+    "slug": "joao-13-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "14",
+    "slug": "joao-14-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "15",
+    "slug": "joao-15-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "16",
+    "slug": "joao-16-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "17",
+    "slug": "joao-17-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "18",
+    "slug": "joao-18-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "19",
+    "slug": "joao-19-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "20",
+    "slug": "joao-20-oracao"
+  },
+  {
+    "livro": "joao",
+    "capitulo": "21",
+    "slug": "joao-21-oracao"
+  },
+  {
+    "livro": "joel",
+    "capitulo": "01",
+    "slug": "joel-01-oracao"
+  },
+  {
+    "livro": "joel",
+    "capitulo": "02",
+    "slug": "joel-02-oracao"
+  },
+  {
+    "livro": "joel",
+    "capitulo": "03",
+    "slug": "joel-03-oracao"
+  },
+  {
+    "livro": "jonas",
+    "capitulo": "01",
+    "slug": "jonas-01-oracao"
+  },
+  {
+    "livro": "jonas",
+    "capitulo": "02",
+    "slug": "jonas-02-oracao"
+  },
+  {
+    "livro": "jonas",
+    "capitulo": "03",
+    "slug": "jonas-03-oracao"
+  },
+  {
+    "livro": "jonas",
+    "capitulo": "04",
+    "slug": "jonas-04-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "01",
+    "slug": "josue-01-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "02",
+    "slug": "josue-02-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "03",
+    "slug": "josue-03-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "04",
+    "slug": "josue-04-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "05",
+    "slug": "josue-05-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "06",
+    "slug": "josue-06-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "07",
+    "slug": "josue-07-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "08",
+    "slug": "josue-08-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "09",
+    "slug": "josue-09-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "10",
+    "slug": "josue-10-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "11",
+    "slug": "josue-11-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "12",
+    "slug": "josue-12-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "13",
+    "slug": "josue-13-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "14",
+    "slug": "josue-14-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "15",
+    "slug": "josue-15-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "16",
+    "slug": "josue-16-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "17",
+    "slug": "josue-17-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "18",
+    "slug": "josue-18-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "19",
+    "slug": "josue-19-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "20",
+    "slug": "josue-20-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "21",
+    "slug": "josue-21-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "22",
+    "slug": "josue-22-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "23",
+    "slug": "josue-23-oracao"
+  },
+  {
+    "livro": "josue",
+    "capitulo": "24",
+    "slug": "josue-24-oracao"
+  },
+  {
+    "livro": "judas",
+    "capitulo": "01",
+    "slug": "judas-01-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "01",
+    "slug": "juizes-01-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "02",
+    "slug": "juizes-02-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "03",
+    "slug": "juizes-03-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "04",
+    "slug": "juizes-04-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "05",
+    "slug": "juizes-05-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "06",
+    "slug": "juizes-06-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "07",
+    "slug": "juizes-07-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "08",
+    "slug": "juizes-08-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "09",
+    "slug": "juizes-09-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "10",
+    "slug": "juizes-10-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "11",
+    "slug": "juizes-11-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "12",
+    "slug": "juizes-12-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "13",
+    "slug": "juizes-13-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "14",
+    "slug": "juizes-14-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "15",
+    "slug": "juizes-15-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "16",
+    "slug": "juizes-16-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "17",
+    "slug": "juizes-17-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "18",
+    "slug": "juizes-18-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "19",
+    "slug": "juizes-19-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "20",
+    "slug": "juizes-20-oracao"
+  },
+  {
+    "livro": "juizes",
+    "capitulo": "21",
+    "slug": "juizes-21-oracao"
+  },
+  {
+    "livro": "lamentacoes",
+    "capitulo": "01",
+    "slug": "lamentacoes-01-oracao"
+  },
+  {
+    "livro": "lamentacoes",
+    "capitulo": "02",
+    "slug": "lamentacoes-02-oracao"
+  },
+  {
+    "livro": "lamentacoes",
+    "capitulo": "03",
+    "slug": "lamentacoes-03-oracao"
+  },
+  {
+    "livro": "lamentacoes",
+    "capitulo": "04",
+    "slug": "lamentacoes-04-oracao"
+  },
+  {
+    "livro": "lamentacoes",
+    "capitulo": "05",
+    "slug": "lamentacoes-05-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "01",
+    "slug": "levitico-01-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "02",
+    "slug": "levitico-02-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "03",
+    "slug": "levitico-03-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "04",
+    "slug": "levitico-04-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "05",
+    "slug": "levitico-05-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "06",
+    "slug": "levitico-06-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "07",
+    "slug": "levitico-07-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "08",
+    "slug": "levitico-08-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "09",
+    "slug": "levitico-09-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "10",
+    "slug": "levitico-10-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "11",
+    "slug": "levitico-11-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "12",
+    "slug": "levitico-12-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "13",
+    "slug": "levitico-13-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "14",
+    "slug": "levitico-14-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "15",
+    "slug": "levitico-15-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "16",
+    "slug": "levitico-16-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "17",
+    "slug": "levitico-17-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "18",
+    "slug": "levitico-18-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "19",
+    "slug": "levitico-19-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "20",
+    "slug": "levitico-20-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "21",
+    "slug": "levitico-21-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "22",
+    "slug": "levitico-22-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "23",
+    "slug": "levitico-23-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "24",
+    "slug": "levitico-24-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "25",
+    "slug": "levitico-25-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "26",
+    "slug": "levitico-26-oracao"
+  },
+  {
+    "livro": "levitico",
+    "capitulo": "27",
+    "slug": "levitico-27-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "01",
+    "slug": "lucas-01-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "02",
+    "slug": "lucas-02-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "03",
+    "slug": "lucas-03-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "04",
+    "slug": "lucas-04-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "05",
+    "slug": "lucas-05-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "06",
+    "slug": "lucas-06-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "07",
+    "slug": "lucas-07-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "08",
+    "slug": "lucas-08-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "09",
+    "slug": "lucas-09-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "10",
+    "slug": "lucas-10-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "11",
+    "slug": "lucas-11-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "12",
+    "slug": "lucas-12-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "13",
+    "slug": "lucas-13-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "14",
+    "slug": "lucas-14-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "15",
+    "slug": "lucas-15-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "16",
+    "slug": "lucas-16-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "17",
+    "slug": "lucas-17-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "18",
+    "slug": "lucas-18-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "19",
+    "slug": "lucas-19-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "20",
+    "slug": "lucas-20-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "21",
+    "slug": "lucas-21-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "22",
+    "slug": "lucas-22-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "23",
+    "slug": "lucas-23-oracao"
+  },
+  {
+    "livro": "lucas",
+    "capitulo": "24",
+    "slug": "lucas-24-oracao"
+  },
+  {
+    "livro": "malaquias",
+    "capitulo": "01",
+    "slug": "malaquias-01-oracao"
+  },
+  {
+    "livro": "malaquias",
+    "capitulo": "02",
+    "slug": "malaquias-02-oracao"
+  },
+  {
+    "livro": "malaquias",
+    "capitulo": "03",
+    "slug": "malaquias-03-oracao"
+  },
+  {
+    "livro": "malaquias",
+    "capitulo": "04",
+    "slug": "malaquias-04-oracao"
+  },
+  {
+    "livro": "marcos",
+    "capitulo": "01",
+    "slug": "marcos-01-oracao"
+  },
+  {
+    "livro": "marcos",
+    "capitulo": "02",
+    "slug": "marcos-02-oracao"
+  },
+  {
+    "livro": "marcos",
+    "capitulo": "03",
+    "slug": "marcos-03-oracao"
+  },
+  {
+    "livro": "marcos",
+    "capitulo": "04",
+    "slug": "marcos-04-oracao"
+  },
+  {
+    "livro": "marcos",
+    "capitulo": "05",
+    "slug": "marcos-05-oracao"
+  },
+  {
+    "livro": "marcos",
+    "capitulo": "06",
+    "slug": "marcos-06-oracao"
+  },
+  {
+    "livro": "marcos",
+    "capitulo": "07",
+    "slug": "marcos-07-oracao"
+  },
+  {
+    "livro": "marcos",
+    "capitulo": "08",
+    "slug": "marcos-08-oracao"
+  },
+  {
+    "livro": "marcos",
+    "capitulo": "09",
+    "slug": "marcos-09-oracao"
+  },
+  {
+    "livro": "marcos",
+    "capitulo": "10",
+    "slug": "marcos-10-oracao"
+  },
+  {
+    "livro": "marcos",
+    "capitulo": "11",
+    "slug": "marcos-11-oracao"
+  },
+  {
+    "livro": "marcos",
+    "capitulo": "12",
+    "slug": "marcos-12-oracao"
+  },
+  {
+    "livro": "marcos",
+    "capitulo": "13",
+    "slug": "marcos-13-oracao"
+  },
+  {
+    "livro": "marcos",
+    "capitulo": "14",
+    "slug": "marcos-14-oracao"
+  },
+  {
+    "livro": "marcos",
+    "capitulo": "15",
+    "slug": "marcos-15-oracao"
+  },
+  {
+    "livro": "marcos",
+    "capitulo": "16",
+    "slug": "marcos-16-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "01",
+    "slug": "mateus-01-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "02",
+    "slug": "mateus-02-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "03",
+    "slug": "mateus-03-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "04",
+    "slug": "mateus-04-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "05",
+    "slug": "mateus-05-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "06",
+    "slug": "mateus-06-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "07",
+    "slug": "mateus-07-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "08",
+    "slug": "mateus-08-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "09",
+    "slug": "mateus-09-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "10",
+    "slug": "mateus-10-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "11",
+    "slug": "mateus-11-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "12",
+    "slug": "mateus-12-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "13",
+    "slug": "mateus-13-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "14",
+    "slug": "mateus-14-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "15",
+    "slug": "mateus-15-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "16",
+    "slug": "mateus-16-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "17",
+    "slug": "mateus-17-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "18",
+    "slug": "mateus-18-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "19",
+    "slug": "mateus-19-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "20",
+    "slug": "mateus-20-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "21",
+    "slug": "mateus-21-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "22",
+    "slug": "mateus-22-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "23",
+    "slug": "mateus-23-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "24",
+    "slug": "mateus-24-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "25",
+    "slug": "mateus-25-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "26",
+    "slug": "mateus-26-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "27",
+    "slug": "mateus-27-oracao"
+  },
+  {
+    "livro": "mateus",
+    "capitulo": "28",
+    "slug": "mateus-28-oracao"
+  },
+  {
+    "livro": "miqueias",
+    "capitulo": "01",
+    "slug": "miqueias-01-oracao"
+  },
+  {
+    "livro": "miqueias",
+    "capitulo": "02",
+    "slug": "miqueias-02-oracao"
+  },
+  {
+    "livro": "miqueias",
+    "capitulo": "03",
+    "slug": "miqueias-03-oracao"
+  },
+  {
+    "livro": "miqueias",
+    "capitulo": "04",
+    "slug": "miqueias-04-oracao"
+  },
+  {
+    "livro": "miqueias",
+    "capitulo": "05",
+    "slug": "miqueias-05-oracao"
+  },
+  {
+    "livro": "miqueias",
+    "capitulo": "06",
+    "slug": "miqueias-06-oracao"
+  },
+  {
+    "livro": "miqueias",
+    "capitulo": "07",
+    "slug": "miqueias-07-oracao"
+  },
+  {
+    "livro": "naum",
+    "capitulo": "01",
+    "slug": "naum-01-oracao"
+  },
+  {
+    "livro": "naum",
+    "capitulo": "02",
+    "slug": "naum-02-oracao"
+  },
+  {
+    "livro": "naum",
+    "capitulo": "03",
+    "slug": "naum-03-oracao"
+  },
+  {
+    "livro": "neemias",
+    "capitulo": "01",
+    "slug": "neemias-01-oracao"
+  },
+  {
+    "livro": "neemias",
+    "capitulo": "02",
+    "slug": "neemias-02-oracao"
+  },
+  {
+    "livro": "neemias",
+    "capitulo": "03",
+    "slug": "neemias-03-oracao"
+  },
+  {
+    "livro": "neemias",
+    "capitulo": "04",
+    "slug": "neemias-04-oracao"
+  },
+  {
+    "livro": "neemias",
+    "capitulo": "05",
+    "slug": "neemias-05-oracao"
+  },
+  {
+    "livro": "neemias",
+    "capitulo": "06",
+    "slug": "neemias-06-oracao"
+  },
+  {
+    "livro": "neemias",
+    "capitulo": "07",
+    "slug": "neemias-07-oracao"
+  },
+  {
+    "livro": "neemias",
+    "capitulo": "08",
+    "slug": "neemias-08-oracao"
+  },
+  {
+    "livro": "neemias",
+    "capitulo": "09",
+    "slug": "neemias-09-oracao"
+  },
+  {
+    "livro": "neemias",
+    "capitulo": "10",
+    "slug": "neemias-10-oracao"
+  },
+  {
+    "livro": "neemias",
+    "capitulo": "11",
+    "slug": "neemias-11-oracao"
+  },
+  {
+    "livro": "neemias",
+    "capitulo": "12",
+    "slug": "neemias-12-oracao"
+  },
+  {
+    "livro": "neemias",
+    "capitulo": "13",
+    "slug": "neemias-13-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "01",
+    "slug": "numeros-01-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "02",
+    "slug": "numeros-02-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "03",
+    "slug": "numeros-03-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "04",
+    "slug": "numeros-04-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "05",
+    "slug": "numeros-05-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "06",
+    "slug": "numeros-06-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "07",
+    "slug": "numeros-07-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "08",
+    "slug": "numeros-08-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "09",
+    "slug": "numeros-09-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "10",
+    "slug": "numeros-10-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "11",
+    "slug": "numeros-11-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "12",
+    "slug": "numeros-12-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "13",
+    "slug": "numeros-13-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "14",
+    "slug": "numeros-14-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "15",
+    "slug": "numeros-15-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "16",
+    "slug": "numeros-16-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "17",
+    "slug": "numeros-17-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "18",
+    "slug": "numeros-18-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "19",
+    "slug": "numeros-19-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "20",
+    "slug": "numeros-20-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "21",
+    "slug": "numeros-21-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "22",
+    "slug": "numeros-22-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "23",
+    "slug": "numeros-23-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "24",
+    "slug": "numeros-24-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "25",
+    "slug": "numeros-25-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "26",
+    "slug": "numeros-26-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "27",
+    "slug": "numeros-27-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "28",
+    "slug": "numeros-28-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "29",
+    "slug": "numeros-29-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "30",
+    "slug": "numeros-30-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "31",
+    "slug": "numeros-31-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "32",
+    "slug": "numeros-32-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "33",
+    "slug": "numeros-33-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "34",
+    "slug": "numeros-34-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "35",
+    "slug": "numeros-35-oracao"
+  },
+  {
+    "livro": "numeros",
+    "capitulo": "36",
+    "slug": "numeros-36-oracao"
+  },
+  {
+    "livro": "obadias",
+    "capitulo": "01",
+    "slug": "obadias-01-oracao"
+  },
+  {
+    "livro": "oseias",
+    "capitulo": "01",
+    "slug": "oseias-01-oracao"
+  },
+  {
+    "livro": "oseias",
+    "capitulo": "02",
+    "slug": "oseias-02-oracao"
+  },
+  {
+    "livro": "oseias",
+    "capitulo": "03",
+    "slug": "oseias-03-oracao"
+  },
+  {
+    "livro": "oseias",
+    "capitulo": "04",
+    "slug": "oseias-04-oracao"
+  },
+  {
+    "livro": "oseias",
+    "capitulo": "05",
+    "slug": "oseias-05-oracao"
+  },
+  {
+    "livro": "oseias",
+    "capitulo": "06",
+    "slug": "oseias-06-oracao"
+  },
+  {
+    "livro": "oseias",
+    "capitulo": "07",
+    "slug": "oseias-07-oracao"
+  },
+  {
+    "livro": "oseias",
+    "capitulo": "08",
+    "slug": "oseias-08-oracao"
+  },
+  {
+    "livro": "oseias",
+    "capitulo": "09",
+    "slug": "oseias-09-oracao"
+  },
+  {
+    "livro": "oseias",
+    "capitulo": "10",
+    "slug": "oseias-10-oracao"
+  },
+  {
+    "livro": "oseias",
+    "capitulo": "11",
+    "slug": "oseias-11-oracao"
+  },
+  {
+    "livro": "oseias",
+    "capitulo": "12",
+    "slug": "oseias-12-oracao"
+  },
+  {
+    "livro": "oseias",
+    "capitulo": "13",
+    "slug": "oseias-13-oracao"
+  },
+  {
+    "livro": "oseias",
+    "capitulo": "14",
+    "slug": "oseias-14-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "01",
+    "slug": "proverbios-01-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "02",
+    "slug": "proverbios-02-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "03",
+    "slug": "proverbios-03-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "04",
+    "slug": "proverbios-04-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "05",
+    "slug": "proverbios-05-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "06",
+    "slug": "proverbios-06-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "07",
+    "slug": "proverbios-07-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "08",
+    "slug": "proverbios-08-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "09",
+    "slug": "proverbios-09-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "10",
+    "slug": "proverbios-10-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "11",
+    "slug": "proverbios-11-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "12",
+    "slug": "proverbios-12-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "13",
+    "slug": "proverbios-13-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "14",
+    "slug": "proverbios-14-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "15",
+    "slug": "proverbios-15-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "16",
+    "slug": "proverbios-16-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "17",
+    "slug": "proverbios-17-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "18",
+    "slug": "proverbios-18-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "19",
+    "slug": "proverbios-19-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "20",
+    "slug": "proverbios-20-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "21",
+    "slug": "proverbios-21-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "22",
+    "slug": "proverbios-22-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "23",
+    "slug": "proverbios-23-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "24",
+    "slug": "proverbios-24-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "25",
+    "slug": "proverbios-25-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "26",
+    "slug": "proverbios-26-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "27",
+    "slug": "proverbios-27-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "28",
+    "slug": "proverbios-28-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "29",
+    "slug": "proverbios-29-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "30",
+    "slug": "proverbios-30-oracao"
+  },
+  {
+    "livro": "proverbios",
+    "capitulo": "31",
+    "slug": "proverbios-31-oracao"
+  },
+  {
+    "livro": "romanos",
+    "capitulo": "01",
+    "slug": "romanos-01-oracao"
+  },
+  {
+    "livro": "romanos",
+    "capitulo": "02",
+    "slug": "romanos-02-oracao"
+  },
+  {
+    "livro": "romanos",
+    "capitulo": "03",
+    "slug": "romanos-03-oracao"
+  },
+  {
+    "livro": "romanos",
+    "capitulo": "04",
+    "slug": "romanos-04-oracao"
+  },
+  {
+    "livro": "romanos",
+    "capitulo": "05",
+    "slug": "romanos-05-oracao"
+  },
+  {
+    "livro": "romanos",
+    "capitulo": "06",
+    "slug": "romanos-06-oracao"
+  },
+  {
+    "livro": "romanos",
+    "capitulo": "07",
+    "slug": "romanos-07-oracao"
+  },
+  {
+    "livro": "romanos",
+    "capitulo": "08",
+    "slug": "romanos-08-oracao"
+  },
+  {
+    "livro": "romanos",
+    "capitulo": "09",
+    "slug": "romanos-09-oracao"
+  },
+  {
+    "livro": "romanos",
+    "capitulo": "10",
+    "slug": "romanos-10-oracao"
+  },
+  {
+    "livro": "romanos",
+    "capitulo": "11",
+    "slug": "romanos-11-oracao"
+  },
+  {
+    "livro": "romanos",
+    "capitulo": "12",
+    "slug": "romanos-12-oracao"
+  },
+  {
+    "livro": "romanos",
+    "capitulo": "13",
+    "slug": "romanos-13-oracao"
+  },
+  {
+    "livro": "romanos",
+    "capitulo": "14",
+    "slug": "romanos-14-oracao"
+  },
+  {
+    "livro": "romanos",
+    "capitulo": "15",
+    "slug": "romanos-15-oracao"
+  },
+  {
+    "livro": "romanos",
+    "capitulo": "16",
+    "slug": "romanos-16-oracao"
+  },
+  {
+    "livro": "rute",
+    "capitulo": "01",
+    "slug": "rute-01-oracao"
+  },
+  {
+    "livro": "rute",
+    "capitulo": "02",
+    "slug": "rute-02-oracao"
+  },
+  {
+    "livro": "rute",
+    "capitulo": "03",
+    "slug": "rute-03-oracao"
+  },
+  {
+    "livro": "rute",
+    "capitulo": "04",
+    "slug": "rute-04-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "01",
+    "slug": "salmos-01-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "02",
+    "slug": "salmos-02-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "03",
+    "slug": "salmos-03-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "04",
+    "slug": "salmos-04-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "05",
+    "slug": "salmos-05-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "06",
+    "slug": "salmos-06-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "07",
+    "slug": "salmos-07-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "08",
+    "slug": "salmos-08-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "09",
+    "slug": "salmos-09-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "10",
+    "slug": "salmos-10-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "100",
+    "slug": "salmos-100-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "101",
+    "slug": "salmos-101-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "102",
+    "slug": "salmos-102-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "103",
+    "slug": "salmos-103-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "104",
+    "slug": "salmos-104-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "105",
+    "slug": "salmos-105-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "106",
+    "slug": "salmos-106-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "107",
+    "slug": "salmos-107-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "108",
+    "slug": "salmos-108-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "109",
+    "slug": "salmos-109-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "11",
+    "slug": "salmos-11-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "110",
+    "slug": "salmos-110-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "111",
+    "slug": "salmos-111-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "112",
+    "slug": "salmos-112-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "113",
+    "slug": "salmos-113-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "114",
+    "slug": "salmos-114-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "115",
+    "slug": "salmos-115-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "116",
+    "slug": "salmos-116-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "117",
+    "slug": "salmos-117-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "118",
+    "slug": "salmos-118-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "119",
+    "slug": "salmos-119-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "12",
+    "slug": "salmos-12-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "120",
+    "slug": "salmos-120-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "121",
+    "slug": "salmos-121-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "122",
+    "slug": "salmos-122-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "123",
+    "slug": "salmos-123-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "124",
+    "slug": "salmos-124-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "125",
+    "slug": "salmos-125-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "126",
+    "slug": "salmos-126-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "127",
+    "slug": "salmos-127-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "128",
+    "slug": "salmos-128-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "129",
+    "slug": "salmos-129-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "13",
+    "slug": "salmos-13-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "130",
+    "slug": "salmos-130-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "131",
+    "slug": "salmos-131-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "132",
+    "slug": "salmos-132-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "133",
+    "slug": "salmos-133-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "134",
+    "slug": "salmos-134-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "135",
+    "slug": "salmos-135-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "136",
+    "slug": "salmos-136-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "137",
+    "slug": "salmos-137-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "138",
+    "slug": "salmos-138-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "139",
+    "slug": "salmos-139-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "14",
+    "slug": "salmos-14-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "140",
+    "slug": "salmos-140-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "141",
+    "slug": "salmos-141-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "142",
+    "slug": "salmos-142-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "143",
+    "slug": "salmos-143-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "144",
+    "slug": "salmos-144-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "145",
+    "slug": "salmos-145-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "146",
+    "slug": "salmos-146-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "147",
+    "slug": "salmos-147-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "148",
+    "slug": "salmos-148-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "149",
+    "slug": "salmos-149-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "15",
+    "slug": "salmos-15-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "150",
+    "slug": "salmos-150-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "16",
+    "slug": "salmos-16-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "17",
+    "slug": "salmos-17-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "18",
+    "slug": "salmos-18-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "19",
+    "slug": "salmos-19-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "20",
+    "slug": "salmos-20-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "21",
+    "slug": "salmos-21-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "22",
+    "slug": "salmos-22-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "23",
+    "slug": "salmos-23-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "24",
+    "slug": "salmos-24-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "25",
+    "slug": "salmos-25-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "26",
+    "slug": "salmos-26-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "27",
+    "slug": "salmos-27-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "28",
+    "slug": "salmos-28-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "29",
+    "slug": "salmos-29-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "30",
+    "slug": "salmos-30-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "31",
+    "slug": "salmos-31-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "32",
+    "slug": "salmos-32-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "33",
+    "slug": "salmos-33-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "34",
+    "slug": "salmos-34-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "35",
+    "slug": "salmos-35-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "36",
+    "slug": "salmos-36-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "37",
+    "slug": "salmos-37-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "38",
+    "slug": "salmos-38-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "39",
+    "slug": "salmos-39-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "40",
+    "slug": "salmos-40-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "41",
+    "slug": "salmos-41-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "42",
+    "slug": "salmos-42-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "43",
+    "slug": "salmos-43-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "44",
+    "slug": "salmos-44-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "45",
+    "slug": "salmos-45-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "46",
+    "slug": "salmos-46-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "47",
+    "slug": "salmos-47-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "48",
+    "slug": "salmos-48-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "49",
+    "slug": "salmos-49-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "50",
+    "slug": "salmos-50-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "51",
+    "slug": "salmos-51-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "52",
+    "slug": "salmos-52-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "53",
+    "slug": "salmos-53-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "54",
+    "slug": "salmos-54-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "55",
+    "slug": "salmos-55-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "56",
+    "slug": "salmos-56-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "57",
+    "slug": "salmos-57-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "58",
+    "slug": "salmos-58-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "59",
+    "slug": "salmos-59-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "60",
+    "slug": "salmos-60-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "61",
+    "slug": "salmos-61-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "62",
+    "slug": "salmos-62-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "63",
+    "slug": "salmos-63-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "64",
+    "slug": "salmos-64-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "65",
+    "slug": "salmos-65-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "66",
+    "slug": "salmos-66-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "67",
+    "slug": "salmos-67-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "68",
+    "slug": "salmos-68-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "69",
+    "slug": "salmos-69-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "70",
+    "slug": "salmos-70-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "71",
+    "slug": "salmos-71-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "72",
+    "slug": "salmos-72-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "73",
+    "slug": "salmos-73-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "74",
+    "slug": "salmos-74-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "75",
+    "slug": "salmos-75-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "76",
+    "slug": "salmos-76-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "77",
+    "slug": "salmos-77-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "78",
+    "slug": "salmos-78-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "79",
+    "slug": "salmos-79-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "80",
+    "slug": "salmos-80-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "81",
+    "slug": "salmos-81-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "82",
+    "slug": "salmos-82-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "83",
+    "slug": "salmos-83-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "84",
+    "slug": "salmos-84-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "85",
+    "slug": "salmos-85-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "86",
+    "slug": "salmos-86-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "87",
+    "slug": "salmos-87-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "88",
+    "slug": "salmos-88-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "89",
+    "slug": "salmos-89-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "90",
+    "slug": "salmos-90-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "91",
+    "slug": "salmos-91-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "92",
+    "slug": "salmos-92-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "93",
+    "slug": "salmos-93-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "94",
+    "slug": "salmos-94-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "95",
+    "slug": "salmos-95-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "96",
+    "slug": "salmos-96-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "97",
+    "slug": "salmos-97-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "98",
+    "slug": "salmos-98-oracao"
+  },
+  {
+    "livro": "salmos",
+    "capitulo": "99",
+    "slug": "salmos-99-oracao"
+  },
+  {
+    "livro": "sofonias",
+    "capitulo": "01",
+    "slug": "sofonias-01-oracao"
+  },
+  {
+    "livro": "sofonias",
+    "capitulo": "02",
+    "slug": "sofonias-02-oracao"
+  },
+  {
+    "livro": "sofonias",
+    "capitulo": "03",
+    "slug": "sofonias-03-oracao"
+  },
+  {
+    "livro": "tiago",
+    "capitulo": "01",
+    "slug": "tiago-01-oracao"
+  },
+  {
+    "livro": "tiago",
+    "capitulo": "02",
+    "slug": "tiago-02-oracao"
+  },
+  {
+    "livro": "tiago",
+    "capitulo": "03",
+    "slug": "tiago-03-oracao"
+  },
+  {
+    "livro": "tiago",
+    "capitulo": "04",
+    "slug": "tiago-04-oracao"
+  },
+  {
+    "livro": "tiago",
+    "capitulo": "05",
+    "slug": "tiago-05-oracao"
+  },
+  {
+    "livro": "tito",
+    "capitulo": "01",
+    "slug": "tito-01-oracao"
+  },
+  {
+    "livro": "tito",
+    "capitulo": "02",
+    "slug": "tito-02-oracao"
+  },
+  {
+    "livro": "tito",
+    "capitulo": "03",
+    "slug": "tito-03-oracao"
+  },
+  {
+    "livro": "zacarias",
+    "capitulo": "01",
+    "slug": "zacarias-01-oracao"
+  },
+  {
+    "livro": "zacarias",
+    "capitulo": "02",
+    "slug": "zacarias-02-oracao"
+  },
+  {
+    "livro": "zacarias",
+    "capitulo": "03",
+    "slug": "zacarias-03-oracao"
+  },
+  {
+    "livro": "zacarias",
+    "capitulo": "04",
+    "slug": "zacarias-04-oracao"
+  },
+  {
+    "livro": "zacarias",
+    "capitulo": "05",
+    "slug": "zacarias-05-oracao"
+  },
+  {
+    "livro": "zacarias",
+    "capitulo": "06",
+    "slug": "zacarias-06-oracao"
+  },
+  {
+    "livro": "zacarias",
+    "capitulo": "07",
+    "slug": "zacarias-07-oracao"
+  },
+  {
+    "livro": "zacarias",
+    "capitulo": "08",
+    "slug": "zacarias-08-oracao"
+  },
+  {
+    "livro": "zacarias",
+    "capitulo": "09",
+    "slug": "zacarias-09-oracao"
+  },
+  {
+    "livro": "zacarias",
+    "capitulo": "10",
+    "slug": "zacarias-10-oracao"
+  },
+  {
+    "livro": "zacarias",
+    "capitulo": "11",
+    "slug": "zacarias-11-oracao"
+  },
+  {
+    "livro": "zacarias",
+    "capitulo": "12",
+    "slug": "zacarias-12-oracao"
+  },
+  {
+    "livro": "zacarias",
+    "capitulo": "13",
+    "slug": "zacarias-13-oracao"
+  },
+  {
+    "livro": "zacarias",
+    "capitulo": "14",
+    "slug": "zacarias-14-oracao"
+  }
+]

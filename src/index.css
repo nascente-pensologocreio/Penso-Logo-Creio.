@@ -24,6 +24,24 @@
     letter-spacing: 0.02em;
   }
 
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(1, 11, 10, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #D4AF37, #70af1e);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #e8c968, #8bc934);
+}
+
   h1 {
     color: #D4AF37;
     text-shadow: 0 0 12px rgba(212,175,55,0.45);

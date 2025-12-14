@@ -162,7 +162,7 @@ export default function Post() {
 
         <div
           style={{
-            maxWidth: "880px",
+            maxWidth: "1180px",
             margin: "1.5rem auto 0",
             padding: "0 1rem 1.5rem",
             textAlign: "center",
@@ -197,7 +197,7 @@ export default function Post() {
       <article
         style={{
           width: "100%",
-          maxWidth: "880px",
+          maxWidth: "1180px",
           margin: "0 auto",
           padding: "2.5rem 2rem 4.5rem",
         }}

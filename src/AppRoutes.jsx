@@ -85,6 +85,9 @@ export default function AppRoutes() {
 
           {/* Orações */}
           <Route path="oracoes" element={<Oracoes />} />
+          
+          {/* Oração individual por livro/capítulo */}
+          <Route path="biblia/:livro/:slug" element={<Post />} />
 
           {/* Biblioteca */}
           <Route path="biblioteca" element={<Biblioteca />} />
