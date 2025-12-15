@@ -24,6 +24,9 @@ function getActiveRoot(pathname, locationState) {
       return "/temas-da-vida";
     }
     return "/";  // Default: Home
+    if (locationState?.from === 'calendario') {
+      return "/calendario";
+    }
   }
 
   // posts Firebase: /post/:slug → Biblioteca (não há item, então nenhum ativo)

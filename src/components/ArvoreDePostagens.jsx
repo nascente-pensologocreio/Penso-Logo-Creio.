@@ -209,7 +209,7 @@ function ArvoreDePostagens() {
                                       {lista.map((post) => (
                                         <li key={post.id} className="list-disc">
                                           <a
-                                            href={`#post-${post.id}`}
+                                            onClick={(e) => { e.preventDefault(); window.location.href = `/artigo/${post.slug}`; }}
                                             className="text-lg block hover:translate-x-2 transition-transform duration-300 link-post"
                                           >
                                             <span className="font-semibold text-[#D4AF37]">
