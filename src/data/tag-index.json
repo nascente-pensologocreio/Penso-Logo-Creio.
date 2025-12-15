@@ -1,5 +1,19 @@
 {
+  "amor": [
+    {
+      "path": "genesis/01/exposicao-homiletica.md",
+      "slug": "genesis-01-pregacao-tecnica"
+    }
+  ],
   "ansiedade": [
+    {
+      "path": "genesis/01/devocional-01.md",
+      "slug": "genesis-01-devocional"
+    },
+    {
+      "path": "genesis/01/exposicao-homiletica.md",
+      "slug": "genesis-01-pregacao-tecnica"
+    },
     {
       "path": "romanos/01/mensagem-pastoral.md",
       "slug": "romanos-01-mensagem-pastoral"
@@ -18,6 +32,10 @@
     }
   ],
   "duvida": [
+    {
+      "path": "genesis/01/exposicao-homiletica.md",
+      "slug": "genesis-01-pregacao-tecnica"
+    },
     {
       "path": "romanos/01/devocional-01.md",
       "slug": "romanos-01-devocional"
@@ -48,6 +66,22 @@
     }
   ],
   "esperanca": [
+    {
+      "path": "genesis/01/devocional-01.md",
+      "slug": "genesis-01-devocional"
+    },
+    {
+      "path": "genesis/01/exposicao-homiletica.md",
+      "slug": "genesis-01-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/01/mensagem-pastoral.md",
+      "slug": "genesis-01-mensagem-pastoral"
+    },
+    {
+      "path": "genesis/01/oracao.md",
+      "slug": "genesis-01-oracao"
+    },
     {
       "path": "romanos/01/devocional-01.md",
       "slug": "romanos-01-devocional"
@@ -105,6 +139,10 @@
   ],
   "futuro": [
     {
+      "path": "genesis/01/exposicao-homiletica.md",
+      "slug": "genesis-01-pregacao-tecnica"
+    },
+    {
       "path": "romanos/01/devocional-01.md",
       "slug": "romanos-01-devocional"
     },
@@ -126,6 +164,18 @@
     }
   ],
   "medo": [
+    {
+      "path": "genesis/01/devocional-01.md",
+      "slug": "genesis-01-devocional"
+    },
+    {
+      "path": "genesis/01/exposicao-homiletica.md",
+      "slug": "genesis-01-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/01/oracao.md",
+      "slug": "genesis-01-oracao"
+    },
     {
       "path": "romanos/01/devocional-01.md",
       "slug": "romanos-01-devocional"
@@ -164,6 +214,22 @@
     }
   ],
   "mudanca": [
+    {
+      "path": "genesis/01/devocional-01.md",
+      "slug": "genesis-01-devocional"
+    },
+    {
+      "path": "genesis/01/exposicao-homiletica.md",
+      "slug": "genesis-01-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/01/mensagem-pastoral.md",
+      "slug": "genesis-01-mensagem-pastoral"
+    },
+    {
+      "path": "genesis/01/oracao.md",
+      "slug": "genesis-01-oracao"
+    },
     {
       "path": "romanos/02/estudo-tematico.md",
       "slug": "romanos-02-estudo-tematico"
@@ -213,8 +279,34 @@
   ],
   "solidao": [
     {
+      "path": "genesis/01/mensagem-pastoral.md",
+      "slug": "genesis-01-mensagem-pastoral"
+    },
+    {
+      "path": "genesis/01/oracao.md",
+      "slug": "genesis-01-oracao"
+    },
+    {
       "path": "romanos/01/mensagem-pastoral.md",
       "slug": "romanos-01-mensagem-pastoral"
+    }
+  ],
+  "sonho": [
+    {
+      "path": "genesis/01/devocional-01.md",
+      "slug": "genesis-01-devocional"
+    },
+    {
+      "path": "genesis/01/exposicao-homiletica.md",
+      "slug": "genesis-01-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/01/mensagem-pastoral.md",
+      "slug": "genesis-01-mensagem-pastoral"
+    },
+    {
+      "path": "genesis/01/oracao.md",
+      "slug": "genesis-01-oracao"
     }
   ]
 }

@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import ReflexaoDiaria from "../components/ReflexaoDiaria.jsx";
 import { ArticleCard } from "../components/ArticleCard.jsx";
-import ArvoreDePostagens from "../components/ArvoreDePostagens.jsx";
 import { getHomePosts } from "../utils/loadHomePosts.js";
 
 import { parseFrontmatter, markdownToHtml } from "../utils/markdownProcessor.js"; // <-- ÚNICA ADIÇÃO
@@ -115,7 +114,6 @@ export default function Home() {
         </div>
       </main>
 
-      <ArvoreDePostagens />
     </>
   );
 }

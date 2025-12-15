@@ -32,9 +32,8 @@ const Oracoes = lazy(() => import("./pages/Oracoes.jsx"));
 const Biblioteca = lazy(() => import("./pages/Biblioteca.jsx"));
 
 // Calendário
-const ArvoreDePostagens = lazy(() =>
-  import("./components/ArvoreDePostagens.jsx")
-);
+const ArvoreDePostagens = lazy(() => import("./components/ArvoreDePostagens.jsx"));
+const CalendarioNovo = lazy(() => import("./pages/CalendarioNovo.jsx"));
 
 // Painel administrativo
 const AdminPublish = lazy(() => import("./pages/AdminPublish.jsx"));
@@ -93,7 +92,7 @@ export default function AppRoutes() {
           <Route path="biblioteca" element={<Biblioteca />} />
 
           {/* Calendário */}
-          <Route path="calendario" element={<ArvoreDePostagens />} />
+          <Route path="calendario" element={<CalendarioNovo />} />
 
           {/* PAINEL ADMINISTRATIVO */}
           <Route path="admin/publish" element={<AdminPublish />} />
