@@ -279,4 +279,3 @@ O primeiro capítulo das Escrituras permanece simultaneamente porta de entrada p
 Que nossas investigações das controvérsias criacionais sirvam sempre ao propósito último da revelação: que "os céus proclamem a glória de Deus" (Salmo 19:1) — e que nossos corações, contemplando essa glória através da Palavra, irrompam em adoração ao Criador que fala, e por Sua palavra, todas as coisas subsistem.
 
 
-## **Capelão Nascente**

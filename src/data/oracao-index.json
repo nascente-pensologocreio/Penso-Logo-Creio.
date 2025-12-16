@@ -14,6 +14,33 @@
     "caminho": "/biblia/genesis/genesis-01-oracao"
   },
   {
+    "titulo": "O Sopro da Vida",
+    "slug": "genesis-02-oracao",
+    "tags": [
+      "amor",
+      "solidao",
+      "mudanca",
+      "sonho",
+      "esperanca"
+    ],
+    "livro": "genesis",
+    "capitulo": "02",
+    "caminho": "/biblia/genesis/genesis-02-oracao"
+  },
+  {
+    "titulo": "Oração das Folhas que Não Cobrem e da Voz que Ainda Caminha",
+    "slug": "genesis-03-oracao",
+    "tags": [
+      "medo",
+      "perdao",
+      "esperanca",
+      "mudanca"
+    ],
+    "livro": "genesis",
+    "capitulo": "03",
+    "caminho": "/biblia/genesis/genesis-03-oracao"
+  },
+  {
     "titulo": "Senhor da Luz que Nunca se Apaga",
     "slug": "romanos-01-oracao",
     "tags": [

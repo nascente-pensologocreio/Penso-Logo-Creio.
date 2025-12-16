@@ -211,4 +211,3 @@ Que assim seja! Que o "muito bom" de Gênesis encontre seu cumprimento final no 
 
 Amém e amém!
 
-**Capelão Nascente**

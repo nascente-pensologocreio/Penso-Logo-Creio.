@@ -35,7 +35,7 @@ Amém.
 
 ### "Os céus proclamam a glória de Deus, e o firmamento anuncia as obras das suas mãos." — Salmos 19:1
 
-**Capelão Nascente**
+
 
 
 
