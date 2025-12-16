@@ -14,7 +14,7 @@ tags: []
 ---
 
 # Terminologia Chave: Gênesis 4
-## "Do Altar ao Exílio: A Gramática do Primeiro Sangue"
+## Do Altar ao Exílio: A Gramática do Primeiro Sangue
 
 ---
 

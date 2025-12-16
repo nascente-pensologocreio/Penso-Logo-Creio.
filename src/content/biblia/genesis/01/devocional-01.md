@@ -17,6 +17,7 @@ tags: ["ansiedade", "esperanca", "medo", "mudanca", "sonho"]
 ## Onde Tudo Começa
 
 
+
 Muitas vezes, sendo redundante de propósito — muitas e não poucas vezes —, acordamos pela manhã como quem sai de uma trincheira em um campo de batalha. Sentimo-nos expostos a projéteis mortíferos, morteiros assassinos, fomes, doenças, à loucura de muitos e à impiedade de outros. A sensação de injustiça e abandono nos cerca, e o ar que respiramos parece pesado com o medo do desconhecido.
 
 O desespero, por vezes, parece ser o único caminho pavimentado à nossa frente. Olhamos ao redor e não vemos saída: de um lado, uma floresta fechada, escura e tenebrosa; do outro, montanhas intransponíveis. Sentimo-nos sem alternativas, forçados a trilhar justamente o caminho que desejávamos nunca pisar.

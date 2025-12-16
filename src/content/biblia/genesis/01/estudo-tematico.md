@@ -14,7 +14,7 @@ tags: []
 ---
 
 # Estudo Temático: Gênesis 1
-## "O Pórtico da Revelação: Criação, Ordem e a Imagem de Deus"
+## O Pórtico da Revelação: Criação, Ordem e a Imagem de Deus
 
 ---
 

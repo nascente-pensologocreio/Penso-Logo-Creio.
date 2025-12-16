@@ -14,7 +14,7 @@ tags: ["batalha", "duvida", "esperanca", "futuro", "medo"]
 ---
 
 # Exposição Homilética: Gênesis 3
-## "Do Éden Perdido ao Evangelho Prometido"
+## Do Éden Perdido ao Evangelho Prometido
 
 **Texto Base:** Gênesis 3:1-24
 

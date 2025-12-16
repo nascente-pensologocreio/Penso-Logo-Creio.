@@ -14,7 +14,7 @@ tags: []
 ---
 
 # Estudo Temático Geral: Gênesis 3
-## "O Colapso do Éden e a Promessa da Semente"
+## O Colapso do Éden e a Promessa da Semente
 
 ---
 

@@ -14,7 +14,7 @@ tags: []
 ---
 
 # Temas Controversos e Complexos: Gênesis 2
-## "As Tensões entre Revelação, História e Ciência: Um Tratado Apologético"
+## As Tensões entre Revelação, História e Ciência: Um Tratado Apologético
 
 ---
 

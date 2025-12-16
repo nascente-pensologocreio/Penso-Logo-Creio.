@@ -14,7 +14,7 @@ tags: ["batalha", "inveja", "solidao", "perdao", "mudanca"]
 ---
 
 # Mensagem Pastoral: Gênesis 4
-## "O Grito Silencioso da Irmandade: Curando a Síndrome de Caim na Igreja"
+## O Grito Silencioso da Irmandade: Curando a Síndrome de Caim na Igreja
 
 ---
 

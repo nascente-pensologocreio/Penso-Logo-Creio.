@@ -14,7 +14,9 @@ tags: ["esperanca", "medo", "mudanca", "sonho", "solidao"]
 ---
 
 # Oração: Gênesis 1
-## "Do Caos à Glória: O Clamor da Criação"
+## Do Caos à Glória: O Clamor da Criação
+
+
 Ó Deus Eterno e Todo-Poderoso, Tu que habitas na luz inacessível e que, pelo poder irresistível da Tua voz, chamaste à existência o que não existia. Nós nos prostramos diante da Tua majestade insondável, reconhecendo que antes que houvesse tempo, antes que houvesse abismo, Tu já eras Deus.
 
 Senhor, ao olharmos para o início de tudo, vemos o Teu Espírito pairando sobre águas escuras e profundas. E hoje, Pai, confessamos com humildade que muitas vezes a nossa alma se assemelha àquela terra primitiva: sem forma e vazia. Há momentos em que o caos tenta governar nossas emoções, em que a escuridão encobre nossa esperança e o vazio ecoa onde deveria haver a Tua plenitude.

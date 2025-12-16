@@ -14,7 +14,7 @@ tags: []
 ---
 
 # Terminologias Chaves: Gênesis 3
-## "O Teatro da Liberdade Ferida: Uma Exegese das Palavras Fundamentais"
+## O Teatro da Liberdade Ferida: Uma Exegese das Palavras Fundamentais
 
 ---
 

@@ -14,7 +14,7 @@ tags: []
 ---
 
 # Temas Controversos e Complexos: Gênesis 3
-## "Navegando as Águas Profundas da Queda e da Condição Humana"
+## Navegando as Águas Profundas da Queda e da Condição Humana
 
 ---
 

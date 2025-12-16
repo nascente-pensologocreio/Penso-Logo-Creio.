@@ -14,7 +14,9 @@ tags: ["esperanca", "mudanca", "sonho", "solidao", "futuro"]
 ---
 
 # Mensagem Pastoral: Gênesis 1
-## “Deus Começa Onde a Gente Só Enxerga Caos”
+## Deus Começa Onde a Gente Só Enxerga Caos
+
+
 
 Amados irmãos e irmãs em Cristo, graça e paz.
 

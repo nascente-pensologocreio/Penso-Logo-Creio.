@@ -14,7 +14,7 @@ tags: []
 ---
 
 # Estudo Temático: Gênesis 4
-## "O Primeiro Abismo: Meditações sobre Gênesis 4 e o Nascimento da História"
+## O Primeiro Abismo: Meditações sobre Gênesis 4 e o Nascimento da História
 
 ---
 

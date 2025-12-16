@@ -14,7 +14,7 @@ tags: ["batalha", "frustracao", "doenca-morte", "perdao", "esperanca"]
 ---
 
 # Pregação Técnica: Gênesis 4
-## "O Primeiro Altar e o Primeiro Túmulo: A Tragédia do Coração Dividido"
+## O Primeiro Altar e o Primeiro Túmulo: A Tragédia do Coração Dividido
 
 ---
 

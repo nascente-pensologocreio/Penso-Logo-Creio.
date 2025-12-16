@@ -14,7 +14,7 @@ tags: ["medo", "batalha", "duvida", "esperanca", "perdao"]
 ---
 
 # Temas Controversos e Complexos: Gênesis 4
-## "O Selo da Compaixão Incompreensível e a Arquitetura da Rebelião"
+## O Selo da Compaixão Incompreensível e a Arquitetura da Rebelião
 
 ---
 

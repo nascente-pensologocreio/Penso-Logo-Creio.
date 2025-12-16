@@ -14,7 +14,7 @@ tags: ["medo", "perdao", "esperanca", "mudanca"]
 ---
 
 # Oração: Gênesis 3
-## "Oração das Folhas que Não Cobrem e da Voz que Ainda Caminha"
+## Oração das Folhas que Não Cobrem e da Voz que Ainda Caminha
 
 ---
 

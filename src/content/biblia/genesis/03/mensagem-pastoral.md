@@ -14,7 +14,7 @@ tags: ["frustracao", "medo", "perdao", "esperanca", "mudanca"]
 ---
 
 # Mensagem Pastoral: Gênesis 3
-## "Quando o Céu Fica em Silêncio: Encontrando Graça no Fracasso"
+## Quando o Céu Fica em Silêncio: Encontrando Graça no Fracasso
 
 ---
 
