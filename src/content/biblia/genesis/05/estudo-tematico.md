@@ -1,6 +1,6 @@
 ---
 slug: "genesis-05-estudo-tematico"
-titulo: "O Livro das Gerações: Gênesis 5 e o Mistério da Continuidade Humana"
+titulo: "O Livro das Gerações, O Livro dos Vivos e dos Mortos: Gênesis 5 e o Mistério da Continuidade Humana"
 tipo: "estudo-tematico"
 origem: "biblia"
 livro: "genesis"

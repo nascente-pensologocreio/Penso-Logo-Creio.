@@ -93,10 +93,6 @@
       "slug": "genesis-04-mensagem-pastoral"
     },
     {
-      "path": "genesis/04/temas-controversos.md",
-      "slug": "genesis-04-temas-controversos"
-    },
-    {
       "path": "genesis/07/exposicao-homiletica.md",
       "slug": "genesis-07-pregacao-tecnica"
     },
@@ -123,10 +119,6 @@
     {
       "path": "genesis/03/exposicao-homiletica.md",
       "slug": "genesis-03-pregacao-tecnica"
-    },
-    {
-      "path": "genesis/04/temas-controversos.md",
-      "slug": "genesis-04-temas-controversos"
     },
     {
       "path": "genesis/07/devocional-01.md",
@@ -225,10 +217,6 @@
     {
       "path": "genesis/04/exposicao-homiletica.md",
       "slug": "genesis-04-pregacao-tecnica"
-    },
-    {
-      "path": "genesis/04/temas-controversos.md",
-      "slug": "genesis-04-temas-controversos"
     },
     {
       "path": "genesis/05/devocional-01.md",
@@ -483,10 +471,6 @@
       "slug": "genesis-04-devocional"
     },
     {
-      "path": "genesis/04/temas-controversos.md",
-      "slug": "genesis-04-temas-controversos"
-    },
-    {
       "path": "genesis/05/devocional-01.md",
       "slug": "genesis-05-devocional"
     },
@@ -721,10 +705,6 @@
     {
       "path": "genesis/04/mensagem-pastoral.md",
       "slug": "genesis-04-mensagem-pastoral"
-    },
-    {
-      "path": "genesis/04/temas-controversos.md",
-      "slug": "genesis-04-temas-controversos"
     },
     {
       "path": "genesis/05/devocional-01.md",
