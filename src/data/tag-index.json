@@ -19,6 +19,10 @@
     {
       "path": "genesis/02/oracao.md",
       "slug": "genesis-02-oracao"
+    },
+    {
+      "path": "genesis/08/exposicao-homiletica.md",
+      "slug": "genesis-08-pregacao-tecnica"
     }
   ],
   "ansiedade": [
@@ -29,6 +33,30 @@
     {
       "path": "genesis/01/exposicao-homiletica.md",
       "slug": "genesis-01-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/07/devocional-01.md",
+      "slug": "genesis-07-devocional"
+    },
+    {
+      "path": "genesis/07/exposicao-homiletica.md",
+      "slug": "genesis-07-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/07/mensagem-pastoral.md",
+      "slug": "genesis-07-mensagem-pastoral"
+    },
+    {
+      "path": "genesis/07/oracao.md",
+      "slug": "genesis-07-oracao"
+    },
+    {
+      "path": "genesis/08/devocional-01.md",
+      "slug": "genesis-08-devocional"
+    },
+    {
+      "path": "genesis/08/mensagem-pastoral.md",
+      "slug": "genesis-08-mensagem-pastoral"
     },
     {
       "path": "romanos/01/mensagem-pastoral.md",
@@ -67,6 +95,14 @@
     {
       "path": "genesis/04/temas-controversos.md",
       "slug": "genesis-04-temas-controversos"
+    },
+    {
+      "path": "genesis/07/exposicao-homiletica.md",
+      "slug": "genesis-07-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/07/oracao.md",
+      "slug": "genesis-07-oracao"
     }
   ],
   "doenca-morte": [
@@ -91,6 +127,18 @@
     {
       "path": "genesis/04/temas-controversos.md",
       "slug": "genesis-04-temas-controversos"
+    },
+    {
+      "path": "genesis/07/devocional-01.md",
+      "slug": "genesis-07-devocional"
+    },
+    {
+      "path": "genesis/07/exposicao-homiletica.md",
+      "slug": "genesis-07-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/07/mensagem-pastoral.md",
+      "slug": "genesis-07-mensagem-pastoral"
     },
     {
       "path": "romanos/01/devocional-01.md",
@@ -183,6 +231,66 @@
       "slug": "genesis-04-temas-controversos"
     },
     {
+      "path": "genesis/05/devocional-01.md",
+      "slug": "genesis-05-devocional"
+    },
+    {
+      "path": "genesis/05/exposicao-homiletica.md",
+      "slug": "genesis-05-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/05/mensagem-pastoral.md",
+      "slug": "genesis-05-mensagem-pastoral"
+    },
+    {
+      "path": "genesis/05/oracao.md",
+      "slug": "genesis-05-oracao"
+    },
+    {
+      "path": "genesis/06/devocional-01.md",
+      "slug": "genesis-06-devocional"
+    },
+    {
+      "path": "genesis/06/exposicao-homiletica.md",
+      "slug": "genesis-06-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/06/mensagem-pastoral.md",
+      "slug": "genesis-06-mensagem-pastoral"
+    },
+    {
+      "path": "genesis/06/oracao.md",
+      "slug": "genesis-06-oracao"
+    },
+    {
+      "path": "genesis/07/devocional-01.md",
+      "slug": "genesis-07-devocional"
+    },
+    {
+      "path": "genesis/07/exposicao-homiletica.md",
+      "slug": "genesis-07-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/07/mensagem-pastoral.md",
+      "slug": "genesis-07-mensagem-pastoral"
+    },
+    {
+      "path": "genesis/07/oracao.md",
+      "slug": "genesis-07-oracao"
+    },
+    {
+      "path": "genesis/08/devocional-01.md",
+      "slug": "genesis-08-devocional"
+    },
+    {
+      "path": "genesis/08/exposicao-homiletica.md",
+      "slug": "genesis-08-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/08/mensagem-pastoral.md",
+      "slug": "genesis-08-mensagem-pastoral"
+    },
+    {
       "path": "romanos/01/devocional-01.md",
       "slug": "romanos-01-devocional"
     },
@@ -245,6 +353,10 @@
       "slug": "genesis-04-pregacao-tecnica"
     },
     {
+      "path": "genesis/07/exposicao-homiletica.md",
+      "slug": "genesis-07-pregacao-tecnica"
+    },
+    {
       "path": "romanos/01/mensagem-pastoral.md",
       "slug": "romanos-01-mensagem-pastoral"
     }
@@ -261,6 +373,34 @@
     {
       "path": "genesis/03/exposicao-homiletica.md",
       "slug": "genesis-03-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/07/devocional-01.md",
+      "slug": "genesis-07-devocional"
+    },
+    {
+      "path": "genesis/07/exposicao-homiletica.md",
+      "slug": "genesis-07-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/07/mensagem-pastoral.md",
+      "slug": "genesis-07-mensagem-pastoral"
+    },
+    {
+      "path": "genesis/07/oracao.md",
+      "slug": "genesis-07-oracao"
+    },
+    {
+      "path": "genesis/08/devocional-01.md",
+      "slug": "genesis-08-devocional"
+    },
+    {
+      "path": "genesis/08/exposicao-homiletica.md",
+      "slug": "genesis-08-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/08/mensagem-pastoral.md",
+      "slug": "genesis-08-mensagem-pastoral"
     },
     {
       "path": "romanos/01/devocional-01.md",
@@ -283,10 +423,30 @@
       "slug": "romanos-01-oracao"
     }
   ],
+  "gratidao": [
+    {
+      "path": "genesis/08/exposicao-homiletica.md",
+      "slug": "genesis-08-pregacao-tecnica"
+    }
+  ],
   "inveja": [
     {
       "path": "genesis/04/mensagem-pastoral.md",
       "slug": "genesis-04-mensagem-pastoral"
+    }
+  ],
+  "luto": [
+    {
+      "path": "genesis/07/devocional-01.md",
+      "slug": "genesis-07-devocional"
+    },
+    {
+      "path": "genesis/07/exposicao-homiletica.md",
+      "slug": "genesis-07-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/07/mensagem-pastoral.md",
+      "slug": "genesis-07-mensagem-pastoral"
     }
   ],
   "medo": [
@@ -325,6 +485,62 @@
     {
       "path": "genesis/04/temas-controversos.md",
       "slug": "genesis-04-temas-controversos"
+    },
+    {
+      "path": "genesis/05/devocional-01.md",
+      "slug": "genesis-05-devocional"
+    },
+    {
+      "path": "genesis/05/exposicao-homiletica.md",
+      "slug": "genesis-05-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/05/mensagem-pastoral.md",
+      "slug": "genesis-05-mensagem-pastoral"
+    },
+    {
+      "path": "genesis/05/oracao.md",
+      "slug": "genesis-05-oracao"
+    },
+    {
+      "path": "genesis/06/devocional-01.md",
+      "slug": "genesis-06-devocional"
+    },
+    {
+      "path": "genesis/06/exposicao-homiletica.md",
+      "slug": "genesis-06-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/06/mensagem-pastoral.md",
+      "slug": "genesis-06-mensagem-pastoral"
+    },
+    {
+      "path": "genesis/06/oracao.md",
+      "slug": "genesis-06-oracao"
+    },
+    {
+      "path": "genesis/07/devocional-01.md",
+      "slug": "genesis-07-devocional"
+    },
+    {
+      "path": "genesis/07/exposicao-homiletica.md",
+      "slug": "genesis-07-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/07/mensagem-pastoral.md",
+      "slug": "genesis-07-mensagem-pastoral"
+    },
+    {
+      "path": "genesis/07/oracao.md",
+      "slug": "genesis-07-oracao"
+    },
+    {
+      "path": "genesis/08/devocional-01.md",
+      "slug": "genesis-08-devocional"
+    },
+    {
+      "path": "genesis/08/mensagem-pastoral.md",
+      "slug": "genesis-08-mensagem-pastoral"
     },
     {
       "path": "romanos/01/devocional-01.md",
@@ -409,6 +625,58 @@
       "slug": "genesis-04-mensagem-pastoral"
     },
     {
+      "path": "genesis/05/devocional-01.md",
+      "slug": "genesis-05-devocional"
+    },
+    {
+      "path": "genesis/05/exposicao-homiletica.md",
+      "slug": "genesis-05-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/05/mensagem-pastoral.md",
+      "slug": "genesis-05-mensagem-pastoral"
+    },
+    {
+      "path": "genesis/05/oracao.md",
+      "slug": "genesis-05-oracao"
+    },
+    {
+      "path": "genesis/06/devocional-01.md",
+      "slug": "genesis-06-devocional"
+    },
+    {
+      "path": "genesis/06/exposicao-homiletica.md",
+      "slug": "genesis-06-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/06/mensagem-pastoral.md",
+      "slug": "genesis-06-mensagem-pastoral"
+    },
+    {
+      "path": "genesis/06/oracao.md",
+      "slug": "genesis-06-oracao"
+    },
+    {
+      "path": "genesis/07/devocional-01.md",
+      "slug": "genesis-07-devocional"
+    },
+    {
+      "path": "genesis/07/exposicao-homiletica.md",
+      "slug": "genesis-07-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/07/mensagem-pastoral.md",
+      "slug": "genesis-07-mensagem-pastoral"
+    },
+    {
+      "path": "genesis/08/devocional-01.md",
+      "slug": "genesis-08-devocional"
+    },
+    {
+      "path": "genesis/08/mensagem-pastoral.md",
+      "slug": "genesis-08-mensagem-pastoral"
+    },
+    {
       "path": "romanos/02/estudo-tematico.md",
       "slug": "romanos-02-estudo-tematico"
     },
@@ -457,6 +725,42 @@
     {
       "path": "genesis/04/temas-controversos.md",
       "slug": "genesis-04-temas-controversos"
+    },
+    {
+      "path": "genesis/05/devocional-01.md",
+      "slug": "genesis-05-devocional"
+    },
+    {
+      "path": "genesis/05/exposicao-homiletica.md",
+      "slug": "genesis-05-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/05/mensagem-pastoral.md",
+      "slug": "genesis-05-mensagem-pastoral"
+    },
+    {
+      "path": "genesis/05/oracao.md",
+      "slug": "genesis-05-oracao"
+    },
+    {
+      "path": "genesis/06/devocional-01.md",
+      "slug": "genesis-06-devocional"
+    },
+    {
+      "path": "genesis/06/exposicao-homiletica.md",
+      "slug": "genesis-06-pregacao-tecnica"
+    },
+    {
+      "path": "genesis/06/mensagem-pastoral.md",
+      "slug": "genesis-06-mensagem-pastoral"
+    },
+    {
+      "path": "genesis/06/oracao.md",
+      "slug": "genesis-06-oracao"
+    },
+    {
+      "path": "genesis/08/exposicao-homiletica.md",
+      "slug": "genesis-08-pregacao-tecnica"
     },
     {
       "path": "romanos/02/devocional-01.md",
@@ -511,6 +815,10 @@
     {
       "path": "genesis/04/mensagem-pastoral.md",
       "slug": "genesis-04-mensagem-pastoral"
+    },
+    {
+      "path": "genesis/07/exposicao-homiletica.md",
+      "slug": "genesis-07-pregacao-tecnica"
     },
     {
       "path": "romanos/01/mensagem-pastoral.md",

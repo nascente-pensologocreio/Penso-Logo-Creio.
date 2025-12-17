@@ -41,6 +41,67 @@
     "caminho": "/biblia/genesis/genesis-03-oracao"
   },
   {
+    "titulo": "Oração das Folhas que Não Cobrem e da Voz que Ainda Caminha",
+    "slug": "genesis-03-oracao",
+    "tags": [
+      "medo",
+      "perdao",
+      "esperanca",
+      "mudanca"
+    ],
+    "livro": "genesis",
+    "capitulo": "03",
+    "caminho": "/biblia/genesis/genesis-03-oracao"
+  },
+  {
+    "titulo": "Quando o Tempo se Curva à Eternidade",
+    "slug": "genesis-05-oracao",
+    "tags": [
+      "medo",
+      "perdao",
+      "esperanca",
+      "mudanca"
+    ],
+    "livro": "genesis",
+    "capitulo": "05",
+    "caminho": "/biblia/genesis/genesis-05-oracao"
+  },
+  {
+    "titulo": "Quando o Coração se Derrama Diante do Deus que Vê",
+    "slug": "genesis-06-oracao",
+    "tags": [
+      "medo",
+      "perdao",
+      "esperanca",
+      "mudanca"
+    ],
+    "livro": "genesis",
+    "capitulo": "06",
+    "caminho": "/biblia/genesis/genesis-06-oracao"
+  },
+  {
+    "titulo": "Quando a Justiça Eterna Rompe os Diques",
+    "slug": "genesis-07-oracao",
+    "tags": [
+      "esperanca",
+      "medo",
+      "futuro",
+      "batalha",
+      "ansiedade"
+    ],
+    "livro": "genesis",
+    "capitulo": "07",
+    "caminho": "/biblia/genesis/genesis-07-oracao"
+  },
+  {
+    "titulo": "Oração das Águas que Cessaram e da Promessa que Permanece",
+    "slug": "genesis-08-oracao",
+    "tags": [],
+    "livro": "genesis",
+    "capitulo": "08",
+    "caminho": "/biblia/genesis/genesis-08-oracao"
+  },
+  {
     "titulo": "Senhor da Luz que Nunca se Apaga",
     "slug": "romanos-01-oracao",
     "tags": [
