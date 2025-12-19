@@ -7,7 +7,7 @@ livro: "genesis"
 capitulo: "05"
 data: "2025-12-29"
 autor: "Capelão Nascente"
-readTime: "120 min de leitura"
+readTime: "60 min de leitura"
 imageUrl: ""
 tema_principal: "Exame crítico dos principais temas controversos de Gênesis 5 à luz da exegese histórica, da teologia patrística, reformada e da pesquisa bíblica contemporânea, reconhecendo convergências, divergências e limites epistemológicos."
 tags: []

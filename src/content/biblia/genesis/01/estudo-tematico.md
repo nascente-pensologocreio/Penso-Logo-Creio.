@@ -7,7 +7,7 @@ livro: "genesis"
 capitulo: "01"
 data: "2025-12-25"
 autor: "Capelão Nascente"
-readTime: "40 min de leitura"
+readTime: "52 min de leitura"
 imageUrl: ""
 tema_principal: "criacao divina e dignidade humana como imagem de Deus"
 tags: []

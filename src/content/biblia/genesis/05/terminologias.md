@@ -7,7 +7,7 @@ livro: "genesis"
 capitulo: "05"
 data: "2025-12-29"
 autor: "Capelão Nascente"
-readTime: "235 min de leitura"
+readTime: "115 min de leitura"
 imageUrl: ""
 tema_principal: "Glossário técnico-teológico de termos hebraicos centrais em Gênesis 5, com ênfase em gênero literário (toledot), antropologia (imago Dei), transmissão geracional, exceção enóquica e o refrão da mortalidade."
 tags: []

@@ -7,10 +7,10 @@ livro: "genesis"
 capitulo: "02"
 data: "2025-12-26"
 autor: "Capelão Nascente"
-readTime: "20 min de leitura"
+readTime: "22 min de leitura"
 imageUrl: ""
 tema_principal: "O Cuidado Paternal de Deus, Valor Pessoal e a Cura da Solidão"
-tags: ["amor", "solidao", "mudanca", "sonho", "esperanca"]
+tags: ["amor", "solidao", "ansiedade"]
 ---
 
 

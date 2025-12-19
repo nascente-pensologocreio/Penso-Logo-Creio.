@@ -7,10 +7,10 @@ livro: "genesis"
 capitulo: "02"
 data: "2025-12-26"
 autor: "Capelão Nascente"
-readTime: "6 min de leitura"
+readTime: "7 min de leitura"
 imageUrl: ""
 tema_principal: "A dignidade humana fundamentada na Imago Dei"
-tags: ["solidao", "amor", "sonho", "esperanca"]
+tags: ["solidao", "frustracao", "sonho"]
 ---
 
 # O Artesão e o Sopro: Você Não é um Acidente

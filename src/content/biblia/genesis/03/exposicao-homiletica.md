@@ -10,7 +10,7 @@ autor: "Capelão Nascente"
 readTime: "45 min de leitura"
 imageUrl: ""
 tema_principal: "A entrada do pecado, a corrupção total da natureza humana e a gloriosa promessa do Protoevangelho."
-tags: ["batalha", "duvida", "esperanca", "futuro", "medo"]
+tags: ["batalha", "perdao", "medo"]
 ---
 
 # O Colapso da Inocência e a Gênese do Evangelho

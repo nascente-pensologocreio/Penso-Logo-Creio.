@@ -7,10 +7,10 @@ livro: "genesis"
 capitulo: "04"
 data: "2025-12-28"
 autor: "Capelão Nascente"
-readTime: "5 min de leitura"
+readTime: "8 min de leitura"
 imageUrl: ""
 tema_principal: "A cura para a comparação, a inveja e a religiosidade vazia através do sangue de Jesus que clama por misericórdia."
-tags: ["batalha", "medo", "esperanca"]
+tags: ["batalha", "sonho", "frustracao"]
 ---
 
 # O Veneno da Comparação e a Porta do Coração

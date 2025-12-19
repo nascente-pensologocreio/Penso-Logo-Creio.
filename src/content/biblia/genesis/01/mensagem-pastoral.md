@@ -7,10 +7,10 @@ livro: "genesis"
 capitulo: "01"
 data: "2025-12-25"
 autor: "Capelão Nascente"
-readTime: "25 min de leitura"
+readTime: "20 min de leitura"
 imageUrl: ""
 tema_principal: "A soberania criativa de Deus sobre o caos existencial e a restauração da identidade humana."
-tags: ["ansiedade", "mudanca", "esperanca", "medo"]
+tags: ["ansiedade", "duvida", "futuro"]
 ---
 
 [//]: # (Grupo PREGAÇÕES foram editadas pela Perplexity.)

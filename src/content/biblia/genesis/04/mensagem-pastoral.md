@@ -7,10 +7,10 @@ livro: "genesis"
 capitulo: "04"
 data: "2025-12-28"
 autor: "Capelão Nascente"
-readTime: "8 min de leitura"
+readTime: "23 min de leitura"
 imageUrl: ""
 tema_principal: "A cura das relações fraternas, o perigo da comparação ministerial e a responsabilidade mútua no Corpo de Cristo."
-tags: ["batalha", "inveja", "solidao", "perdao", "mudanca"]
+tags: ["frustracao", "medo", "duvida"]
 ---
 
 # Introdução: Quando o Altar Vira um Tribunal

@@ -7,7 +7,7 @@ livro: "genesis"
 capitulo: "02"
 data: "2025-12-26"
 autor: "Capelão Nascente"
-readTime: "40 min de leitura"
+readTime: "49 min de leitura"
 imageUrl: ""
 tema_principal: "Exegese Linguística, Antropologia Bíblica e Definições Originais"
 tags: []

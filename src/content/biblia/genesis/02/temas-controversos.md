@@ -7,7 +7,7 @@ livro: "genesis"
 capitulo: "02"
 data: "2025-12-26"
 autor: "Capelão Nascente"
-readTime: "60 min de leitura"
+readTime: "59 min de leitura"
 imageUrl: ""
 tema_principal: "Apologética, Criacionismo, Arqueologia e a Transição do Sábado"
 tags: []

@@ -7,10 +7,10 @@ livro: "genesis"
 capitulo: "01"
 data: "2025-12-25"
 autor: "Capelão Nascente"
-readTime: "9 min de leitura"
+readTime: "8 min de leitura"
 imageUrl: ""
 tema_principal: "luz, ordem e repouso"
-tags: ["solidao", "esperanca", "mudanca", "sonho"]
+tags: ["mudanca", "medo", "esperanca"]
 ---
 
 [//]: # (Grupo PREGAÇÕES foram editadas pela Perplexity.)

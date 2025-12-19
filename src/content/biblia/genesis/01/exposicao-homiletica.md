@@ -7,7 +7,7 @@ livro: "genesis"
 capitulo: "01"
 data: "2025-12-25"
 autor: "Capelão Nascente"
-readTime: "42 minutos e 30 segundos"
+readTime: "40 minutos e 30 segundos"
 imageUrl: ""
 tema_principal: "A revelação da soberania criadora de Deus que transforma o caos em cosmos e estabelece a humanidade como portadora de Sua imagem para governar e cultivar a criação."
 tags: ["futuro", "esperanca"]

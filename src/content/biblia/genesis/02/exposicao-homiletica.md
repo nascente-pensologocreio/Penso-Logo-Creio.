@@ -7,10 +7,10 @@ livro: "genesis"
 capitulo: "02"
 data: "2025-12-26"
 autor: "Capelão Nascente"
-readTime: "45 min de leitura"
+readTime: "42 min de leitura"
 imageUrl: ""
 tema_principal: "A imago Dei, o Mandato Cultural e a Aliança Matrimonial na Ordem da Criação"
-tags: ["amor", "solidao", "mudanca", "sonho", "esperanca"]
+tags: ["amor", "solidao"]
 ---
 
 

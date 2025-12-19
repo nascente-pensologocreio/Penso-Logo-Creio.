@@ -7,7 +7,7 @@ livro: "genesis"
 capitulo: "01"
 data: "2025-12-25"
 autor: "Capelão Nascente"
-readTime: "50 min de leitura"
+readTime: "48 min de leitura"
 imageUrl: ""
 tema_principal: "A análise exaustiva das tensões interpretativas de Gênesis 1 (cronologia, trindade, caos, ciência, Lilith e dinossauros), buscando uma síntese que honre a autoridade bíblica e a complexidade histórica."
 tags: []

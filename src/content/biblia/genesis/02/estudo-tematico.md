@@ -7,7 +7,7 @@ livro: "genesis"
 capitulo: "02"
 data: "2025-12-26"
 autor: "Capelão Nascente"
-readTime: "310 min de leitura"
+readTime: "57 min de leitura"
 imageUrl: ""
 tema_principal: "intimidade divino-humana e vocacao do homem no Eden"
 tags: []

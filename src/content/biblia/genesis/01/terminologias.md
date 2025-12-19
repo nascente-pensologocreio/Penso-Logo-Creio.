@@ -7,7 +7,7 @@ livro: "genesis"
 capitulo: "01"
 data: "2025-12-25"
 autor: "Capelão Nascente"
-readTime: "40 minutos de leitura"
+readTime: "45 minutos de leitura"
 imageUrl: ""
 tema_principal: "Análise lexical, exegética e teológica dos principais termos hebraicos de Gênesis 1, mostrando como cada palavra-chave abre horizontes para entendermos criação, tempo, Trindade, caos e descanso."
 tags: []

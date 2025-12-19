@@ -7,10 +7,10 @@ livro: "genesis"
 capitulo: "04"
 data: "2025-12-28"
 autor: "Capelão Nascente"
-readTime: "45 min de leitura"
+readTime: "43 min de leitura"
 imageUrl: ""
 tema_principal: "A revelação da natureza corrompida que transforma a adoração em competição e o amor fraternal em rivalidade mortal."
-tags: ["batalha", "frustracao", "doenca-morte", "perdao", "esperanca"]
+tags: ["batalha", "frustracao", "perdao"]
 ---
 
 # O Sangue que Clama: Religião, Violência e a Marca da Graça

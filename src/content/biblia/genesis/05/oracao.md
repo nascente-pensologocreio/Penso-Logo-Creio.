@@ -16,6 +16,8 @@ tags: ["medo", "perdao", "esperanca", "mudanca"]
 
 # Oração da Caminhada em Tempos de Finitude
 
+
+
 Ó Eterno e Imortal Deus,
 
 Diante da Tuas eras sem fim, nossa vida é como um sopro que passa, uma neblina que se dissipa ao sol da manhã. Lemos em Tua Palavra a marcha incessante da morte, o ritmo sóbrio de gerações que nascem e expiram, lembrando-nos de que somos pó e ao pó tornaremos. Confessamos, Senhor, o medo que temos da finitude, o cansaço que sentimos pelo trabalho em terra de espinhos e a angústia de ver o tempo escorrer por nossas mãos.
@@ -29,5 +31,6 @@ Como Lameque, clamamos pelo Teu consolo. Nossas mãos estão fatigadas e nossa a
 Senhor, quando nosso nome for chamado e nossa carreira aqui terminar, que se diga de nós o que se disse do Teu servo: que andamos com Deus e Deus nos tomou para Si.
 
 Em nome dAquele que venceu a morte e vive para sempre, Jesus Cristo.
+
 
 Amém.

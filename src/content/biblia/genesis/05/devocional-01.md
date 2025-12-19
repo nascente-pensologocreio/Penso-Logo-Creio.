@@ -7,10 +7,10 @@ livro: "genesis"
 capitulo: "05"
 data: "2025-12-29"
 autor: "Capelão Nascente"
-readTime: "8 min de leitura"
+readTime: "7 min de leitura"
 imageUrl: ""
 tema_principal: "Mesmo sob a repetição da morte, Gênesis 5 revela que Deus preserva a dignidade humana, sustenta a esperança e chama Seus filhos a andar com Ele no tempo."
-tags: ["medo", "perdao", "esperanca", "mudanca"]
+tags: ["doenca-morte", "luto", "esperanca"]
 ---
 
 # Flores no Concreto: A Esperança no Meio da Rotina

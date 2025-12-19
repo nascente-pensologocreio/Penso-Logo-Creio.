@@ -7,7 +7,7 @@ livro: "genesis"
 capitulo: "04"
 data: "2025-12-28"
 autor: "Capelão Nascente"
-readTime: "90 min de leitura"
+readTime: "113 min de leitura"
 imageUrl: ""
 tema_principal: "A complexidade moral de Caim, a criatividade paradoxal do mal, a desconstrução da teologia da prosperidade, o nascimento da cultura e a dialética entre violência originária e civilização."
 tags: []

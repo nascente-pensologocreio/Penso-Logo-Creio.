@@ -7,10 +7,10 @@ livro: "genesis"
 capitulo: "05"
 data: "2025-12-29"
 autor: "Capelão Nascente"
-readTime: "45 min de leitura"
+readTime: "40 min de leitura"
 imageUrl: ""
 tema_principal: "A genealogia adâmica revela a tensão entre a sentença divina da mortalidade e a preservação soberana da linhagem messiânica, culminando na esperança da redenção através da fidelidade de Deus às Suas promessas."
-tags: ["medo", "perdao", "esperanca", "mudanca"]
+tags: ["luto", "doenca-morte", "esperanca"]
 ---
 
 # O Obituário da Esperança: Morte, Vida e a Caminhada com Deus

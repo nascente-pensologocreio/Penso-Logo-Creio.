@@ -7,7 +7,7 @@ livro: "genesis"
 capitulo: "03"
 data: "2025-12-27"
 autor: "Capelão Nascente"
-readTime: "110 min de leitura"
+readTime: "115 min de leitura"
 imageUrl: ""
 tema_principal: "linguagem queda e alienacao"
 tags: []

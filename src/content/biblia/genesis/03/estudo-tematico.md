@@ -7,7 +7,7 @@ livro: "genesis"
 capitulo: "03"
 data: "2025-12-27"
 autor: "Capelão Nascente"
-readTime: "90 min de leitura"
+readTime: "102 min de leitura"
 imageUrl: ""
 tema_principal: "a queda da humanidade e suas consequencias cosmicas"
 tags: ["culpa","vergonha","medo","separacao","perdao","esperanca","mudanca","batalha"]

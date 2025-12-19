@@ -7,7 +7,7 @@ livro: "genesis"
 capitulo: "03"
 data: "2025-12-27"
 autor: "Capelão Nascente"
-readTime: "45 min de leitura"
+readTime: "108 min de leitura"
 imageUrl: ""
 tema_principal: "Análise profunda das controvérsias exegéticas, antropológicas e teológicas fundamentais da Queda."
 tags: []

@@ -7,10 +7,10 @@ livro: "genesis"
 capitulo: "03"
 data: "2025-12-27"
 autor: "Capelão Nascente"
-readTime: "7 min de leitura"
+readTime: "9 min de leitura"
 imageUrl: ""
 tema_principal: "A esperança e a graça de Deus encontrando o ser humano em meio à culpa e vergonha."
-tags: ["medo", "esperanca", "mudanca"]
+tags: ["medo", "frustracao", "duvida"]
 ---
 
 # O Som dos Passos e o Medo de Ser Visto
