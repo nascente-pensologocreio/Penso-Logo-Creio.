@@ -1,6 +1,10 @@
 {
   "amor": [
     {
+      "path": "genesis/02/devocional-01.md",
+      "slug": "genesis-02-devocional"
+    },
+    {
       "path": "genesis/02/exposicao-homiletica.md",
       "slug": "genesis-02-pregacao-tecnica"
     },
@@ -175,6 +179,10 @@
     {
       "path": "genesis/01/oracao.md",
       "slug": "genesis-01-oracao"
+    },
+    {
+      "path": "genesis/02/devocional-01.md",
+      "slug": "genesis-02-devocional"
     },
     {
       "path": "genesis/02/exposicao-homiletica.md",
@@ -589,10 +597,6 @@
     {
       "path": "genesis/01/oracao.md",
       "slug": "genesis-01-oracao"
-    },
-    {
-      "path": "genesis/02/devocional-01.md",
-      "slug": "genesis-02-devocional"
     },
     {
       "path": "genesis/02/exposicao-homiletica.md",
