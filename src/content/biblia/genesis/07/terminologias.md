@@ -1,267 +1,151 @@
 ---
-slug: "genesis-07-terminologias-chave"
-titulo: "As Palavras do Dilúvio: Linguagem, Juízo e Preservação em Gênesis 7"
-tipo: "terminologias-chave"
+slug: "genesis-07-terminologias"
+titulo: "As Palavras do Dilúvio: Léxico do Juízo e do Refúgio em Gênesis 7"
+tipo: "estudo-terminologias"
 origem: "biblia"
-livro: "genesis"
-capitulo: "07"
-data: "2025-12-16"
+livro: "Gênesis"
+capitulo: "7"
+data: "2025-12-31"
 autor: "Capelão Nascente"
-readTime: "90 min de leitura"
+readTime: "42 min de leitura"
 imageUrl: ""
-tema_principal: "juizo e preservacao divina"
+tema_principal: "Vocabulário hebraico da narrativa do dilúvio"
 tags: []
 ---
 
-# Terminologias: Gênesis 7
-## As Palavras que Carregam Mundos
+# As Palavras do Dilúvio: Léxico do Juízo e do Refúgio em Gênesis 7
+
+## Introdução: A Anatomia Linguística de um Cataclismo
+
+Gênesis 7 não é apenas uma narrativa; é um *corpus* linguístico onde cada termo hebraico funciona como órgão vital de um organismo teológico maior. O capítulo opera com uma economia lexical precisa: verbos que descrevem movimentos divinos e humanos, substantivos que nomeiam realidades cósmicas, adjetivos que qualificam a intensidade do juízo. Estudar estas palavras é fazer uma disseção espiritual do texto — não para matar sua vitalidade, mas para compreender sua anatomia. Como observou o filósofo Ludwig Wittgenstein, “Os limites da minha linguagem significam os limites do meu mundo.” Em Gênesis 7, a linguagem hebraica expande os limites do nosso mundo para incluir realidades de juízo cósmico e graça específica que desafiam nossas categorias habituais. Este estudo percorre nove termos-chave que estruturam a narrativa, cada um uma janela para compreender como Deus age, como o homem responde e como a criação é simultaneamente julgada e preservada.
 
 ---
 
-## Introdução
+## בּוֹא (*Bô’*) — “Entrar”: O Movimento da Obediência
 
-O capítulo 7 de Gênesis constitui o núcleo narrativo do relato do Dilúvio. Aqui, a ação divina deixa de ser apenas anunciada e passa a ser executada. O texto, porém, não comunica essa realidade apenas por meio de eventos, mas sobretudo por meio de **terminologias cuidadosamente escolhidas**, carregadas de densidade teológica, simbólica e antropológica.
+**Exegese:**  
+O verbo *bô’* aparece sete vezes no capítulo 7, marcando cada transição significativa: a entrada de Noé (v.1,7,13), dos animais (v.9,15), e a consequência final — “as águas entraram” (v.17). Sua raiz é primitiva, indicando movimento em direção a um espaço interior. Na forma imperativa (*bo’*, “entra tu”), carrega urgência e autoridade divina. Contrasta com *yatza* (“sair”), que marcará o fim do dilúvio em 8:16.
 
-Estudar as palavras de Gênesis 7 é entrar em contato com o **vocabulário do juízo**, mas também com a **linguagem da preservação**, da obediência e da fidelidade divina à criação. Cada termo hebraico empregado não é intercambiável; cada escolha lexical molda a compreensão do leitor acerca de Deus, do ser humano e do cosmos.
+**Hermenêutica:**  
+A repetição de *bô’* cria um ritmo litúrgico: entrar não é mera locomoção, é ato cultual. Noé não “foge” para a arca; “entra” conforme a ordem divina. A Septuaginta traduz por *eiserchomai*, mesmo verbo usado por Jesus em João 10:9: “Eu sou a porta; se alguém entrar por mim, será salvo.” A tipologia é intencional: a salvação exige movimento através de uma abertura designada.
 
-A metodologia adotada neste estudo é **léxico-exegética**, combinando:
-- Análise das **raízes hebraicas**.
-- Exploração do **campo semântico**.
-- Comparação com usos no **Antigo Testamento**, na **Septuaginta** e, quando relevante, no **Novo Testamento**.
-- Avaliação das **implicações teológicas e hermenêuticas**.
-- Aplicações contemporâneas, evitando anacronismos e reducionismos morais.
+**Aplicação Contemporânea:**  
+Em um mundo que valoriza a autorrealização, a linguagem bíblica da salvação é radicalmente receptiva: exige que “entremos” no que já foi preparado. Não construímos nosso refúgio; adentramos o que Deus construiu. A porta está aberta, mas estreita; a entrada exige deixar para trás o espaço exterior do “mundo que então pereceu” (2Pedro 3:6).
 
 ---
 
-## בּוֹא — *Bô’* (Entrar)
+## תֵּבָה (*Tēvāh*) — “Arca”: O Recipiente da Preservação
 
-### Exegese
-**"Entra tu e toda a tua casa na arca"** (Gn 7:1)
+**Exegese:**  
+Termo raro, aparece apenas 28 vezes no AT — 26 no dilúvio, 2 no êxodo de Moisés (Ex 2:3-5). Não é *oniyyah* (navio), mas recipiente fechado, caixa, cofre. Suas dimensões (300x50x30 côvados) seguem proporções ideais de estabilidade hidrodinâmica. O betume (*kopher*) que a veda compartilha raiz com *kippur* (expiação).
 
-- **Raiz etimológica:** בוא — movimento em direção a um espaço delimitado.
-- **Campo semântico:** entrar, vir, adentrar, acessar.
-- **Uso no hebraico bíblico:** frequentemente associado a acesso permitido ou convocado.
-- **Uso na Septuaginta:** εἰσέρχομαι (*eisérchomai*), termo relacional e intencional.
-- **Contraste:** diferente de *נָסַע* (viajar) ou *הָלַךְ* (andar), *bô’* implica destino e propósito.
+**Hermenêutica:**  
+A arca é paradoxo: feita por mãos humanas (6:22), mas selada por Deus (7:16). Flutua passivamente, sem leme ou velas — imagem da igreja que não navega por sua sabedoria, mas é carregada pela providência. Os Padres viram na madeira da arca a madeira da cruz; no betume, o sangue de Cristo; nos três andares, a Trindade.
 
-### Hermenêutica
-
-O verbo *bô’* em Gênesis 7 não descreve um simples deslocamento físico. Ele carrega a noção de **entrada autorizada**, quase litúrgica. Nãoé não invade a arca; ele é chamado a entrar. O movimento é resposta à palavra divina, não iniciativa humana.
-
-Na tradição rabínica, esse verbo é lido como gesto de **refúgio sob autoridade divina**. Na leitura cristã patrística, a entrada na arca tornou-se tipologia do ingresso na salvação.
-
-### Aplicação Contemporânea
-
-- A salvação bíblica não começa com fuga, mas com **convocação**.
-- Entrar implica deixar algo para trás.
-- Nem toda porta aberta é porta autorizada.
+**Aplicação Contemporânea:**  
+Vivemos entre dois dilúvios — o das águas passadas e o do fogo futuro (2Pedro 3:7). A arca permanece como tipo do único refúgio verdadeiro: Cristo. Como a arca, Ele é específico (não qualquer “barco espiritual”), suficiente (abriga toda família de Deus), e seguro (Deus mesmo o fecha). Não há salvação fora desta arca.
 
 ---
 
-## תֵּבָה — *Tēvāh* (Arca)
+## מַבּוּל (*Mabbûl*) — “Dilúvio”: O Nome Próprio do Juízo
 
-### Exegese
-**"Faze para ti uma arca"** (Gn 6:14; cf. Gn 7)
+**Exegese:**  
+Substantivo masculino singular de origem obscura, possivelmente da raiz *ybl* (fluir, carregar). Das 13 ocorrências no AT, 12 estão em Gênesis 6–11; a 13ª é Salmo 29:10, onde Yahweh “se assenta sobre o dilúvio” — imagem de soberania sobre o caos. A LXX traduz por *kataklysmos*, termo que o NT retoma (Mt 24:38-39; 2Ped 2:5).
 
-- **Raiz etimológica:** termo raro, sem raiz verbal clara.
-- **Campo semântico:** recipiente, caixa, cofre.
-- **Uso exclusivo:** apenas em Gênesis (Noé) e Êxodo (cesto de Moisés).
-- **Septuaginta:** κιβωτός (*kibōtós*), também usada para a Arca da Aliança.
-- **Contraste:** não é *אֳנִיָּה* (navio).
+**Hermenêutica:**  
+*Mabbûl* não é enchente natural, mas evento único na história da salvação — o “dia do Senhor” do mundo antediluviano. Representa des-criação: as águas separadas em Gênesis 1:6-7 são reunidas novamente. Mas também prepara re-criação: após o *mabbûl*, Deus estabelece aliança com “toda carne” (9:15-17).
 
-### Hermenêutica
-
-A *tēvāh* não é um instrumento de navegação, mas de **preservação passiva**. Ela não possui leme, vela ou direção. Sua segurança depende exclusivamente da fidelidade de Deus.
-
-A conexão lexical entre a arca de Noé e o cesto de Moisés cria um eixo teológico: **Deus preserva a vida em meio às águas do caos**.
-
-### Aplicação Contemporânea
-
-- A fé bíblica não promete controle, mas proteção.
-- Há momentos em que a obediência não governa o destino, apenas confia nele.
-- Deus salva não apenas indivíduos, mas **futuros possíveis**.
+**Aplicação Contemporânea:**  
+O dilúvio desmitologiza as catástrofes: não são forças cegas da natureza, mas instrumentos do juízo divino sobre o pecado estruturado. A memória do *mabbûl* deveria nos livrar tanto do pânico ambientalista (que idolatra a criação) quanto da indiferença exploradora (que a destrói). A terra ainda geme (Rm 8:22), aguardando não outro dilúvio, mas a revelação dos filhos de Deus.
 
 ---
 
-## מַבּוּל — *Mabbûl* (Dilúvio)
+## מַיִם רַבִּים (*Mayim Rabbim*) — “Muitas Águas”: O Instrumento do Caos
 
-### Exegese
-**"Veio o dilúvio sobre a terra"** (Gn 7:6)
+**Exegese:**  
+*Mayim* é sempre plural em hebraico; *rabbim* intensifica (“muitíssimas”). A expressão descreve o transbordamento catastrófico (7:6,10,17). As águas vêm de duas fontes: “fontes do grande abismo” (*tehom rabbah*) e “comportas dos céus” (7:11) — abaixo e acima, completando o cerco.
 
-- **Raiz etimológica:** possivelmente relacionada a fluxo destrutivo.
-- **Campo semântico:** inundação total, juízo hídrico.
-- **Uso no AT:** quase exclusivo do relato de Noé.
-- **Septuaginta:** κατακλυσμός (*kataklysmós*).
-- **Eco no NT:** Mt 24:38-39.
+**Hermenêutica:**  
+As águas representam o caos primordial (*tohu wa-bohu*) que Deus domesticou na criação (Gn 1:2,6-9; Jó 38:8-11; Sl 104:6-9). O dilúvio é liberação temporária deste caos contido. Agostinho via aqui o paradoxo: o mesmo elemento que no batismo significa regeneração (1Ped 3:21), aqui significa destruição.
 
-### Hermenêutica
-
-*Mabbûl* não descreve uma enchente comum. É um evento **cosmológico**, uma reversão parcial da criação de Gênesis 1, quando as águas são novamente soltas.
-
-Teologicamente, o dilúvio não é capricho divino, mas **resposta ética à corrupção universal**.
-
-### Aplicação Contemporânea
-
-- Há limites para a violência estrutural antes do colapso.
-- Juízo bíblico não é negação da graça, mas sua face severa.
-- Ignorar sinais não impede a realidade.
+**Aplicação Contemporânea:**  
+As “muitas águas” lembram que o cosmos não é autossustentável; depende do contínuo *fiat* divino que contém o caos. Nossa crise ecológica é, em parte, esquecimento desta dependência: tratamos a natureza como máquina previsível, não como criação sustentada por Palavra. Quando esta Palavra é retirada, o caos retorna.
 
 ---
 
-## מַיִם — *Mayim* (Águas)
+## גָּבַר (*Gāvar*) — “Prevalecer”: A Marcha Irreversível do Juízo
 
-### Exegese
-**"As águas prevaleceram sobremodo"** (Gn 7:19)
+**Exegese:**  
+Verbo que aparece quatro vezes em 7:18-20, sempre descrevendo as águas. Significa “ser forte, mostrar-se poderoso, dominar”. Na forma conjugada (*vayigboru*), indica ação progressiva e cumulativa. Contrasta com *shakak* (“baixar, diminuir”) em 8:1.
 
-- **Raiz etimológica:** termo plural.
-- **Campo semântico:** águas caóticas, vida, morte.
-- **Uso em Gn 1:** elemento primitivo do caos.
-- **Septuaginta:** ὕδατα (*hydata*).
-- **Ambiguidade semântica:** fonte de vida e instrumento de morte.
+**Hermenêutica:**  
+O prevalecer das águas não é explosão instantânea, mas avanço metódico — quinze côvados acima dos montes mais altos (7:20). Esta precisão numérica (cerca de 7 metros) enfatiza que o juízo é total, mas medido. Deus não perde o controle mesmo ao liberar o caos.
 
-### Hermenêutica
-
-As águas em Gênesis 7 são as mesmas águas de Gênesis 1, agora liberadas. O texto sugere que Deus **não cria um novo juízo**, mas retira contenções.
-
-### Aplicação Contemporânea
-
-- O que sustenta a vida pode destruí-la quando desordenado.
-- Deus julga muitas vezes permitindo que forças soltas sigam seu curso.
-- Nem todo caos é ausência de Deus.
+**Aplicação Contemporânea:**  
+O mal raramente avança por golpes espetaculares; avança por erosão lenta, por “prevalecimento” gradual. O texto nos adverte: não subestimemos o crescimento do pecado estrutural. As águas do dilúvio começaram com uma gota; corromperam-se primeiro os corações (6:5), depois as estruturas (6:11-13), finalmente o cosmos inteiro.
 
 ---
 
-## גָּבַר — *Gāvar* (Prevalecer)
+## נִשְׁאַר (*Nish’ar*) — “Restar”: A Matemática da Graça
 
-### Exegese
-**"As águas prevaleceram"** (Gn 7:18)
+**Exegese:**  
+Forma passiva do verbo *sha’ar* (“restar, sobrar”). Em 7:23, após a enumeração do que morreu, a frase final: “e restou somente Noé, e os que com ele estavam na arca.” O advérbio *ak* (“somente, apenas”) enfatiza a exclusividade.
 
-- **Raiz etimológica:** ser forte, dominar.
-- **Campo semântico:** intensificação progressiva.
-- **Uso militar:** prevalecer em batalha.
-- **Septuaginta:** ἐπλεόνασεν (*epleónasen*).
-- **Contraste:** não é instantâneo, mas gradual.
+**Hermenêutica:**  
+*Nish’ar* inaugura a teologia do remanescente que atravessará a Escritura: Israel no exílio (Is 10:20-22), os sete mil joelhos não dobrados a Baal (1Rs 19:18), o “pequeno rebanho” de Lucas 12:32. O restante não é acidente, mas eleição; não mérito, mas graça preservadora.
 
-### Hermenêutica
-
-O juízo em Gênesis 7 é descrito como **processo**, não explosão. A repetição do verbo cria sensação de avanço inexorável.
-
-### Aplicação Contemporânea
-
-- O mal raramente domina de uma vez; ele cresce.
-- O juízo divino respeita ritmos.
-- Ignorar processos é espiritualmente perigoso.
+**Aplicação Contemporânea:**  
+Em eras de apostasia generalizada, Deus sempre trabalha com minorias fiéis. O “resto” não é motivo de orgulho sectário, mas de humilde responsabilidade: carregam a semente do futuro. A igreja hoje, se fiel, é este *nish’ar* — não maioria cultural, mas comunidade convocada dentro da arca.
 
 ---
 
-## נִשְׁאַר — *Nish’ar* (Restar)
+## סָגַר (*Sāgar*) — “Fechar”: O Selo da Soberania Salvadora
 
-### Exegese
-**"Somente Noé ficou"** (Gn 7:23)
+**Exegese:**  
+Verbo decisivo em 7:16: “E o SENHOR o fechou dentro.” A forma *vayisgor* enfatiza ação divina instantânea e completa. A preposição *ba’ado* (“atrás dele”) sugere que a porta se fecha após a entrada, não durante.
 
-- **Raiz etimológica:** שאר — permanecer.
-- **Campo semântico:** remanescente, sobrevivente.
-- **Uso profético:** teologia do remanescente.
-- **Septuaginta:** κατελείφθη (*kateléiphthē*).
-- **Conexão:** Isaías, Romanos 9.
+**Hermenêutica:**  
+Este é um dos versículos mais importantes da soteriologia bíblica: a segurança dos salvos não depende de sua capacidade de manter a porta fechada, mas do ato soberano de Deus. A porta fechada protege dos elementos externos e impede retrocesso. Na tipologia cristã, representa o “selo do Espírito Santo” (Ef 1:13; 4:30).
 
-### Hermenêutica
-
-A teologia bíblica nunca termina no total aniquilamento. Sempre há um *nish’ar*. O juízo é severo, mas **não absoluto**.
-
-### Aplicação Contemporânea
-
-- Deus trabalha com minorias fiéis.
-- Sobreviver não é sinal de mérito, mas de chamado.
-- O remanescente carrega responsabilidade histórica.
+**Aplicação Contemporânea:**  
+A porta fechada conforta e confronta. Conforta os dentro da arca: sua segurança é divina. Confronta os fora: o tempo da oportunidade não é infinito. Como Jonathan Edwards pregou: “A porta da misericórdia está aberta, mas há um momento em que Deus a fechará.” A questão urgente não é como a arca foi construída, mas se estamos dentro quando a porta se fecha.
 
 ---
 
-## צִוָּה — *Tzivvāh* (Ordenar)
+## זָכָר וּנְקֵבָה (*Zākhār ūNeqēvāh*) — “Macho e Fêmea”: A Estrutura da Continuidade
 
-### Exegese
-**"Como Deus lhe havia ordenado"** (Gn 7:5)
+**Exegese:**  
+A frase aparece três vezes no capítulo (7:2,3,9), sempre em conexão com a entrada “de dois em dois” (*shnayim shnayim*). *Zākhār* destaca o aspecto memorial (“lembrar”); *neqēvāh* o aspecto perfurado, receptor. Juntos, representam a complementaridade reprodutiva.
 
-- **Raiz etimológica:** צוה — ordenar com autoridade.
-- **Campo semântico:** mandamento vinculante.
-- **Uso legal:** contexto de aliança.
-- **Septuaginta:** ἐνετείλατο (*eneteílato*).
-- **Contraste:** diferente de conselho (*יָעַץ*).
+**Hermenêutica:**  
+Mesmo no juízo total, Deus preserva a estrutura da bênção criacional: “macho e fêmea” (1:27) para “frutificar e multiplicar” (1:28). A arca não é museu de espécies, mas berçário do futuro. Cada par carrega dentro de si o potencial de recriação.
 
-### Hermenêutica
-
-A obediência de Noé não é criativa, mas **fiel**. Ele não inova; ele executa.
-
-### Aplicação Contemporânea
-
-- Fé bíblica valoriza fidelidade mais que originalidade.
-- Nem todo chamado exige criatividade; alguns exigem constância.
-- Obedecer precede compreender plenamente.
+**Aplicação Contemporânea:**  
+Em uma cultura que desestrutura a diferença sexual como mero constructo social, o dilúvio lembra: a distinção macho-fêmea é ordem criacional preservada mesmo no juízo. Não é acidental que o ataque contemporâneo à família comece precisamente aqui — na negação desta diferença estruturante. A arca salva famílias, não indivíduos isolados.
 
 ---
 
-## זָכָר / נְקֵבָה — *Zākhār / Neqēvāh* (Macho e Fêmea)
+## כַּאֲשֶׁר צִוָּה (*Ka’asher Tzivvāh*) — “Como Ordenara”: A Fórmula da Obediência
 
-### Exegese
-**"Macho e fêmea entraram"** (Gn 7:9)
+**Exegese:**  
+Frase recorrente (6:22; 7:5,9,16) que funciona como refrão teológico. *Tzivvāh* (ordenar) implica autoridade vinculante; *ka’asher* (conforme, exatamente como) enfatiza precisão mimética. Noé não obedece em linhas gerais; obedece ponto por ponto.
 
-- **Raiz etimológica:** biológica e relacional.
-- **Campo semântico:** complementaridade criacional.
-- **Uso em Gn 1:** criação ordenada.
-- **Septuaginta:** ἄρσεν καὶ θῆλυ.
-- **Implicação:** preservação da vida futura.
+**Hermenêutica:**  
+A obediência de Noé é modelo da fé que salva: não sentimentos piedosos, mas ação correspondente à revelação. A repetição da fórmula mostra que cada etapa — construção, entrada, fechamento — é ato de fé. Hebreus 11:7 resume: “Pela fé, Noé... preparou uma arca.”
 
-### Hermenêutica
-
-O juízo não anula o mandato criacional. Mesmo no dilúvio, Deus preserva a **possibilidade de continuidade**.
-
-### Aplicação Contemporânea
-
-- Deus pensa no depois, mesmo quando julga.
-- Preservar estruturas de vida é ato teológico.
-- O futuro começa antes do fim do juízo.
+**Aplicação Contemporânea:**  
+Em um cristianismo muitas vezes reduzido a experiência ou dogma, o dilúvio lembra: a fé salvífica é performativa. “Faze uma arca” (6:14) precede “entra na arca” (7:1). A obediência não é opcional para o crente; é a forma visível da fé invisível. Como disse Lutero: “A fé é um verbo vivo, criativo, ativo.”
 
 ---
 
-## סָגַר — *Sāgar* (Fechar)
+## Conclusão: O Léxico que nos Salva do Esquecimento
 
-### Exegese
-**"E o Senhor fechou a porta"** (Gn 7:16)
+As palavras de Gênesis 7 formam um vocabulário completo para falar do juízo e da graça. Elas nos ensinam que Deus age com palavras — palavras que julgam (“dilúvio”), palavras que convocam (“entra”), palavras que protegem (“fechar”). O texto preserva esta linguagem não como relíquia arqueológica, mas como equipamento espiritual para gerações que vivem entre dilúvios — entre o juízo já executado na cruz e o juízo ainda por vir no fim dos tempos.
 
-- **Raiz etimológica:** cerrar, encerrar.
-- **Campo semântico:** proteção e exclusão.
-- **Uso jurídico:** fechar acesso legal.
-- **Septuaginta:** ἔκλεισεν (*ékleisen*).
-- **Agente:** o próprio Deus.
+Cada termo hebraico examinado é uma ferramenta para a imaginação teológica: *bô’* nos treina a responder ao convite divino; *tēvāh* nos lembra que o refúgio já foi construído; *mabbûl* nos adverte sobre a seriedade do pecado coletivo; *mayim rabbim* nos humilha diante da fragilidade da ordem criada; *gāvar* nos mostra o padrão lento mas total da corrupção; *nish’ar* nos conforta com a perseverança dos eleitos; *sāgar* nos assegura da segurança divina; *zākhār ūneqēvāh* nos reconecta com a bênção criacional; *ka’asher tzivvāh* nos disciplina na obediência específica.
 
-### Hermenêutica
+Juntas, estas palavras constituem uma gramática da salvação. Elas nos permitem dizer, com precisão teológica, o que significa ser salvo “através da água” (1Ped 3:20). E nos preparam para responder à pergunta mais importante que o texto deixa: quando as águas começarem a subir outra vez — não de chuva, mas de fogo (2Ped 3:7) —, em que palavras estaremos ancorados? Em que arca estaremos entrando? Por qual porta teremos passado antes que ela se feche para sempre?
 
-O fechamento da porta não é ação de Noé. O texto insiste: **o Senhor fechou**. A salvação não depende da força humana em manter a porta, mas da decisão divina.
-
-### Aplicação Contemporânea
-
-- Há portas que Deus fecha por misericórdia.
-- A segurança final não está em nossas mãos.
-- O tempo da resposta não é infinito.
-
----
-
-## Síntese Lexical e Teológica
-
-As terminologias de Gênesis 7 formam uma **teia semântica coerente**:
-
-- *Entrar* aponta para resposta obediente.
-- *Arca* indica preservação passiva.
-- *Dilúvio* revela juízo ético-cósmico.
-- *Águas* simbolizam caos controlado.
-- *Prevalecer* descreve processo.
-- *Restar* garante continuidade.
-- *Ordenar* fundamenta obediência.
-- *Macho e fêmea* sustentam futuro.
-- *Fechar* assegura salvação.
-
-Juntas, essas palavras constroem uma teologia na qual **juízo e graça não se opõem**, mas se entrelaçam. O Deus que fecha a porta é o mesmo que convida a entrar. O Deus que solta as águas é o mesmo que preserva a vida dentro delas.
-
----
+A linguagem do dilúvio, finalmente, é a linguagem da urgência amorosa: a porta ainda está aberta; a arca ainda está disponível; a ordem ainda ressoa: “Entra.” Resta saber se temos ouvidos para ouvir — e pés para entrar.
 
 

@@ -5,7 +5,7 @@ tipo: "oracao"
 origem: "biblia"
 livro: "genesis"
 capitulo: "07"
-data: "2025-12-16"
+data: "2025-12-31"
 autor: "Capelão Nascente"
 readTime: "8 min de leitura"
 imageUrl: ""
@@ -47,6 +47,7 @@ Pois se há uma porta, há uma fechadura. E se há uma fechadura, há urgência.
 Guarda-nos até o dia em que pisaremos na terra seca da Nova Criação, não por nossa força, mas porque a Tua mão nos segurou sobre o abismo.
 
 Em nome de Jesus Cristo, a Arca Eterna da nossa Salvação.
+
 
 **Amém.**
 
