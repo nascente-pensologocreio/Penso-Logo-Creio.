@@ -1,0 +1,15 @@
+const a=`---
+livro: "habacuque"
+capitulo: "02"
+titulo: ""
+slug: "habacuque-02-terminologias-chave"
+data: ""
+autor: "Capelão Nascente"
+tipo: "terminologias-chave"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{a as default};
+//# sourceMappingURL=terminologias-Clr7TElD.js.map

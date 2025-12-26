@@ -1,0 +1,156 @@
+/* ================================================
+   CONTAINER PRINCIPAL
+   ================================================ */
+.editorial-grid-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ================================================
+   GRID DE 2 COLUNAS (sidebar + conteúdo)
+   Usado quando há cards laterais à esquerda
+   ================================================ */
+.editorial-grid-2cols {
+  display: grid;
+  grid-template-columns: 1.2fr 3fr; /* antes 1fr 2.5fr → mais espaço para o texto */
+  gap: 2.5rem;                      /* um pouco mais de respiro entre colunas */
+}
+
+/* ================================================
+   GRID SEM COLUNA ESQUERDA (main + índice)
+   Usado em "Caminho das Escrituras"
+   ================================================ */
+.editorial-grid-no-left {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) 320px; /* coluna principal controlada + índice fixo */
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* ================================================
+   GRID APENAS CONTEÚDO (sem sidebars)
+   Caso o layout seja usado sem índice
+   ================================================ */
+.editorial-grid-full {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* ================================================
+   SIDEBAR ESQUERDA (Reflexão / Versículo)
+   ================================================ */
+.editorial-sidebar-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ================================================
+   SIDEBAR DIREITA (Índice Bíblico)
+   ================================================ */
+.editorial-sidebar-right {
+  position: sticky;
+  top: 2rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+}
+
+/* ================================================
+   BOX DECORATIVA DA SIDEBAR E DOS CARDS
+   ================================================ */
+.editorial-box {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 1.6rem 1.8rem; /* +padding para o texto respirar melhor */
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  transition: 0.25s ease-in-out;
+}
+
+/* ================================================
+   TÍTULO DE CADA BOX
+   ================================================ */
+.editorial-box-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #D4AF37;
+  margin-bottom: 0.6rem;
+  text-shadow: 0 0 6px rgba(212, 175, 55, 0.4);
+}
+
+/* ================================================
+   ÁREA PRINCIPAL DO ARTIGO / PREGACAO / ESTUDO
+   ================================================ */
+.editorial-main {
+  padding: 0.5rem 0.75rem; /* menos recuo lateral → card pode crescer mais */
+}
+
+.editorial-main-wrapper {
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  max-width: 980px;       /* largura base confortável */
+  margin: 0 auto;         /* centraliza o ArtigoBiblico dentro da coluna */
+}
+
+/* Card central mais largo quando não há coluna esquerda */
+.editorial-grid-no-left .editorial-main-wrapper {
+  max-width: 100%;        /* ocupa toda a coluna disponível */
+}
+
+/* ================================================
+   ÁREA CENTRAL PARA DEVOCIONAL (SEM CARDS)
+   ================================================ */
+.editorial-centro {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.editorial-centro > * {
+  max-width: 680px;
+  width: 100%;
+}
+
+/* ================================================
+   RESPONSIVIDADE
+   ================================================ */
+@media (max-width: 1024px) {
+  .editorial-grid-2cols {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .editorial-grid-no-left {
+    grid-template-columns: 1fr; /* empilha conteúdo e índice */
+    gap: 1.5rem;
+  }
+
+  .editorial-main {
+    padding: 0.5rem;
+  }
+
+  .editorial-main-wrapper {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    max-width: 100%;
+  }
+
+  .editorial-box {
+    padding: 1.4rem 1.5rem;
+  }
+
+  .editorial-sidebar-right {
+    position: static;
+    max-height: none;
+  }
+}

@@ -1,0 +1,81 @@
+/* src/index.css - Tipografia premium e microinterações (revisado) */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    @apply w-full h-full min-h-screen;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #EDEDED;
+    background-color: #010b0a;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.02em;
+  }
+
+/* Scrollbar discreta e refinada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.5);
+}
+}
+
+  h1 {
+    color: #D4AF37;
+    text-shadow: 0 0 12px rgba(212,175,55,0.45);
+  }
+
+  h2 {
+    color: #cfcfcf;
+  }
+
+  h3 {
+    color: #bcbcbc;
+  }
+
+  p {
+    line-height: 1.625;
+  }
+
+  blockquote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    border-left-width: 4px;
+    padding-left: 1rem;
+    color: #D4AF37;
+    text-shadow: 0 0 8px rgba(212,175,55,0.35);
+  }
+
+  a {
+    @apply transition-colors;
+  }
+
+  a:hover {
+    color: #D4AF37;
+    text-shadow: 0 0 8px rgba(212,175,55,0.45);
+}
+
+/* Nenhum @import de arquivos JS — seguro e limpo */

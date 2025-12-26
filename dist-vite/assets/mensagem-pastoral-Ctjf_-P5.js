@@ -1,0 +1,15 @@
+const n=`---
+livro: "2cronicas"
+capitulo: "32"
+titulo: ""
+slug: "2cronicas-32-mensagem-pastoral"
+data: ""
+autor: "Capelão Nascente"
+tipo: "mensagem-pastoral"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=mensagem-pastoral-Ctjf_-P5.js.map

@@ -1,0 +1,15 @@
+const n=`---
+livro: "josue"
+capitulo: "16"
+titulo: ""
+slug: "josue-16-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=temas-controversos-CFC9AmTc.js.map

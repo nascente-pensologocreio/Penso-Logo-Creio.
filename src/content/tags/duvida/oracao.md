@@ -1,0 +1,6 @@
+ ---
+titulo: ""
+tipo: "oracao"
+---
+
+

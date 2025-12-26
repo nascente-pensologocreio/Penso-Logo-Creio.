@@ -1,0 +1,23 @@
+// src/data/tagsMap.js
+export const tagsImages = {
+  amor: "/src/assets/tag-amor.webp",
+  ansiedade: "/src/assets/tag-ansiedade.webp",
+  batalha: "/src/assets/tag-batalha.webp",
+  depressao: "/src/assets/tag-depressao.webp",
+  desemprego: "/src/assets/tag-desemprego.webp",
+  dividas: "/src/assets/tag-dividas.webp",
+  "doenca-morte": "/src/assets/tag-doenca-morte.webp",
+  duvida: "/src/assets/tag-duvida.webp",
+  esperanca: "/src/assets/tag-esperanca.webp",
+  frustracao: "/src/assets/tag-frustracao.webp",
+  futuro: "/src/assets/tag-futuro.webp",
+  insonia: "/src/assets/tag-insonia.webp",
+  luto: "/src/assets/tag-luto.webp",
+  medo: "/src/assets/tag-medo.webp",
+  mudanca: "/src/assets/tag-mudanca.webp",
+  perdao: "/src/assets/tag-perdao.webp",
+  separacao: "/src/assets/tag-separacao.webp",
+  solidao: "/src/assets/tag-solidao.webp",
+  sonho: "/src/assets/tag-sonho.webp",
+  vicio: "/src/assets/tag-vicio.webp",
+};

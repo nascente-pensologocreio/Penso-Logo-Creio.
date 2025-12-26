@@ -1,0 +1,15 @@
+const n=`---
+livro: "lucas"
+capitulo: "24"
+titulo: ""
+slug: "lucas-24-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=temas-controversos-dbwwvlW4.js.map

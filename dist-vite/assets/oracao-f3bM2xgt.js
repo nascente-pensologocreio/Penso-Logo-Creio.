@@ -1,0 +1,15 @@
+const n=`---
+livro: "2cronicas"
+capitulo: "10"
+titulo: ""
+slug: "2cronicas-10-oracao"
+data: ""
+autor: "Capelão Nascente"
+tipo: "oracao"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=oracao-f3bM2xgt.js.map

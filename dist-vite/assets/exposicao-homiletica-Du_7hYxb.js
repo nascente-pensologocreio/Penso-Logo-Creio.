@@ -1,0 +1,15 @@
+const n=`---
+livro: "josue"
+capitulo: "14"
+titulo: ""
+slug: "josue-14-pregacao-tecnica"
+data: ""
+autor: "Capelão Nascente"
+tipo: "pregacao-tecnica"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=exposicao-homiletica-Du_7hYxb.js.map

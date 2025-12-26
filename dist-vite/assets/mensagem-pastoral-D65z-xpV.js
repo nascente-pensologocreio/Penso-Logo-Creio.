@@ -1,0 +1,15 @@
+const a=`---
+livro: "salmos"
+capitulo: "36"
+titulo: ""
+slug: "salmos-36-mensagem-pastoral"
+data: ""
+autor: "Capelão Nascente"
+tipo: "mensagem-pastoral"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{a as default};
+//# sourceMappingURL=mensagem-pastoral-D65z-xpV.js.map

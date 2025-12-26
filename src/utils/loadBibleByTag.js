@@ -1,0 +1,108 @@
+// src/utils/loadBibleByTag.js
+import { parseFrontmatter, markdownToHtml } from "./markdownProcessor.js";
+import tagIndex from "@data/tag-index.json";
+
+// Glob LAZY (não carrega nada até ser chamado)
+const lazyModules = import.meta.glob("/src/content/biblia/**/*.md", {
+  query: "?raw",
+  import: "default",
+});
+
+export async function loadBibleByTag(tag) {
+  console.log("🔍 loadBibleByTag chamado com tag:", tag);
+
+  if (!tag) {
+    console.log("❌ Tag vazia");
+    return { devocional: [], oracao: [] };
+  }
+
+  try {
+    const normalizedTag = tag.toLowerCase().trim();
+    
+    // LOOKUP O(1) no índice (agora com path + slug)
+    const indexedItems = tagIndex[normalizedTag];
+    
+    if (!indexedItems || indexedItems.length === 0) {
+      console.log(`📭 Nenhum arquivo encontrado para tag "${tag}"`);
+      return { devocional: [], oracao: [] };
+    }
+
+    console.log(`📁 Arquivos indexados para "${tag}":`, indexedItems.length);
+
+    const resultados = { devocional: [], oracao: [] };
+
+    // CARREGA APENAS OS ARQUIVOS DA TAG (lazy)
+    for (const item of indexedItems) {
+      const relativePath = item.path;
+      const fullPath = `/src/content/biblia/${relativePath}`;
+      
+      const loader = lazyModules[fullPath];
+      
+      if (!loader) {
+        console.warn(`⚠️ Loader não encontrado: ${fullPath}`);
+        continue;
+      }
+
+      try {
+        const rawMd = await loader();
+        const { data, content } = parseFrontmatter(rawMd);
+
+        console.log(`📄 Processado: ${relativePath}`);
+
+        const tipo = (data?.tipo || "").toLowerCase();
+        
+        // ACEITAR APENAS devocional e oracao
+        if (tipo !== "devocional" && tipo !== "oracao") {
+          console.log(`   ⏭️ Pulado (tipo: ${tipo})`);
+          continue;
+        }
+
+        const html = markdownToHtml(content);
+
+        const post = {
+          slug: data.slug || item.slug || relativePath.split("/").pop().replace(".md", ""),
+          titulo: data.titulo || "Sem título",
+          tipo,
+          origem: data.origem || "biblia",
+          livro: data.livro || "",
+          capitulo: data.capitulo || "",
+          data: data.data ? new Date(data.data) : null,
+          autor: data.autor || "",
+          readTime: data.readTime || "",
+          imageUrl: data.imageUrl || "",
+          tema_principal: data.tema_principal || "",
+          tags: Array.isArray(data?.tags) ? data.tags : [],
+          html,
+        };
+
+        if (tipo === "devocional") {
+          resultados.devocional.push(post);
+          console.log("   ✅ Adicionado a devocional");
+        } else if (tipo === "oracao") {
+          resultados.oracao.push(post);
+          console.log("   ✅ Adicionado a oracao");
+        }
+      } catch (err) {
+        console.warn(`⚠️ Erro ao processar ${relativePath}:`, err);
+      }
+    }
+
+    console.log("📊 Resultados finais:");
+    console.log("   - Devocionais:", resultados.devocional.length);
+    console.log("   - Orações:", resultados.oracao.length);
+
+    const ordenar = (arr) =>
+      arr.sort((a, b) => {
+        if (a.livro !== b.livro) return a.livro.localeCompare(b.livro);
+        return parseInt(a.capitulo || 0) - parseInt(b.capitulo || 0);
+      });
+
+    ordenar(resultados.devocional);
+    ordenar(resultados.oracao);
+
+    return resultados;
+  } catch (err) {
+    console.error("❌ Erro ao carregar posts bíblicos por tag:", err);
+    return { devocional: [], oracao: [] };
+  }
+}

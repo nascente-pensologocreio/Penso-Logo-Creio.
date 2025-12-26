@@ -1,0 +1,31 @@
+.editorial-swap-grid-triple {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+.editorial-main {
+  width: 100%;
+}
+
+.editorial-side-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.editorial-card {
+  border: 1px solid #D4AF37;
+  padding: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #0f0f0f;
+}
+
+.editorial-card:hover {
+  transform: translateY(-3px);
+  border-color: #f0d98a;
+}
+

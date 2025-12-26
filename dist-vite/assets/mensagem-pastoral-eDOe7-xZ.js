@@ -1,0 +1,15 @@
+const n=`---
+livro: "efesios"
+capitulo: "04"
+titulo: ""
+slug: "efesios-04-mensagem-pastoral"
+data: ""
+autor: "Capelão Nascente"
+tipo: "mensagem-pastoral"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=mensagem-pastoral-eDOe7-xZ.js.map

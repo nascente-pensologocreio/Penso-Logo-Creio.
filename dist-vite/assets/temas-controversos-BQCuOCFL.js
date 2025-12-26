@@ -1,0 +1,15 @@
+const n=`---
+livro: "2reis"
+capitulo: "06"
+titulo: ""
+slug: "2reis-06-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=temas-controversos-BQCuOCFL.js.map

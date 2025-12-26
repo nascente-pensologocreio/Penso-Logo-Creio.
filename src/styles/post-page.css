@@ -1,0 +1,223 @@
+/* src/styles/post-page.css - Estilos dedicados para Post.jsx */
+
+/* HERO - Contenção forçada */
+.post-hero-container {
+  position: relative !important;
+  width: 100% !important;
+  height: 60vh !important;
+  max-height: 500px !important;
+  min-height: 400px !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.post-hero-image {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+.post-hero-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  ) !important;
+  pointer-events: none !important;
+}
+
+/* CABEÇALHO - Centralizado e contido */
+.post-header-section {
+  width: 100% !important;
+  max-width: 896px !important;
+  margin: 0 auto !important;
+  padding: 3rem 1.5rem 1.5rem !important;
+  text-align: center !important;
+}
+
+@media (min-width: 768px) {
+  .post-header-section {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
+
+.post-title {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 1.875rem !important;
+  font-weight: 700 !important;
+  color: #F5E3A1 !important;
+  text-shadow: 0 0 16px rgba(245, 227, 161, 0.4) !important;
+  margin-bottom: 1rem !important;
+  line-height: 1.2 !important;
+}
+
+@media (min-width: 768px) {
+  .post-title {
+    font-size: 3rem !important;
+  }
+}
+
+/* CORPO EDITORIAL - Forçar contenção lateral */
+.post-body-article {
+  width: 100% !important;
+  max-width: 896px !important;
+  margin: 0 auto !important;
+  padding: 4rem 1.5rem !important;
+  box-sizing: border-box !important;
+}
+
+@media (min-width: 768px) {
+  .post-body-article {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
+
+/* Container de vidro */
+.post-glass-container {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  border: 1px solid rgba(212, 175, 55, 0.25) !important;
+  border-radius: 0.75rem !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  padding: 2rem !important;
+  box-sizing: border-box !important;
+}
+
+@media (min-width: 768px) {
+  .post-glass-container {
+    padding: 3rem !important;
+  }
+}
+
+/* Conteúdo textual */
+.post-content-prose {
+  color: #E5E7EB !important;
+  line-height: 1.8 !important;
+  text-align: justify !important;
+  word-spacing: 0.05em !important;
+  hyphens: auto !important;
+}
+
+.post-content-prose p {
+  color: #E5E7EB !important;
+  line-height: 1.8 !important;
+  text-align: justify !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.post-content-prose h1,
+.post-content-prose h2,
+.post-content-prose h3,
+.post-content-prose h4 {
+  font-family: 'Playfair Display', serif !important;
+  color: #F5E3A1 !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.post-content-prose h1 {
+  font-size: 2.25rem !important;
+}
+
+.post-content-prose h2 {
+  font-size: 1.875rem !important;
+}
+
+.post-content-prose h3 {
+  font-size: 1.5rem !important;
+}
+
+.post-content-prose a {
+  color: #D4AF37 !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+}
+
+.post-content-prose a:hover {
+  text-decoration: underline !important;
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.45) !important;
+}
+
+.post-content-prose strong {
+  color: #F5E3A1 !important;
+  font-weight: 600 !important;
+}
+
+.post-content-prose blockquote {
+  border-left: 4px solid #D4AF37 !important;
+  padding-left: 1.5rem !important;
+  color: #D4AF37 !important;
+  font-style: italic !important;
+  margin: 1.5rem 0 !important;
+}
+
+.post-content-prose ul,
+.post-content-prose ol {
+  padding-left: 2rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.post-content-prose li {
+  margin-bottom: 0.5rem !important;
+}
+
+/* RESET de possíveis conflitos */
+.post-body-article * {
+  box-sizing: border-box !important;
+}
+
+/* Garantir que nenhum elemento filho force width: 100vw */
+.post-body-article *,
+.post-glass-container *,
+.post-content-prose * {
+  max-width: 100% !important;
+}
+
+/* Tag de destaque */
+.post-tag {
+  display: inline-block !important;
+  padding: 0.25rem 1rem !important;
+  border: 1px solid rgba(212, 175, 55, 0.6) !important;
+  border-radius: 9999px !important;
+  font-size: 0.75rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.2em !important;
+  color: #D4AF37 !important;
+}
+
+/* Metadados */
+.post-meta {
+  color: #9CA3AF !important;
+  font-size: 0.875rem !important;
+  margin-bottom: 1rem !important;
+}
+
+@media (min-width: 768px) {
+  .post-meta {
+    font-size: 1rem !important;
+  }
+}
+
+/* Proteção contra overflow global */
+html,
+body {
+  overflow-x: hidden !important;
+}
+
+/* Se o LayoutPrincipal está aplicando estilos no main, anular */
+main.post-page-main {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}

@@ -1,0 +1,2 @@
+import{b as e,i as o}from"./firebase-core-3RcgupBU.js";const a={apiKey:"AIzaSyCptB0SmTC_Cv4zVOHGGX3zzA01IyZM",authDomain:"pensologocreio-id-firebase.firebaseapp.com",projectId:"pensologocreio-id-firebase",storageBucket:"pensologocreio-id-firebase.firebasestorage.app",messagingSenderId:"482839755454",appId:"1:482839755454:web:f96ba289b3a29c6cbcef"},i=o(a),p=e(i);export{p as d};
+//# sourceMappingURL=config-BZzbv8tb.js.map

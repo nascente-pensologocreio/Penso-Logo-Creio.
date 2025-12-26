@@ -1,0 +1,15 @@
+const n=`---
+livro: "levitico"
+capitulo: "02"
+titulo: ""
+slug: "levitico-02-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=devocional-01-BmnV6pzJ.js.map

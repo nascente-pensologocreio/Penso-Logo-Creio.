@@ -1,0 +1,15 @@
+const o=`---
+livro: "proverbios"
+capitulo: "05"
+titulo: ""
+slug: "proverbios-05-temas-controversos"
+data: ""
+autor: "Capelão Nascente"
+tipo: "temas-controversos"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{o as default};
+//# sourceMappingURL=temas-controversos-ByIcbT2z.js.map

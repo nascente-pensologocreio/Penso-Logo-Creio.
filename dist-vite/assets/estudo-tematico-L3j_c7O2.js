@@ -1,0 +1,15 @@
+const t=`---
+livro: "2tessalonicenses"
+capitulo: "03"
+titulo: ""
+slug: "2tessalonicenses-03-estudo-tematico"
+data: ""
+autor: "Capelão Nascente"
+tipo: "estudo-tematico"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{t as default};
+//# sourceMappingURL=estudo-tematico-L3j_c7O2.js.map

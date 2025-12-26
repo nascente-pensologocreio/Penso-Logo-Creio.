@@ -1,0 +1,161 @@
+[
+  {
+    "titulo": "Oração do Abismo: Um Clamor por Criação",
+    "slug": "genesis-01-oracao",
+    "tags": [
+      "esperanca",
+      "medo",
+      "mudanca",
+      "solidao"
+    ],
+    "livro": "genesis",
+    "capitulo": "01",
+    "caminho": "/biblia/genesis/genesis-01-oracao"
+  },
+  {
+    "titulo": "O Sopro da Vida",
+    "slug": "genesis-02-oracao",
+    "tags": [
+      "amor",
+      "solidao",
+      "mudanca",
+      "sonho",
+      "esperanca"
+    ],
+    "livro": "genesis",
+    "capitulo": "02",
+    "caminho": "/biblia/genesis/genesis-02-oracao"
+  },
+  {
+    "titulo": "Oração das Folhas que Não Cobrem e da Voz que Ainda Caminha",
+    "slug": "genesis-03-oracao",
+    "tags": [
+      "medo",
+      "perdao",
+      "esperanca",
+      "mudanca"
+    ],
+    "livro": "genesis",
+    "capitulo": "03",
+    "caminho": "/biblia/genesis/genesis-03-oracao"
+  },
+  {
+    "titulo": "Oração das Folhas que Não Cobrem e da Voz que Ainda Caminha",
+    "slug": "genesis-03-oracao",
+    "tags": [
+      "medo",
+      "perdao",
+      "esperanca",
+      "mudanca"
+    ],
+    "livro": "genesis",
+    "capitulo": "03",
+    "caminho": "/biblia/genesis/genesis-03-oracao"
+  },
+  {
+    "titulo": "Oração da Caminhada em Tempos de Finitude",
+    "slug": "genesis-05-oracao",
+    "tags": [
+      "medo",
+      "perdao",
+      "esperanca",
+      "mudanca"
+    ],
+    "livro": "genesis",
+    "capitulo": "05",
+    "caminho": "/biblia/genesis/genesis-05-oracao"
+  },
+  {
+    "titulo": "Clamor de um Coração na Arca da Graça",
+    "slug": "genesis-06-oracao",
+    "tags": [
+      "medo",
+      "esperanca",
+      "perdao",
+      "solidao",
+      "batalha"
+    ],
+    "livro": "genesis",
+    "capitulo": "06",
+    "caminho": "/biblia/genesis/genesis-06-oracao"
+  },
+  {
+    "titulo": "Quando a Justiça Eterna Rompe os Diques",
+    "slug": "genesis-07-oracao",
+    "tags": [
+      "esperanca",
+      "medo",
+      "futuro",
+      "batalha",
+      "ansiedade"
+    ],
+    "livro": "genesis",
+    "capitulo": "07",
+    "caminho": "/biblia/genesis/genesis-07-oracao"
+  },
+  {
+    "titulo": "Oração das Águas que Cessaram e da Promessa que Permanece",
+    "slug": "genesis-08-oracao",
+    "tags": [
+      "esperanca",
+      "medo",
+      "ansiedade",
+      "gratidao"
+    ],
+    "livro": "genesis",
+    "capitulo": "08",
+    "caminho": "/biblia/genesis/genesis-08-oracao"
+  },
+  {
+    "titulo": "Sob o Arco da Tua Misericórdia",
+    "slug": "genesis-09-oracao",
+    "tags": [
+      "oracao",
+      "confissao",
+      "alianca",
+      "misericordia"
+    ],
+    "livro": "genesis",
+    "capitulo": "09",
+    "caminho": "/biblia/genesis/genesis-09-oracao"
+  },
+  {
+    "titulo": "Oração das Nações Dispersas e do Nome que Permanece",
+    "slug": "genesis-10-oracao",
+    "tags": [
+      "solidao",
+      "futuro",
+      "esperanca",
+      "medo"
+    ],
+    "livro": "genesis",
+    "capitulo": "10",
+    "caminho": "/biblia/genesis/genesis-10-oracao"
+  },
+  {
+    "titulo": "Senhor da Luz que Nunca se Apaga",
+    "slug": "romanos-01-oracao",
+    "tags": [
+      "esperanca",
+      "futuro",
+      "medo",
+      "duvida"
+    ],
+    "livro": "romanos",
+    "capitulo": "01",
+    "caminho": "/biblia/romanos/romanos-01-oracao"
+  },
+  {
+    "titulo": "Senhor, Circuncida Nosso Coração",
+    "slug": "romanos-02-oracao",
+    "tags": [
+      "ansiedade",
+      "medo",
+      "esperanca",
+      "perdao"
+    ],
+    "livro": "romanos",
+    "capitulo": "02",
+    "caminho": "/biblia/romanos/romanos-02-oracao"
+  }
+]

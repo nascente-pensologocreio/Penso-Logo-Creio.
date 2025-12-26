@@ -1,0 +1,15 @@
+const n=`---
+livro: "2cronicas"
+capitulo: "14"
+titulo: ""
+slug: "2cronicas-14-devocional"
+data: ""
+autor: "Capelão Nascente"
+tipo: "devocional"
+tema_principal: ""
+tags: []
+---
+
+
+`;export{n as default};
+//# sourceMappingURL=devocional-01-CII5PrAS.js.map
